@@ -37,7 +37,9 @@ The full cohort contains 674 complete observed triads; the numerical-pKa subset 
 - **Training-only transforms:** endpoint scaling and numerical-descriptor scaling are fitted within the relevant training partition.
 - **Paired uncertainty:** whole-group bootstrap resampling, with fitted seeds fixed and the declared mean comparator MAE recomputed in each draw. Seed SDs describe training variability separately.
 
-The fixed-capacity comparisons reuse selected structure-only settings across input/loss conditions. Their structure-only and pH 7.4 reference fits are shared between the ionisation and combined analyses. A separately labelled robustness analysis considers raw paired pKa values, Henderson–Hasselbalch fractions, input-specific configuration searches and input-specific penalty selection. Its verified results will remain distinct from the fixed-capacity references.
+The fixed-capacity comparisons reuse selected structure-only settings across input/loss conditions. Their structure-only and pH 7.4 reference fits are shared between the ionisation and combined analyses. The robustness analysis also compares raw paired pKa values and Henderson–Hasselbalch fractions, with equal-budget input-specific configuration searches and input-specific penalty selection. Fixed-capacity and input-tuned results use separate, explicitly identified references.
+
+Categories and continuous descriptors improve volume and clearance prediction across the three model families. Encoding effects depend on the model and endpoint: fractional inputs improve ChemBERTa beyond categories in some comparisons. The penalty improves internal agreement, with accuracy effects that depend on the input and model. Complete endpoint, interaction and observed-triad-stratum results are supplied with the analysis.
 
 ## Reproduce saved results or fit new models
 
@@ -45,14 +47,16 @@ There are two different workflows:
 
 | Workflow | Purpose | Compute |
 | --- | --- | --- |
-| Validate and rescore saved predictions | Check released artifact identities and reconstruct point metrics; use the separate figure command for plots and intervals | CPU; no model fitting |
+| Reproduce saved results | Validate artifacts, rescore predictions, recompute intervals and redraw figures | CPU; Python or Docker as specified below |
 | Refit models | Run the documented grouped training and selection procedures into a new output directory | A compatible training environment; GPU recommended |
 
 Use the [reproduction guide](docs/reproduction.md) for environment setup, artifact preparation and the available entry points. Recomputed saved-prediction statistics and a fresh training run answer different reproducibility questions: refitting can vary with the hardware and numerical environment.
 
-From the repository root, use Python 3.11 or later to validate and rescore the supplied predictions. These two commands use only the Python standard library:
+Clone the repository, then run the lightweight validation and point-metric checks with Python 3.11 or later. These checks use only the Python standard library:
 
 ```bash
+git clone https://github.com/ThaoPham96/Evaluating-Ionisation-Inputs-and-Mass-Balance-Consistency-in-Neural-Networks-for-PK-Prediction.git pk-reproduction
+cd pk-reproduction
 python scripts/pipeline.py validate
 python scripts/pipeline.py rescore
 ```
@@ -61,22 +65,20 @@ Rescored metrics and the validation report are written to `outputs/rescore/`. To
 
 ```bash
 python scripts/build_runtime.py
+python scripts/pipeline.py validate-robustness
 python scripts/pipeline.py statistics --output outputs/statistics
-python scripts/pipeline.py figures --current-base --output outputs/figures-current-base
+python scripts/pipeline.py figures --output outputs/figures
 ```
 
-The `--current-base` command rebuilds current Figures 1, 2, 3, S1 and S2, including the revised Figure 2 and Figure 3 uncertainty intervals. It uses the saved scientific tables and performs no model fitting. The new robustness figure remains pending integration. An explicit `--historical` option retains the archived Figure 2, Figure 3 and Figure S2 workflow with its original intervals. Figure rebuilding and training run automatically in the local `pipknet-reproduction:20261114-v1` Docker image; no separate host installation of scientific Python packages is needed.
+The statistics command runs the complete 10,000-draw analysis, including the continuous-descriptor and tuning comparisons. The figure command rebuilds Figures 1, 2, 3, S1, S2 and S3 from the supplied scientific tables. These commands run in the local `pipknet-reproduction:20261114-v1` Docker image and perform no model fitting. The reproduction guide also documents the separately labelled historical analyses.
 
 Model refitting is a separate step. For example, the following requests a new GraphConv outer-fold unit:
 
 ```bash
-python scripts/pipeline.py train \
-  --unit GraphConv-outer1 \
-  --device cuda \
-  --output outputs/training
+python scripts/pipeline.py train --campaign robustness --unit GraphConv-outer1-P0 --device cuda --output outputs/training
 ```
 
-The training command performs model fitting. Use a new output directory and consult the [reproduction guide](docs/reproduction.md) for the scope of the selected unit and hardware requirements.
+The training command performs model fitting. Use a new output directory and consult the [reproduction guide](docs/reproduction.md) for campaign selection, unit scope and hardware requirements. Fresh refits record the actual environment and receive new identities; archived predictions and fit identities remain available for exact saved-result checks.
 
 ## Data and provenance
 
@@ -90,7 +92,7 @@ The required data and prediction tables are tracked as losslessly compressed fil
 
 This repository accompanies the working manuscript **“Evaluating Ionisation Inputs and Mass-Balance Consistency in Neural Networks for Pharmacokinetic Prediction.”** The graphical abstract above is the current manuscript graphic and summarizes the categorical-input and soft-loss comparison.
 
-The saved-prediction uncertainty and algebraic-derivation analyses have been checked locally. The expanded continuous-descriptor and input-specific tuning campaign is undergoing verification and integration. The [release status](reproducibility/RELEASE_STATUS.json) identifies the included results. A versioned artifact release and article/preprint citation will be linked when available.
+The repository includes the original comparisons, revised uncertainty analysis, algebraic-derivation controls, and completed continuous-descriptor and input-specific tuning experiments. The [release status](reproducibility/RELEASE_STATUS.json) identifies the included results and validation scope. The manuscript is a working paper; cite the repository version or commit used alongside its title and authors.
 
 ## Citation
 

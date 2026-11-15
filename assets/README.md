@@ -10,4 +10,4 @@ To regenerate the PNG with Poppler:
 pdftoppm -png -singlefile -r 600 assets/graphical-abstract.pdf assets/graphical-abstract
 ```
 
-The adjacent `graphical-abstract.provenance.json` records source and render checksums. The diagram describes the categorical-input and soft-loss comparison in the working manuscript; it does not claim completed results for the expanded continuous-descriptor robustness analysis.
+The adjacent `graphical-abstract.provenance.json` records source and render checksums. The diagram describes the categorical-input and soft-loss comparison in the working manuscript. The continuous-descriptor and tuning comparisons are reported separately in the manuscript and Figure S3.
