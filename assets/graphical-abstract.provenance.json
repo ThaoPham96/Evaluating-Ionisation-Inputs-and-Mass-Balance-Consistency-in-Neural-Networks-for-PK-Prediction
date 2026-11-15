@@ -1,0 +1,21 @@
+{
+  "source": "Overleaf manuscript figures/toc.pdf",
+  "source_commit": "d526a705c48760f7440fc1e210b1aa38cc45da6c",
+  "pdf_sha256": "301ec02b5f2850b906e2a0858fb09f90f81c734cfcd536cb7fe5b84c7e90d236",
+  "png_sha256": "2859efc1e0a3ec338869d046c74494487a27eb7bdcdef41bc04a395833a15a95",
+  "page": 1,
+  "page_size_points": [
+    234,
+    126
+  ],
+  "render_dpi": 600,
+  "pixel_size": [
+    1950,
+    1050
+  ],
+  "renderer": "Poppler pdftoppm",
+  "command": "pdftoppm -png -singlefile -r 600 assets/graphical-abstract.pdf assets/graphical-abstract",
+  "pdf_bytes_unchanged": true,
+  "visual_inspection": "PASS: readable labels and arrows, no clipping or overlap; original contents preserved",
+  "scientific_scope": "Current fixed-capacity categorical-input and soft-loss comparison; no new robustness outcomes asserted"
+}
