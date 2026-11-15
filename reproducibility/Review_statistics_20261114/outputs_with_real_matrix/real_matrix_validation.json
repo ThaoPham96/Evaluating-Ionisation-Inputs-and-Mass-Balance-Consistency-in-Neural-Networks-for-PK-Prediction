@@ -1,0 +1,22 @@
+{
+  "complete_contrasts": 9520,
+  "new_contrasts": 4092,
+  "old_contrasts_unchanged": 5428,
+  "same_input_reference_rows": 141264,
+  "T_descriptor_Vd_CL_negative_intervals": 18,
+  "T_triad_range": [
+    -2.6847033220868166,
+    0.8999188272831226
+  ],
+  "T_residual_reduction_percent_range": [
+    24.79287994369087,
+    63.59241845554654
+  ],
+  "R2_average_range": [
+    -1.1514870685802543,
+    0.041520856784775
+  ],
+  "R2_average_intervals_include_zero": 6,
+  "campaign_id": "2109d71c4127900d3ee9f1d6eb2acc9bf2469f9e46b77c9ed6958d7f66a74eb3",
+  "prediction_sha256": "73375d27caae320fdc98e403c0960a43451ce4085a2935eb9022a6d1cb7419b5"
+}

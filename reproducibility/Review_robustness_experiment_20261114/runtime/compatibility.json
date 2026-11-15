@@ -1,0 +1,55 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "Review_robustness_experiment_20261114/tests/test_robustness.py",
+    "-q"
+  ],
+  "evidence": "Actual previous/new trainer equality across all three backbones P0/P1 +/-lambda; checkpoint states, curves, predictions and scalers exact",
+  "limitation": "CPU execution parity is not a GPU numerical-equivalence experiment; pinned original T4 image/environment is checked on every cloud unit before fitting",
+  "local_python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "passed": true,
+  "source_hashes": {
+    "analysis/combined_features.py": "a82cc2f0dd3522672bc64913ffadf5ef4210a28bcd71c80041c65f7b05055ee6",
+    "analysis/combined_train.py": "34a729ee844811f87a1556d81b012c7a5fb31b645110b99790542c8b9a7b75fa",
+    "analysis/unified_features.py": "89bf46afe211fdb8a4d2de6b71a1d0634556418f7e578dc8a9755477927b5fe2",
+    "analysis/vendor_ionisation/__init__.py": "ff3f8a7538f6291c10a8efa7572e68e4c462478d3a63feca8f4dce56f689b530",
+    "analysis/vendor_ionisation/_vendor.py": "f0aef397c1829b523c2505a29eb6c3b47d98c8f7af3470566f6611bc359bb05e",
+    "analysis/vendor_ionisation/ionisation_campaign.py": "7573a2383591365f6e7de2b4b6de441be2d03a086027727f01e6a03757815348",
+    "analysis/vendor_ionisation/ionisation_data.py": "1a4952f18f6640ae481893424d0ac609ec15d12dfcb9bde9371cf0a104db4c9c",
+    "analysis/vendor_ionisation/ionisation_score.py": "6fae7fd4105294bd3c5ebeae1abde0215f6939a9aeeee6a8f0140480acc6927e",
+    "analysis/vendor_ionisation/ionisation_train.py": "7ca0e35569e5dd3bd03560c8f0b5fca329bc5f6632eceffaa983cbd654ff3517",
+    "analysis/vendor_ionisation/vendor_mass_balance/mass_balance_controls.py": "786bfa8ae1774a68c5bb1b6471d15ffc7b63ad0e4bb6c3a7c22454f7b23e241f",
+    "analysis/vendor_ionisation/vendor_mass_balance/mass_balance_train.py": "ed9d682753d170753e6961779d1d0994a9702e135f8a6eee98199ce0bed1a69b",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/__init__.py": "7081a2d17594640128e69fd56105ada32f3ed9394f8adf6cf1de46c28ebb6f02",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/cli.py": "8154135ccd67a00b98d76ff210cf039f9fdbbd107860c4c8d7aa162188617340",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/data.py": "a6b105f15ac88a8b63e77a06e3477124f9c31fc9012562d07082f9056c6bed28",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/engine.py": "7030ec315068cc23e5f922e42bf8fc6185814dbd0b55836f9135cdbc40521ebf",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/featurizers.py": "1778c7b78d33ddd78aacd61cc96aaf745fb4d35a828f3df3dad8c791fb1150b7",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/inference.py": "3975da0581e9477fd5bed5d978352d344f5cc0961c3ea5731f015725c8b11eb0",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/models.py": "a231679f8586dc74308ef07b8f3966b68dbf3481d1f297bf9b80f5c30ee828b3",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/training.py": "8b0cc68b81602a23c7411d4154fd876d97404be61ee608b68832a01a859aa9c3",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/utils.py": "75bfc1df69d5e20968b8fdef3027581b26f537b8c18c3e38a336cb148b2cf3aa",
+    "runtime/reference_combined_train.py": "c6ecaab9bc04814428a61084aa1be8993128dc806bf82c849cb88c4906b74a6b",
+    "tests/test_robustness.py": "284fb485e8c4a54a3149ee8ac81fd244c79752c497504f5c12b6c0930435651c"
+  },
+  "test_output_sha256": "555c234d72da7bbebed34065764566e4c2caafba4f8ece52caab528a734a5a31",
+  "public_runtime_revalidation": {
+    "tests": "tests/test_robustness.py",
+    "passed": 6,
+    "device": "cpu",
+    "python": "3.11.10",
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "tests/test_robustness.py",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "log_sha256": "a136e667d344bb3ce2fc7003508865182071ea2fd1612c8bee5fc1983f8d7e8e",
+    "scope": "Synthetic two-epoch reference/trainer parity and descriptor/scaling checks; no full refit"
+  }
+}
