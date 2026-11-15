@@ -1,0 +1,4 @@
+Training metadata: one row per cohort, outer fold and training partition; inner_fold=0 denotes the outer fit, 1-5 the inner fits. SDs use observed log10 labels and population divisor n. Counts refer to available labels.
+Matched calibration: one row per matched F/T P0 inner fit. Scientific requests, initial state, scaling, environment and random-number streams are compared; first_divergent_epoch=0 indicates no recorded curve difference. Positive and zero-inclusive weights are selected by pooled complete-triad log10 MAE.
+Selection comparison: P0 choices and full lambda-grid score ranges by outer fold.
+Data 3 F policy epochs: medians of five inner stopping epochs for each selected policy, including the loss-off fit reused when zero is selected.

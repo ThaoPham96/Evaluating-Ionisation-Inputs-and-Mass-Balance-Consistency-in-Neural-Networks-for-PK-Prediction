@@ -1,5 +1,5 @@
 {
-  "release_version": "repository-20261115",
+  "release_version": "repository-20261115-clarifications",
   "checksums": {
     "artifacts.json": "ad0d78828a68e32cb90db6ce2b5a81aa36717a7b00310899a4b027f92c1e58a5",
     "checkpoint_provenance.csv": "80f4770c6886b9bd6e84f6ab16befc6d59854665699e5ad401dd6624b3d1831f",
@@ -89,9 +89,9 @@
     "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/PLOT_GUIDE.txt": "302ed75d9531da9d40f44b1861b436f35b6143ca5ca12f4a95b93a2d3f471e27",
     "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/render.py": "05eac9e3d02e3fad1b2663e3377b87a312e56de13d01100c1b5b4a6158f1cbfb",
     "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/source_manifest.json": "ddd2558b2d276c2453d48dbcf925a828235d0999a42842f87c6796f9bb3d014e",
-    "current/render_preserved_figures.py": "d53fa6b95d0a686e32211c2d7a3270f7f1f037fa750ef454277fc079ad2a077e",
+    "current/render_preserved_figures.py": "803aebabf5fef5d7f0a5f125572e2731084925295a35ec1a63bfe7c1d50f37db",
     "current/render_primary_intervals.py": "292bda521fc2f55d8b52f14f01e648924ba9520bef5e9194200a8da53d28f68b",
-    "current/render_s3.py": "2a1e2135ea133af46a36318ba3c15416047b48366b1dda73d2fe5ad121d11f09",
+    "current/render_s3.py": "c3aea750cba118b7d236cd9d8fee7c60a01fd6e27c9516d5472152b9229bab5b",
     "derived/observation_masks_and_membership.csv": "b5643675536dc7a674f4ffb565252598a24a202944471a80bb3e88f1b9d85bf2",
     "fit_selections/ionisation_class/class-ChemBERTa_head-outer1/selection.json": "d31f97e37351c45bd77d2853c36bf858c84c8f072fe404e6758d1dc1745208b6",
     "fit_selections/ionisation_class/class-ChemBERTa_head-outer2/selection.json": "15aae30a7c997c7950eb70fd57096720bbad4811e902196cc4143c2b55a9c09d",
@@ -964,7 +964,7 @@
     "runtime_recipe/pip-overlay.txt": "c91cebb7716b7628b5fa4567ff8b0cc31bf9d5b502761b115e8f8d374b82040f",
     "runtime_recipe/target-pip-list.json": "f9ff0ca8cb51c07d96d5f89476a2f2e1bbea866822300119aeea1856cc52040b",
     "runtime_recipe/verify_environment.py": "d82e4210a7350d4e26b42e112ee1ba96f6db40998c90e1085bbdcad8b41d370a",
-    "supporting_data/README.txt": "3cbe6a772416f371a2e268201842ee8f101a4d9ec73c71717165329d9a7b3286",
+    "supporting_data/README.txt": "10fabda2df5459b6424ca1771540008b7a9e9dae1ac274ca7aa6023f26ca7938",
     "supporting_data/Supplementary_Data_1_2_dictionary.txt": "5122ea252e5d509a19fe28948c926eb2fe33cef05e92139f33de9625523aec2c",
     "supporting_data/Supplementary_Data_1_condition_metrics.csv": "3603ca8ea5745e3a9a7933afdf8dee68bf1939a949013419627a6a6fdb79879a",
     "supporting_data/Supplementary_Data_1_ensemble_scatter_metrics.csv": "6bd14d8aa58e07940deb22afbb537a5ec8093949f7c7bf4c715a4cfab983c9f1",
@@ -1069,6 +1069,13 @@
     "Unified_ionisation_combined_20261114/reporting/output/scores/single_ph_seed_contrasts.csv": "e6173c9c1ea4bc855f516515d610bea2855226bac2f56d5e39af92181272ef57",
     "Unified_ionisation_combined_20261114/runtime/input_manifest.json": "815b80a490bdddaf4eb30a4a3141cb7c7ee21c211ba2d854b92a44ad0ba8deb8",
     "Unified_ionisation_combined_20261114/runtime/p0_recipes.json": "84adb53b8a99a222674c36f5030972bc26b7bc4fb9d4668c25c8eba3c6f81574",
-    "Unified_ionisation_combined_20261114/runtime/same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd"
+    "Unified_ionisation_combined_20261114/runtime/same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd",
+    "current/build_training_metadata.py": "aedb1950c0743976ec5f270414990c321757133009ecce81c1e8d1df4219d999",
+    "current/paired_calibration.jsonl.gz": "a2f9254d38374898be9c8017ea7f4d3f8d5b82569d286c07a08a426fd53b1705",
+    "supporting_data/Supplementary_Data_4_dictionary.txt": "06ac9a23733af3637ad8f5e154ed453415377a48abfc2a9b679d6074ebaf1b18",
+    "supporting_data/Supplementary_Data_4_matched_calibration.csv": "d757109107b0de9895b5b1499536ddac0574394587975987043897e83eb1b323",
+    "supporting_data/Supplementary_Data_4_selection_comparison.csv": "bef7bbae1caddaecc96801b7efae32b2cfbf6df40a8b84acae97856ad964c400",
+    "supporting_data/Supplementary_Data_4_training_metadata.csv": "f893d179302a12725f4c05d41141d59112b5938ea09fd7e42630153cacfab153",
+    "supporting_data/Supplementary_Data_3_F_policy_epochs.csv": "ed0b5cca9552814a4db877d76a0782e0bb3e94f2eb318277a4d310d5b651eaa4"
   }
 }

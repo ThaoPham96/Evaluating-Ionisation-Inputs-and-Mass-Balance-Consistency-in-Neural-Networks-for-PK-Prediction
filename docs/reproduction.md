@@ -51,6 +51,17 @@ The compact replay keeps original requests, completion markers, publication mark
 
 `validate-robustness` independently checks the three compressed fit-provenance bundles for all 6,105 new fits. Original raw request, summary, scaler and prediction bytes are checked against their completion markers; all 60 architecture/lambda/epoch selections are reconstructed exactly using the archived scientific plan. Every final exported prediction is compared with its source fit, including reused F references. The command reports the omitted checkpoint/learning-curve scope explicitly. It uses Linux numerical libraries because exact selection replay can differ by a final floating-point bit on other platforms.
 
+## Training metadata and matched calibration
+
+```sh
+python scripts/pipeline.py hydrate
+python reproducibility/current/build_training_metadata.py --output outputs/training-metadata
+```
+
+This command requires NumPy and pandas (`python -m pip install numpy==1.26.4 pandas==2.3.3` in a separate Python 3.11 environment, matching the scientific runtime). It runs locally on CPU and rebuilds and verifies the 30 fixed-capacity epoch-policy records, 90 training-partition records, 525 paired F/T P0 calibration summaries and 15 selection comparisons in Supplementary Data 3 and 4. It performs no model fitting. The compact `current/paired_calibration.jsonl.gz` archive adds the learning curves for these paired comparisons, including their original byte hashes and the scientific request/summary fields used for comparison. The broader fit-provenance archives retain their documented omission of other learning curves.
+
+The matched records agree in scientific requests, initial-state/data/scaler/environment hashes and batch/dropout streams. Chemprop and ChemBERTa trajectories are identical; GraphConv trajectories show numerical variation across the separate executions, which did not enforce deterministic GPU execution. The archive supports comparison of the recorded trajectories without attributing the variation to a particular GPU operator. F and T keep their own fitted reference models.
+
 ## Local training
 
 ```sh

@@ -124,3 +124,13 @@ All exported source fields retain their original text and numerical spelling.
 The supplied category codes, scalar encodings and subset membership flags
 are explicit representations of the recorded class labels and memberships.
 SHA256SUMS.txt gives the hashes of the supplied CSV files and this dictionary.
+
+Training and calibration metadata (Supplementary Data 3 and 4)
+
+Supplementary_Data_3_F_policy_epochs.csv gives the 30 model/input/fold records for loss-off, shared-positive, separate-positive and zero-inclusive F epoch policies.
+Supplementary_Data_4_training_metadata.csv gives 90 inner/outer training-partition label counts and triad log10 standard deviations.
+Supplementary_Data_4_matched_calibration.csv compares 525 paired P0 inner fits from the original F and separately executed T calibration.
+Supplementary_Data_4_selection_comparison.csv compares the 15 P0 model/fold selections and score ranges.
+Supplementary_Data_4_dictionary.txt defines these fields.
+
+Run current/build_training_metadata.py after hydration to reproduce and verify these four tables. The accompanying current/paired_calibration.jsonl.gz stores the original learning-curve bytes and whitelisted scientific request/summary fields for each paired fit. Per-curve hashes are verified. Requests, initial-state/data/scaler/environment hashes and batch/dropout streams match. Chemprop and ChemBERTa trajectories match; all 175 GraphConv pairs differ numerically and 50 have different best epochs. These records do not identify a particular GPU kernel as the cause. No new training was performed for this metadata release.
