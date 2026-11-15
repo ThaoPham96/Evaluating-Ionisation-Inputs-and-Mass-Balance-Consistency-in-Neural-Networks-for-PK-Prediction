@@ -1257,6 +1257,24 @@
       "original_sha256": "e146258974a2056ac041649d1c5ad575061586b0b081c7cf6e407fb174f040b9",
       "public_sha256": "c11295990e6a1f9e43f3cd0b7399e1ba64e95a5f703f7fc6bde567b71ed8e583",
       "change": "producer writes repository-relative POSIX source paths"
+    },
+    {
+      "path": "Review_statistics_20261114/outputs_with_real_matrix/exact_archived_comparison.csv",
+      "original_sha256": "de6917d4364ff81cd481b6d42020c83fcb205caa913759e0bcbdf784b9fde7b9",
+      "public_sha256": "8a0475ae31b927ae4d879f19f4fe8f1d27d1d25ed1b510be912d93830c1f3fff",
+      "change": "source provenance paths made portable; numerical results unchanged"
+    },
+    {
+      "path": "Review_statistics_20261114/outputs_with_real_matrix/exact_archived_interval_changes.csv",
+      "original_sha256": "1e3de3e4fc0ba68fd9041f41adf97b6caf5959bc86d96b7035a26f4548f523b2",
+      "public_sha256": "9bbf2703ec6f243f9925980d58f19f4e11476eae29c059fa9c8980b7a67e4961",
+      "change": "source provenance paths made portable; numerical results unchanged"
+    },
+    {
+      "path": "Review_statistics_20261114/outputs_with_real_matrix/manifest.json",
+      "original_sha256": "73f8611ec139e0a38937145d6f68f0a5afd4a3b0b2acaf51d19dc8ceeccfe247",
+      "public_sha256": "914a4e638294d46e9d08d210c00c1e7af61d86587fdd4577e3ba263cecfce175",
+      "change": "source provenance paths made portable; numerical results unchanged"
     }
   ],
   "checkpoint_weights": "not distributed; no public retrieval promise",

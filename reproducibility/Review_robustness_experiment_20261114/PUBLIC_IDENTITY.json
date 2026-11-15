@@ -1,0 +1,144 @@
+{
+  "archived_campaign_id": "2109d71c4127900d3ee9f1d6eb2acc9bf2469f9e46b77c9ed6958d7f66a74eb3",
+  "original_source_hashes": {
+    "analysis/audit_historical.py": "568dadb3d5d4da36a1afeb63519caf3bce32032eb0d833bb7ad28f09282d7cfa",
+    "analysis/collect_unified.py": "fa238036123c7eb683404d5aabf021bab9561b76a1a8660caeb808c557da1576",
+    "analysis/combined_campaign.py": "819aec04d6add542bedb45bedfd740154bf47264cc1032ef95297631e5aedf46",
+    "analysis/combined_features.py": "046d45100f703a6d38ab3a563746c9e22852d36c6129980cffe5c8ad99d42d7d",
+    "analysis/combined_score.py": "8f349d7035db59bee898b708ab0eccea08993744dcfc60cbdc233d5630234ea4",
+    "analysis/combined_train.py": "34a729ee844811f87a1556d81b012c7a5fb31b645110b99790542c8b9a7b75fa",
+    "analysis/memory_preflight.py": "f724a5729cebf66bad0c7272d6d9653fd5ac6c52a34434464e604e8fb8d5a0d7",
+    "analysis/robustness_campaign.py": "5f669339d0419021782689ecfd080d25fe586141ae1fb92ea87eee81e9db746d",
+    "analysis/tests/test_unified_campaign.py": "8451d785dbc53d9a2151a17eb75d839c8fd815eda3cfdb363d1d1967617929f2",
+    "analysis/unified_campaign.py": "4c8fda40206b3c682bef0f6905a915c6f02802c8476fdeb7a75a95b20e0e3da1",
+    "analysis/unified_features.py": "89bf46afe211fdb8a4d2de6b71a1d0634556418f7e578dc8a9755477927b5fe2",
+    "analysis/vendor_ionisation/__init__.py": "ff3f8a7538f6291c10a8efa7572e68e4c462478d3a63feca8f4dce56f689b530",
+    "analysis/vendor_ionisation/_vendor.py": "f0aef397c1829b523c2505a29eb6c3b47d98c8f7af3470566f6611bc359bb05e",
+    "analysis/vendor_ionisation/ionisation_campaign.py": "7573a2383591365f6e7de2b4b6de441be2d03a086027727f01e6a03757815348",
+    "analysis/vendor_ionisation/ionisation_data.py": "1a4952f18f6640ae481893424d0ac609ec15d12dfcb9bde9371cf0a104db4c9c",
+    "analysis/vendor_ionisation/ionisation_score.py": "6fae7fd4105294bd3c5ebeae1abde0215f6939a9aeeee6a8f0140480acc6927e",
+    "analysis/vendor_ionisation/ionisation_train.py": "7ca0e35569e5dd3bd03560c8f0b5fca329bc5f6632eceffaa983cbd654ff3517",
+    "analysis/vendor_ionisation/SOURCE_MANIFEST.json": "532e92c9b79357f86cae41ce86e22e8bc7bbd9b4bc45c9bee6c703825b3b174d",
+    "analysis/vendor_ionisation/vendor_mass_balance/mass_balance_controls.py": "786bfa8ae1774a68c5bb1b6471d15ffc7b63ad0e4bb6c3a7c22454f7b23e241f",
+    "analysis/vendor_ionisation/vendor_mass_balance/mass_balance_train.py": "ed9d682753d170753e6961779d1d0994a9702e135f8a6eee98199ce0bed1a69b",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/__init__.py": "7081a2d17594640128e69fd56105ada32f3ed9394f8adf6cf1de46c28ebb6f02",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/cli.py": "8154135ccd67a00b98d76ff210cf039f9fdbbd107860c4c8d7aa162188617340",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/data.py": "a6b105f15ac88a8b63e77a06e3477124f9c31fc9012562d07082f9056c6bed28",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/engine.py": "7030ec315068cc23e5f922e42bf8fc6185814dbd0b55836f9135cdbc40521ebf",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/featurizers.py": "1778c7b78d33ddd78aacd61cc96aaf745fb4d35a828f3df3dad8c791fb1150b7",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/inference.py": "3975da0581e9477fd5bed5d978352d344f5cc0961c3ea5731f015725c8b11eb0",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/models.py": "a231679f8586dc74308ef07b8f3966b68dbf3481d1f297bf9b80f5c30ee828b3",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/training.py": "8b0cc68b81602a23c7411d4154fd876d97404be61ee608b68832a01a859aa9c3",
+    "analysis/vendor_ionisation/vendor_mass_balance/pipknet/utils.py": "75bfc1df69d5e20968b8fdef3027581b26f537b8c18c3e38a336cb148b2cf3aa",
+    "analysis/vendor_ionisation/vendor_mass_balance/SOURCE_MANIFEST.json": "b21f2a430522e7ebf87ab0da8a6a19238057ebeab4d4d447269b4634faf453ea",
+    "tests/test_campaign.py": "348a52529d37a5e5241e5921c9bbfd224f39666cd9118d4abb743ebacb2f5ab7",
+    "tests/test_robustness.py": "284fb485e8c4a54a3149ee8ac81fd244c79752c497504f5c12b6c0930435651c",
+    "data/release/numerical/fold_coverage.csv": "8f868346b6af03ffea71a474a54e5d1a5d7a624c72ee0908a63389d84fda7734",
+    "data/release/numerical/inner.csv": "918d1f3a683b8da9008f6511f3aef35a76277ed4a0a4dd45e06a3c3c4d55b5d5",
+    "data/release/numerical/ledger.csv": "291a18ddc209c74d68ddb0b1862c6292a5596e320c52566672707257204f431a",
+    "data/release/numerical/manifest.json": "825ff1af8202cbda119cf2334038d5986349b60788d1f187d0276944556f975f",
+    "data/release/numerical/model_dataset.csv": "ebe47d2c6285ca54db824fd4d7e37313dca60930679e3527a1a5f90ddf0a3426",
+    "data/release/numerical/outer.csv": "bf7aaee6fb25334686d2d6b43ebe34c30d123e2e97115aa636a70373a3a6ff32",
+    "features/numerical/chemberta.npy": "4d9dd63d0bd3622c5cc8d8e6caadb0dc5c9f55f6de18cab268d5d5c1f2e48c23",
+    "features/numerical/graphs.pt": "72a9f724e624433e7a6fcdc3c011ceb7f418030b599e72f8681d5a379fc1cb8a",
+    "features/numerical/manifest.json": "3d4ebaa079ea03a498c8f6149aede9339da52efd85e79df4dcc11722785028c3",
+    "features/numerical/structures.json": "c3a9b7d0d54f364340848f6290fbaf270567864f345cc5eb7e373654d80acc55",
+    "runtime/compatibility.json": "88ef421a63d8691c71a860d175ab136a4c41d606070c813a41c233c3c43d754e",
+    "runtime/input_manifest.json": "20c18a8649910d1cc8d90db869969c71b9c9c5b0195600f672ec03914785e73a",
+    "runtime/memory_preflight.json": "af030fcf1ff83079f631616769662d152b3f16c15a5f368e5b35fd9b28ebb1b2",
+    "runtime/p0_recipes.json": "84adb53b8a99a222674c36f5030972bc26b7bc4fb9d4668c25c8eba3c6f81574",
+    "runtime/reference_combined_train.py": "c6ecaab9bc04814428a61084aa1be8993128dc806bf82c849cb88c4906b74a6b",
+    "runtime/references/final_predictions.csv": "a203e818304be29ca54537f4663395fdfbd1f5ee79dd6771aaffe9125669c939",
+    "runtime/references/fit_provenance.json": "3a92f8aec9e1859f6c2566447f96678ea7da97e5f0210840d33826bc4dc3ff47",
+    "runtime/references/r2_calibration.json": "7fc2e25a12f6c0a669e9eca05e58e3f961f1f9271b0dd3c59536a22c543e5ab3",
+    "runtime/references/reference_manifest.json": "89bc4d6f367df69086758a44451a86d1b732413bda81c94ec680c0b81f8ad846",
+    "runtime/references/selections.json": "d6ed07db4abde662d68dbd83591debc4dd8076f5bd4df10edc41b43b61086b23",
+    "runtime/same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd",
+    "runtime/search_grid.json": "e51d331e338d0fef30c0f9eb50cc185b0f05293a4ef790e0c2f7d7a191f58c1a",
+    "outputs/export/final_predictions.csv": "73375d27caae320fdc98e403c0960a43451ce4085a2935eb9022a6d1cb7419b5",
+    "outputs/export/manifest.json": "0da61ec9ccc7a90648de4a1dfd6a0eb7c3e31d5f8534f1e4bf55a0255e58106c",
+    "outputs/export/plan.json": "b12213355e7ea6105a6fa42952062f3cc5f26feba49f41428ac0c48de780d74b",
+    "outputs/export/selections.json": "939a941943601df628cf5e5184db21d27b4c318ed9784c79dc6e3c9b0eac405e",
+    "outputs/export/unit_markers.json": "c26afba34f233b61cd56898717b8443eaad2fb40bb45e4d6873769a7d3765916"
+  },
+  "public_changes": [
+    {
+      "path": "analysis/combined_campaign.py",
+      "original_sha256": "819aec04d6add542bedb45bedfd740154bf47264cc1032ef95297631e5aedf46",
+      "public_sha256": "431048403a9f023b4740652fbb9756ab0a33b0e77cd69d340f40c272935a10b0"
+    },
+    {
+      "path": "analysis/combined_features.py",
+      "original_sha256": "046d45100f703a6d38ab3a563746c9e22852d36c6129980cffe5c8ad99d42d7d",
+      "public_sha256": "a82cc2f0dd3522672bc64913ffadf5ef4210a28bcd71c80041c65f7b05055ee6"
+    },
+    {
+      "path": "analysis/memory_preflight.py",
+      "original_sha256": "f724a5729cebf66bad0c7272d6d9653fd5ac6c52a34434464e604e8fb8d5a0d7",
+      "public_sha256": "e26ec1123036936139559a058e7393cc3d015894787a8469c2a942f0cfd7837e"
+    },
+    {
+      "path": "analysis/robustness_campaign.py",
+      "original_sha256": "5f669339d0419021782689ecfd080d25fe586141ae1fb92ea87eee81e9db746d",
+      "public_sha256": "be6e2a4ed493f5fdf1d7900a1b30295773e6ed4d4aa1afc215f3f695d80e427d"
+    },
+    {
+      "path": "data/release/numerical/ledger.csv",
+      "original_sha256": "291a18ddc209c74d68ddb0b1862c6292a5596e320c52566672707257204f431a",
+      "public_sha256": "dd54529f31dea464a2cce42fc6199ec95c7f22309ddc62ef915d8f36558fffc3"
+    },
+    {
+      "path": "data/release/numerical/manifest.json",
+      "original_sha256": "825ff1af8202cbda119cf2334038d5986349b60788d1f187d0276944556f975f",
+      "public_sha256": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3"
+    },
+    {
+      "path": "data/release/numerical/model_dataset.csv",
+      "original_sha256": "ebe47d2c6285ca54db824fd4d7e37313dca60930679e3527a1a5f90ddf0a3426",
+      "public_sha256": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6"
+    },
+    {
+      "path": "features/numerical/manifest.json",
+      "original_sha256": "3d4ebaa079ea03a498c8f6149aede9339da52efd85e79df4dcc11722785028c3",
+      "public_sha256": "36188f3353482d1843f1764805b46e23387c71832b56e53f197663d305d6ae5d"
+    },
+    {
+      "path": "runtime/compatibility.json",
+      "original_sha256": "88ef421a63d8691c71a860d175ab136a4c41d606070c813a41c233c3c43d754e",
+      "public_sha256": "3a0be7a0fb8bb989aa373cb67261bda2bac8d70562f7f84aa82360545213883b"
+    },
+    {
+      "path": "runtime/input_manifest.json",
+      "original_sha256": "20c18a8649910d1cc8d90db869969c71b9c9c5b0195600f672ec03914785e73a",
+      "public_sha256": "815b80a490bdddaf4eb30a4a3141cb7c7ee21c211ba2d854b92a44ad0ba8deb8"
+    },
+    {
+      "path": "runtime/memory_preflight.json",
+      "original_sha256": "af030fcf1ff83079f631616769662d152b3f16c15a5f368e5b35fd9b28ebb1b2",
+      "public_sha256": "3f9fcf4c47f4d79504fd65f788a3c5cc31de7d3e97a13890df10cbe7401ebc62"
+    },
+    {
+      "path": "runtime/references/reference_manifest.json",
+      "original_sha256": "89bc4d6f367df69086758a44451a86d1b732413bda81c94ec680c0b81f8ad846",
+      "public_sha256": "c03fb8e929039031ef793ab9803f5757e98b8e8980a3f508f2285e6656b3ce9e"
+    },
+    {
+      "path": "outputs/export/manifest.json",
+      "original_sha256": "0da61ec9ccc7a90648de4a1dfd6a0eb7c3e31d5f8534f1e4bf55a0255e58106c",
+      "public_sha256": "f3719fbecfea7c53a4ff67ea672bee56c26a8cd1b3e1649455bfd90206befc68"
+    },
+    {
+      "path": "outputs/export/plan.json",
+      "original_sha256": "b12213355e7ea6105a6fa42952062f3cc5f26feba49f41428ac0c48de780d74b",
+      "public_sha256": "108e1ca9708cdd2257b5385a4cae596d73231afdfc165a0b0a238b38219cf92f"
+    }
+  ],
+  "reviewer_metadata_source": "../PUBLIC_METADATA_IDENTITY.json",
+  "scope": "Scientific input cells/order, split assignments, selected configurations, lambdas, epochs and saved predictions unchanged. Public packaging and fresh refits have distinct identities.",
+  "normalization_notes": [
+    "reviewer display metadata uses the existing scientific-column equality proof",
+    "private registry hostname removed while immutable image digest retained",
+    "author-only default paths and diagnostic output directory removed",
+    "public CPU compatibility revalidation recorded"
+  ]
+}

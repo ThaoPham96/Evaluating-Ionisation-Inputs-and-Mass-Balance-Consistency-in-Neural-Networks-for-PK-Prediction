@@ -110,7 +110,7 @@ def verify(output, metrics=False):
               'mass_scoring': checker.score_mass(DATA, model, rows),
               'unified_scoring': checker.score_unified(DATA, model, rows),
               'class_scoring': checker.score_class(DATA, model, rows),
-              'scope': 'Historical frozen cohorts and saved-prediction point metrics; pending revision results excluded.'}
+              'scope': 'Historical frozen cohorts and saved-prediction point metrics. Use validate-robustness and statistics for the complete new matrix.'}
     output.mkdir(parents=True, exist_ok=True)
     (output / 'validation.json').write_text(json.dumps(report, indent=2) + '\n')
     if metrics:
@@ -120,7 +120,7 @@ def verify(output, metrics=False):
             writer.writerows(rows)
     print(json.dumps(report, indent=2))
 
-def container(command, output, unit, device, dry_run, historical=False, current_base=False, draws=10000):
+def container(command, output, unit, device, dry_run, historical=False, current_base=False, draws=10000, campaign='historical'):
     output = output.resolve()
     if output == ROOT or output == DATA or DATA in output.parents:
         raise ValueError('Choose an output directory outside reproducibility/')
@@ -130,7 +130,7 @@ def container(command, output, unit, device, dry_run, historical=False, current_
             '-e', 'MPLCONFIGDIR=/tmp/matplotlib', '-e', 'HOME=/tmp',
             '-v', f'{ROOT}:/repository:ro', '-v', f'{output}:/results:rw',
             '-w', '/repository']
-    if command == 'train' and device == 'cuda':
+    if device == 'cuda' and (command == 'train' or (command == 'preflight' and campaign == 'robustness')):
         args += ['--gpus', 'all']
     if hasattr(os, 'getuid'):
         args += ['--user', f'{os.getuid()}:{os.getgid()}']
@@ -140,7 +140,7 @@ def container(command, output, unit, device, dry_run, historical=False, current_
         args += ['--historical']
     if current_base:
         args += ['--current-base']
-    args += ['--draws', str(draws)]
+    args += ['--draws', str(draws), '--campaign', campaign]
     if dry_run:
         print(json.dumps({'command': args, 'starts_training': False}, indent=2))
         return
@@ -148,18 +148,21 @@ def container(command, output, unit, device, dry_run, historical=False, current_
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['hydrate', 'validate', 'rescore', 'statistics', 'figures', 'train', 'preflight'])
+    parser.add_argument('command', choices=['hydrate', 'validate', 'validate-robustness', 'rescore', 'statistics', 'figures', 'train', 'preflight'])
     parser.add_argument('--output', type=Path)
-    parser.add_argument('--unit', default='GraphConv-outer1', help='Historical unified campaign unit; use preflight to list units')
+    parser.add_argument('--unit', help='Campaign unit; use preflight to list units')
+    parser.add_argument('--campaign', choices=['mass', 'class', 'historical', 'robustness'], default='historical', help='Training/preflight procedure: mass952, class494, unified327, or four-input T/R0/R2')
     parser.add_argument('--device', choices=['cpu', 'cuda'], default='cuda')
     parser.add_argument('--dry-run', action='store_true', help='Print Docker command without starting computation')
-    parser.add_argument('--historical', action='store_true', help='Render the archived unified figures with their original intervals')
+    parser.add_argument('--historical', action='store_true', help='Use historical-only statistics, or archived unified figures with original intervals')
     parser.add_argument('--current-base', action='store_true', help='Render current Figures 1/2/3/S1/S2; pending new robustness figures excluded')
     parser.add_argument('--draws', type=int, default=10000, help='Bootstrap draws for statistics (use 10000 for the manuscript)')
     parser.add_argument('--inside-container', action='store_true', help=argparse.SUPPRESS)
     args = parser.parse_args()
+    defaults = {'mass': 'all', 'class': 'class-GraphConv-outer1', 'historical': 'GraphConv-outer1', 'robustness': 'GraphConv-outer1-P2'}
+    args.unit = args.unit or defaults[args.campaign]
     output = args.output or ROOT / 'outputs' / args.command
-    if args.command == 'figures' and not (args.historical or args.current_base):
+    if args.command == 'figures' and not (args.historical or args.current_base) and not (DATA / 'current/render_s3.py').is_file():
         raise SystemExit('Final robustness figure integration is pending. Use --current-base for current Figures 1/2/3/S1/S2, or --historical for archived Figures 2/3/S2 with original intervals.')
     if args.historical and args.current_base:
         parser.error('Choose only one figure scope')
@@ -172,14 +175,20 @@ def main():
     elif args.command in ['validate', 'rescore']:
         verify(output, metrics=args.command == 'rescore')
     elif not args.inside_container:
-        container(args.command, output, args.unit, args.device, args.dry_run, args.historical, args.current_base, args.draws)
+        container(args.command, output, args.unit, args.device, args.dry_run, args.historical, args.current_base, args.draws, args.campaign)
+    elif args.command == 'validate-robustness':
+        subprocess.run([sys.executable, '-B', str(ROOT / 'scripts/verify_robustness.py'), '--output', str(output / 'validation.json')], check=True)
     elif args.command == 'figures':
-        if args.current_base:
+        if not args.historical:
             if any(output.iterdir()):
                 raise ValueError('Figure output directory must be empty')
             subprocess.run([sys.executable, '-B', str(DATA / 'current/render_preserved_figures.py'), '--output', str(output)], check=True)
             subprocess.run([sys.executable, '-B', str(DATA / 'current/render_primary_intervals.py'), '--output', str(output / 'primary')], check=True)
-            print('Current Figures 1/2/3/S1/S2 regenerated; new robustness figures remain pending.')
+            if not args.current_base:
+                subprocess.run([sys.executable, '-B', str(DATA / 'current/render_s3.py'),
+                                '--scores', str(DATA / 'Review_statistics_20261114/outputs_with_real_matrix'),
+                                '--output', str(output / 'figS3')], check=True)
+            print('Current manuscript figures regenerated.' if not args.current_base else 'Current Figures 1/2/3/S1/S2 regenerated.')
             return
         # Invoke the unchanged historical builder with a separate writable output.
         builder = module('historical_reporting', DATA / UNIFIED / 'reporting/build.py')
@@ -190,14 +199,45 @@ def main():
         print('Historical unified Figure 2, Figure 3 and S2 rebuilt with score tables.')
     elif args.command == 'statistics':
         source = DATA / 'Review_statistics_20261114'
-        subprocess.run([sys.executable, '-B', str(source / 'evaluate.py'), '--draws', str(args.draws), '--output', str(output)], check=True)
+        command = [sys.executable, '-B', str(source / 'evaluate.py'), '--draws', str(args.draws), '--output', str(output)]
+        if not args.historical:
+            command += ['--new-export', str(DATA / 'Review_robustness_experiment_20261114/outputs/export')]
+        subprocess.run(command, check=True)
         # The archive comparison is defined for the manuscript's 10,000 draws.
         followups = ['archive_comparison.py', 'report_evidence.py'] if args.draws == 10000 else []
         for name in followups:
             subprocess.run([sys.executable, '-B', str(source / name), '--output', str(output)], check=True)
+        if args.draws == 10000 and not args.historical:
+            subprocess.run([sys.executable, '-B', str(source / 'report_real_matrix.py'), '--output', str(output)], check=True)
         if args.draws != 10000:
             print('Diagnostic draw count only; exact manuscript interval comparison was not requested.')
     else:
+        if args.campaign == 'mass':
+            source = DATA / 'Mass_balance_experiment_20261113'
+            script = str(source / 'analysis/mass_balance_campaign.py')
+            options = ['--release-dir', str(source / 'data'), '--feature-dir', str(source / 'features'),
+                       '--plan-dir', str(source / 'plans'), '--output-dir', str(output)]
+            if args.command == 'preflight' or not (output / 'campaign.json').exists():
+                subprocess.run([sys.executable, '-B', script, 'init', *options], check=True)
+            if args.command == 'train':
+                subprocess.run([sys.executable, '-B', script, 'worker', *options, '--device', args.device], check=True)
+            return
+        if args.campaign == 'class':
+            source = DATA / 'Ionisation_experiment_20261113'
+            script = str(source / 'analysis/ionisation_campaign.py')
+            plan = output / 'class_plan.json'
+            if args.command == 'preflight' or not plan.exists():
+                subprocess.run([sys.executable, '-B', script, '--root', str(source), 'plan',
+                                '--out', str(plan), '--cohorts', 'class'], check=True)
+            if args.command == 'train':
+                subprocess.run([sys.executable, '-B', script, '--root', str(source), 'run-unit',
+                                '--plan', str(plan), '--unit', args.unit, '--output', str(output), '--device', args.device], check=True)
+            return
+        if args.campaign == 'robustness':
+            subprocess.run([sys.executable, '-B', str(ROOT / 'scripts/train_robustness.py'),
+                            'preflight' if args.command == 'preflight' else 'run-unit',
+                            '--unit', args.unit, '--device', args.device, '--output', str(output)], check=True)
+            return
         campaign = DATA / UNIFIED
         cli = ['preflight', '--root', str(campaign)] if args.command == 'preflight' else [
             'run-unit', '--root', str(campaign), '--unit', args.unit,

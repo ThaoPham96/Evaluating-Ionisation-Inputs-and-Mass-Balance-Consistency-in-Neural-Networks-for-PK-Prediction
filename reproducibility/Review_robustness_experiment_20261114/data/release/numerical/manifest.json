@@ -1,0 +1,52 @@
+{
+  "cohort": "numerical",
+  "data_frozen": true,
+  "decision_csv_sha256": "23f216526ab826b01de62c2aa318bcb89edafe72f622deae730991098fc34fe8",
+  "files": {
+    "fold_coverage.csv": "8f868346b6af03ffea71a474a54e5d1a5d7a624c72ee0908a63389d84fda7734",
+    "inner.csv": "918d1f3a683b8da9008f6511f3aef35a76277ed4a0a4dd45e06a3c3c4d55b5d5",
+    "ledger.csv": "dd54529f31dea464a2cce42fc6199ec95c7f22309ddc62ef915d8f36558fffc3",
+    "model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+    "outer.csv": "bf7aaee6fb25334686d2d6b43ebe34c30d123e2e97115aa636a70373a3a6ff32"
+  },
+  "fingerprint": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8",
+  "inputs": {
+    "builder_sha256": "1a4952f18f6640ae481893424d0ac609ec15d12dfcb9bde9371cf0a104db4c9c",
+    "historical_assessment": {
+      "candidate_modelled.csv": "3d626dcc4e440dba00e657b7739849b954d53ae19f1bd587870f86abbd857b8d",
+      "inputs/reference.csv": "3db0d65b168ca2a80df9de1046833fa26861c23aec88bc11b9357c833636850e",
+      "ionisation_eligibility.csv": "f4e9c87746200003165d594231faa7bacc53cf2c448b9f778fadad833c4acce8",
+      "manifest.json": "19a64cc7cc3bd843f205e57377391f9f95032a81f661cc92444da106dba86213"
+    },
+    "historical_reinstatement": {
+      "all_619_recovery_decisions.csv": "9814881117ed8033b4e194b136b576f16d7e8141f00e6fb75dd7249b487db043",
+      "applied_review.json": "f0ff04f862b07adda0daf854cb604611dc5829fc93c53b693d774dcdd4bea39a",
+      "reinstatement_summary.json": "348ce237bb2c26c40dfc2d25ba9a37144d3e99acf326950a85bed53e8b0be455",
+      "source_evidence_by_record.json": "7a30a9aac927a20bdfb401499cec0c031df6308456a19ff4500e92c9f08ebdfb"
+    },
+    "mass_balance": {
+      "batch_review.csv": "e6c70a4b8eabdf8b4b30de32ef3934eb0f3833274627c08dc58dd33816437f89",
+      "final_identity_amendments.csv": "59c8d86321fd2a72e335bae08e85ee09b86b7ec6250205069d6beea08071169b",
+      "identity_resolution_65.csv": "2a9f8718da0497353c1c65427cd53ca99b18d3008ac253d0f2148dd6a5aaf75d",
+      "inner.csv": "e2036dda5c241994e214d2011c904d36e344f49475440df743f23d36cf441bf5",
+      "manifest.json": "01a9b8fc98e934b2fce4b399c63b013c6a21fb09f0c5ba8ddd82e788dacafbb1",
+      "model_dataset.csv": "857df1882b9b644e65adc15f48a8b41ff59198df215865ec36e15e235de8a2c6",
+      "outer.csv": "41e83993e5e784351acc0a318ba91186a3f4413b1fa05ab8a2aa45fa1d39d7b2",
+      "reviewed_source_records.csv": "e60ffc1cb3e5110639e4385ab9355a616b478ecdadf9c50911b49e216eca2895",
+      "same_row_complete_triads.csv": "0f47b54ea77bdd3a8f088fc6a30002969c76aa99732199f820831cf7ee804cee",
+      "source_row_mapping.csv": "941187245280789686a4671a3f0b4f0563a9a1ec3aae32a4b251d10a95e23749",
+      "unlabelled_structures_not_used.csv": "f7bf13269182b8fd0fa7133e342fc832e3d6e3520198eb5197826a19677cf584"
+    }
+  },
+  "minimum_inner_validation_labels": 10,
+  "schema_version": 1,
+  "source": {
+    "fingerprint": "5413771691c6981d22b6c9ca8e21584dc93cd01244c5e3b143c489dfdc9c7942",
+    "manifest.json": "01a9b8fc98e934b2fce4b399c63b013c6a21fb09f0c5ba8ddd82e788dacafbb1",
+    "model_dataset.csv": "857df1882b9b644e65adc15f48a8b41ff59198df215865ec36e15e235de8a2c6"
+  },
+  "splits_frozen": true,
+  "structure_count": 327,
+  "target_transform_sha256": "ed9d682753d170753e6961779d1d0994a9702e135f8a6eee98199ce0bed1a69b",
+  "training_ready": true
+}
