@@ -1,0 +1,31 @@
+{
+  "bootstrap_draws": 10000,
+  "bootstrap_seeds": {
+    "full952": 20261112,
+    "unified327": 20261113
+  },
+  "estimator": "Nine seed means; paired whole-group percentile intervals with fitted models fixed and denominator recomputed per draw.",
+  "partial_triad_structures": 233,
+  "structures": "Disconnected components include hydrates/formulation components; nonzero atomic formal charges also include charge-separated valence representations.",
+  "reference_scope": "F shared versus T positive changes penalty policy and calibration; F separate versus T positive uses the same per-input selection rule.",
+  "input_sha256": {
+    "Mass_balance_experiment_20261113/data/model_dataset.csv": "857df1882b9b644e65adc15f48a8b41ff59198df215865ec36e15e235de8a2c6",
+    "Mass_balance_experiment_20261113/data/outer.csv": "41e83993e5e784351acc0a318ba91186a3f4413b1fa05ab8a2aa45fa1d39d7b2",
+    "Mass_balance_experiment_20261113/data/inner.csv": "e2036dda5c241994e214d2011c904d36e344f49475440df743f23d36cf441bf5",
+    "Mass_balance_experiment_20261113/data/same_row_complete_triads.csv": "0f47b54ea77bdd3a8f088fc6a30002969c76aa99732199f820831cf7ee804cee",
+    "Unified_ionisation_combined_20261114/data/release/numerical/model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+    "Unified_ionisation_combined_20261114/data/release/numerical/outer.csv": "bf7aaee6fb25334686d2d6b43ebe34c30d123e2e97115aa636a70373a3a6ff32",
+    "Unified_ionisation_combined_20261114/data/release/numerical/inner.csv": "918d1f3a683b8da9008f6511f3aef35a76277ed4a0a4dd45e06a3c3c4d55b5d5",
+    "Unified_ionisation_combined_20261114/runtime/same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd",
+    "Ionisation_experiment_20261113/data/release/class/model_dataset.csv": "376b492bfb68044a28952ae8436f31cb121dfbe6a83e756f8365d1e8861a9742",
+    "Mass_balance_experiment_20261113/figure_data/primary_outer_predictions.csv.gz": "2c8478e8ced25c3ed4de821805f95a6773bfbcf7405445e1af17f3505608283a",
+    "Review_robustness_experiment_20261114/outputs/export/final_predictions.csv": "73375d27caae320fdc98e403c0960a43451ce4085a2935eb9022a6d1cb7419b5"
+  },
+  "outputs": {
+    "Supplementary_Data_5_F_penalty_interactions.csv": "afd40e5c6cd30990451b2369661913a64b223a82fdf35b0f309c19f3eed19fd1",
+    "Supplementary_Data_5_F_T_reference_comparison.csv": "9b830ceb310b71f9be615513f55e3370fd7b5cec35aea70043be7feeb0f9a157",
+    "Supplementary_Data_5_partial_triad_accuracy.csv": "d91e609afe1cecf5593b87aea74e9ca1d56910b76f2cf7cabd82ee8caa89c7e3",
+    "Supplementary_Data_5_structure_flags.csv": "689836f4ef1361e24aa1d882fb5f96e5cc874ea1312a376838cf8949d17674b7",
+    "Supplementary_Data_5_structure_summary.csv": "e224334761953c01edd22f2ad4e76eacbc7374b5fd751ae1b6636f51e656934b"
+  }
+}

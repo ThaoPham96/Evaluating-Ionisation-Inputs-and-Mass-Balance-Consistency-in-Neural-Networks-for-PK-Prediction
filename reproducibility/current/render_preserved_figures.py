@@ -9,7 +9,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.text import Text
-from matplotlib.ticker import FuncFormatter
+from matplotlib.ticker import FuncFormatter, FixedFormatter
 import numpy as np
 import pandas as pd
 
@@ -56,9 +56,17 @@ def save(fig, directory, stem):
     directory.mkdir(exist_ok=True)
     before = geometry(fig)
     changes = []
+    if stem == 'ionisation_supplementary_selected':
+        for ax in fig.axes:
+            labels = [label.get_text() for label in ax.get_xticklabels()]
+            if any('t½' in label for label in labels):
+                ax.xaxis.set_major_formatter(FixedFormatter([label.replace('t½', r'$t_{1/2}$') for label in labels]))
+                changes.append(dict(tick_label='half-life subscript'))
     for label in fig.findobj(Text):
         old = label.get_text()
         new = old.replace('ChemBERTA', 'ChemBERTa').replace('MAE relative to structure only (%)', 'MAE vs structure only (%)').replace(r'\ln 2', r'\ln\,2')
+        if stem == 'ionisation_supplementary_selected':
+            new = new.replace('t½', r'$t_{1/2}$')
         if new != old:
             label.set_text(new)
             changes.append(dict(old=old, new=new))
@@ -112,8 +120,27 @@ def mass_main():
         mod.observed_panel(fig, csv(mod.INPUTS/'same_row_complete_triads.csv'))
         mod.continuous_panel(fig, csv(mod.INPUTS/'cdf_values.csv.gz'))
         mod.split_panel(fig, csv(mod.INPUTS/'split_1_5_summary.csv'))
-        mod.endpoint_panel(fig, csv(mod.INPUTS/'endpoint_seed_values.csv'), csv(mod.INPUTS/'average_seed_values.csv'),
-                           csv(mod.INPUTS/'endpoint_summary.csv'))
+        endpoint_axes = mod.endpoint_panel(fig, csv(mod.INPUTS/'endpoint_seed_values.csv'), csv(mod.INPUTS/'average_seed_values.csv'),
+                                          csv(mod.INPUTS/'endpoint_summary.csv'))
+        scores = csv(ROOT/'Review_statistics_20261114/outputs/contrasts.csv')
+        scores = scores.loc[scores.cohort.eq('full952') & scores.protocol.eq('F') &
+                            scores.stratum.eq('all') & scores.contrast.eq('selected_positive-baseline')]
+        plotted = []
+        for ax, (model, _) in zip(endpoint_axes, mod.MODELS):
+            metrics = [key for _, key in mod.METRICS] + ['seven_endpoint_average']
+            assert len(ax.containers) == len(metrics) == 8
+            for container, metric in zip(ax.containers, metrics):
+                row = scores.loc[scores.model.eq(model) & scores.metric.eq(metric)].iloc[0]
+                centre, caps, bars = container.lines
+                np.testing.assert_allclose(np.asarray(centre.get_xdata(), dtype=float), [row.relative_pct], atol=1e-11, rtol=0)
+                y = float(centre.get_ydata()[0])
+                assert len(caps) == 2 and len(bars) == 1
+                caps[0].set_xdata([row.primary_low]); caps[1].set_xdata([row.primary_high])
+                bars[0].set_segments([[[row.primary_low, y], [row.primary_high, y]]])
+                assert ax.get_xlim()[0] < row.primary_low <= row.relative_pct <= row.primary_high < ax.get_xlim()[1]
+                plotted.append(dict(model=model, metric=metric, mean=row.relative_pct,
+                                    low95=row.primary_low, high95=row.primary_high))
+        pd.DataFrame(plotted).to_csv(mod.ROOT/'endpoint_primary_intervals.csv', index=False)
         for label in fig.findobj(Text):
             label.set_color('black')
         ratio = mod.BODY_HEIGHT / mod.HEIGHT
