@@ -1,0 +1,30 @@
+{
+  "version": "e-Drug3D_2197",
+  "citation": "https://chemoinfo.ipmc.cnrs.fr/edrug3d.html",
+  "files": {
+    "pk": {
+      "url": "https://chemoinfo.ipmc.cnrs.fr/DOWNLOAD/MOLDB/e-Drug3D_2197_PK.txt",
+      "resolved_url": "https://chemoinfo.ipmc.cnrs.fr/DOWNLOAD/MOLDB/e-Drug3D_2197_PK.txt",
+      "retrieved_utc": "2026-11-12T14:29:10.644026+00:00",
+      "bytes": 279680,
+      "etag": "\"44480-65c142ea341d0-gzip\"",
+      "last_modified": "Tue, 22 Sep 2026 15:40:11 GMT",
+      "filename": "e-Drug3D_2197_PK.txt",
+      "sha256": "39a89a1e49f91397773275699757933f0470563f6d137301e8397b82e98e766c",
+      "md5": "8841b7372e16dcb43916f775cc15daff",
+      "publisher_checksum_verified": false
+    },
+    "structures": {
+      "url": "https://chemoinfo.ipmc.cnrs.fr/DOWNLOAD/MOLDB/e-Drug3D_2197.sdf",
+      "resolved_url": "https://chemoinfo.ipmc.cnrs.fr/DOWNLOAD/MOLDB/e-Drug3D_2197.sdf",
+      "retrieved_utc": "2026-11-12T14:29:11.203929+00:00",
+      "bytes": 10784596,
+      "etag": "\"a48f54-65c142ea370b1\"",
+      "last_modified": "Tue, 22 Sep 2026 15:40:11 GMT",
+      "filename": "e-Drug3D_2197.sdf",
+      "sha256": "ca26479ed6bf2dfd5fd7ffb5cfcdccdb76f429acaee5bff8641c513134f7a264",
+      "md5": "ff243fa9bedeb5cc587527504f8ef444",
+      "publisher_checksum_verified": false
+    }
+  }
+}

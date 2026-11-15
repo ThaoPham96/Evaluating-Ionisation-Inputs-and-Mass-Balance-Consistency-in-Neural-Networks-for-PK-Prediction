@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=COLISTIN&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=COLISTIN&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:51.253158+00:00",
+  "sha256": "fa91200a3a1f7f9dbf1883e96d24c126966aca28a5d297009f5dddb7e584eb72",
+  "bytes": 1699
+}

@@ -1,0 +1,739 @@
+{
+  "campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "identity": {
+    "protocol": "ionisation_v2",
+    "datasets": {
+      "class": {
+        "release": "e8a1870320cf33bbf04dbd0749e24647275f3b1e95dd85ce9c2ade1985d884f5",
+        "features": "5f6e8eff5e43538b7e9000bc5b5c84f086e2fa0c8bb0e583cbd3b6b6e28f85dd",
+        "fingerprint": "40aaf9b824380b35414b5e514942ee660c5b89645dce564c323a4eb37b3067fb",
+        "structures": 494
+      },
+      "numerical": {
+        "release": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+        "features": "36188f3353482d1843f1764805b46e23387c71832b56e53f197663d305d6ae5d",
+        "fingerprint": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8",
+        "structures": 327
+      }
+    },
+    "code": {
+      "analysis/_vendor.py": "f0aef397c1829b523c2505a29eb6c3b47d98c8f7af3470566f6611bc359bb05e",
+      "analysis/ionisation_campaign.py": "7573a2383591365f6e7de2b4b6de441be2d03a086027727f01e6a03757815348",
+      "analysis/ionisation_controls.py": "c5131cb0b2b04a25f82591232bc1794144fd77d8abd288215cfd7ce272864de9",
+      "analysis/ionisation_data.py": "1a4952f18f6640ae481893424d0ac609ec15d12dfcb9bde9371cf0a104db4c9c",
+      "analysis/ionisation_pilot.py": "a34a43ef9661a6e6cb9680506dfb85f89852b26cd5ca8cb22c805c204b9d02ff",
+      "analysis/ionisation_score.py": "6fae7fd4105294bd3c5ebeae1abde0215f6939a9aeeee6a8f0140480acc6927e",
+      "analysis/ionisation_train.py": "7ca0e35569e5dd3bd03560c8f0b5fca329bc5f6632eceffaa983cbd654ff3517",
+      "analysis/vendor_mass_balance/mass_balance_controls.py": "786bfa8ae1774a68c5bb1b6471d15ffc7b63ad0e4bb6c3a7c22454f7b23e241f",
+      "analysis/vendor_mass_balance/mass_balance_train.py": "ed9d682753d170753e6961779d1d0994a9702e135f8a6eee98199ce0bed1a69b",
+      "analysis/vendor_mass_balance/pipknet/__init__.py": "7081a2d17594640128e69fd56105ada32f3ed9394f8adf6cf1de46c28ebb6f02",
+      "analysis/vendor_mass_balance/pipknet/cli.py": "8154135ccd67a00b98d76ff210cf039f9fdbbd107860c4c8d7aa162188617340",
+      "analysis/vendor_mass_balance/pipknet/data.py": "a6b105f15ac88a8b63e77a06e3477124f9c31fc9012562d07082f9056c6bed28",
+      "analysis/vendor_mass_balance/pipknet/engine.py": "7030ec315068cc23e5f922e42bf8fc6185814dbd0b55836f9135cdbc40521ebf",
+      "analysis/vendor_mass_balance/pipknet/featurizers.py": "1778c7b78d33ddd78aacd61cc96aaf745fb4d35a828f3df3dad8c791fb1150b7",
+      "analysis/vendor_mass_balance/pipknet/inference.py": "3975da0581e9477fd5bed5d978352d344f5cc0961c3ea5731f015725c8b11eb0",
+      "analysis/vendor_mass_balance/pipknet/models.py": "a231679f8586dc74308ef07b8f3966b68dbf3481d1f297bf9b80f5c30ee828b3",
+      "analysis/vendor_mass_balance/pipknet/training.py": "8b0cc68b81602a23c7411d4154fd876d97404be61ee608b68832a01a859aa9c3",
+      "analysis/vendor_mass_balance/pipknet/utils.py": "75bfc1df69d5e20968b8fdef3027581b26f537b8c18c3e38a336cb148b2cf3aa"
+    },
+    "grid": {
+      "GraphConv": [
+        {
+          "hidden_dim": 128,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.001,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 64,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.3,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 64,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.3,
+          "lr": 0.0003,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 128,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.0003,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 128,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.3,
+          "lr": 0.001,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 64,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 128,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.0003,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 128,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.3,
+          "lr": 0.0003,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 256,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 128,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.3,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        }
+      ],
+      "Chemprop": [
+        {
+          "hidden_dim": 300,
+          "depth": 3,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 600,
+          "depth": 6,
+          "ffn_layers": 3,
+          "dropout": 0.1,
+          "lr": 0.001,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 600,
+          "depth": 3,
+          "ffn_layers": 1,
+          "dropout": 0.3,
+          "lr": 0.0003,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 300,
+          "depth": 5,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.001,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 600,
+          "depth": 2,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.0003,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 300,
+          "depth": 2,
+          "ffn_layers": 1,
+          "dropout": 0.3,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 600,
+          "depth": 3,
+          "ffn_layers": 1,
+          "dropout": 0.3,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 600,
+          "depth": 3,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.0003,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 300,
+          "depth": 2,
+          "ffn_layers": 1,
+          "dropout": 0.3,
+          "lr": 0.001,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 600,
+          "depth": 2,
+          "ffn_layers": 1,
+          "dropout": 0.0,
+          "lr": 0.0003,
+          "weight_decay": 0.0
+        }
+      ],
+      "ChemBERTa_head": [
+        {
+          "hidden_dim": 512,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.001,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 128,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.0003,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 256,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.0003,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 512,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 256,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.001,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 256,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 256,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.3,
+          "lr": 0.0003,
+          "weight_decay": 0.0001
+        },
+        {
+          "hidden_dim": 512,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.0,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 128,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.1,
+          "lr": 0.001,
+          "weight_decay": 0.0
+        },
+        {
+          "hidden_dim": 512,
+          "depth": null,
+          "ffn_layers": 2,
+          "dropout": 0.3,
+          "lr": 0.0003,
+          "weight_decay": 0.0001
+        }
+      ]
+    },
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505,
+      606,
+      707,
+      808,
+      909
+    ],
+    "search_seed": 42,
+    "include_tuned": true,
+    "max_epochs": 200,
+    "patience": 30,
+    "endpoint_weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "lambda": 0,
+    "units": [
+      {
+        "unit_id": "numerical-Chemprop-outer1",
+        "cohort": "numerical",
+        "backbone": "Chemprop",
+        "outer_fold": 1,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-Chemprop-outer2",
+        "cohort": "numerical",
+        "backbone": "Chemprop",
+        "outer_fold": 2,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-Chemprop-outer3",
+        "cohort": "numerical",
+        "backbone": "Chemprop",
+        "outer_fold": 3,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-Chemprop-outer4",
+        "cohort": "numerical",
+        "backbone": "Chemprop",
+        "outer_fold": 4,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-Chemprop-outer5",
+        "cohort": "numerical",
+        "backbone": "Chemprop",
+        "outer_fold": 5,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-GraphConv-outer1",
+        "cohort": "numerical",
+        "backbone": "GraphConv",
+        "outer_fold": 1,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-GraphConv-outer2",
+        "cohort": "numerical",
+        "backbone": "GraphConv",
+        "outer_fold": 2,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-GraphConv-outer3",
+        "cohort": "numerical",
+        "backbone": "GraphConv",
+        "outer_fold": 3,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-GraphConv-outer4",
+        "cohort": "numerical",
+        "backbone": "GraphConv",
+        "outer_fold": 4,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-GraphConv-outer5",
+        "cohort": "numerical",
+        "backbone": "GraphConv",
+        "outer_fold": 5,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-ChemBERTa_head-outer1",
+        "cohort": "numerical",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 1,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-ChemBERTa_head-outer2",
+        "cohort": "numerical",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 2,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-ChemBERTa_head-outer3",
+        "cohort": "numerical",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 3,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-ChemBERTa_head-outer4",
+        "cohort": "numerical",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 4,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "numerical-ChemBERTa_head-outer5",
+        "cohort": "numerical",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 5,
+        "new_fits_upper_bound": 237
+      },
+      {
+        "unit_id": "class-Chemprop-outer1",
+        "cohort": "class",
+        "backbone": "Chemprop",
+        "outer_fold": 1,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-Chemprop-outer2",
+        "cohort": "class",
+        "backbone": "Chemprop",
+        "outer_fold": 2,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-Chemprop-outer3",
+        "cohort": "class",
+        "backbone": "Chemprop",
+        "outer_fold": 3,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-Chemprop-outer4",
+        "cohort": "class",
+        "backbone": "Chemprop",
+        "outer_fold": 4,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-Chemprop-outer5",
+        "cohort": "class",
+        "backbone": "Chemprop",
+        "outer_fold": 5,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-GraphConv-outer1",
+        "cohort": "class",
+        "backbone": "GraphConv",
+        "outer_fold": 1,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-GraphConv-outer2",
+        "cohort": "class",
+        "backbone": "GraphConv",
+        "outer_fold": 2,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-GraphConv-outer3",
+        "cohort": "class",
+        "backbone": "GraphConv",
+        "outer_fold": 3,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-GraphConv-outer4",
+        "cohort": "class",
+        "backbone": "GraphConv",
+        "outer_fold": 4,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-GraphConv-outer5",
+        "cohort": "class",
+        "backbone": "GraphConv",
+        "outer_fold": 5,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-ChemBERTa_head-outer1",
+        "cohort": "class",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 1,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-ChemBERTa_head-outer2",
+        "cohort": "class",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 2,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-ChemBERTa_head-outer3",
+        "cohort": "class",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 3,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-ChemBERTa_head-outer4",
+        "cohort": "class",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 4,
+        "new_fits_upper_bound": 155
+      },
+      {
+        "unit_id": "class-ChemBERTa_head-outer5",
+        "cohort": "class",
+        "backbone": "ChemBERTa_head",
+        "outer_fold": 5,
+        "new_fits_upper_bound": 155
+      }
+    ]
+  },
+  "training_ready": true,
+  "new_fits_upper_bound": 5880,
+  "units": [
+    {
+      "unit_id": "numerical-Chemprop-outer1",
+      "cohort": "numerical",
+      "backbone": "Chemprop",
+      "outer_fold": 1,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-Chemprop-outer2",
+      "cohort": "numerical",
+      "backbone": "Chemprop",
+      "outer_fold": 2,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-Chemprop-outer3",
+      "cohort": "numerical",
+      "backbone": "Chemprop",
+      "outer_fold": 3,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-Chemprop-outer4",
+      "cohort": "numerical",
+      "backbone": "Chemprop",
+      "outer_fold": 4,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-Chemprop-outer5",
+      "cohort": "numerical",
+      "backbone": "Chemprop",
+      "outer_fold": 5,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-GraphConv-outer1",
+      "cohort": "numerical",
+      "backbone": "GraphConv",
+      "outer_fold": 1,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-GraphConv-outer2",
+      "cohort": "numerical",
+      "backbone": "GraphConv",
+      "outer_fold": 2,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-GraphConv-outer3",
+      "cohort": "numerical",
+      "backbone": "GraphConv",
+      "outer_fold": 3,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-GraphConv-outer4",
+      "cohort": "numerical",
+      "backbone": "GraphConv",
+      "outer_fold": 4,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-GraphConv-outer5",
+      "cohort": "numerical",
+      "backbone": "GraphConv",
+      "outer_fold": 5,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-ChemBERTa_head-outer1",
+      "cohort": "numerical",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 1,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-ChemBERTa_head-outer2",
+      "cohort": "numerical",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 2,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-ChemBERTa_head-outer3",
+      "cohort": "numerical",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 3,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-ChemBERTa_head-outer4",
+      "cohort": "numerical",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 4,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "numerical-ChemBERTa_head-outer5",
+      "cohort": "numerical",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 5,
+      "new_fits_upper_bound": 237
+    },
+    {
+      "unit_id": "class-Chemprop-outer1",
+      "cohort": "class",
+      "backbone": "Chemprop",
+      "outer_fold": 1,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-Chemprop-outer2",
+      "cohort": "class",
+      "backbone": "Chemprop",
+      "outer_fold": 2,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-Chemprop-outer3",
+      "cohort": "class",
+      "backbone": "Chemprop",
+      "outer_fold": 3,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-Chemprop-outer4",
+      "cohort": "class",
+      "backbone": "Chemprop",
+      "outer_fold": 4,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-Chemprop-outer5",
+      "cohort": "class",
+      "backbone": "Chemprop",
+      "outer_fold": 5,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-GraphConv-outer1",
+      "cohort": "class",
+      "backbone": "GraphConv",
+      "outer_fold": 1,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-GraphConv-outer2",
+      "cohort": "class",
+      "backbone": "GraphConv",
+      "outer_fold": 2,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-GraphConv-outer3",
+      "cohort": "class",
+      "backbone": "GraphConv",
+      "outer_fold": 3,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-GraphConv-outer4",
+      "cohort": "class",
+      "backbone": "GraphConv",
+      "outer_fold": 4,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-GraphConv-outer5",
+      "cohort": "class",
+      "backbone": "GraphConv",
+      "outer_fold": 5,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-ChemBERTa_head-outer1",
+      "cohort": "class",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 1,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-ChemBERTa_head-outer2",
+      "cohort": "class",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 2,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-ChemBERTa_head-outer3",
+      "cohort": "class",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 3,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-ChemBERTa_head-outer4",
+      "cohort": "class",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 4,
+      "new_fits_upper_bound": 155
+    },
+    {
+      "unit_id": "class-ChemBERTa_head-outer5",
+      "cohort": "class",
+      "backbone": "ChemBERTa_head",
+      "outer_fold": 5,
+      "new_fits_upper_bound": 155
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MONOMETHYL%20FUMARATE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MONOMETHYL%20FUMARATE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:45.703476+00:00",
+  "sha256": "c1f81b0f4c7eb00d36559b03d0509a9b063f15273e008f5f32d62371b44a0bd3",
+  "bytes": 3473
+}

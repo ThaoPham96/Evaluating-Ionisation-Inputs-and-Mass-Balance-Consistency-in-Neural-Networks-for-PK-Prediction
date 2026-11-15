@@ -1,0 +1,8 @@
+{
+  "campaign_id": "8507d5b8972f756b5d851f7677599f2ace390f4c63b08aad09f0e1364b25a928",
+  "source_render_sha256": "6ec423b3f30314805b5d4edb4128c1934f569978219a769e9aee14e26189cfd3",
+  "score_manifest_sha256": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+  "cdf_view_max_fold": 5,
+  "max_predictions_above_view": 18,
+  "seed_predictions_per_curve": 2943
+}

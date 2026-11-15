@@ -1,0 +1,6 @@
+# Additional package for regenerating the frozen embeddings. The cached embeddings are included.
+transformers==4.46.3
+huggingface_hub==0.26.5
+tokenizers==0.20.3
+safetensors==0.4.5
+regex==2026.11.9

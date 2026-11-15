@@ -1,0 +1,19 @@
+All MAE comparisons | 2 of 8
+Every prespecified all-cohort comparison, including historical continuous-input controls. See main figure for adjusted primary intervals.
+pH 7.4 + 6.5 − pH 7.4 repeated twice  [shared recipe; descriptive]
+All four pH categories − pH 7.4 category  [shared recipe; exploratory]
+pH 7.4 + 2.0 − pH 7.4 category  [shared recipe; exploratory]
+Categorical-pH follow-up on 327 structures in 238 frozen parent/scaffold groups.
+Five grouped outer folds are pooled within each of nine matched seeds; seeds are not independent drugs.
+The seven endpoint labelled counts are: t_half 316, Vd 259, CL 246, Cmax 190, Tmax 249, F 172, PPB 292.
+All endpoint weights in training are 1, with no mass-balance penalty. Targets are scaled using training data only.
+Relative MAE changes and their intervals divide absolute paired MAE differences by a fixed nine-seed mean comparator MAE.
+Log10 MAE is used for positive endpoints, and percentage-point MAE for F and PPB. Zero PPB labels remain in MAE.
+95% intervals resample whole seeds and whole frozen groups jointly (10,000 draws), conditional on fixed data/folds/selected models.
+Only ALL4 minus REP4 on Vd and F across the three models is the six-test primary family (adjusted 99.1667% intervals).
+All other intervals are exploratory; ADD65 minus REP2 is descriptive. These many secondary contrasts are not multiplicity-adjusted.
+Tuning is performed separately on the same cohort and folds; some final fitted predictions are exactly reused. It is a sensitivity analysis, not independent replication.
+ALL4 and REP4 both have 16 inputs divided by 2. ADD2/ADD65/ADD5 and REP2 have 8 inputs divided by sqrt(2).
+REF74 is a four-channel pH 7.4 one-hot input. REF0 has no ionisation input. pH values are numeric input conditions, not organ simulations.
+Negative MAE changes indicate lower error. Colours identify endpoints; markers/legends identify conditions.
+These are large author-review figures, not a final journal-sized layout.

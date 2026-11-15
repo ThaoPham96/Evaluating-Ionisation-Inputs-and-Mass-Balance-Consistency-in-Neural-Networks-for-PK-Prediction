@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PHENYLPROPANOLAMINE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PHENYLPROPANOLAMINE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:32.062003+00:00",
+  "sha256": "19391458b135c5fd0eef610da583ea9baaf6e115a9466ec957e5449c17253209",
+  "bytes": 3594
+}

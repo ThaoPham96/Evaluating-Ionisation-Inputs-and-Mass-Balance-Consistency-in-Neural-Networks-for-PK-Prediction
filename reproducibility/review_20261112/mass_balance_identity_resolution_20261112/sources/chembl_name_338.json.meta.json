@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=CALCITRIOL&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=CALCITRIOL&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:34.542321+00:00",
+  "sha256": "0be5ba37b8a59c045eaea1f3fa7c121a7d151477a4f132cde5bc314f7546a108",
+  "bytes": 6893
+}

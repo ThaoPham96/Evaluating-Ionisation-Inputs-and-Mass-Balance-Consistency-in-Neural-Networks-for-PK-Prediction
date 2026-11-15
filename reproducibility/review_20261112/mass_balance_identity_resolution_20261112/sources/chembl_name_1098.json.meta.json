@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PONESIMOD&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PONESIMOD&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:49.382939+00:00",
+  "sha256": "b9f52fb71347b7baa9b2548c117a5634fc08e432f813262952e3c5ac905d0ae2",
+  "bytes": 5215
+}

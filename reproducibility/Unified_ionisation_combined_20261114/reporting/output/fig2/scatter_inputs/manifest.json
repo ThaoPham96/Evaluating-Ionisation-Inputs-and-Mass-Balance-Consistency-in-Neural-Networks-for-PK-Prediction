@@ -1,0 +1,16 @@
+{
+  "axis_limits_log10": {
+    "Vd": [
+      0.35,
+      5.65
+    ],
+    "CL": [
+      -2.15,
+      3.65
+    ]
+  },
+  "outputs": {
+    "metrics.csv": "fd20797e24a82cfded685537ed67320c9ddd0a1fd2a1aaa14bdcf9be616d53d1",
+    "plotted_points.csv": "7a0f3247c3d430a356545b778540067bfd01badc85eaf8ca1b9e1f5a59a7d4b8"
+  }
+}

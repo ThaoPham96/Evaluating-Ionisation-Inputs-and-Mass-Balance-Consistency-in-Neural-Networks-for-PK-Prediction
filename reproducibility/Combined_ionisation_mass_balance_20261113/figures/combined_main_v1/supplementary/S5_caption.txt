@@ -1,0 +1,13 @@
+S5. Paired effects of adding the mass-balance loss to ionisation-informed models.
+
+a. Teal shows the equal-weight average of seven endpoint percentage MAE changes. Each endpoint uses all observed labels: half-life 316, Vd 259, CL 246, Cmax 190, Tmax 249, F 172 and PPB 292, retaining zero F/PPB labels. Five endpoints use log10 MAE and F/PPB use percentage-point MAE. Each endpoint's paired MAE difference (both minus ionisation only) is divided by its fixed ionisation-only nine-seed mean MAE, multiplied by 100, and the seven changes are averaged within each seed. Purple shows the prespecified percentage change in raw triad macro log10 MAE on the 242 complete same-row triads, divided by the fixed ionisation-only triad mean. This triad macro metric averages raw log10 endpoint MAEs before normalisation; it therefore retains the original primary weighting, whereas the main figure's triad display averages normalised endpoint MAEs.
+
+b. Percentage change in mean absolute log10 triad residual on all 327 structures when adding the loss to ionisation-informed models. Estimates and interval bounds use the fixed ionisation-only mean across seeds as the denominator.
+
+Dots show nine paired seed changes; diamonds show means. Thick lines show exploratory 95% percentile intervals. Thin lines show 99.1667% Bonferroni-adjusted intervals for the six prespecified primary comparisons (triad accuracy and disagreement across three models). The seven-endpoint summary is exploratory and has 95% intervals only. The 10,000 crossed bootstrap draws jointly resample whole structure groups and whole fitted seed trajectories across endpoints, preserving endpoint dependence and using each endpoint's resampled observed-label count. Normalising denominators remain fixed. Training data, folds, recipes and selection procedure remain fixed.
+
+Complete-triad sensitivity (mean residual, both minus ionisation only):
+GraphConv: -31.43% on the 242 complete-triad structures; -31.72% on all 327.
+Chemprop: -45.95% on the 242 complete-triad structures; -45.96% on all 327.
+Frozen ChemBERTa + MLP: -48.11% on the 242 complete-triad structures; -48.52% on all 327.
+These are descriptive sensitivity estimates; the plotted primary intervals above remain the full-cohort analyses. Each population uses its own fixed ionisation-only mean as denominator.

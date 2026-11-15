@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=OMBITASVIR&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=OMBITASVIR&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:46.571178+00:00",
+  "sha256": "0b799cb11d85aea5b7f2e07c4b57b4fa3009128317f31f7d41eec7ff9c488235",
+  "bytes": 8457
+}

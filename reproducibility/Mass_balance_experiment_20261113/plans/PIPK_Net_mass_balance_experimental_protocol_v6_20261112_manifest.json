@@ -1,0 +1,14 @@
+{
+  "dataset_fingerprint": "5413771691c6981d22b6c9ca8e21584dc93cd01244c5e3b143c489dfdc9c7942",
+  "frozen_manifest": "revision_work\\analysis\\data\\mass_balance\\5413771691c6981d\\manifest.json",
+  "files": {
+    "PIPK_Net_mass_balance_experimental_protocol_v6_20261112.txt": "5aa04228978ae36b3b324be625724191942b8a92aa66cfd90617db441e18c941",
+    "PIPK_Net_mass_balance_experimental_protocol_v6_20261112.html": "782afb79ff52d5844b8cc5288e9a2ba0bb1592c21ac9d654dbbf3aae705084ef",
+    "PIPK_Net_mass_balance_experimental_protocol_v6_20261112_candidate_configurations.csv": "4710bf1ceb86f47fa3f5be9361e04f3fade3e2b153f63334245c8f7ba06caf39",
+    "PIPK_Net_mass_balance_experimental_protocol_v6_20261112_logical_fits.csv": "87bc0f70542a87960d92d5490f0887a3577a6cd42a9ddefef18b5717ea247e62",
+    "mass_balance_freeze_20261112\\freeze_report.txt": "66c8921d5fea0dc99bbf36dbe2e8277effa5892b33af49623e4f8fa88d397383",
+    "mass_balance_freeze_20261112\\freeze_report.html": "1ed32db1270875c2f6a434fd3fd3bcfc43f14fea468ad13a1c2ff0bea77325cf"
+  },
+  "training_ready": false,
+  "paid_compute_launched": false
+}

@@ -1,0 +1,97 @@
+study,block,backbone,depth,settings,arm,seed,metric,value,n
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),baseline,101,triad_mae_log10,0.46696673400145255,674
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),baseline,101,within_1_25_fold_percent,39.91596638655462,952
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),baseline,202,triad_mae_log10,0.4704953891125605,674
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),baseline,202,within_1_25_fold_percent,37.5,952
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),baseline,303,triad_mae_log10,0.4663611702451844,674
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),baseline,303,within_1_25_fold_percent,39.810924369747895,952
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),loss,101,triad_mae_log10,0.46518556211959927,674
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),loss,101,within_1_25_fold_percent,92.22689075630252,952
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),loss,202,triad_mae_log10,0.4649351106886003,674
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),loss,202,within_1_25_fold_percent,87.60504201680672,952
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),loss,303,triad_mae_log10,0.4648224952873203,674
+depth,primary_final,GraphConv,2,inner-selected for GraphConv (reference),loss,303,within_1_25_fold_percent,94.0126050420168,952
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,baseline,101,triad_mae_log10,0.46802738789055637,674
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,baseline,101,within_1_25_fold_percent,39.705882352941174,952
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,baseline,202,triad_mae_log10,0.47355902407665956,674
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,baseline,202,within_1_25_fold_percent,35.609243697478995,952
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,baseline,303,triad_mae_log10,0.472094264101389,674
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,baseline,303,within_1_25_fold_percent,25.10504201680672,952
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,loss,101,triad_mae_log10,0.47078148362853456,674
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,loss,101,within_1_25_fold_percent,96.00840336134453,952
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,loss,202,triad_mae_log10,0.4704991305347049,674
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,loss,202,within_1_25_fold_percent,94.74789915966386,952
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,loss,303,triad_mae_log10,0.47116023732278095,674
+encoder,alternative_encoders,GIN,2,transferred GraphConv configuration and lambda,loss,303,within_1_25_fold_percent,88.13025210084034,952
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,baseline,101,triad_mae_log10,0.47173669078844405,674
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,baseline,101,within_1_25_fold_percent,42.542016806722685,952
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,baseline,202,triad_mae_log10,0.4721965863689086,674
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,baseline,202,within_1_25_fold_percent,36.029411764705884,952
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,baseline,303,triad_mae_log10,0.4744785093859879,674
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,baseline,303,within_1_25_fold_percent,38.23529411764706,952
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,loss,101,triad_mae_log10,0.4763933163780715,674
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,loss,101,within_1_25_fold_percent,93.4873949579832,952
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,loss,202,triad_mae_log10,0.47025079238452006,674
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,loss,202,within_1_25_fold_percent,91.7016806722689,952
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,loss,303,triad_mae_log10,0.4780288694357916,674
+encoder,alternative_encoders,GAT,2,transferred GraphConv configuration and lambda,loss,303,within_1_25_fold_percent,92.43697478991596,952
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,baseline,101,triad_mae_log10,0.45426931477117294,674
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,baseline,101,within_1_25_fold_percent,50.21008403361344,952
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,baseline,202,triad_mae_log10,0.4658979002151375,674
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,baseline,202,within_1_25_fold_percent,44.22268907563025,952
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,baseline,303,triad_mae_log10,0.4572693873058657,674
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,baseline,303,within_1_25_fold_percent,40.86134453781513,952
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,loss,101,triad_mae_log10,0.46136681219205034,674
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,loss,101,within_1_25_fold_percent,95.27310924369748,952
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,loss,202,triad_mae_log10,0.46465547993852807,674
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,loss,202,within_1_25_fold_percent,92.64705882352942,952
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,loss,303,triad_mae_log10,0.4634649014083719,674
+encoder,alternative_encoders,AttentiveFP,2,transferred GraphConv configuration and lambda,loss,303,within_1_25_fold_percent,92.5420168067227,952
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,baseline,101,triad_mae_log10,0.4752268487312904,674
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,baseline,101,within_1_25_fold_percent,43.0672268907563,952
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,baseline,202,triad_mae_log10,0.47452778050475136,674
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,baseline,202,within_1_25_fold_percent,48.424369747899156,952
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,baseline,303,triad_mae_log10,0.47304110638607033,674
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,baseline,303,within_1_25_fold_percent,38.55042016806723,952
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,loss,101,triad_mae_log10,0.4765723882807163,674
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,loss,101,within_1_25_fold_percent,92.43697478991596,952
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,loss,202,triad_mae_log10,0.47633453175935947,674
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,loss,202,within_1_25_fold_percent,94.9579831932773,952
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,loss,303,triad_mae_log10,0.4759424089103865,674
+depth,depth_1_to_5,GraphConv,1,transferred GraphConv configuration and lambda,loss,303,within_1_25_fold_percent,94.74789915966386,952
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,baseline,101,triad_mae_log10,0.4676796390898874,674
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,baseline,101,within_1_25_fold_percent,34.03361344537815,952
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,baseline,202,triad_mae_log10,0.47237588103485956,674
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,baseline,202,within_1_25_fold_percent,42.226890756302524,952
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,baseline,303,triad_mae_log10,0.4671812090402342,674
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,baseline,303,within_1_25_fold_percent,41.806722689075634,952
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,loss,101,triad_mae_log10,0.48264138806903234,674
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,loss,101,within_1_25_fold_percent,91.49159663865547,952
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,loss,202,triad_mae_log10,0.46381496208612133,674
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,loss,202,within_1_25_fold_percent,93.80252100840336,952
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,loss,303,triad_mae_log10,0.4674638776592998,674
+depth,depth_1_to_5,GraphConv,3,transferred GraphConv configuration and lambda,loss,303,within_1_25_fold_percent,94.4327731092437,952
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,baseline,101,triad_mae_log10,0.4771053245893696,674
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,baseline,101,within_1_25_fold_percent,32.35294117647059,952
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,baseline,202,triad_mae_log10,0.47748644797979134,674
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,baseline,202,within_1_25_fold_percent,35.294117647058826,952
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,baseline,303,triad_mae_log10,0.4793493388059674,674
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,baseline,303,within_1_25_fold_percent,35.189075630252105,952
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,loss,101,triad_mae_log10,0.4729791199280942,674
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,loss,101,within_1_25_fold_percent,91.49159663865547,952
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,loss,202,triad_mae_log10,0.48295476466828496,674
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,loss,202,within_1_25_fold_percent,94.0126050420168,952
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,loss,303,triad_mae_log10,0.4817091391540886,674
+depth,depth_1_to_5,GraphConv,4,transferred GraphConv configuration and lambda,loss,303,within_1_25_fold_percent,92.75210084033614,952
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,baseline,101,triad_mae_log10,0.4786137131123978,674
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,baseline,101,within_1_25_fold_percent,42.962184873949575,952
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,baseline,202,triad_mae_log10,0.4771534970494926,674
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,baseline,202,within_1_25_fold_percent,47.37394957983193,952
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,baseline,303,triad_mae_log10,0.4776778860399436,674
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,baseline,303,within_1_25_fold_percent,46.63865546218487,952
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,loss,101,triad_mae_log10,0.4720585308443531,674
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,loss,101,within_1_25_fold_percent,90.86134453781513,952
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,loss,202,triad_mae_log10,0.4786059616397652,674
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,loss,202,within_1_25_fold_percent,97.79411764705883,952
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,loss,303,triad_mae_log10,0.47800687165395156,674
+depth,depth_1_to_5,GraphConv,5,transferred GraphConv configuration and lambda,loss,303,within_1_25_fold_percent,84.34873949579831,952

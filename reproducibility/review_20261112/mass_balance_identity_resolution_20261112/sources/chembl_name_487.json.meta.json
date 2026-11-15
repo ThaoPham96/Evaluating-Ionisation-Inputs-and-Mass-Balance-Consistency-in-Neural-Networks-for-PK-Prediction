@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=GRANISETRON&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=GRANISETRON&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:38.736054+00:00",
+  "sha256": "a7cf413af59332cdfb86ec12f2cefa1aabb64240526c05bfc85f52076b82da1d",
+  "bytes": 5447
+}

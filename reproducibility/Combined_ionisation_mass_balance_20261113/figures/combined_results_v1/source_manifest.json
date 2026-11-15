@@ -1,0 +1,28 @@
+{
+  "campaign_id": "8507d5b8972f756b5d851f7677599f2ace390f4c63b08aad09f0e1364b25a928",
+  "score_manifest_sha256": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+  "verified_score_files": {
+    "metrics.csv": "b194c3f5f5dd7544dde5839c66d5ba37b54f7cce1c3fc14e12c1b29a6dd47c79",
+    "seed_metrics.csv": "7a3c30244dd57703c4410ac4ae28b66032600f6a916a90e9a20ab5cf87b67757",
+    "contrasts.csv": "d290e9a7ec43e71675f522d6811ba07023e0bc9ba918d98bedb0bde43698c0cb",
+    "seed_contrasts.csv": "e53914588debe38fb68bf27f2722df4a867abae3ca43a73b43eb91970924d949",
+    "disagreement_cdf.csv": "781c01b88a5e581d9831e56aed1044bbcf97e0a5c540b302655bfc054d5a8ce5",
+    "signed_residuals.csv": "c9f1e7a167742e69aa63ab5323fbaac568dc1a158367cce257d46806618f32c8",
+    "alpha_selection.csv": "62e9df20d281a71cf48e118904dc259798881589c636f41895597756e3f091db",
+    "lambda_selection.csv": "ff571434bb097f3a25fe9b05d7fc0898b3edca8d1c2ad46e8e9cf5dfbf513a01"
+  },
+  "render_sha256": "6ec423b3f30314805b5d4edb4128c1934f569978219a769e9aee14e26189cfd3",
+  "cdf_view_max_fold": 5.0,
+  "cdf_max_count_above_view": 18,
+  "cdf_denominator_per_curve": 2943,
+  "files": {
+    "plot_data.csv": "5f02c95581e73e769ffa737bca08e271e0163959f947e9a6c43993a0a7f06e0c",
+    "caption.txt": "1c77d339cdcfcda710fce8ac31d37ab1b597e9cd096e00ba954029e75895f4f1",
+    "combined_overview.png": "12749e80af0916e331b0d424edaec2724984a77cd64c2d5a86a722c3769473bc",
+    "combined_overview.pdf": "925014dcc6a7a0d84a0a73ca7761c8f4a4355f05df8e054398a51eff506d47bb",
+    "combined_overview.svg": "dc29d9586c003b66555637527f5cdee505ac16d0e636b7d068845381f2e11d23",
+    "adding_loss_tradeoff.png": "d3344098c4a06a3407f3744bb9f282fe6fd454d2235c2d142638a64fffa8e9c7",
+    "adding_loss_tradeoff.pdf": "469afe68926cd5f4db6e2b090069d95470ba3f74d7c2b9467b6b146f4c302be9",
+    "adding_loss_tradeoff.svg": "2c6e6981329f85c7bc07b97d0f7cd48b3260466c7ada123c9960ecef4fc211dd"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=CLARITHROMYCIN&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=CLARITHROMYCIN&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:42.493753+00:00",
+  "sha256": "3f9abf2c7b3396efb906506b8f2a34008e1b472330b35e96c888aeda3ea7f93a",
+  "bytes": 10158
+}

@@ -1,0 +1,33 @@
+{
+  "campaign_id": "8507d5b8972f756b5d851f7677599f2ace390f4c63b08aad09f0e1364b25a928",
+  "score_manifest_sha256": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+  "export_manifest_sha256": "403ed303bf1d3be9c5ee4195c23cb2b1464839d3e823d466686a4bdb3853710d",
+  "source_triads_sha256": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd",
+  "release_fingerprint": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8",
+  "method": "Average the seven paired endpoint percent MAE changes against structure only with equal weights.",
+  "normalization": "Fixed nine-seed structure-only mean MAE for each endpoint and backbone.",
+  "bootstrap": "Within each crossed group-and-seed draw, recompute each endpoint MAE on its own observed-label mask, difference the matched conditions, normalize and average, then take percentiles across draws.",
+  "bootstrap_seed": 20261113,
+  "bootstrap_draws": 10000,
+  "ci_level": 0.95,
+  "label_counts": {
+    "t_half_mae": 316,
+    "Vd_mae": 259,
+    "CL_mae": 246,
+    "Cmax_mae": 190,
+    "Tmax_mae": 249,
+    "F_mae": 172,
+    "PPB_mae": 292
+  },
+  "verification_absolute_tolerance": 1e-12,
+  "source_sha256": {
+    "average_endpoints.py": "b0304834f3ba022c38cf28678d63c0122e06ad726da1c71b40a983bac4c0ab6e",
+    "analysis/combined_score.py": "20e44121aefccc255f8904bd4e17baa4854d9101f90150583a6e2e8c46bf018f",
+    "analysis/vendor_ionisation/ionisation_score.py": "6fae7fd4105294bd3c5ebeae1abde0215f6939a9aeeee6a8f0140480acc6927e",
+    "../combined_main_v1/all_endpoints.py": "234521d9a24c7058fe16ab52b0270ad4300fa787a54cc504a3a9f8c75e83d162"
+  },
+  "files": {
+    "average_summary.csv": "a7b81acc82a7b19489551651789ab911b9eaabaf779a96e62cb5aecd5409c360",
+    "average_seeds.csv": "7c6e496505d95c365ce34c2c7b223d8de9111c0f3e324e2a088f500098ddd167"
+  }
+}

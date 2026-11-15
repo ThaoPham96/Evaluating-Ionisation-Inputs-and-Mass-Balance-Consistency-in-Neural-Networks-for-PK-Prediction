@@ -1,0 +1,29 @@
+{
+  "pages": 5,
+  "builder_sha256": "8020686bcf83449223f9134edaf4bc553a765cb97d22aa690fa04242e8e2e6f5",
+  "main_render_sha256": "7883188f124733f6499697aecfded25ffce87638a8ed8097c36589072038ab2c",
+  "files": {
+    "captions.txt": "aa64ef261482f075fab11e2bce207027e4641707821b477991c52e0e920f781c",
+    "combined_supplementary.pdf": "461737f30f7615ebbd2fc26a528bd0802d6d623aa483ea4a4b54fcb8947a9569",
+    "S1_interactions.pdf": "bf06998c7e8349dd96672feee38d520645369359f2d8c5dea25403d18f874dae",
+    "S1_interactions.png": "23e4e43176cb4716f5e3b3c8a13adccc7f66ad104904691472bfb7c32b88abd0",
+    "S1_interactions.svg": "243ffd775ab9a96c92230cfdf3b9f9a5ec21660f1fb74cc0cab45e2fd75c7904",
+    "S1_S2_plot_data.csv": "8c2b0bb71f24a6fcba6c58f2a19c2bcf3e706a7035a5e8b8eca30a5adfc14448",
+    "S2_posthoc_controls.pdf": "6d93c1e9a4b2ef3c087e5cf05a3818c6147374a7d7b0c249a20e1aeba9ac7c04",
+    "S2_posthoc_controls.png": "97f4b6298ffb702a8653add5be1c85b186470df51da50bc5cdbfc3fa36479309",
+    "S2_posthoc_controls.svg": "dde399e4203f30eb8eb131e6eb79cc52767a1a6a3ecc33af985cbd0f2fa5e8de",
+    "S3_accuracy_and_disagreement.pdf": "36d0c71c4ef2a327edbeef224503dbbc1b3fee6b2bd83e2b73ffb4145fc47f40",
+    "S3_accuracy_and_disagreement.png": "9384e60574e04fbf9f2037d50cfdfa56ebe1749955ad2196d2c9600509250d1a",
+    "S3_accuracy_and_disagreement.svg": "4492e5d1527fbd3ab841a4a7f8830c7050e841155a73f8fa8d54ea637bfa9e19",
+    "S3_plot_data.csv": "6844c2f200cac4b0981e69e943007e57059e87c223a561ecb22b9a5b0e81bdcb",
+    "S4_cohort_sensitivity.csv": "85120d08d9cbefa2af6e554be28ff35f981d1965f9800cabce12ba7d0faa960b",
+    "S4_paired_effects.pdf": "f3b96b470cec324a3a460d2bfc0fe1a320937d76491cdeab995babc9af25a5d1",
+    "S4_paired_effects.png": "5f40bac92a73e8137d9ff7fb912e3477646a9c645e741a5e919838128ff20273",
+    "S4_paired_effects.svg": "5bbf3a953869bba763049949f4d4406eab5c63cb2f426f1dfc35f5345762de5f",
+    "S4_plot_data.csv": "0eeabc46a9fedfccdcec099e263bdf9576bd2df4036dc7e5ebf0ca72f3ea5bd6",
+    "S5_matched_triads.pdf": "5c2cf6e891742d67cbf3ccc5629d151d159272552556e8a7c9e3d8a54a74ca0d",
+    "S5_matched_triads.png": "f84c86f5e400ec7fbebaf123dd9bbbf4c7bc1d85b161c967072888a0d1e158f5",
+    "S5_matched_triads.svg": "86796ba9992db0e4f33577ff170e0fd140735da038b6338d9649efaf7381c600",
+    "S5_plot_data.csv": "3e6a60b4a2136b4d419822df9c8d01d6ba21644cefeed82c4788c1fff20bd54b"
+  }
+}

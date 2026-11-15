@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NIFURTIMOX&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NIFURTIMOX&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:49.278338+00:00",
+  "sha256": "609932a3c5ba5f4b52a4a67164289aa20fd282b2eb186a968ed715e067a8afae",
+  "bytes": 4843
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=CISAPRIDE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=CISAPRIDE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:37.924593+00:00",
+  "sha256": "8fef7f2080bdcc85665aec842d56b7192daf005ffd12267fbe293c9ddc11bf64",
+  "bytes": 5297
+}

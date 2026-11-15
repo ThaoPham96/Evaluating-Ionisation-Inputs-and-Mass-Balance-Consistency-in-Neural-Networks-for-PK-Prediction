@@ -1,0 +1,26 @@
+{
+  "builder_sha256": "1a4952f18f6640ae481893424d0ac609ec15d12dfcb9bde9371cf0a104db4c9c",
+  "cohort": "class",
+  "data": {
+    "fingerprint": "40aaf9b824380b35414b5e514942ee660c5b89645dce564c323a4eb37b3067fb",
+    "manifest.json": "e8a1870320cf33bbf04dbd0749e24647275f3b1e95dd85ce9c2ade1985d884f5",
+    "model_dataset.csv": "376b492bfb68044a28952ae8436f31cb121dfbe6a83e756f8365d1e8861a9742",
+    "ordered_structure_smiles_sha256": "a48f6efeffd8ac6de334bfad654c7852e0fc2f1bb919398396e33482922f670e"
+  },
+  "files": {
+    "chemberta.npy": "d7d78c86d7539aa131c49f39a4066e6c620679499ea6f0c9baddeaeae6d84542",
+    "graphs.pt": "3f42ff3bf03d1cc401dc6153430b512493f90a7ba72c35daf8b3c22c728877ab",
+    "structures.json": "9f66e2325449c9ef79d79e7ee3a389cd88c2f75a1d47298a9d90d698daacf0c5"
+  },
+  "mass_balance_features": {
+    "files": {
+      "chemberta.npy": "b8a3b63161653609a5274625f7f086676d676be3a1d4ef1f57eca675d65cdfec",
+      "graphs.pt": "20b0e6e0255b957de2498b88e3ae8f1b575691486565253656513437fb7abc5c",
+      "structures.json": "6eaac117356e099b10627722517b380979512daf76e4d5156c0d6689e643c3fb"
+    },
+    "manifest.json": "82e8ce3794d01ccc8b19c16bcb8f731797b3b7409bcf03d4ec2fba8d31565718"
+  },
+  "order": "model_dataset.csv row order for structures.json, graphs.pt and chemberta.npy",
+  "schema_version": 1,
+  "structure_count": 494
+}

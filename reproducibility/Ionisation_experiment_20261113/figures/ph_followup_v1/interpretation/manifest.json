@@ -1,0 +1,24 @@
+{
+  "campaign_id": "27b0bc93f682a3ac04f773b3240f495e2d106c278b42722381328bb5daf67d58",
+  "scoring_manifest_sha256": "6136354a44872aa2dc78082b803b5fcaa0a710d006aac18ba2ccd393a2bcbf05",
+  "input_files": {
+    "contrasts.csv": "52f24b60175b0607df39c49dbd4e1a2f01042052a5859abecdf8c71714258905",
+    "endpoint_metrics.csv": "28b6166fc92c3fe5a652aca9b9388f93a802470598e091b00b30229b1a5e469e",
+    "switcher_interactions.csv": "4b580908bd6746f103dc3b825817a8223b4da62f7582fd8e6ffa65b03a70438e",
+    "endpoint_summary.csv": "ca2f5cdb90ccb8eba32a4456b366b6b8b385532d34098d59d8c894bdee70a1ef",
+    "prediction_sources.csv": "6007a48dc154dcb91cad838f62906d598217ee66c236ddcecbe3ab03228d0c82"
+  },
+  "rows": {
+    "metric_shift_summary.csv": 504,
+    "interval_direction_counts.csv": 24,
+    "interaction_summary.csv": 147
+  },
+  "sha256": {
+    "metric_shift_summary.csv": "2daa65268bcd281c1a95dd13127106ab0d46a3c4cd7417dcdce129cb180c7324",
+    "interval_direction_counts.csv": "e71b189479541486d8bebbc6aad973e3ce939e4447252d8bd2afeb86a27fcf94",
+    "interaction_summary.csv": "e2fe4def72eef92fdbddc5273a986b4503cc3b1b666c18e08c715bbb59841e3d",
+    "interpretation_summary.txt": "7b58928928ff942b8ab35a3d4232d3ae4ac34a281601bf00c2d2a7a82c275328"
+  },
+  "paired_non_mae": "Means, sample SD and favourable signs use finite pairs within each of the same nine seed trajectories. No group/compound CI for these metrics.",
+  "interval_counts": "Crossed 95% direction counts are descriptive and dependent, not corrected tests or votes."
+}

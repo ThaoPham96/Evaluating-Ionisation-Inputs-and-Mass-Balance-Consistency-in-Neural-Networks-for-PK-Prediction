@@ -1,0 +1,174 @@
+{
+  "created": "2026-09-18T14:44:18.741942+00:00",
+  "modified": "2026-09-18T14:44:19.347142+00:00",
+  "id": 22831843,
+  "conceptrecid": "4432351",
+  "doi": "10.5281/zenodo.22831843",
+  "conceptdoi": "10.5281/zenodo.4432351",
+  "doi_url": "https://doi.org/10.5281/zenodo.22831843",
+  "metadata": {
+    "title": "Structures of FDA-approved drugs and their active metabolites and data sets of experimental PD and PK properties",
+    "doi": "10.5281/zenodo.22831843",
+    "publication_date": "2026-09-18",
+    "description": "<p>Data sets are extracted from the 2025 release of the e-Drug3D Database (2162 FDA-approved drug structures)</p>\n<ol>\n<li><strong>e-Drug3D_2162.zip </strong>(contains e-Drug3D_2162.sdf)<strong> -</strong> <strong>Chemical Structures</strong> - The e-Drug3D collection in SDF format file - &nbsp;one 3D conformer; ionization of carboxylic acid, phosphate, phosphonate, phosphonoamide, amidinium and guanidinium groups. The datablock contains the ID, name (INN), CAS number and Status.</li>\n<li><strong>e-Drug3D_2162_PK.csv - </strong><strong>Pharmacokinetics</strong> - Column/field value is separated by a semicolon. It contains the e-Drug3D ID, INN (drug name), CAS number, year of approval, Status, is_or_has a metabolite, routes of administration, Volume of distribution (VD), Clearance (Cl), Plasma Protein Binding (PPB), Half-life (t1/2), Bioavailability (F), Cmax/Tmax, comment on solubility.</li>\n<li><strong>e-Drug3D_2162_PD.csv -</strong> <strong>Pharmacodynamics</strong> - Column/field value is separated by a semicolon. It contains the e-Drug3D ID, INN (drug name), CAS number, year of approval, Status, Primary target, ATC code(s), PDB codes and main list of drug targets.</li>\n<li><strong>e-Drug3D_2162_RD.csv -</strong> <strong>FDA Registration Data</strong> - Column/field value is separated by a semicolon. It contains the ID, name (INN), CAS number, First year of approval, Status, <a href=\"http://www.knapsackfamily.com/knapsack_core/top.php\">KNApSAcK</a> or <a href=\"https://www.npatlas.org\">NPAtlas</a> Id if natural product, all associated NDA numbers [FDA approval number, name of the label file in PDF format, company name, year of approval and commercial name of the drug] and the Indication/Therapeutic class information.</li>\n<li><strong>labels.tar.gz</strong> - The drug label files in PDF format (compressed directory). A label file is named with the NDA number. The NDA number is the approval number assigned by the FDA. A drug may possess several NDA numbers (see the above e-Drug3D-RD data set).</li>\n</ol>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Douguet, Dominique",
+        "affiliation": "Inserm, CNRS, Université Côte d'Azur, Institut de Pharmacologie Moléculaire et Cellulaire",
+        "orcid": "0000-0001-6209-6464"
+      }
+    ],
+    "keywords": [
+      "FDA-approved",
+      "Drugs",
+      "Pharmacology",
+      "Cheminformatics",
+      "Drug repurposing",
+      "Pharmacodynamics",
+      "Pharmacokinetics"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1021/acsmedchemlett.7b00462",
+        "relation": "isNewVersionOf",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1093/bioinformatics/bts186",
+        "relation": "isNewVersionOf",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "type": "updated"
+      }
+    ],
+    "version": "e-Drug3D_2162 (2025)",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 5,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4432351"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Structures of FDA-approved drugs and their active metabolites and data sets of experimental PD and PK properties",
+  "links": {
+    "self": "https://zenodo.org/api/records/22831843",
+    "self_html": "https://zenodo.org/records/22831843",
+    "preview_html": "https://zenodo.org/records/22831843?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.22831843",
+    "self_doi": "https://doi.org/10.5281/zenodo.22831843",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.22831843",
+    "reserve_doi": "https://zenodo.org/api/records/22831843/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4432351",
+    "parent_html": "https://zenodo.org/records/4432351",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4432351",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4432351",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:22831843/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:22831843/sequence/default",
+    "files": "https://zenodo.org/api/records/22831843/files",
+    "media_files": "https://zenodo.org/api/records/22831843/media-files",
+    "latest": "https://zenodo.org/api/records/22831843/versions/latest",
+    "latest_html": "https://zenodo.org/records/22831843/latest",
+    "versions": "https://zenodo.org/api/records/22831843/versions",
+    "draft": "https://zenodo.org/api/records/22831843/draft",
+    "access_links": "https://zenodo.org/api/records/22831843/access/links",
+    "access_grants": "https://zenodo.org/api/records/22831843/access/grants",
+    "access_users": "https://zenodo.org/api/records/22831843/access/users",
+    "access_request": "https://zenodo.org/api/records/22831843/access/request",
+    "access": "https://zenodo.org/api/records/22831843/access",
+    "communities": "https://zenodo.org/api/records/22831843/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/22831843/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/22831843/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/22831843/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/22831843/quota-increase",
+    "requests": "https://zenodo.org/api/records/22831843/requests"
+  },
+  "updated": "2026-09-18T14:44:19.347142+00:00",
+  "recid": "22831843",
+  "revision": 4,
+  "files": [
+    {
+      "id": "dca19da1-1ec9-46a3-a92a-576115a83a43",
+      "key": "e-Drug3D_2162_PK.csv",
+      "size": 274760,
+      "checksum": "md5:f56b0e1f446a8627b71ea1a35c8ddefb",
+      "links": {
+        "self": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162_PK.csv/content"
+      }
+    },
+    {
+      "id": "77af7b8d-8492-45fd-8216-81b22fb80c53",
+      "key": "e-Drug3D_2162_RD.csv",
+      "size": 5027205,
+      "checksum": "md5:4ecfef15d81ca741302c364e714607bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162_RD.csv/content"
+      }
+    },
+    {
+      "id": "6b926f0a-da7d-4302-81b9-76445bb43bce",
+      "key": "e-Drug3D_2162_PD.csv",
+      "size": 491156,
+      "checksum": "md5:65e639c2d49f39eb213483c593953c1f",
+      "links": {
+        "self": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162_PD.csv/content"
+      }
+    },
+    {
+      "id": "d1c2029b-b733-4256-b8d3-309ed8c54008",
+      "key": "e-Drug3D_2162.zip",
+      "size": 1885855,
+      "checksum": "md5:b9fc4f5982363c3677802075dd2d5d9c",
+      "links": {
+        "self": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162.zip/content"
+      }
+    },
+    {
+      "id": "6ddbef76-762a-4bd1-b1cd-2d7e76faf480",
+      "key": "labels.tar.gz",
+      "size": 2156162296,
+      "checksum": "md5:fbd87327f5464dd6146326a31551707e",
+      "links": {
+        "self": "https://zenodo.org/api/records/22831843/files/labels.tar.gz/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "187225"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 3299,
+    "unique_downloads": 2810,
+    "views": 3814,
+    "unique_views": 3568,
+    "version_downloads": 219,
+    "version_unique_downloads": 208,
+    "version_unique_views": 172,
+    "version_views": 186
+  },
+  "state": "done",
+  "submitted": true
+}

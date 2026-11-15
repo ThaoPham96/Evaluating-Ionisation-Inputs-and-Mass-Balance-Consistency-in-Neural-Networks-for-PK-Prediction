@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=COBIMETINIB&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=COBIMETINIB&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:47.032547+00:00",
+  "sha256": "06472b118cb26b3d17b26c0f42e41fe7d3704a8426a1acee770c2d78a1f526f3",
+  "bytes": 5712
+}

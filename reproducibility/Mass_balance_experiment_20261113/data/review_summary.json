@@ -1,0 +1,40 @@
+{
+  "status": "pending",
+  "review_complete": true,
+  "reviewed": 59,
+  "accept": 57,
+  "modify": 2,
+  "exclude": 0,
+  "status_reason": "All 59 named identities can be promoted after applying the two recommended graph substitutions in the frozen copy.",
+  "pending_freeze_replacements": [
+    195,
+    231
+  ],
+  "labelled_replacement_rows": [
+    195
+  ],
+  "staged_with_PK_labels": 53,
+  "staged_without_PK_labels": 6,
+  "staged_in_later_65": 0,
+  "staged_in_any_of_71_queued_rows": 0,
+  "release_parent_connectivity_support": 57,
+  "exceptions_invalid_in_both_public_release_SDFs": [
+    359,
+    667
+  ],
+  "archived_chembl_comparison": {
+    "exact graph": 52,
+    "different connectivity key": 5,
+    "same standardized parent": 2
+  },
+  "expected_labelled_structures_after_replacements": 952,
+  "expected_complete_same_row_triads_after_replacements": 674,
+  "scope": "Chemical identity and graph representation. PK formulation, assay and study comparability were outside this batch review.",
+  "checks": [
+    "Exact archive/reference/candidate names and CAS.",
+    "PubChem CID/graph and exact CAS synonym from caches.",
+    "Reparsed both checksummed raw e-Drug3D PK/SDF releases by record ID and checked normalized graph.",
+    "Queried all linked ChEMBL structures and checked official or curated evidence on disputed cases.",
+    "No exact graph collision for either recommended replacement. No PK field or historical assignment changed."
+  ]
+}

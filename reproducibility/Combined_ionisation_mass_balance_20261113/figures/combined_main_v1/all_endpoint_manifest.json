@@ -1,0 +1,87 @@
+{
+  "campaign_id": "8507d5b8972f756b5d851f7677599f2ace390f4c63b08aad09f0e1364b25a928",
+  "score_manifest_sha256": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+  "method": "Equal-weight mean of seven endpoint percent MAE changes, cell 11 minus cell 10.",
+  "normalization": "Each endpoint uses its fixed cell 10 mean MAE across nine seeds within backbone.",
+  "labels": "All observed labels per endpoint. Zero labels are included.",
+  "label_counts": {
+    "t_half": 316,
+    "Vd": 259,
+    "CL": 246,
+    "Cmax": 190,
+    "Tmax": 249,
+    "F": 172,
+    "PPB": 292
+  },
+  "endpoint_baseline_10_mae": {
+    "GraphConv": {
+      "t_half": 0.41455580847981804,
+      "Vd": 0.43448698128462787,
+      "CL": 0.4656090760658086,
+      "Cmax": 0.9107914902657365,
+      "Tmax": 0.24094573711476797,
+      "F": 25.959780326572524,
+      "PPB": 19.34168506947751
+    },
+    "Chemprop": {
+      "t_half": 0.4232091212582394,
+      "Vd": 0.45977030309475936,
+      "CL": 0.4637223390619431,
+      "Cmax": 0.9520226690108902,
+      "Tmax": 0.24510553140361646,
+      "F": 27.23067559470625,
+      "PPB": 18.982880318180335
+    },
+    "ChemBERTa_head": {
+      "t_half": 0.42461107693151057,
+      "Vd": 0.47634448067725504,
+      "CL": 0.47165407692474987,
+      "Cmax": 0.8889587033306504,
+      "Tmax": 0.22713633162765953,
+      "F": 24.065782007922042,
+      "PPB": 17.13617355743763
+    }
+  },
+  "bootstrap": "Exploratory equal-tailed crossed percentile intervals. The joint draws resample groups and seeds across all endpoints and backbones. Endpoint MAEs use resampled observed-label counts.",
+  "bootstrap_seed": 20261113,
+  "bootstrap_draws": 10000,
+  "ci_level": 0.95,
+  "n_structures": 327,
+  "n_groups": 238,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "verified_endpoint_checks": [
+    "cell seed MAEs",
+    "cell means",
+    "paired seed effects",
+    "mean contrasts",
+    "95% crossed interval bounds"
+  ],
+  "verification_absolute_tolerance": 1e-12,
+  "source_sha256": {
+    "all_endpoints.py": "234521d9a24c7058fe16ab52b0270ad4300fa787a54cc504a3a9f8c75e83d162",
+    "analysis/combined_score.py": "20e44121aefccc255f8904bd4e17baa4854d9101f90150583a6e2e8c46bf018f",
+    "analysis/vendor_ionisation/ionisation_score.py": "6fae7fd4105294bd3c5ebeae1abde0215f6939a9aeeee6a8f0140480acc6927e",
+    "outputs/scores/manifest.json": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+    "outputs/scores/seed_metrics.csv": "7a3c30244dd57703c4410ac4ae28b66032600f6a916a90e9a20ab5cf87b67757",
+    "outputs/scores/contrasts.csv": "d290e9a7ec43e71675f522d6811ba07023e0bc9ba918d98bedb0bde43698c0cb",
+    "outputs/scores/seed_contrasts.csv": "e53914588debe38fb68bf27f2722df4a867abae3ca43a73b43eb91970924d949",
+    "outputs/export/manifest.json": "403ed303bf1d3be9c5ee4195c23cb2b1464839d3e823d466686a4bdb3853710d",
+    "outputs/export/final_predictions.csv": "0b46a9cd9967429121f8a5cfaa34fe813c11f129551b5395b2420fddb439b333",
+    "data/release/numerical/manifest.json": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+    "runtime/same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd"
+  },
+  "files": {
+    "all_endpoint_summary.csv": "b85d6d624a3ee3081467b44c88adeea36199193b24a4351e7c2bdb93c5eb6550",
+    "all_endpoint_seeds.csv": "4576546fb8c08a7e6f9a37ca46aa96739e2b519a8c058ab52673b66286ffe213"
+  }
+}

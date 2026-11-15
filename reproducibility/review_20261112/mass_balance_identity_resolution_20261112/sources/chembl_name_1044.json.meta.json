@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DUVELISIB&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DUVELISIB&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:48.348652+00:00",
+  "sha256": "b695b0bed1d31cce3c3c119fed4cf74bbc30b86fbd75928dd778d062d9a0303c",
+  "bytes": 5175
+}

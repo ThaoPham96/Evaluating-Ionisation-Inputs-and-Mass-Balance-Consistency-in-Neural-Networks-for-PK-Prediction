@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MIFEPRISTONE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MIFEPRISTONE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:41.196411+00:00",
+  "sha256": "6a47618a7a40c1096e2598874706414a3a361165d7d0fd1fe764e2d398f28268",
+  "bytes": 6728
+}

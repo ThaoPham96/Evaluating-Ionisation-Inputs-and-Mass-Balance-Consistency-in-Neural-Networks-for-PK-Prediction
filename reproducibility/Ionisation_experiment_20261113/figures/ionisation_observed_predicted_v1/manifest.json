@@ -1,0 +1,38 @@
+{
+  "sources": {
+    "Ionisation_experiment_20261113\\outputs\\ph_followup\\outer_predictions.csv": "bf0a90c402173b94df88de851bd9ba84b4ba2e9b5fbe78ce6b11a6a13c2cd8c2",
+    "Ionisation_experiment_20261113\\data\\release\\numerical\\model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+    "Ionisation_experiment_20261113\\outputs\\ph_followup\\scoring\\endpoint_metrics.csv": "28b6166fc92c3fe5a652aca9b9388f93a802470598e091b00b30229b1a5e469e"
+  },
+  "outputs": {
+    "caption.txt": "ea0012d7224a91e6bd5f89cd309032662aa74f505f23c7c57a85fedb179c462e",
+    "metrics.csv": "172b7e8c33a7f48e2e1e95e4740f06bf7c7cf54a666ded76f4ba887aa3ac0c0b",
+    "plotted_points.csv": "37e2df1aee1edb6fed499892a4fdbc2f9ec24a4211cd44c79aadde176c972572",
+    "vd_clearance_all4.png": "2c3855575991a83b449f0358690c7d39aadf1cfdf4f48127940fe8a9174b2580",
+    "vd_clearance_all4.svg": "c9e3d2f6420239ce41f7b5710bc6b899fee391ac850da42151d567df5d44334b",
+    "vd_clearance_observed_predicted.pdf": "bf5a0bf58ce7522dadf18a6ed4932191ae7ca07874ea59e151afa859f985410b",
+    "vd_clearance_ref0.png": "e01784c2a37cac15bfb8df00ee754754d9f7bc85e5352cce27b47523cd771842",
+    "vd_clearance_ref0.svg": "645a2d4145820c4b09763bc32284245b8338119e5bcfd42593e5b9ef2efd51bf",
+    "vd_clearance_ref74.png": "63e139387510d6fe31e52311a903006b57121540ba51491e9186a83de8ea0a99",
+    "vd_clearance_ref74.svg": "581bce60d8aca866b2359371d05d5395e53d689018026122435bbb0bc330b1e1",
+    "vd_clearance_rep4.png": "0d90a11172bea061b69b07658afe93a49e569b111b091275184fe3043439639f",
+    "vd_clearance_rep4.svg": "8c11b724068b09bb53c11542173b931d5274fa6424422cb48b579451059f68f1"
+  },
+  "axis_limits_log10": {
+    "Vd": [
+      0.35,
+      5.65
+    ],
+    "CL": [
+      -2.15,
+      3.65
+    ]
+  },
+  "pages": [
+    "REF74",
+    "REF0",
+    "REP4",
+    "ALL4"
+  ],
+  "n_seeds": 9
+}

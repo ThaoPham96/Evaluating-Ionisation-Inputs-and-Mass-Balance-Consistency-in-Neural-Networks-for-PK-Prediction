@@ -1,0 +1,710 @@
+{
+  "updated_utc": "2026-11-12T21:15:19.945154+00:00",
+  "review_mode": "Assess Opus advice on its merits; author review of counterproposal before implementation.",
+  "current_issue_rank": 10,
+  "current_issue_status": "Opus summary received and critically assessed; proposed changes awaiting author review; current v4.1 matrix remains 3,165 fits",
+  "campaign_planning_directive": {
+    "user_request": "Plan all retained experiments efficiently across multiple AWS instances or one machine, within GBP 500, for another model to review before scripts are built.",
+    "budget_gbp": 100,
+    "region_preference": "any whichever is cheapest and available",
+    "parallelism_preference": "User selected 16 g6.2xlarge On-Demand; provisional four independent fit processes/node; no Spot.",
+    "scope_status": "Retraining agreed in principle by the author. Exact scientific matrix and optional extensions remain under review; execution is pending the completed review.",
+    "execution_constraint": "Planning and read-only pricing/capacity checks only. Do not implement the orchestration or training changes, launch paid compute, or use paid AWS model inference.",
+    "review_status": "Opus ACCEPT WITH CHANGES summary received. Assessment separates accepted-in-principle suggestions, modifications and declined/deferred additions. Author has not yet accepted the proposed revised matrix.",
+    "current_override": "Mass-balance-only protocol v4.0 for independent review. Budget/configuration chosen, scripts and launch deferred until scientific review. Local preparation/testing and final analysis remain planned.",
+    "pre_mass_balance_v3": {
+      "user_request": "Plan all retained experiments efficiently across multiple AWS instances or one machine, within GBP 500, for another model to review before scripts are built.",
+      "budget_gbp": 500,
+      "region_preference": "any whichever is cheapest and available",
+      "parallelism_preference": "Multiple instances preferred; small hardware variation acceptable. Revised design uses five outer-fold shards with local process pools; compare five g6.2xlarge, five g6.4xlarge, and a measured-need-only five g6.12xlarge option. Fleet choice remains pending.",
+      "scope_status": "Retraining agreed in principle by the author. Exact scientific matrix and optional extensions remain under review; execution is pending the completed review.",
+      "execution_constraint": "Planning and read-only pricing/capacity checks only. Do not implement the orchestration or training changes, launch paid compute, or use paid AWS model inference.",
+      "review_status": "Fable 5.2: ACCEPT WITH CHANGES. Incorporated in plan v1.2; no implementation or execution authorised by receipt of review.",
+      "current_override": "Version 2 scientific redesign proposed; earlier AWS fleet and fit scope are historical. Local/CSF3 default. New author/Fable review precedes training implementation."
+    },
+    "quota_increase_option": "User: We can request more quota. Treat present quotas as administrative prerequisites, not a scientific scope cap.",
+    "budget_before_mass_balance_selection_gbp": 500,
+    "budget_scope": "Current mass-balance-only EC2 campaign; replaces the earlier generic GBP 500 plan for this block. Does not change the separate Bedrock budget.",
+    "user_choice_text": "Ok lets set a budget for 100 using 16 on demond. Give me a dwtail plan of the experiments to get another model to review"
+  },
+  "decisions": [
+    {
+      "issue_rank": 1,
+      "issue": "Corrected training structures and models",
+      "decision": "Yes, retraining agreed; execution waits for full scientific plan and review",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T16:52:06.744696+00:00",
+      "user_instruction": "we will do the retraining anyway but we should fully plan out this part of the paper first and review the plan etc before we spend the compute",
+      "reason": "Author commits to retraining and requires the mass-balance study to be fully planned and reviewed first.",
+      "revisit_trigger": "Reconsider if another verified issue provides an additional reason to rerun models, then discuss combined scope and timing with the user.",
+      "execution_constraint": "Do not begin retraining before design review is settled. Paid AWS compute additionally requires current configuration/cost approval.",
+      "scientific_status": "The four development-structure corrections and dataset/old-weight mismatch remain confirmed and unresolved. Deferring retraining does not establish that their effect is negligible.",
+      "reporting_requirement": "If original weights are retained, transparently distinguish their training input snapshot from the corrected dataset and preserve reproducible provenance.",
+      "status_override": "Retraining agreed; scientific design and execution pending",
+      "remaining_override": "Complete and review the mass-balance experiment/Results specification; settle exact scope before implementation and computation.",
+      "subsequent_planning_context": {
+        "date": "2026-11-12",
+        "request": "Plan all retained experiments on parallel AWS instances within GBP 500, for independent review before implementation.",
+        "status": "Planning scenario; no execution approval"
+      },
+      "decision_before_retraining_confirmation": {
+        "issue_rank": 1,
+        "issue": "Corrected training structures and models",
+        "decision": "Deferred / maybe",
+        "decided_by": "User",
+        "decided_utc": "2026-11-12T12:02:08Z",
+        "user_instruction": "not sure if retraining it all with the tight deadline is worth it yet - add it as a maybe. if we need to redo with other reasons as well we can consider.",
+        "reason": "Tight submission deadline; the user has not decided that this issue alone warrants full retraining.",
+        "revisit_trigger": "Reconsider if another verified issue provides an additional reason to rerun models, then discuss combined scope and timing with the user.",
+        "execution_constraint": "Do not launch full corrected-data retraining on the strength of issue 1. A further finding triggers reconsideration, not automatic approval to launch.",
+        "scientific_status": "The four development-structure corrections and dataset/old-weight mismatch remain confirmed and unresolved. Deferring retraining does not establish that their effect is negligible.",
+        "reporting_requirement": "If original weights are retained, transparently distinguish their training input snapshot from the corrected dataset and preserve reproducible provenance.",
+        "status_override": "Full rerun is the current planning scenario; execution pending",
+        "remaining_override": "Review the combined corrected-data scope and optional protocol extensions. The earlier deadline-based deferral is preserved; no runner or training has been authorised by the planning request. Finalise inputs, then agree the campaign and concrete compute configuration.",
+        "subsequent_planning_context": {
+          "date": "2026-11-12",
+          "request": "Plan all retained experiments on parallel AWS instances within GBP 500, for independent review before implementation.",
+          "status": "Planning scenario; no execution approval"
+        }
+      }
+    },
+    {
+      "issue_rank": 2,
+      "issue": "Parent-API overlap across salt forms",
+      "decision": "Yes \u2014 include parent/salt audit and hold-out sensitivity in the rerun plan",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T13:58:28.398634+00:00",
+      "user_instruction": "i think we can include it since we are doing the rerun anyway.",
+      "reason": "The user reversed the earlier likely-no decision while reviewing the combined rerun plan.",
+      "revisit_trigger": "Review new parent-overlap findings before freezing inputs and cohorts.",
+      "execution_constraint": "Planning inclusion approved. No automatic new split, wholesale desalting, training-row deletion or additional retraining experiment. Any newly discovered substantive split defect requires a documented design decision.",
+      "scientific_status": "The shared diphenhydramine component across development dimenhydrinate and hold-out diphenhydramine remains confirmed. The development row has no observed PK labels; the physiology loss can still act on unlabelled inputs. Performance impact is unmeasured, and the automated parent screen is not an exhaustive curated API audit.",
+      "reporting_requirement": "Keep the precise wording concern on record: zero identical complete structures alone does not establish that all parent components are absent across partitions. No manuscript change is made by this decision record.",
+      "status_override": "Yes \u2014 included in rerun plan; audit and CPU sensitivity queued",
+      "remaining_override": "Complete parent identity adjudication, freeze the exclusion list independently of performance, and compare full-cohort versus overlap-excluded endpoint, macro and triad results using the same final predictions. One current overlap means 257 versus 256 unique structures; no extra GPU fits.",
+      "decision_history": [
+        {
+          "issue_rank": 2,
+          "issue": "Parent-API overlap across salt forms",
+          "decision": "Deferred / maybe (likely no)",
+          "decided_by": "User",
+          "decided_utc": "2026-11-12T12:11:25Z",
+          "user_instruction": "ok only 1 drug so i dont think its important - put it as maybe (likely no)",
+          "reason": "The user does not currently consider the one identified hold-out drug sufficient to justify additional work under the deadline.",
+          "revisit_trigger": "Reconsider only if additional evidence makes the overlap materially relevant, or alongside another justified rerun decision.",
+          "execution_constraint": "Defer the proposed expanded parent audit and leave-one-compound-out sensitivity analysis; do not trigger model retraining or change the split.",
+          "scientific_status": "The shared diphenhydramine component across development dimenhydrinate and hold-out diphenhydramine remains confirmed. The development row has no observed PK labels; the physiology loss can still act on unlabelled inputs. Performance impact is unmeasured, and the automated parent screen is not an exhaustive curated API audit.",
+          "reporting_requirement": "Keep the precise wording concern on record: zero identical complete structures alone does not establish that all parent components are absent across partitions. No manuscript change is made by this decision record.",
+          "status_override": "Deferred / maybe (likely no) \u2014 author decision",
+          "remaining_override": "User deprioritised the one identified overlap. Additional parent adjudication and exclusion sensitivity are deferred; no split change or retraining. Keep the finding and the blanket no-leakage wording concern on record; its performance impact remains unmeasured."
+        }
+      ],
+      "authorised_scope": "Adjudicate parent-component overlap before locking the analysis cohort; retain the primary 257-structure hold-out and add an identically scored sensitivity excluding all independently adjudicated overlap cases. Currently one case, row 18, would leave 256 structures. Regenerate sensitivity alongside final campaign scoring."
+    },
+    {
+      "issue_rank": 3,
+      "issue": "Ionisation-label provenance and missing pKa values",
+      "decision": "Yes for now \u2014 focused label/provenance review",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T12:19:49Z",
+      "user_instruction": "Ok put it as yes for now lets continue with the others",
+      "reason": "The user accepted the proposed focused ionisation-label check while continuing the issue-by-issue discussion.",
+      "authorised_scope": "Complete the missing-pKa, permanent-charge and provenance review; produce a verified correction list and assess the resulting model scope.",
+      "execution_constraint": "Queue the review while discussing remaining issues. This does not authorise model retraining; present the verified corrections and combined scope before any rerun decision.",
+      "scientific_status": "Initial audit complete: 128 both-pKa-missing records are Neutral; two permanent-cation examples are verified. Remaining candidates and original database provenance require review.",
+      "status_override": "Yes for now \u2014 focused review approved; queued",
+      "remaining_override": "Complete the ionisation-label and provenance review and produce a verified correction list. Keep any model retraining decision separate; consider a combined scope with issue 1 only after the corrected input list is known."
+    },
+    {
+      "issue_rank": 4,
+      "issue": "Consistent scoring, denominators and publication outputs",
+      "decision": "Yes \u2014 bundled with final analysis",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T12:33:28Z",
+      "user_instruction": "ok yes continue",
+      "reason": "The user accepted scheduling scoring reconciliation as the final reporting step after whichever model reruns are approved, avoiding duplicate publication updates.",
+      "authorised_scope": "Use one final prediction snapshot and the corrected common scorer to regenerate metrics and confidence intervals for all models, including unchanged baselines; synchronise manuscript, supplement, figures and response letter.",
+      "execution_constraint": "Keep the scorer fixes already completed. Final numerical publication updates follow the data/model decisions and any approved reruns. This decision does not authorise additional model training.",
+      "scientific_status": "Shared scoring code corrected and 17 tests passed. Current Word already has the principal PPB denominators right; some correlations, macro values and figure annotations still need synchronising.",
+      "status_override": "Yes \u2014 bundled with final analysis; queued",
+      "remaining_override": "After the final prediction set is selected, recompute point estimates and intervals with consistent eligibility masks; synchronise tables, figure values, manuscript, supplement and reviewer replies. No model retraining is required by this scoring task itself."
+    },
+    {
+      "issue_rank": 5,
+      "issue": "Scope of physiological/PBPK and accuracy claims",
+      "decision": "Deferred / maybe later \u2014 revisit during rewrite",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T12:40:21Z",
+      "user_instruction": "i think skip this for now as we will likely rewrite and regenerate the results - put it down as maybe later",
+      "reason": "The user expects the Results to be regenerated and rewritten, so prefers to revisit claim wording then.",
+      "revisit_trigger": "Revisit with the Results, Discussion and Conclusion rewrite once the final prediction set and accuracy/consistency statistics are selected.",
+      "execution_constraint": "Do not edit these claims or launch additional experiments now. This decision does not authorise model retraining.",
+      "scientific_status": "The distinction between internal predicted-triad consistency and validated physiological/PBPK performance, and the broad no-accuracy-cost wording, remain unresolved wording issues. No additional experiment is required to narrow the claims to the existing evidence.",
+      "status_override": "Deferred / maybe later \u2014 revisit during rewrite",
+      "remaining_override": "User deferred this wording work until Results regeneration and the manuscript rewrite. Revisit physiological/PBPK scope and accuracy tradeoffs against the final results; no immediate edits or new experiments."
+    },
+    {
+      "issue_rank": 6,
+      "issue": "Attribute the constraint effect using matched comparisons",
+      "decision": "Yes, later \u2014 downstream of any agreed reruns and final scoring",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T12:44:46Z",
+      "user_instruction": "ok say yes later - probably downstream of the reruns",
+      "reason": "The user approved the comparison and interpretation update as downstream work once the final model results are available.",
+      "authorised_scope": "Use A-to-D and B-to-C comparisons from the final selected predictions to describe the constraint effect; synchronise Results, Discussion, Figures 7-8 and supplementary reporting with final scoring.",
+      "execution_constraint": "Queue this work after any agreed reruns and final scoring. This decision does not approve or start model retraining; the matched-comparison update itself requires no additional model training.",
+      "scientific_status": "The Results and Figure 8 already use the appropriate ablation contrasts. Discussion wording and the unconstrained range need harmonising; existing saved predictions show A 37.0%, B 0.8%, C/D 99.6% consistency.",
+      "status_override": "Yes, later \u2014 downstream of any agreed reruns; queued",
+      "remaining_override": "After any agreed reruns and final scoring, carry both A-to-D and B-to-C comparisons into the manuscript interpretation and harmonise the unconstrained range. Treat the proposed endpoint-decoupling mechanism as an interpretation. No additional training is required by this reporting task itself."
+    },
+    {
+      "issue_rank": 7,
+      "issue": "GCN layer-count sensitivity study and Reviewer 2 comment 7",
+      "decision": "Yes \u2014 include in the planned big rerun batch",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T12:48:41Z",
+      "user_instruction": "ok yes we can add this to the big reruns next",
+      "reason": "The user approved retaining the limited depth study and adding it to the forthcoming combined rerun batch.",
+      "authorised_scope": "Include C_physio at GraphConv depths 1, 2, 3 and 4 with five folds and one seed per depth, inherited matched hyperparameters and the final agreed input snapshot. Update Methods, Results, Table S15 and Reviewer 2 comment 7 from the resulting scores.",
+      "execution_constraint": "Queue with the planned big reruns after the shared inputs and protocol are settled. This approves the depth-study component, not every optional job in the maximum campaign estimate. Do not add a broad depth hyperparameter search or additional seeds without a separate scientific reason and decision.",
+      "run_scope": "20 fold fits total; 15 incremental fits if the main depth-2 run has identical data hashes, split, seed and training settings and is explicitly reused. These fits were already included in the maximum planning matrix, so do not add them a second time.",
+      "scientific_status": "Existing checkpoints cover depths 1-4, including a separate matched depth-2 rerun. One-seed evidence must remain descriptive and does not establish equivalence across depths or a depth-by-constraint interaction.",
+      "status_override": "Yes \u2014 include in big reruns; queued",
+      "remaining_override": "Include the limited 1-4-layer C_physio study in the planned batch: 20 fold fits, or 15 additional if depth 2 is validly reused. Use the final shared inputs, correct the comparator label, and regenerate manuscript/SI/response reporting with a descriptive one-seed interpretation."
+    },
+    {
+      "issue_rank": 8,
+      "issue": "Methods alignment with the implemented protocol",
+      "decision": "Yes, later \u2014 during proper rerun planning",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T12:56:37Z",
+      "user_instruction": "ok yes we can do that later  when we plan the rerun properly lets continue",
+      "reason": "The user approved resolving the protocol and Methods discrepancies when the combined rerun is planned properly.",
+      "authorised_scope": "During rerun planning, settle and record the actual search/refit budgets, grids, model-selection scales, inherited versus independently tuned settings, ChemBERTa regime, loss spaces, encoder readouts and split counts. Align Methods/SI with that protocol and check the final text against executed run configurations.",
+      "execution_constraint": "Queue for rerun planning rather than editing or changing training settings now. This is not an instruction to expand the experimental campaign to match previously overstated Methods wording.",
+      "scientific_status": "Protocol discrepancies are verified. The physiological loss uses the correct log space; that concern needs clarification, not a new scaling experiment.",
+      "status_override": "Yes, later \u2014 during rerun planning; queued",
+      "remaining_override": "Settle the intended protocol when planning the combined rerun, then align Methods, SI and response with the actual implementation. Verify the final descriptions against completed run configurations. No extra GPU experiment is required solely to correct these descriptions."
+    },
+    {
+      "issue_rank": 9,
+      "issue": "Benchmark input parity and ionisation representation controls",
+      "decision": "Yes \u2014 include one-hot controls in rerun planning; consider direct scalar input as well",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T12:59:44Z",
+      "user_instruction": "ok yes i agree we should include that - another thing to consider is if we just directly give it the ionisation as a single value as well vs embedding.",
+      "reason": "The user approved the targeted input-matched controls and proposed testing whether a direct single-value ionisation input suffices instead of a learned embedding.",
+      "authorised_scope": "Include fixed four-dimensional one-hot ionisation inputs in the GCN and Chemprop, each with and without the constraint, on matched final inputs, folds, seeds and fixed settings. Consider a direct scalar encoding during experimental design and explain its interpretation before fixing that arm.",
+      "execution_constraint": "Queue for proper rerun planning; do not launch training now. The new scalar suggestion is a candidate design choice, not a settled encoding or authorisation for a broad representation/hyperparameter sweep. Broader benchmark retuning remains optional and undecided.",
+      "run_scope": "20 additional one-hot fold fits (two backbones x two constraint states x five folds x one seed), provided matching original-input controls come from the main campaign. A scalar control across both backbones and constraint states would add a further 20 fits, but is not yet included in the executable planning matrix.",
+      "scalar_design_note": "The current class IDs are anionic=0, cationic=1, neutral=2, zwitterionic=3 and are embedding lookup indices, not physical magnitudes. Feeding them directly as one number imposes arbitrary numerical spacing. A charge-sign proxy would merge neutral and zwitterionic classes and would not encode charge magnitude. Keep the four-class one-hot comparison as the primary equal-information control.",
+      "status_override": "Yes \u2014 one-hot controls queued; scalar input under consideration",
+      "remaining_override": "Add the 20 one-hot control fits to the rerun design, with matched original-input controls and final audited ionisation labels. Consider the user's direct scalar input as a separate representation sensitivity arm; specify its coding and interpretation before adding jobs. Correct the Chemprop interface claim and keep broader retuning optional."
+    },
+    {
+      "issue_rank": 10,
+      "issue": "Reproducibility of the final release",
+      "decision": "Yes \u2014 prepare before reruns and complete the release afterwards",
+      "decided_by": "User",
+      "decided_utc": "2026-11-12T13:11:19Z",
+      "user_instruction": "ok yes we can do that. ... dont build the scripts yet just plan it in detail and i will get another model to review the plan first.",
+      "authorised_scope": "Plan run provenance, fresh output roots, cache validation, complete CLI workflows, matching data/checkpoints/predictions and release verification. Tutorial notebooks follow stable results.",
+      "execution_constraint": "The immediate task is a reviewable plan only. Do not implement scripts or launch compute until the plan has been reviewed and the concrete configuration/cost is approved.",
+      "status_override": "Yes \u2014 include in rerun design and final release; planning only",
+      "remaining_override": "Specify input/code/configuration hashes, explicit seeds/folds, resumable execution and final CLI reproduction checks in the reviewed plan. Implement pre-run records before training, then package and verify the complete release afterwards; notebooks follow stable results."
+    }
+  ],
+  "preprocessing_implementation_directive": {
+    "recorded_utc": "2026-11-12T14:36:13.915427+00:00",
+    "user_request": "Build Step 1 preprocessing now, including fresh dataset downloads.",
+    "authorised_scope": "Local CPU preprocessing, downloads, provenance/identity checks, reviewed correction ledger, candidate outputs and tests.",
+    "boundary": "Training and orchestration implementation remain pending; no model retraining or paid compute authorised by this narrow request.",
+    "status": "Finite source-match review completed: 203 records reinstated; candidate 589 records / 576 structures. 37 tests passed; 45 candidate artifact checksums verified. Global data/protocol review remains pending.",
+    "handoff": "preprocessing_handoff_20261112.txt",
+    "latest_candidate": "../revision_work/analysis/outputs/preprocessing/f57c87745d2d433f/"
+  },
+  "missing_pka_cohort_decision": {
+    "missing_pka": "exclude_both_missing",
+    "decided_by": "User",
+    "decided_utc": "2026-11-12T14:55:02.298485+00:00",
+    "user_instruction": "yes i prefer that option - lets just drop them and carry on",
+    "scope": "Exclude records missing both saved acidic and basic pKa values from the modelled cohort; retain one-pKa records. Apply after validating original partitions, preserving surviving row IDs and folds.",
+    "expected_initial_effect": {
+      "excluded_modelled_records": 128,
+      "development_retained": 792,
+      "holdout_retained": 247,
+      "retained_unique_structures": 1026
+    },
+    "implementation_status": "Implemented; cohort and exclusion files checksum-verified"
+  },
+  "sequential_implementation_preference": {
+    "recorded_utc": "2026-11-12T14:55:02.306540+00:00",
+    "user_instruction": "the experiments dont have to be exactly the same as the old version - if there is clearly an improvement to be made we can consider it. lets continue with the sequential script building",
+    "interpretation": "Build sequentially. Treat the old protocol as a documented reference, not a requirement of exact replication. Consider and explain scientific or reproducibility improvements, recording deliberate deviations. Current stage: preprocessing and ionisation adjudication. Paid AWS configuration approval remains required."
+  },
+  "ionisation_review_progress": {
+    "stage": "Finite recovery review completed; candidate remains subject to global data review",
+    "next_row_idx": 9,
+    "next_compound": "HOMATROPINE METHYLBROMIDE",
+    "proposed_change": "Neutral to Cationic",
+    "status": "203 reinstatements applied; row 9 remains unresolved and excluded.",
+    "evidence": "https://pubchem.ncbi.nlm.nih.gov/compound/Homatropine-Methylbromide",
+    "remaining_review_records": 450,
+    "known_parent_overlap_status": "Recheck in the full cohort before training; reduced-cohort absence does not remove the full-cohort issue."
+  },
+  "unresolved_ionisation_cohort_decision": {
+    "decided_by": "User",
+    "decision_date": "2026-11-12",
+    "user_instruction": "yes i agree lets continue without it",
+    "context": "Accepted recommendation to exclude unresolved ionisation assignments rather than automatically exclude every missing pKa.",
+    "scope": "Apply a common evidence-gated cohort to planned comparison models. Retain a partial-pKa record only with an identity-bound, evidenced adjudication explaining the missing value and confirming its charge category. Complete pKa pairs support the operational 7.4 threshold rule only when no recorded charge/identity/boundary alert remains. No automatic label corrections.",
+    "provisional_effect": "203 of 226 strict/normalised source-match candidates reinstated; 23 deferred. 416 partial-pKa records remain unresolved; original both-missing exclusions remain in the ionisation candidate.",
+    "policy": "exclude_unresolved",
+    "implemented_utc": "2026-11-12T15:16:32.720392+00:00",
+    "implementation_status": "Reinstatement applied; 37 tests passed; 45 candidate checksums verified.",
+    "latest_candidate": "../revision_work/analysis/outputs/preprocessing/f57c87745d2d433f/",
+    "candidate_counts": {
+      "development": {
+        "records": 448,
+        "unique_structures": 441
+      },
+      "holdout": {
+        "records": 141,
+        "unique_structures": 135
+      }
+    },
+    "records_retained": 589,
+    "unique_structures_retained": 576,
+    "additional_exclusions": 450,
+    "partial_pka_unverified": 416,
+    "complete_pka_with_alerts": 34,
+    "training_ready": false,
+    "current_followup": "Plan a full eligible no-ionisation cohort for the loss study and the reviewed reduced cohort for ionisation/interaction, with shared identity and PK checks.",
+    "initial_386_record_state": {
+      "decided_by": "User",
+      "decision_date": "2026-11-12",
+      "user_instruction": "yes i agree lets continue without it",
+      "context": "Accepted recommendation to exclude unresolved ionisation assignments rather than automatically exclude every missing pKa.",
+      "scope": "Apply a common evidence-gated cohort to planned comparison models. Retain a partial-pKa record only with an identity-bound, evidenced adjudication explaining the missing value and confirming its charge category. Complete pKa pairs support the operational 7.4 threshold rule only when no recorded charge/identity/boundary alert remains. No automatic label corrections.",
+      "provisional_effect": "Currently no retained partial-pKa record has a completed adjudication; all such records are therefore unresolved for now. This is a provisional conservative candidate, not a frozen final sample. Excluded records remain archived and may be reinstated through evidence before training.",
+      "policy": "exclude_unresolved",
+      "implemented_utc": "2026-11-12T15:16:32.720392+00:00",
+      "implementation_status": "Implemented provisionally; 30 tests passed; all artifact checksums verified.",
+      "latest_candidate": "../revision_work/analysis/outputs/preprocessing/01c501adccf84944/",
+      "candidate_counts": {
+        "development": {
+          "records": 303,
+          "unique_structures": 303
+        },
+        "holdout": {
+          "records": 83,
+          "unique_structures": 79
+        }
+      },
+      "records_retained": 386,
+      "unique_structures_retained": 382,
+      "additional_exclusions": 653,
+      "partial_pka_unverified": 619,
+      "complete_pka_with_alerts": 34,
+      "training_ready": false,
+      "current_followup": "User asks whether alternative databases or ionisation sources can resolve the 619 partial-pKa records before accepting the loss. Investigate recovery sources before freezing the cohort."
+    }
+  },
+  "ionisation_recovery_investigation": {
+    "date": "2026-11-12",
+    "user_request": "Check alternative databases or ionisation sources before accepting loss of 619 partial-pKa records.",
+    "conclusion": "589 records retained after restoring 203. Source-plus-structure inferences are documented; numerical pKa and PK target cells were not imputed or changed.",
+    "recommended_order": [
+      "Recheck ChEMBL structure/parent matching and available recorded properties; do not substitute its differently thresholded molecular_species category.",
+      "Match IUPAC/PubChem measured pKa evidence with exact identity, acid/base type and conditions.",
+      "If substantial gaps remain, assess one consistent pH-specific prediction method across the entire cohort; distinguish predicted from measured evidence and retain unresolved status for ambiguous cases."
+    ],
+    "sources": [
+      {
+        "url": "https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/drug-and-compound-questions",
+        "finding": "ChEMBL describes ChemAxon pKa properties and an approximate molecular_species classification using 6.5/8.5 cutoffs; not a drop-in substitute for the paper rule."
+      },
+      {
+        "url": "https://github.com/IUPAC/Dissociation-Constants",
+        "finding": "Curated measured aqueous dissociation constants, with identity, constant type, temperature, uncertainty and source references; matching coverage is not yet measured."
+      },
+      {
+        "url": "https://docs.chemaxon.com/latest/pka-plugin.html",
+        "finding": "Predicts pKa and species distributions; can assess charge at target pH."
+      },
+      {
+        "url": "https://docs.chemaxon.com/latest/calculators_licensing.html",
+        "finding": "pKa and major-microspecies calculations require appropriate license; availability not yet checked."
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6689865/",
+        "finding": "Dimorphite-DL enumerates protonation using functional-group pKa ranges; does not calculate molecule-specific pKa or guarantee one dominant state."
+      },
+      {
+        "url": "https://chemoinfo.ipmc.cnrs.fr/edrug3d.html",
+        "finding": "Current SDF ionizes selected listed functional groups; cannot assume every saved structure is a validated predominant state at pH 7.4."
+      }
+    ],
+    "scope": "All 226 strict/normalised source matches received retain/defer decisions. All 619 recovery candidates have a disposition.",
+    "status": "Completed finite review and applied reinstatement",
+    "completed_utc": "2026-11-12T16:41:41.256542+00:00",
+    "report": "../revision_work/analysis/outputs/ionisation_reinstatement/20261112/review.html",
+    "counts": {
+      "exact_or_normalised": 226,
+      "connectivity_only": 26,
+      "no_match": 367
+    },
+    "iupac_matches": 52,
+    "pubchem_non_iupac_matches": 210,
+    "iupac_missing_side_type_candidates": 3,
+    "records_reinstated": 203,
+    "limitations": [
+      "Coverage does not imply resolved charge labels.",
+      "Current ChEMBL pKa fields deprecated; bulk identity retrieval failed, so parent audit incomplete.",
+      "Measurements, predictions and repeated citations remain separate."
+    ],
+    "next_candidates": [],
+    "license_question": "Asked whether university has ChemAxon pKa/Major Microspecies access; no answer yet.",
+    "validation": {
+      "tests_passed": 37,
+      "candidate_hashes_verified": 45
+    },
+    "pre_reinstatement_investigation_state": {
+      "date": "2026-11-12",
+      "user_request": "Check alternative databases or ionisation sources before accepting loss of 619 partial-pKa records.",
+      "conclusion": "A focused recovery pass is worthwhile. Missing one pKa is not proof of an unusable ionisation label; the 386-record cohort is a conservative provisional fallback, not the final scientific sample.",
+      "recommended_order": [
+        "Recheck ChEMBL structure/parent matching and available recorded properties; do not substitute its differently thresholded molecular_species category.",
+        "Match IUPAC/PubChem measured pKa evidence with exact identity, acid/base type and conditions.",
+        "If substantial gaps remain, assess one consistent pH-specific prediction method across the entire cohort; distinguish predicted from measured evidence and retain unresolved status for ambiguous cases."
+      ],
+      "sources": [
+        {
+          "url": "https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/drug-and-compound-questions",
+          "finding": "ChEMBL describes ChemAxon pKa properties and an approximate molecular_species classification using 6.5/8.5 cutoffs; not a drop-in substitute for the paper rule."
+        },
+        {
+          "url": "https://github.com/IUPAC/Dissociation-Constants",
+          "finding": "Curated measured aqueous dissociation constants, with identity, constant type, temperature, uncertainty and source references; matching coverage is not yet measured."
+        },
+        {
+          "url": "https://docs.chemaxon.com/latest/pka-plugin.html",
+          "finding": "Predicts pKa and species distributions; can assess charge at target pH."
+        },
+        {
+          "url": "https://docs.chemaxon.com/latest/calculators_licensing.html",
+          "finding": "pKa and major-microspecies calculations require appropriate license; availability not yet checked."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6689865/",
+          "finding": "Dimorphite-DL enumerates protonation using functional-group pKa ranges; does not calculate molecule-specific pKa or guarantee one dominant state."
+        },
+        {
+          "url": "https://chemoinfo.ipmc.cnrs.fr/edrug3d.html",
+          "finding": "Current SDF ionizes selected listed functional groups; cannot assume every saved structure is a validated predominant state at pH 7.4."
+        }
+      ],
+      "scope": "Source investigation only so far; no new recovered label, trained model, license purchase or paid compute.",
+      "status": "Initial source-coverage search completed; record-level adjudication next",
+      "completed_utc": "2026-11-12T15:35:28.051633+00:00",
+      "report": "../revision_work/analysis/outputs/ionisation_recovery/20261112/review.html",
+      "counts": {
+        "exact_or_normalised": 226,
+        "connectivity_only": 26,
+        "no_match": 367
+      },
+      "iupac_matches": 52,
+      "pubchem_non_iupac_matches": 210,
+      "iupac_missing_side_type_candidates": 3,
+      "records_reinstated": 0,
+      "limitations": [
+        "Coverage does not imply resolved charge labels.",
+        "Current ChEMBL pKa fields deprecated; bulk identity retrieval failed, so parent audit incomplete.",
+        "Measurements, predictions and repeated citations remain separate."
+      ],
+      "next_candidates": [
+        {
+          "row_idx": 4,
+          "name": "THEOPHYLLINE",
+          "proposal": "Retain Neutral based on both acidic and conjugate-acid dissociation evidence; source uncertainty recorded; not applied."
+        },
+        {
+          "row_idx": 286,
+          "name": "FLUCYTOSINE",
+          "proposal": "Retain Neutral based on sourced acid/base measurements; conditions/uncertainty recorded; not applied."
+        }
+      ],
+      "license_question": "Asked whether university has ChemAxon pKa/Major Microspecies access; no answer yet.",
+      "validation": "6 matching tests passed; 68 source/output checksums verified."
+    },
+    "matched_records_deferred": 23,
+    "remaining_partial_records": 416,
+    "category_corrections": {
+      "397": "Anionic to Zwitterionic",
+      "945": "Anionic to Zwitterionic"
+    },
+    "supplementary_docx": "revision_work\\manuscript\\PIPK_Net_ionisation_reinstatement_supplementary_table_20261112.docx",
+    "supplementary_csv": "revision_work\\manuscript\\PIPK_Net_ionisation_reinstatement_supplementary_table_20261112.csv",
+    "source_annotations_csv": "revision_work\\manuscript\\PIPK_Net_ionisation_reinstatement_supplementary_table_20261112_source_annotations.csv",
+    "current_next_step": "Scientific design review; no remaining automatic reinstatement queue.",
+    "previously_queued_candidates_status": "Rows 4 (theophylline) and 286 (flucytosine) are reinstated; their earlier unapplied proposals are historical."
+  },
+  "additional_identity_review_findings": [
+    {
+      "row_idx": 441,
+      "name": "CLOZAPINE",
+      "saved_structure": "clozapine N-oxide",
+      "saved_inchikey": "OGUCZBIQSYYWEF-UHFFFAOYSA-N",
+      "clozapine_inchikey": "QZUDBNBUXVUHMW-UHFFFAOYSA-N",
+      "sources": [
+        "https://pubchem.ncbi.nlm.nih.gov/compound/135445691",
+        "https://pubchem.ncbi.nlm.nih.gov/compound/135398737"
+      ],
+      "status": "Verified structural mismatch; correction and annotation reconciliation not applied. Currently excluded by provisional ionisation policy."
+    }
+  ],
+  "restructured_results_plan": {
+    "recorded_utc": "2026-11-12T16:52:06.744696+00:00",
+    "author_direction": "Treat old paper as an initial version. Separate mass-balance loss, ionisation, and a combined interaction result if informative. Focus on effects across GCN, Chemprop and ChemBERTa rather than superiority or novelty.",
+    "paper_order": [
+      "data context",
+      "mass-balance loss",
+      "ionisation information",
+      "combined interaction"
+    ],
+    "cohort_proposal": "Full eligible PK cohort for no-ionisation loss study; same reviewed reduced cohort for all ionisation/factorial arms.",
+    "plan": "PIPK_Net_restructured_results_and_mass_balance_plan_20261112.html",
+    "plain_text": "PIPK_Net_restructured_results_and_mass_balance_plan_20261112.txt",
+    "fit_scope": "PIPK_Net_restructured_results_and_mass_balance_plan_20261112_scope.json",
+    "status": "Version 2.1 proposed; new Fable review pending. Prior Fable acceptance applies only to the earlier plan.",
+    "retraining_decision": "Author confirms retraining will be done; execution pending full mass-balance planning and review.",
+    "proposed_changes_not_yet_approved": [
+      "equal per-endpoint supervised loss",
+      "nested baseline-tuned lambda curves",
+      "duplicate/unlabelled-data handling",
+      "frozen transformer pooling recipe",
+      "new fit scope and SI extensions"
+    ],
+    "execution_boundary": "No training/orchestration script built or model run for this proposal. Local/CSF3 preferred; paid compute requires separate price/configuration approval.",
+    "mass_balance_superseded_by": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112.html"
+  },
+  "mass_balance_plan": {
+    "version": "5",
+    "status": "Review updated; identity/split/scope decisions pending; no paid launch authorised by this update",
+    "plan": "PIPK_Net_mass_balance_experimental_protocol_v5_20261112.html",
+    "plain_text": "PIPK_Net_mass_balance_experimental_protocol_v5_20261112.txt",
+    "candidate_csv": "PIPK_Net_mass_balance_experimental_protocol_v5_20261112_candidate_configurations.csv",
+    "logical_fit_csv": "PIPK_Net_mass_balance_experimental_protocol_v5_20261112_logical_fits.csv",
+    "total_fits": 4240,
+    "fit_blocks": {
+      "primary_baseline_search": 1500,
+      "positive_lambda_calibration": 450,
+      "primary_final": 495,
+      "alternative_encoders": 240,
+      "depth_1_to_5": 320,
+      "single_task_search": 1050,
+      "single_task_final": 105,
+      "task_weight_sensitivity": 80
+    },
+    "partial_correction_alphas": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      1
+    ],
+    "partial_correction_extra_fits": 0,
+    "audit": "mass_balance_data_audit_20261112/audit_report.html",
+    "training_ready": false,
+    "paid_compute_launched": false,
+    "s3_uploaded": false,
+    "previous_compute_preference": "16 g6.2xlarge On-Demand; GBP 100 ceiling",
+    "launch_rule": "Current user AGENTS requires current 2-3 priced options and explicit choice before paid launch",
+    "recommended_split_pending": "fresh full-cohort grouped 5x5 nested CV; historical exposure acknowledged",
+    "recommended_scientific_scope_pending": "soft algebraic regularizer on heterogeneous PK labels; source-defined sensitivity scoring",
+    "pending_decisions": [
+      "identity adjudication or quarantine; review 59 staged replacements",
+      "full-cohort grouped nested CV versus historical boundary",
+      "algebraic regularizer versus curated terminal-physiology study",
+      "revised fit scope then priced compute choice after timing"
+    ]
+  },
+  "mass_balance_plan_history": [
+    {
+      "version": "3.1",
+      "recorded_utc": "2026-11-12T18:18:29.283041+00:00",
+      "scope": "Mass-balance result and its SI only; ionisation and combined study deferred",
+      "status": "Proposed for author/Fable review; no approval to build training/launch scripts or run compute yet",
+      "brief": "PIPK_Net_mass_balance_review_brief_20261112.html",
+      "plan": "PIPK_Net_mass_balance_plan_20261112.html",
+      "plain_text": "PIPK_Net_mass_balance_plan_20261112.txt",
+      "candidate_csv": "PIPK_Net_mass_balance_plan_20261112_candidate_configurations.csv",
+      "logical_fit_csv": "PIPK_Net_mass_balance_plan_20261112_logical_fits.csv",
+      "costs": "PIPK_Net_mass_balance_plan_20261112_costs.json",
+      "primary_fits": 2325,
+      "supplementary_fits": 840,
+      "total_fits": 3165,
+      "primary_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "lambda_grid": [
+        0,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3
+      ],
+      "bootstrap_seed": 20261112,
+      "cohort": "Full eligible PK cohort pending identity/unit/duplicate audit, not the 589-record ionisation subset",
+      "aws_recommendation": "Provisional eight g6.2xlarge On-Demand, subject to throughput pilot and separate launch choice",
+      "aws_options": "Four/eight/sixteen On-Demand; quota-enabled one On-Demand plus fifteen Spot in Ohio also costed",
+      "quota_direction": "User: We can request more quota. Treat present quotas as administrative prerequisites, not a scientific scope cap.",
+      "quota_request_submitted": false,
+      "paid_compute_launched": false,
+      "s3_uploaded": false,
+      "implementation_boundary": "Review design first. Build only after author review, then free local pilot, fresh cost/configuration choice before paid compute."
+    },
+    {
+      "version": "4.0",
+      "recorded_utc": "2026-11-12T18:44:42.710292+00:00",
+      "scope": "Mass-balance result and its SI only; ionisation and combined study deferred",
+      "status": "Author selected 16 On-Demand instances and GBP 100 ceiling; scientific review before scripts remains pending",
+      "brief": "PIPK_Net_mass_balance_review_brief_v4_20261112.html",
+      "plan": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112.html",
+      "plain_text": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112.txt",
+      "candidate_csv": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112_candidate_configurations.csv",
+      "logical_fit_csv": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112_logical_fits.csv",
+      "costs": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112_costs.json",
+      "primary_fits": 2325,
+      "supplementary_fits": 840,
+      "total_fits": 3165,
+      "primary_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "lambda_grid": [
+        0,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3
+      ],
+      "bootstrap_seed": 20261112,
+      "cohort": "Full eligible PK cohort pending identity/unit/duplicate audit, not the 589-record ionisation subset",
+      "aws_recommendation": "Superseded by explicit author choice: sixteen g6.2xlarge On-Demand",
+      "aws_options": "Selected sixteen On-Demand; previous local/4/8/Spot alternatives are historical",
+      "quota_direction": "User: We can request more quota. Treat present quotas as administrative prerequisites, not a scientific scope cap.",
+      "quota_request_submitted": false,
+      "paid_compute_launched": false,
+      "s3_uploaded": false,
+      "implementation_boundary": "Review design first. Build only after author review, then free local pilot, fresh cost/configuration choice before paid compute.",
+      "aws_selected_configuration": {
+        "instance_type": "g6.2xlarge",
+        "instances": 16,
+        "purchase_type": "On-Demand",
+        "region_default": "us-east-1",
+        "budget_gbp": 100,
+        "global_deadline_hours": 5
+      },
+      "execution_boundary": "Scientific/design review and implementation not yet authorised. Once cleared, preserve the selected configuration/budget approval; ask anew only for material changes or additional/replacement compute.",
+      "independent_review_request": "PIPK_Net_mass_balance_independent_review_request_v4_20261112.txt"
+    },
+    {
+      "recorded_utc": "2026-11-12T21:15:19.945154+00:00",
+      "prior_plan": {
+        "version": "4.1",
+        "recorded_utc": "2026-11-12T19:21:54.712919+00:00",
+        "scope": "Mass-balance result and its SI only; ionisation and combined study deferred",
+        "status": "Opus summary received and critically assessed; proposed changes awaiting author review; current v4.1 matrix remains 3,165 fits",
+        "brief": "PIPK_Net_mass_balance_review_brief_v4_20261112.html",
+        "plan": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112.html",
+        "plain_text": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112.txt",
+        "candidate_csv": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112_candidate_configurations.csv",
+        "logical_fit_csv": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112_logical_fits.csv",
+        "costs": "PIPK_Net_mass_balance_experimental_protocol_v4_20261112_costs.json",
+        "primary_fits": 2325,
+        "supplementary_fits": 840,
+        "total_fits": 3165,
+        "primary_seeds": [
+          101,
+          202,
+          303,
+          404,
+          505
+        ],
+        "lambda_grid": [
+          0,
+          0.03,
+          0.1,
+          0.3,
+          1,
+          3
+        ],
+        "bootstrap_seed": 20261112,
+        "cohort": "Full eligible PK cohort pending identity/unit/duplicate audit, not the 589-record ionisation subset",
+        "aws_recommendation": "Superseded by explicit author choice: sixteen g6.2xlarge On-Demand",
+        "aws_options": "Selected sixteen On-Demand; previous local/4/8/Spot alternatives are historical",
+        "quota_direction": "User: We can request more quota. Treat present quotas as administrative prerequisites, not a scientific scope cap.",
+        "quota_request_submitted": false,
+        "paid_compute_launched": false,
+        "s3_uploaded": false,
+        "implementation_boundary": "Review first. Preserve the selected 16-node On-Demand / GBP 100 choice; implementation and launch remain deferred, with new decisions only for material changes or extra resources.",
+        "aws_selected_configuration": {
+          "instance_type": "g6.2xlarge",
+          "instances": 16,
+          "purchase_type": "On-Demand",
+          "region_default": "us-east-1",
+          "budget_gbp": 100,
+          "global_deadline_hours": 5
+        },
+        "execution_boundary": "Scientific/design review and implementation not yet authorised. Once cleared, preserve the selected configuration/budget approval; ask anew only for material changes or additional/replacement compute.",
+        "independent_review_request": "PIPK_Net_mass_balance_independent_review_request_v4_20261112.txt",
+        "reviewer": "Opus 5",
+        "review_authority": "Advisory; assess recommendations individually rather than implementing all suggestions automatically",
+        "review_dispositions": [
+          "accepted",
+          "modified",
+          "deferred",
+          "declined"
+        ],
+        "figure_plan": {
+          "main_figure_count": 1,
+          "type": "multipanel",
+          "panels": {
+            "A": "Observed complete-triad disagreement",
+            "B": "GCN accuracy-consistency curve with post-hoc controls",
+            "C": "Chemprop accuracy-consistency curve with post-hoc controls",
+            "D": "Frozen ChemBERTa-head accuracy-consistency curve with post-hoc controls",
+            "E": "Wider panel of paired relative MAE changes across all seven endpoints"
+          },
+          "primary_evaluation": "cross-validated development",
+          "supplement": "historical hold-out; absolute errors; endpoint shifts; seeds; encoders; depth; single-task; weighting; learning curves; counts; source audit"
+        },
+        "review_received_utc": "2026-11-12T19:45:38.309134+00:00",
+        "opus5_review_assessment": {
+          "source": "opus5_review_assessment_20261112/review_received.txt",
+          "assessment": "opus5_review_assessment_20261112/assessment.html",
+          "recommendations": "opus5_review_assessment_20261112/recommended_changes.json",
+          "diagnostics": "opus5_review_assessment_20261112/verified_review_diagnostics.json",
+          "full_review_available": false,
+          "current_fit_count": 3165,
+          "proposed_fit_count": 4240,
+          "recommendations_applied_to_protocol": false,
+          "data_or_training_changed": false
+        }
+      },
+      "reason": "audit and partial-correction update requested; scientific decisions pending"
+    }
+  ]
+}

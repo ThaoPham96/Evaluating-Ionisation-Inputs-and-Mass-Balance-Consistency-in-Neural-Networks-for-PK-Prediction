@@ -1,0 +1,85 @@
+{
+  "campaign_id": "5935d646a2f6dd49b0b03be53cabcd1dd5b0b09fc3e2a3ea5c93ea43bafe55fd",
+  "prior_campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "release_fingerprints": {
+    "numerical": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8"
+  },
+  "seed_ids": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "input_directory": "outputs/single_ph/scoring",
+  "inputs_sha256": {
+    "scoring_manifest.json": "330f41297e3c138854b76868c5355e0e3cb54266121936e0fc4da1df0e6d0536",
+    "endpoint_metrics.csv": "039d0235beaca349b6f59d4ca060cfaff44683051db90af560338585825c6c57",
+    "endpoint_summary.csv": "f0e7b54dc65f815f6b38c9e9a3ee7c5c53ba22c83f1883df92a307e7e18f53a7",
+    "contrasts.csv": "6aa65fad97ae1fe8edce1ef2b90108a76ecf7f9c01dc1bdb13377902cb955763",
+    "contrast_seeds.csv": "76c765ceacee1e7a6bf558ed597d2eb2b4feec84539b577c34776498daeb6c5e",
+    "contrast_outer_folds.csv": "7a6756ec6059f8eec36fdebe57fba7f1b75257fdab4c08f234edc539130a8b8f",
+    "coverage.csv": "81b3f3a682821e91b96ef5156a0c72cec99c1f2363d021de639e5b0abd3fed2e",
+    "group_sizes.csv": "52d8d0ca59083d4885cf8667bd2d8d9accbef735afedcf444074406e6933f76d",
+    "prediction_sources.csv": "ca0d41114c2313560a93e7e01b795fc5cfbade48560c44be8621816ddf6f6e33"
+  },
+  "render_script_sha256": "c693d1c4dbecd43e69d3ed06c5f4d07b2789eec367019c566db03c6cae1a31f6",
+  "outputs_sha256": {
+    "all_endpoint_mae.png": "dfc8d7be97486ff2924707b643c7411a791e51147be2bceebae7e2247a4939ee",
+    "all_endpoint_mae.svg": "d768747e0966ba0696e3381da658087a31c7b186f309b478eb8e39f9a388c13c",
+    "vd_cl_vs_structure.png": "06081fd998f4875a7377cd7935eedafc5769ce0d6a31670d4c5667e697ae8338",
+    "vd_cl_vs_structure.svg": "c42a222061d5d5f03e937109d3cdc4c9f859e14b844337d4915eb41cd459a1d5",
+    "vd_cl_vs_ph74.png": "ac75da164cf23787639cc6f161f0216a1092f2e2d1936cad8d7d6f19cdcc52e2",
+    "vd_cl_vs_ph74.svg": "4862a1c2f01ede1c6fc84f985174fd02cd1dd8aa292459ed88f65c729dd62481",
+    "single_ph_results.pdf": "ed55dd6bceef4196a05fa04b6e998e251c54c7e74f7f9e02778bcd79ecd97185",
+    "plotted_estimates.csv": "6aa65fad97ae1fe8edce1ef2b90108a76ecf7f9c01dc1bdb13377902cb955763",
+    "plotted_seeds.csv": "76c765ceacee1e7a6bf558ed597d2eb2b4feec84539b577c34776498daeb6c5e",
+    "captions.txt": "0785d48db6bf080cedbaff2f69a2492776a01afb3840ad0ec11f09eeafed0ed5"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "png": "all_endpoint_mae.png",
+      "svg": "all_endpoint_mae.svg"
+    },
+    {
+      "page": 2,
+      "png": "vd_cl_vs_structure.png",
+      "svg": "vd_cl_vs_structure.svg"
+    },
+    {
+      "page": 3,
+      "png": "vd_cl_vs_ph74.png",
+      "svg": "vd_cl_vs_ph74.svg"
+    }
+  ],
+  "plotted_scales": {
+    "all_endpoint_mae": 15.0,
+    "vd_cl_vs_structure": {
+      "Vd": [
+        -25.0,
+        10.0
+      ],
+      "CL": [
+        -16.0,
+        8.0
+      ]
+    },
+    "vd_cl_vs_ph74": {
+      "Vd": [
+        -5.0,
+        30.0
+      ],
+      "CL": [
+        -8.0,
+        16.0
+      ]
+    }
+  },
+  "estimate_rows": 147,
+  "seed_rows": 1323
+}

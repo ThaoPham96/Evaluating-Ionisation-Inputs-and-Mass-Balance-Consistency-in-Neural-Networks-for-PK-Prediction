@@ -1,0 +1,65 @@
+FILE AND METRIC DICTIONARY
+
+Keys
+structure_id: frozen unique reviewed structure key.
+group_id: parent/scaffold connected component used for both splitting and bootstrap.
+outer_fold: 1-5; each structure has one held-out outer fold.
+seed: model-training seed; nine main-policy seeds, first three for fixed curves.
+backbone: GraphConv, Chemprop, ChemBERTa_head (frozen embeddings + trained MLP).
+
+Policies
+baseline: lambda=0.
+selected_positive: positive lambda selected using inner same-row triad log-MAE.
+zero_eligible: baseline or selected-positive chosen by the inner scores.
+selected_alpha_orthogonal / selected_alpha_half_life: inner-selected correction of baseline.
+exact_orthogonal / exact_half_life: alpha=1 correction of baseline.
+fixed_lambda_X: prespecified lambda X; three seeds.
+fixed_alpha_METHOD_X: prespecified alpha X; three seeds.
+
+figure_data/primary_outer_predictions.csv.gz
+179,928 = 3 backbones x 7 policies x 9 seeds x 952 structures. Each row is one
+out-of-fold prediction, not a distinct subject. selected_lambda is the actual
+training strength for that row's policy/fold (zero for correction controls);
+selected_alpha is populated for correction policies, including exact alpha=1.
+pred_*_log10: unstandardised log10 physical-unit predictions.
+pred_F_percent / pred_PPB_percent: inverse-logit predictions in 0-100 percentage units.
+observed_endpoint_*: endpoint-specific truth, using all available labels.
+observed_same_row_*: primary triad truth from a shared source row; use this for
+the reported 674-triad accuracy. Missing fields are empty, not zero.
+same_row_triad_eligible: 1 for those 674 structures, else 0.
+signed_residual_log10: log10(t_half)-log10(V)+log10(CL)-log10(ln2).
+abs_residual_log10: magnitude of that residual.
+within_1_25: 1 if abs residual <= log10(1.25), else 0.
+same_row_triad_log10_mae: per-structure mean of three absolute log errors; empty
+for noneligible rows. Pool all five folds per seed before aggregating seeds.
+
+results/summary/summary.csv
+One row per backbone/policy/domain/metric, with mean, sample SD and expected/
+defined seed counts. Domains: same_row_triad_log10; coherence_all_structures;
+t_half_log10, Vd_log10, CL_log10, Cmax_log10, Tmax_log10; F_percentage_point and
+PPB_percentage_point. within_1_25 is a fraction (multiply by 100 to plot percent).
+mae is absolute-unit error; delta_mae is policy minus baseline. n_eligible and
+n_scored are counts, not errors. summary.json also records coverage/selection.
+seed_metrics.csv retains the values before mean/SD aggregation.
+selections.csv records each model/outer fold's positive and zero-eligible lambda,
+selected alphas and whether all positive lambdas scored worse than baseline.
+
+results/bootstrap/summary.csv
+baseline_mean, policy_mean, delta, ci95_lower, ci95_upper use the named metric's
+units. within_1_25_fold_percentage_points is already in percentage points.
+Triad/positive endpoint deltas are log10-MAE; F/PPB are percentage-point MAE.
+seed_delta_sd describes seed spread; it is not the group-bootstrap CI.
+The saved draw-count matrix and group membership support identical resampling.
+
+campaign/results/MB5-*/predictions.csv
+Raw trainer columns pred_t_half, pred_Vd, pred_CL, pred_Cmax, pred_Tmax are log10;
+raw pred_F and pred_PPB are logit10, NOT percentages. Use scoring_units to invert.
+request.json distinguishes inner validation/search from outer final predictions.
+Do not merge all raw predictions as a test set. Use selections' aliases for primary
+policies and all_fits_index.csv to select supplementary outer-final fits.
+Predictions have their original order; join to labels by structure_id, not row number.
+
+Reproducibility
+MANIFEST.json verifies this handoff. Original campaign/fit/data/feature manifests
+verify immutable scientific records. Source absolute paths are metadata only.
+Fitted checkpoint.pt files are absent; all analysis predictions are present.

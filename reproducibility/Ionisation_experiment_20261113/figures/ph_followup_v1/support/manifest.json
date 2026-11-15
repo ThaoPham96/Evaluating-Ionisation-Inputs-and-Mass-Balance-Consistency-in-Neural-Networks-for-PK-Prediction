@@ -1,0 +1,115 @@
+{
+  "campaign_id": "27b0bc93f682a3ac04f773b3240f495e2d106c278b42722381328bb5daf67d58",
+  "release_fingerprints": {
+    "numerical": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8"
+  },
+  "inputs_directory": "outputs/ph_followup/scoring",
+  "inputs_sha256": {
+    "scoring_manifest.json": "6136354a44872aa2dc78082b803b5fcaa0a710d006aac18ba2ccd393a2bcbf05",
+    "endpoint_summary.csv": "ca2f5cdb90ccb8eba32a4456b366b6b8b385532d34098d59d8c894bdee70a1ef",
+    "endpoint_metrics.csv": "28b6166fc92c3fe5a652aca9b9388f93a802470598e091b00b30229b1a5e469e",
+    "contrasts.csv": "52f24b60175b0607df39c49dbd4e1a2f01042052a5859abecdf8c71714258905",
+    "contrast_seeds.csv": "137604468e181202f0fe69429dc4c890b88521ca0a07b0c852684ae838415cee"
+  },
+  "script_sha256": "0eb8f5d1181b8b66b61c3e41ce4ef2198c1c235fe01dc86cd56bc487bfb5619f",
+  "outputs_sha256": {
+    "ph_metric_comparison_absolute_mae.png": "0214e3f9694ccac1da31e55b008d9ccf6badcdba875c32eb42f6d9db37161b78",
+    "ph_metric_comparison_absolute_mae.svg": "a91fde6d18b0d847cc4c00c53939492e9cbe4a901d5e6dd132b04d7bf070b9f5",
+    "ph_metric_comparison_absolute_aafe.png": "6eb1d16e4c5726afeba30828bc692ee8e9feacec43dc6ef9172ba10c9e6b85ba",
+    "ph_metric_comparison_absolute_aafe.svg": "a3b81838512c26ea6a7cdb9410d4209dd067c6e99e6cb6a055b0263dd8df368b",
+    "ph_metric_comparison_absolute_spearman.png": "2c501e7cd5814b257e737bea2b79bcee0feabd5172fb1376fa34a739d53ba004",
+    "ph_metric_comparison_absolute_spearman.svg": "f36c671cb4fe21fc2bb0b9dfae84dcb490dcf7342fcc625d9bb926ef9bbac5d6",
+    "ph_metric_comparison_absolute_r2.png": "02a72cbde1a4c22ac900a5975bf913838f0fd2764cbfa7b86b1f1656d7af2fd5",
+    "ph_metric_comparison_absolute_r2.svg": "648d7321d694a2dc5f022f097fa00fc1779232dddc3bf3c8c65c20fe59492be4",
+    "ph_metric_comparison_paired_mae.png": "0507336c2ecac7e009cb3c972aec46f32f113fc3c82fb386cc247946204b8868",
+    "ph_metric_comparison_paired_mae.svg": "a15133e97b02c48fdd4031a47ffa63787061110aa64ae43832b0d242467ad52c",
+    "ph_metric_comparison_paired_aafe.png": "ac5abc947fe284f91f559ab796414f1905ad767144845b358f12a2dffd05a654",
+    "ph_metric_comparison_paired_aafe.svg": "efbe4038443d105866f6a01780be02d5603d2d1ef724998c4556834a955868a2",
+    "ph_metric_comparison_paired_spearman.png": "ce3a85643acceca25f1c1ef18d10192c8ea5cc68dbfc1a1b57ecad8604e6ee28",
+    "ph_metric_comparison_paired_spearman.svg": "8e47bf27bf1dd768a83462b15102006511d16079405c030dd9977f86542fa705",
+    "ph_metric_comparison_paired_r2.png": "fad25134e6d32411ce0287f7d33a4d0dd3f99cbb9ba46ced5635ea2e92a46450",
+    "ph_metric_comparison_paired_r2.svg": "f704d3bced082df691e446f587958efa7b39cb356c581bb140d84dc30fe45604",
+    "metric_atlas.pdf": "6c8e6c8c79688099129a0a1642efbe8ae2a89167c52c283107a4a3ca8df15c0d",
+    "heatmap_values.csv": "f6c42a2f1fd8c867ed29a16e7daba7a37cae0c0cb2646be0a8a042fe69196671",
+    "paired_seed_values.csv": "8139af765470e3c67526ccab61bae09c5189a700ddb2caf8d5a80b56b3186781",
+    "paired_summary.csv": "7eab5a678e567a6e3604c5aa3f63b596330add40682440213a9dbda40afdfd8f",
+    "captions.md": "57ca7b8c553755a0a7d48f3b3e02388927ba3e62fbe1f959dc64178475fa7e74"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "metric": "mae",
+      "display": "absolute",
+      "png": "ph_metric_comparison_absolute_mae.png",
+      "svg": "ph_metric_comparison_absolute_mae.svg"
+    },
+    {
+      "page": 2,
+      "metric": "aafe",
+      "display": "absolute",
+      "png": "ph_metric_comparison_absolute_aafe.png",
+      "svg": "ph_metric_comparison_absolute_aafe.svg"
+    },
+    {
+      "page": 3,
+      "metric": "spearman",
+      "display": "absolute",
+      "png": "ph_metric_comparison_absolute_spearman.png",
+      "svg": "ph_metric_comparison_absolute_spearman.svg"
+    },
+    {
+      "page": 4,
+      "metric": "r2",
+      "display": "absolute",
+      "png": "ph_metric_comparison_absolute_r2.png",
+      "svg": "ph_metric_comparison_absolute_r2.svg"
+    },
+    {
+      "page": 5,
+      "metric": "mae",
+      "display": "paired",
+      "png": "ph_metric_comparison_paired_mae.png",
+      "svg": "ph_metric_comparison_paired_mae.svg"
+    },
+    {
+      "page": 6,
+      "metric": "aafe",
+      "display": "paired",
+      "png": "ph_metric_comparison_paired_aafe.png",
+      "svg": "ph_metric_comparison_paired_aafe.svg"
+    },
+    {
+      "page": 7,
+      "metric": "spearman",
+      "display": "paired",
+      "png": "ph_metric_comparison_paired_spearman.png",
+      "svg": "ph_metric_comparison_paired_spearman.svg"
+    },
+    {
+      "page": 8,
+      "metric": "r2",
+      "display": "paired",
+      "png": "ph_metric_comparison_paired_r2.png",
+      "svg": "ph_metric_comparison_paired_r2.svg"
+    }
+  ],
+  "heatmap_cells": 1176,
+  "paired_seed_values": 1512,
+  "paired_summaries": 168,
+  "seed_ids": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "sd_ddof": 1,
+  "heatmap_reference": "Same-model, same-endpoint primary REF74",
+  "absolute_annotations_decimal_places": 3,
+  "nonfinite_metrics": 0,
+  "colour_clipping": false
+}

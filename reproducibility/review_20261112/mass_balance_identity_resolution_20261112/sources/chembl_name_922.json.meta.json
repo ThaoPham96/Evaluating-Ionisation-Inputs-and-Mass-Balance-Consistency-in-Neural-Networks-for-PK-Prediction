@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DOLUTEGRAVIR&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DOLUTEGRAVIR&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:45.382664+00:00",
+  "sha256": "31ab1a1afc60d09c5881913618d1fd049516d7e80d4d91379f68fd6fc6c7a1c5",
+  "bytes": 5587
+}

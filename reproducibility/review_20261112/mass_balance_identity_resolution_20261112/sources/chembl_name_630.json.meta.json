@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=APREPITANT&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=APREPITANT&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:42.027556+00:00",
+  "sha256": "69831a533ce3bb103cced7f4ed97c39333e5d41dc686fe42481b091ec98c6da7",
+  "bytes": 7789
+}

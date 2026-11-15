@@ -1,0 +1,1264 @@
+{
+  "parent_manifest_sha256": "65ccc2ee575308219e973d6f0961b1c1ccb09388e3c6596d3ec213d1c82460e2",
+  "omitted": [
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_average/caption.txt",
+      "sha256": "d8817423ca73a7125709a2bbd22eb050cfdfa03ea9f9b3ec9200c1d5e18b3eeb",
+      "bytes": 2267
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_average/combined_main.pdf",
+      "sha256": "d175d63485bc4469b312ce921ba8e3a5acc08570e0bbf5793c00ba4156318335",
+      "bytes": 55901
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_average/combined_main.svg",
+      "sha256": "66651114bc2eb43b1893a4cf9be02afe9c99a07ae85e1d788feda97c3b3695a0",
+      "bytes": 125889
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_average/plot_data.csv",
+      "sha256": "1d7d8523e6d2e69a73c53af079c5ed07b7cd63af31425df2a42d89fd22af17b8",
+      "bytes": 18483
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_average/render.py",
+      "sha256": "625ceeb65c551ffa770ebb3e5d856b3a24b64ea5057b90331b6a62141fd77a0f",
+      "bytes": 14897
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_average/source_manifest.json",
+      "sha256": "adf758a4dce2db1b7edbb5c777c46a45bc0805b4610c93f3cf4740ec9b2e7d0d",
+      "bytes": 1763
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_joint_panel/caption.txt",
+      "sha256": "173a0a8e304dc6aa91fb2e22d444f92be18abb7e9f789dec95bfc369942419a8",
+      "bytes": 3369
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_joint_panel/combined_main.pdf",
+      "sha256": "cfead77333bef84296b9d0239601e3b37c20d0e60296626767a7e1d9295a5266",
+      "bytes": 57879
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_joint_panel/combined_main.svg",
+      "sha256": "9bb9e00a56ca24dfaa92f76b16575f6748443869ba4980d7a6d426130207803b",
+      "bytes": 133824
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_joint_panel/plot_data.csv",
+      "sha256": "12cc9cdc8ab041b49c11512f537167206717c89b558d4ff7c770716f3c46232c",
+      "bytes": 21835
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_joint_panel/render.py",
+      "sha256": "9911c3518f9f668d0a82c8f1ce5496ec0c09052afac67856976bff510c97c3ba",
+      "bytes": 19347
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_all_seven_joint_panel/source_manifest.json",
+      "sha256": "ba3aa1f1c742562660e7d6bc708b1872905cb640a70c9971f5710545c345fa49",
+      "bytes": 1959
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/caption.txt",
+      "sha256": "dc47dd82b1cfa3dab57110ca72a4009260ad29d1387b321bdfbf6aefc06e0a02",
+      "bytes": 3279
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/combined_main.pdf",
+      "sha256": "83b247018452063d131a9f06d712bb71f23692c518203c1bbe1e6e648d818f2b",
+      "bytes": 54980
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/combined_main.svg",
+      "sha256": "1b6075753d1174a612f728dabec566e01c3b47232fb8d9bc71da4942676c8141",
+      "bytes": 144983
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/plot_data.csv",
+      "sha256": "5db1ee9e7ecafffe5d3ab3cdd86a91f2461a856ba30cc91df28a7be445a79986",
+      "bytes": 23734
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/render.py",
+      "sha256": "8c92b328fd2db85d255c199681cb1b2af598160f6e5d2821dcdcbc32811f3efb",
+      "bytes": 27494
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/source_manifest.json",
+      "sha256": "5d7c5b934543aa53c535b90d1dd6cac6be8a63a1baebe70a0611db2ab646ec0a",
+      "bytes": 2726
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/captions.txt",
+      "sha256": "14e6144ec99e9c27d216bcf8189e4d7cf0bea03004778ff03a40843710438ef5",
+      "bytes": 4386
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/combined_supplementary.pdf",
+      "sha256": "99eb62d52635466788f371de9c8d2469d871a62f8c618b3aaa6e8ce8732d862c",
+      "bytes": 272869
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/manifest.json",
+      "sha256": "792a22abcb0f4278ad85ed47ad09ff818f72cdff4b96b2db7947acc23626852b",
+      "bytes": 3664
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S1_all_endpoints.pdf",
+      "sha256": "a8857a01d72d7ec950adec29a326bf6feb2fb2bb798608d95c3840848a21f989",
+      "bytes": 57149
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S1_all_endpoints.svg",
+      "sha256": "13f4212a5ccbef4d731432716d2e97767249747975a1d6228c8a5bd8113bf632",
+      "bytes": 179532
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S1_S3_plot_data.csv",
+      "sha256": "5f3a1704fdcbaa3a9432d748a69013443cf71f6cb8b4c3d410ff912856b04ef9",
+      "bytes": 14428
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S2_interactions.pdf",
+      "sha256": "abd605c64ded5e70e3092fe1bc2fc8d3159dec4b3d9f4ebeb2343ac787591901",
+      "bytes": 30648
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S2_interactions.svg",
+      "sha256": "e3ec0da1951ef3720938adb9ffb497429466cfdf6041d0edcf2fc71cb05305b6",
+      "bytes": 45056
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S3_posthoc_controls.pdf",
+      "sha256": "51ddd5c712a670ecc3fc368f83cf5115c2953d1a35b61470d17310a6c9058a1e",
+      "bytes": 40958
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S3_posthoc_controls.svg",
+      "sha256": "a129ab7514b1dbbfcd27a6e865372c5f6f7ae1f437036923643e0e533699d66e",
+      "bytes": 113520
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S4_accuracy_and_disagreement.pdf",
+      "sha256": "2b61be7757c85acd449045402ec5605027b63e9908df1b33755e0aa52c4e9f35",
+      "bytes": 115641
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S4_accuracy_and_disagreement.svg",
+      "sha256": "0104f60d321ac61e54e18bf12c1ab2fc4416012f21f546494d5ce0f56286dea6",
+      "bytes": 284689
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S4_plot_data.csv",
+      "sha256": "6aee403aca3eda2375e2ae4417347afe47487ab69873434a1f729ab7e711f353",
+      "bytes": 2956248
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S4_render_manifest.json",
+      "sha256": "c3cb6b93b7d9c3bab0468770975ef8c95ba164147da7bcd0052613849cd5fd11",
+      "bytes": 385
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S5_caption.txt",
+      "sha256": "bf2d1a42f4a6c322c72d423d5e728c6fd73421bb0fe1429c1acd96360585a769",
+      "bytes": 1838
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S5_paired_effects.pdf",
+      "sha256": "03d8c1e992f50b988d2bc3ed3375a6215952d06256c8955abb19a2cdd27b2e11",
+      "bytes": 30336
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S5_paired_effects.svg",
+      "sha256": "b8190ada420c7bab87d2a059326d5704a7c864a7af5fe6f185b30629a51eef73",
+      "bytes": 35223
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/supplementary/S5_plot_data.csv",
+      "sha256": "7bbf1dfc8377dc3aed5732356fec5c1450c5a7c5069ebe3137b6c589d2df1e61",
+      "bytes": 11581
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/triad_display.py",
+      "sha256": "60b6c1559fa9a215c1f41d5c5a1fa747f21493a53904c989c88a910d2d4fb278",
+      "bytes": 5008
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/triad_display_manifest.json",
+      "sha256": "8d0dc0c1ed60fe1fd18f4a407358ec0e022e21bf237bacb086ca2264d6eed61b",
+      "bytes": 2060
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matched_242_consistency/triad_display_seed_metrics.csv",
+      "sha256": "4840e8c0c274a00efec80cce82e2bcfb1e8e4f1224371328464b0a308c63de31",
+      "bytes": 10512
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/build_supplement.py",
+      "sha256": "9bc675492dcf3d35226157097d642696f31aa6444dd49ac5b61a504863e2eceb",
+      "bytes": 4244
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/caption.txt",
+      "sha256": "33eb3c699ac6772fd8cc113ef76e295db726e1254b1dab9eabc72d46392753b7",
+      "bytes": 4530
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/combined_main.pdf",
+      "sha256": "cd94faf6f7d720e95feaaf668cb4c999f221c52bdf8a1bd3310a909dabf4011f",
+      "bytes": 66960
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/combined_main.svg",
+      "sha256": "1c7d521df6db0968f2cc5348bcf1c972d25667d52f2198c577c737c4cf4f7ef4",
+      "bytes": 187213
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/plot_data.csv",
+      "sha256": "fe49e686b1bc574db00e047b11e18d5223db2cadc233cb5f89090dbb3efd604d",
+      "bytes": 32349
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/render.py",
+      "sha256": "7137f2b3e673bab81fb9b4d8aaf6d6471af2164a7abecdb943b750dd1eba2a00",
+      "bytes": 27058
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/source_manifest.json",
+      "sha256": "6607eb45d4d068c1c11126773210f6170dc5b2333cb7a1863363a13a9d393f6e",
+      "bytes": 1959
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/captions.txt",
+      "sha256": "c0c65689ae76565ab70292c29a7c3a37468a75da90056e5b41a65e41c10e386f",
+      "bytes": 2546
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/combined_supplementary.pdf",
+      "sha256": "486291062633d840e2c00ba046b508f114a2ead4e2613326d725e59627267ab4",
+      "bytes": 242834
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/manifest.json",
+      "sha256": "9fdd5c0a058a8e185c7c28c8e7048fb63c441afaa45c79ac0c633bacf999ad06",
+      "bytes": 3093
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S1_all_endpoints.pdf",
+      "sha256": "a8857a01d72d7ec950adec29a326bf6feb2fb2bb798608d95c3840848a21f989",
+      "bytes": 57149
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S1_all_endpoints.svg",
+      "sha256": "13f4212a5ccbef4d731432716d2e97767249747975a1d6228c8a5bd8113bf632",
+      "bytes": 179532
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S1_S3_plot_data.csv",
+      "sha256": "5f3a1704fdcbaa3a9432d748a69013443cf71f6cb8b4c3d410ff912856b04ef9",
+      "bytes": 14428
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S2_interactions.pdf",
+      "sha256": "abd605c64ded5e70e3092fe1bc2fc8d3159dec4b3d9f4ebeb2343ac787591901",
+      "bytes": 30648
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S2_interactions.svg",
+      "sha256": "e3ec0da1951ef3720938adb9ffb497429466cfdf6041d0edcf2fc71cb05305b6",
+      "bytes": 45056
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S3_posthoc_controls.pdf",
+      "sha256": "51ddd5c712a670ecc3fc368f83cf5115c2953d1a35b61470d17310a6c9058a1e",
+      "bytes": 40958
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S3_posthoc_controls.svg",
+      "sha256": "a129ab7514b1dbbfcd27a6e865372c5f6f7ae1f437036923643e0e533699d66e",
+      "bytes": 113520
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S4_accuracy_and_disagreement.pdf",
+      "sha256": "2199c8d2bea8c40bcf5449bec02e1665faa0416da3fbe1453ad49d499c498282",
+      "bytes": 115641
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S4_accuracy_and_disagreement.svg",
+      "sha256": "362aedf2b5154dfabc814dfe714aa773060ee02138a5ccb8fa878adeddd1364f",
+      "bytes": 284689
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S4_plot_data.csv",
+      "sha256": "6aee403aca3eda2375e2ae4417347afe47487ab69873434a1f729ab7e711f353",
+      "bytes": 2956248
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_matching_error_scales/supplementary/S4_render_manifest.json",
+      "sha256": "c3cb6b93b7d9c3bab0468770975ef8c95ba164147da7bcd0052613849cd5fd11",
+      "bytes": 385
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_removing_comparison_arrows/caption.txt",
+      "sha256": "8da90d4b5c07df0384bc21058b71e178ece81b52138179f005e5ede20cd7512c",
+      "bytes": 3320
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_removing_comparison_arrows/combined_main.pdf",
+      "sha256": "82228b70186f384c6c2d79c3b3df8700be055d431433ca3b6748348c40060fdc",
+      "bytes": 55573
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_removing_comparison_arrows/combined_main.svg",
+      "sha256": "20823dcf5fc2dbd33785e61dca7d57759779dead1fe6d526c36ef85b7e7a64aa",
+      "bytes": 147453
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_removing_comparison_arrows/plot_data.csv",
+      "sha256": "5db1ee9e7ecafffe5d3ab3cdd86a91f2461a856ba30cc91df28a7be445a79986",
+      "bytes": 23734
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_removing_comparison_arrows/render.py",
+      "sha256": "53b9ee8c7ba28f9c523b1707f1053832ee7de8d7b9e633a543d95a2afb5dd78f",
+      "bytes": 27905
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/revisions/before_removing_comparison_arrows/source_manifest.json",
+      "sha256": "10bde8eec204979b100803169e6de5a179c15801576af032754829d023cb4cd3",
+      "bytes": 2726
+    },
+    {
+      "path": "environment_provenance.json",
+      "sha256": "dd33b8d4c0bf2df539807e440ddac1e08e4c23eafdf4f813acefc6abc3adfe6b",
+      "bytes": 746
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_input_schematic_v1/README.txt",
+      "sha256": "2062bee7fe3c3ffad17ac03496cd22bc44b2845d43b7e77425d7872be9e8b38c",
+      "bytes": 1615
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/REVIEW.txt",
+      "sha256": "a237e7f18442bb0573a1bfa9e8f3c30fad7dfb2c2780e058853e02c20b8d25d2",
+      "bytes": 2233
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/revisions/before_vd_average_ph_comparison/caption.txt",
+      "sha256": "a5e4a04af7eba0adb4e75154bef552f63ebe9288d463737c7959353220f85a98",
+      "bytes": 3895
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/revisions/before_vd_average_ph_comparison/ionisation_main.pdf",
+      "sha256": "1d1bb995ff67f9aaf721561ce84011861a329572af5a667477694728e65a5f7a",
+      "bytes": 112662
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/revisions/before_vd_average_ph_comparison/ionisation_main.svg",
+      "sha256": "489136fc256dee9e4408c421d7ecfa75b8aa577bcc5018847a4f567a8fe20077",
+      "bytes": 337349
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/revisions/before_vd_average_ph_comparison/manifest.json",
+      "sha256": "5e7731293f394b1f58b64e9fe96c5a698ba2ca16ca409732180dda4dc3361c5c",
+      "bytes": 2520
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/revisions/before_vd_average_ph_comparison/README.txt",
+      "sha256": "cf099280cfbb8fdd6c7d99ba6be59394b13c6a21fac4429603378ddff7b54344",
+      "bytes": 621
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/revisions/before_vd_average_ph_comparison/render.py",
+      "sha256": "3ac5caff3fbd706e67b73f5ba87aca4f2fc8bb1f50de62e8c6f34b39a1184a45",
+      "bytes": 21376
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/revisions/before_vd_average_ph_comparison/REVIEW.txt",
+      "sha256": "8cc89680df77c470446ea63672b0c199e8493bdd045dc1eb24fc6948fec30784",
+      "bytes": 1273
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/REVIEW.txt",
+      "sha256": "9419ecb14c3e8ae33401655d94c7a63d9820153fea585ba12c0ba71757023085",
+      "bytes": 1108
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/bundle_review.py",
+      "sha256": "c990f35f2b6487f01a6f045744b4c88807349fa7ced791c91b99b440c8798b7c",
+      "bytes": 7558
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/README.txt",
+      "sha256": "53c23aa006a9daf71fe5b97c1cd0a570ffeaca45bf420c22404f431733848dcf",
+      "bytes": 2059
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/REVIEW.txt",
+      "sha256": "45cdab2e64239d3f5001ec4405e8d4396bb6eb474d1b8424b1a63cff08208e7c",
+      "bytes": 1699
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "65ccc2ee575308219e973d6f0961b1c1ccb09388e3c6596d3ec213d1c82460e2",
+      "bytes": 432368
+    },
+    {
+      "path": "Mass_balance_experiment_20261113/campaign.tar.gz",
+      "sha256": "705f7dd1ad672654b2f51adaeda0b8f8b93fa40be04bf9a06d596ec80e7ab987",
+      "bytes": 194005261
+    },
+    {
+      "path": "Mass_balance_experiment_20261113/FIGURE_AND_REVIEW_BRIEF.txt",
+      "sha256": "d27b84f9b682495de72a6475e0ac3077f6c0e29ef2d04366a51001d50846106d",
+      "bytes": 2945
+    },
+    {
+      "path": "PUBLIC_PAYLOAD_POLICY.json",
+      "sha256": "e98826ea3474b5c4a812bf6e7b7748e6e187d9131c2e90b1e6ba4959e2f6600f",
+      "bytes": 1349
+    },
+    {
+      "path": "README.txt",
+      "sha256": "b241d2d81b6091359eb49b3cbea458b3dec99cf9a533026aa352284211b47d79",
+      "bytes": 3914
+    },
+    {
+      "path": "review_20261112/mass_balance_identity_resolution_20261112/independent_verification.json",
+      "sha256": "05dcc4d0caeaeb26b91479f231ded84f1f8b4f1595c871fa54b314d6711f9d29",
+      "bytes": 1930
+    },
+    {
+      "path": "runtime_recipe/.dockerignore",
+      "sha256": "42f688991064707edb801b9a98284861f5ef8fce171296eb5a7d4118d4cee308",
+      "bytes": 153
+    },
+    {
+      "path": "runtime_recipe/build_local.py",
+      "sha256": "f6702c4351045e8997d898ae6b6ffcc7bd88e884e45cf778baafeb1b256551ce",
+      "bytes": 2088
+    },
+    {
+      "path": "runtime_recipe/checks/checks.json",
+      "sha256": "544961aa2c95ea9e3dbc6693eb45dc3d88496641bfe510607d8a373df1f38d12",
+      "bytes": 2206
+    },
+    {
+      "path": "runtime_recipe/checks/environment.log",
+      "sha256": "ffcac6e0e16fe72818aa2134aee9709b41c00de6e55e1122074eb2ad4d281b00",
+      "bytes": 1100
+    },
+    {
+      "path": "runtime_recipe/checks/mass_controls.log",
+      "sha256": "8f57819c55c3566bc0af8237d3b45fcfadf24f23c56b8c2655931b0590c70ae6",
+      "bytes": 108
+    },
+    {
+      "path": "runtime_recipe/checks/reconstruction-scoring.json",
+      "sha256": "e70b7b5e27f448012742cd230a118c633acd2dbbde7a769776e9414f0ec6ab88",
+      "bytes": 1314
+    },
+    {
+      "path": "runtime_recipe/checks/reconstruction_scoring.log",
+      "sha256": "118b11002c92fb42b0332727f2b35cbd20630c7f3d9c08a3e92c750fd9c0b7e1",
+      "bytes": 1324
+    },
+    {
+      "path": "runtime_recipe/checks/runtime_environment.json",
+      "sha256": "19a4bf0f49a0310062ef061b9ca7fa20ae860e1ac059a01cdd03db8bf07e9ebc",
+      "bytes": 1090
+    },
+    {
+      "path": "runtime_recipe/checks/unified_cpu_parity.log",
+      "sha256": "7c34d9c6aaa78bf6d82f89d23ad0a8f69f958038e9e66af84be53855f48ea4ac",
+      "bytes": 878
+    },
+    {
+      "path": "runtime_recipe/checks/unified_preflight.log",
+      "sha256": "4fe1404d3b8a5ac4ab4af8125143fcb46eeecafd14ea48685c1fbc2e532936d5",
+      "bytes": 892
+    },
+    {
+      "path": "runtime_recipe/checks/upstream_notice_inventory.json",
+      "sha256": "a0c4c5d736a0496f9d32816ec791fa769193625948c428b33a6cb0d40573b7a0",
+      "bytes": 81851
+    },
+    {
+      "path": "runtime_recipe/derive_overlay.py",
+      "sha256": "6adc717129b43e1d534cd26c6acb4ccb6e86cf2d88ca1ff530138d13183b69cd",
+      "bytes": 2946
+    },
+    {
+      "path": "runtime_recipe/inspect_base.py",
+      "sha256": "cc24089e10d4c151fba8c4073a568a2d867ff6d6f33d1db21b6fd752b1f78202",
+      "bytes": 1667
+    },
+    {
+      "path": "runtime_recipe/pip-artifacts.json",
+      "sha256": "1076244474a5269a2316c2e5a382530a6d683e07ce1fcb77a1f7c704c71fe236",
+      "bytes": 1062876
+    },
+    {
+      "path": "runtime_recipe/README.txt",
+      "sha256": "d253a43e0a03e5fdb2f01a517fefb48b046e0585e761729697dcfb53ba147058",
+      "bytes": 6298
+    },
+    {
+      "path": "runtime_recipe/resolve_overlay.py",
+      "sha256": "a836d6bbbf92cab667b87ca21df6cbd2c91b36fcd1968edd57067d232f531cc1",
+      "bytes": 1474
+    },
+    {
+      "path": "runtime_recipe/run_container_checks.py",
+      "sha256": "2198da64ebba6be9a4a23f26e23d430e0d3d52cc6bead78883fd3886f2230f3b",
+      "bytes": 2457
+    },
+    {
+      "path": "runtime_recipe/SHA256SUMS.txt",
+      "sha256": "95e816f75db61e8f3289beeb7c2eebf6b2df054811ee68db661a8f463d584c19",
+      "bytes": 2579
+    },
+    {
+      "path": "runtime_recipe/validation_summary.json",
+      "sha256": "ad4ffd188804f945a3fad698f043c9b5f079ba4566145af4dda2c19ade152042",
+      "bytes": 3039
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "sha256": "6d3dcb1f86c08981531432a7bb7d985e3c1c20caa930580fb87cfcf550e7753e",
+      "bytes": 170242
+    },
+    {
+      "path": "TERMS_AND_SOURCE_AUDIT.md",
+      "sha256": "568a669892843f2cfad76ae15016e2b34a758f3311cc37fc748fbb95e5fbd83e",
+      "bytes": 6326
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/combined_main.pdf",
+      "sha256": "9c68d3e84b398029d3c89bf385902f1fe2d1cdc3a62fe2a42c0a441241c19790",
+      "bytes": 55636,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/combined_main.svg",
+      "sha256": "b291d6e7b9c64d4d6c9dbe6686ecce016e9e996646b5fff232700533c7453a08",
+      "bytes": 145010,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/combined_supplementary.pdf",
+      "sha256": "086c0edac613b9e67cfa43892d5c69d1ea8321de544a90c3a9b26d5ff06cd7df",
+      "bytes": 274410,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S1_all_endpoints.pdf",
+      "sha256": "a8857a01d72d7ec950adec29a326bf6feb2fb2bb798608d95c3840848a21f989",
+      "bytes": 57149,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S1_all_endpoints.svg",
+      "sha256": "13f4212a5ccbef4d731432716d2e97767249747975a1d6228c8a5bd8113bf632",
+      "bytes": 179532,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S2_interactions.pdf",
+      "sha256": "abd605c64ded5e70e3092fe1bc2fc8d3159dec4b3d9f4ebeb2343ac787591901",
+      "bytes": 30648,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S2_interactions.svg",
+      "sha256": "e3ec0da1951ef3720938adb9ffb497429466cfdf6041d0edcf2fc71cb05305b6",
+      "bytes": 45056,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S3_posthoc_controls.pdf",
+      "sha256": "51ddd5c712a670ecc3fc368f83cf5115c2953d1a35b61470d17310a6c9058a1e",
+      "bytes": 40958,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S3_posthoc_controls.svg",
+      "sha256": "a129ab7514b1dbbfcd27a6e865372c5f6f7ae1f437036923643e0e533699d66e",
+      "bytes": 113520,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S4_accuracy_and_disagreement.pdf",
+      "sha256": "62814eaf37f88f91c44b18ee69e355aeb5a71b5f20adb6f6cd149c0af4a77a9b",
+      "bytes": 115641,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S4_accuracy_and_disagreement.svg",
+      "sha256": "4b70d06540f9b9b55ac4e204396874a1fadcc1fecc82331a0d95cfb1ca58b9a7",
+      "bytes": 284689,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S5_paired_effects.pdf",
+      "sha256": "3779b1312d2fea3f10112f87e4e03fd7eb66b8374f39e29119594a32317a70d8",
+      "bytes": 31877,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/supplementary/S5_paired_effects.svg",
+      "sha256": "cce00b5a034241a6050f0a579efc7b531abc6329b74b4e2beac3269b90b01451",
+      "bytes": 35659,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/combined_main.pdf",
+      "sha256": "6a643bfd5b05a4347ffdb8688cf75636aab54f36aaac80039b732f2397b8379c",
+      "bytes": 108209,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/combined_main.svg",
+      "sha256": "cf85f877016fa7362dd626d8be466ee37dfce65df39aee330ee08e389385cb4d",
+      "bytes": 211442,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/combined_supplementary.pdf",
+      "sha256": "461737f30f7615ebbd2fc26a528bd0802d6d623aa483ea4a4b54fcb8947a9569",
+      "bytes": 362552,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S1_interactions.pdf",
+      "sha256": "bf06998c7e8349dd96672feee38d520645369359f2d8c5dea25403d18f874dae",
+      "bytes": 56002,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S1_interactions.svg",
+      "sha256": "243ffd775ab9a96c92230cfdf3b9f9a5ec21660f1fb74cc0cab45e2fd75c7904",
+      "bytes": 36624,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S2_posthoc_controls.pdf",
+      "sha256": "6d93c1e9a4b2ef3c087e5cf05a3818c6147374a7d7b0c249a20e1aeba9ac7c04",
+      "bytes": 69819,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S2_posthoc_controls.svg",
+      "sha256": "dde399e4203f30eb8eb131e6eb79cc52767a1a6a3ecc33af985cbd0f2fa5e8de",
+      "bytes": 105546,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S3_accuracy_and_disagreement.pdf",
+      "sha256": "36d0c71c4ef2a327edbeef224503dbbc1b3fee6b2bd83e2b73ffb4145fc47f40",
+      "bytes": 120218,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S3_accuracy_and_disagreement.svg",
+      "sha256": "4492e5d1527fbd3ab841a4a7f8830c7050e841155a73f8fa8d54ea637bfa9e19",
+      "bytes": 213809,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S4_paired_effects.pdf",
+      "sha256": "f3b96b470cec324a3a460d2bfc0fe1a320937d76491cdeab995babc9af25a5d1",
+      "bytes": 58090,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S4_paired_effects.svg",
+      "sha256": "5bbf3a953869bba763049949f4d4406eab5c63cb2f426f1dfc35f5345762de5f",
+      "bytes": 32195,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S5_matched_triads.pdf",
+      "sha256": "5c2cf6e891742d67cbf3ccc5629d151d159272552556e8a7c9e3d8a54a74ca0d",
+      "bytes": 59926,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/supplementary/S5_matched_triads.svg",
+      "sha256": "86796ba9992db0e4f33577ff170e0fd140735da038b6338d9649efaf7381c600",
+      "bytes": 50042,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/adding_loss_tradeoff.pdf",
+      "sha256": "469afe68926cd5f4db6e2b090069d95470ba3f74d7c2b9467b6b146f4c302be9",
+      "bytes": 29691,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/adding_loss_tradeoff.svg",
+      "sha256": "2c6e6981329f85c7bc07b97d0f7cd48b3260466c7ada123c9960ecef4fc211dd",
+      "bytes": 27563,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/combined_overview.pdf",
+      "sha256": "925014dcc6a7a0d84a0a73ca7761c8f4a4355f05df8e054398a51eff506d47bb",
+      "bytes": 115955,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/combined_overview.svg",
+      "sha256": "dc29d9586c003b66555637527f5cdee505ac16d0e636b7d068845381f2e11d23",
+      "bytes": 284696,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/combined_results_all_plots.pdf",
+      "sha256": "f38cd744d80b707b9ed07f5998d0287c881903fa1b05fea2984b6df3adcae14e",
+      "bytes": 228561,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/ionisation_main.pdf",
+      "sha256": "d0ac88b7ca99ef2f7a6ec7016c0d720bf0b82df0e0df4859bbf8cf8cd0041a5b",
+      "bytes": 131739,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/ionisation_main.svg",
+      "sha256": "f1dee26e1ce5ab5583ee55cab39e1944827430ddcfad9e8229ca98a23095c80a",
+      "bytes": 470547,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/panel_c_alternative/panel_c_vd_shift.pdf",
+      "sha256": "58f94626cfa90400e9a5c0f0078347947435ab4142e769448761567386ad4b27",
+      "bytes": 51622,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/panel_c_alternative/panel_c_vd_shift.svg",
+      "sha256": "27f784b889de5ad93e1fa1003846adc05f2cf5b3443887485878fef3861ec4a3",
+      "bytes": 14460,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/supplementary/ionisation_supplementary.pdf",
+      "sha256": "9798fa71c9cabf0d7619f3c407504e68abf72c219eb4c5cbe3572d5a25de5446",
+      "bytes": 2641040,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/supplementary/ph_vs_baseline_overview/ph_vs_baseline_overview.pdf",
+      "sha256": "9fcb2f2861e056184083b9b60125d59207f7cff6fb343786aedb6261644f72b6",
+      "bytes": 69719,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v3/ionisation_main.pdf",
+      "sha256": "b68351b737e67a226ee38ac63a36335ebe200864aaa15920ea04f242a3574505",
+      "bytes": 118948,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v3/ionisation_main.svg",
+      "sha256": "781f4fb1ba18f1ee4b014b68385d5e06ba62ec58b2ec4063f57ac767bc80c5db",
+      "bytes": 389836,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v3/supplementary/ionisation_supplementary.pdf",
+      "sha256": "04f6dd7f1fc1edd9485a2ef71a48784e1c88d4f3f0f9fb0797ca924803e65a4b",
+      "bytes": 4849011,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/vd_clearance_all4.svg",
+      "sha256": "c9e3d2f6420239ce41f7b5710bc6b899fee391ac850da42151d567df5d44334b",
+      "bytes": 340136,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/vd_clearance_observed_predicted.pdf",
+      "sha256": "bf5a0bf58ce7522dadf18a6ed4932191ae7ca07874ea59e151afa859f985410b",
+      "bytes": 195399,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/vd_clearance_ref0.svg",
+      "sha256": "645a2d4145820c4b09763bc32284245b8338119e5bcfd42593e5b9ef2efd51bf",
+      "bytes": 340109,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/vd_clearance_ref74.svg",
+      "sha256": "581bce60d8aca866b2359371d05d5395e53d689018026122435bbb0bc330b1e1",
+      "bytes": 340142,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/vd_clearance_rep4.svg",
+      "sha256": "8c11b724068b09bb53c11542173b931d5274fa6424422cb48b579451059f68f1",
+      "bytes": 340188,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/baseline_comparison/baseline_vs_ionisation.pdf",
+      "sha256": "93f186b284d61b5bbb7a50b39c9be2da39219b4743cfae2694e7c0c5791594eb",
+      "bytes": 122006,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/baseline_comparison/cl_baseline_vs_ionisation.svg",
+      "sha256": "9d9190d3e490b6cb2a9228c396532d6b95885e5ba80b0215418fbdc4b312a8a4",
+      "bytes": 321539,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/baseline_comparison/vd_baseline_vs_ionisation.svg",
+      "sha256": "e4b6122b81a158b2638f20e15da7142633a21b4f20092daa9ddc1b61add62f2c",
+      "bytes": 326874,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/ionisation_diagnostics.pdf",
+      "sha256": "52d62cdd357d9f4fdbf3a6870243e3320b8ea6c04f8ffa65e1ec928b02aafaca",
+      "bytes": 69546,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/ionisation_diagnostics.svg",
+      "sha256": "f851cce6f411df10350b3ca744ebd27eb2936804c3f36ac17e594a4bf1885092",
+      "bytes": 75108,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/ionisation_overview.pdf",
+      "sha256": "c5ed1d605d334f156d876b01505dffc76515004898d5df42edd65a0cb338a965",
+      "bytes": 78082,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/ionisation_overview.svg",
+      "sha256": "2ce5841346fd778d3b79da2aada0536ccf570fcc9f719e0c3dac6b8e4fbe62e7",
+      "bytes": 115203,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/support/endpoint_effects.pdf",
+      "sha256": "ef6b0e95014de0f829ff3cd727aa870e90d9b6bfccc71cddb815d0b9098ffcd6",
+      "bytes": 81639,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/support/endpoint_effects.svg",
+      "sha256": "919e7a9658d3055008b0f51627f03bb3854790d6bec4ccdda906629af9ca545d",
+      "bytes": 163230,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/support/representation_checks.pdf",
+      "sha256": "296b99bd7b3abb248c856cc41cb50f20c0045815b8ceece38f6b415cea18195d",
+      "bytes": 61271,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_results_v1/support/representation_checks.svg",
+      "sha256": "9406ef634a67eda2d4ba8df0a35ccb8f00d14eebb5e273dbe5074860e9066859",
+      "bytes": 56395,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/all_mae_contrasts.pdf",
+      "sha256": "c3da436e11f51d9ae64f913c67d6c0343d1c4fbe595f358d05940b2a6198ed9b",
+      "bytes": 354279,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_01.svg",
+      "sha256": "b9638c7e1aedc73169f90e647d06546582289b79798dc0b51cbff377115f4d52",
+      "bytes": 182379,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_02.svg",
+      "sha256": "f0f6386694bdbc947785495224fdbe397b70ee670b6110f48351cf174a503886",
+      "bytes": 182388,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_03.svg",
+      "sha256": "bfcdc6f97bf4f8255fd8d9d20214a38c0fd3d16ced74a0c2f308946021c2b2e9",
+      "bytes": 182368,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_04.svg",
+      "sha256": "e9645ddf3c02806346aa9ea3aa39f9cece3ce90f3029f4a95ec403cdca313083",
+      "bytes": 182345,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_05.svg",
+      "sha256": "2e4f0d0640c071edbb0087c58dd88a90751c33cee500269419cfe03920c00e7e",
+      "bytes": 182390,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_06.svg",
+      "sha256": "99ebcc46f5f581454ef48e5762349b5b1a2504c4cbc1667500194b4c6706ea36",
+      "bytes": 182381,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_07.svg",
+      "sha256": "91960a17770cb036f1a50270988f75f6fe46baab82450d55749d3d0ca658e6d5",
+      "bytes": 182438,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/contrast_atlas_08.svg",
+      "sha256": "eb34266d1a5292d625745e28a37b83438945fd6f6bfac0084cfd70961b50e75e",
+      "bytes": 170738,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/individual_ph_results.pdf",
+      "sha256": "37a03fc7af457fcc1acc4e8a07ca2066ab9790dca84891f832d48c86a6272948",
+      "bytes": 90759,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/individual_ph_results.svg",
+      "sha256": "3f4054bdc7edaa334de0eb8ba86ef4f8a22fffbe38cedab56b1e97206e29cd93",
+      "bytes": 182409,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/ionisation_ph_all_results.pdf",
+      "sha256": "bbfff7ef542c246977fea5293901e0fa4498d208da481e5d410d0b675f8ab388",
+      "bytes": 5130693,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/ph_main_results.pdf",
+      "sha256": "08d2d2f0c4f1328ed6366bea503bad90e51d202e0e0ff2dd7e2c7eb03e08e7b7",
+      "bytes": 85963,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/ph_main_results.svg",
+      "sha256": "03d456531f4c3378ce9c0a8dd53686b65894f26dc77a325a2feb38b06690a16d",
+      "bytes": 132658,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/reference_controls.pdf",
+      "sha256": "264089d4da1e0c027d4409fed76b25c0b03581588a9b6b0338dc92851a9e737a",
+      "bytes": 88214,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/reference_controls.svg",
+      "sha256": "76b3b32b539258087c189aa90a9a2cfd8ecf09940526a15428ca4722e53fa7fd",
+      "bytes": 178509,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_01_classes.svg",
+      "sha256": "fe1d4cf4dd972d3f603719340b6683fd7f070401b757b7def5bce6ddbfce15be",
+      "bytes": 92234,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_02_switching.svg",
+      "sha256": "02e37f9d103d7de8e4f42b49458da92161364b913514d4db56fecd43b14818e4",
+      "bytes": 78731,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_03_switching.svg",
+      "sha256": "7bacac35157e925c24d818f14c8a777c373f948713f70d396189442387b373f3",
+      "bytes": 78698,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_04_switching.svg",
+      "sha256": "d7f9c85940e06672c580db3c1d8b8fb07fbf0ec0743f711e0c3ec10f1500baa2",
+      "bytes": 82585,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_05_switching.svg",
+      "sha256": "774de2549c2a8a98fd0c6132fb78eac364ca38e844808e8e221081d07cbe26da",
+      "bytes": 82555,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_06_switching.svg",
+      "sha256": "06014e22bf35857c1c50b0213aa8655aee10454753fff61f2123921af63facb9",
+      "bytes": 82559,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_07_switching.svg",
+      "sha256": "17c061523cfb2b41f0528cc0237e2417473dc00cd9e75f333e884dd383d2c345",
+      "bytes": 82503,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_08_switching.svg",
+      "sha256": "88c0303ca09d0336263bdd9695955258330afb980d055dedd1c61c4629919253",
+      "bytes": 78688,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/subgroups_and_interactions.pdf",
+      "sha256": "77c1c678966e9832bf6bacefe21eede30d1c00da9d21437e933d35d37f07f37e",
+      "bytes": 149955,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/highlights/ionisation_three_key_plots.pdf",
+      "sha256": "66fa41e7b3bc5e1e47ae69ea449ef5aa5ab38e7ff9508af7606155c29e9b1bbc",
+      "bytes": 66419,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/highlights/ionisation_three_key_plots.svg",
+      "sha256": "2be41ef425c3b3dd66e5060094c0b7e262443a4a49db3d0100f19ae224c75d12",
+      "bytes": 89597,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/prediction_shifts/prediction_shifts.pdf",
+      "sha256": "32396b30889b8801d195383769849e4a1e9114fe253f8147289bd7d78bd45d95",
+      "bytes": 242662,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/metric_atlas.pdf",
+      "sha256": "6c8e6c8c79688099129a0a1642efbe8ae2a89167c52c283107a4a3ca8df15c0d",
+      "bytes": 264027,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_absolute_aafe.svg",
+      "sha256": "a3b81838512c26ea6a7cdb9410d4209dd067c6e99e6cb6a055b0263dd8df368b",
+      "bytes": 204148,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_absolute_mae.svg",
+      "sha256": "a91fde6d18b0d847cc4c00c53939492e9cbe4a901d5e6dd132b04d7bf070b9f5",
+      "bytes": 204225,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_absolute_r2.svg",
+      "sha256": "648d7321d694a2dc5f022f097fa00fc1779232dddc3bf3c8c65c20fe59492be4",
+      "bytes": 204248,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_absolute_spearman.svg",
+      "sha256": "f36c671cb4fe21fc2bb0b9dfae84dcb490dcf7342fcc625d9bb926ef9bbac5d6",
+      "bytes": 204984,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_paired_aafe.svg",
+      "sha256": "efbe4038443d105866f6a01780be02d5603d2d1ef724998c4556834a955868a2",
+      "bytes": 146478,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_paired_mae.svg",
+      "sha256": "a15133e97b02c48fdd4031a47ffa63787061110aa64ae43832b0d242467ad52c",
+      "bytes": 143678,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_paired_r2.svg",
+      "sha256": "f704d3bced082df691e446f587958efa7b39cb356c581bb140d84dc30fe45604",
+      "bytes": 143711,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/support/ph_metric_comparison_paired_spearman.svg",
+      "sha256": "8e47bf27bf1dd768a83462b15102006511d16079405c030dd9977f86542fa705",
+      "bytes": 140940,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v1/all_endpoint_mae.svg",
+      "sha256": "d768747e0966ba0696e3381da658087a31c7b186f309b478eb8e39f9a388c13c",
+      "bytes": 104564,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v1/single_ph_results.pdf",
+      "sha256": "ed55dd6bceef4196a05fa04b6e998e251c54c7e74f7f9e02778bcd79ecd97185",
+      "bytes": 100722,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v1/vd_cl_vs_ph74.svg",
+      "sha256": "4862a1c2f01ede1c6fc84f985174fd02cd1dd8aa292459ed88f65c729dd62481",
+      "bytes": 80944,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v1/vd_cl_vs_structure.svg",
+      "sha256": "c42a222061d5d5f03e937109d3cdc4c9f859e14b844337d4915eb41cd459a1d5",
+      "bytes": 94886,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v2/all_endpoint_mae.svg",
+      "sha256": "badc9573757058f60a2caded4719ae33eba9f704f7b94cad5304ce97ff25719d",
+      "bytes": 113881,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v2/single_ph_results.pdf",
+      "sha256": "70b7603898f903e3cccfd7511f9f0d13653fec0603556f3925b1288ac5441805",
+      "bytes": 107925,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v2/vd_cl_vs_ph74.svg",
+      "sha256": "77f58e30b1924261174d1fcd75173607ae16bcf33e66d45d4f1cdce32d2ed547",
+      "bytes": 93277,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/single_ph_v2/vd_cl_vs_structure.svg",
+      "sha256": "7331a8b186011e04f8c994b89ef95a9bcca6eef5526dc86284de6ec01083ef05",
+      "bytes": 105348,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/supplementary_selected_v1/ionisation_supplementary_selected.pdf",
+      "sha256": "c578937b25a8dd5e329d105ebae7bb3a8b9317f25f7363319482301302aa3cb2",
+      "bytes": 139922,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/supplementary_selected_v1/ionisation_supplementary_selected.svg",
+      "sha256": "dfe22e4309da98bfae2029b531f5e2e3bb1f8167946745aace720ad1ffb68bd7",
+      "bytes": 774777,
+      "reason": "Historical rendered output or manuscript; regenerated from retained code/data"
+    }
+  ],
+  "metadata_changes": [
+    {
+      "path": "fit_metadata.jsonl.gz",
+      "original_sha256": "0d2b4c0c35f301db21696f95ca214def87190f26116805402cfcf9ad1ceaef33",
+      "public_sha256": "faef2ae531bcc4d7634483d14a64407db37f1bed838c30603a6553488f6e3ec8",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_main_v2/panel_c_alternative/manifest.json",
+      "original_sha256": "6d4ecdf562c1e0a174cc400c692c50e3f62db7446195146480b0cab91c4f61cc",
+      "public_sha256": "c44d61250c5b4a450766331324c7931c82af3d19e86e1fe4ad2752d1122f3ad9",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/baseline_comparison/manifest.json",
+      "original_sha256": "2ea93256feb0dbce01f0428018d6053091adfff49a3a3e3c4ff75f31625e2ee3",
+      "public_sha256": "03a3427a904f60684473eb22ffa960e7d8351bd4115bc66cc5ac5201771717ce",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ionisation_observed_predicted_v1/manifest.json",
+      "original_sha256": "0a77e730e3a1a9357c23b79e152e5ae4b02cb2d791a5db30f105f968ab635e7f",
+      "public_sha256": "8a9aeab851889e522d39e0c7e57f0f6bef5af772707e50578d6edace3eae7eab",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Ionisation_experiment_20261113/figures/ph_followup_v1/highlights/manifest.json",
+      "original_sha256": "4493b86726eed83fa1f4b6afd92093561bc65a1be6387b0164d54921059cf1ea",
+      "public_sha256": "1e432aa7b0e966a0a4dd36431c4c5aa92d1588e26653c88e055974adc3a28883",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Mass_balance_experiment_20261113/data/grouping_reference_index.json",
+      "original_sha256": "e893f923645d825033fffbb7b2445d3420141ff89bc0173333b3d04719026c5d",
+      "public_sha256": "a12d1ce761b3012318f6626be498649bbdb28a48f17bcc05ea9d6674050d08d7",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Mass_balance_experiment_20261113/plans/PIPK_Net_mass_balance_experimental_protocol_v6_20261112_manifest.json",
+      "original_sha256": "5f6da05bf259e6df899e33a3439dfad45648b8306188cadbe4a48fa048cc5756",
+      "public_sha256": "0e624bd434780e6901cb7b95634a36ceefedb81ec13bcdffae78c84131cb57d4",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Mass_balance_experiment_20261113/results/bootstrap/manifest.json",
+      "original_sha256": "59b4184a777100c2e929081cd0a4e6b0aa11a5aa9f3408b005433afc3d42ca29",
+      "public_sha256": "38a9a47219b56b682bed69239fa7d056e105dd0d0a44bfe6fb5b7bd770e59aa8",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Mass_balance_experiment_20261113/results/summary/manifest.json",
+      "original_sha256": "6c5578f0cc60d69020a50d44078fb26fc0542f801d7d7c7b3298d4f0d8141f43",
+      "public_sha256": "2cf7e08661ec02ad24156ef2fa889a4dc927c1de1dc112ec5d3154586b31e485",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "review_20261112/mass_balance_identity_resolution_20261112/exception_reference_index.json",
+      "original_sha256": "186a158dd09adc6a870f732a576bdfd65d43d87152454af486d5d08878bab0e7",
+      "public_sha256": "70e940939771224c22fc4615e26d56c157de304bb55466028ec3aeebdeff69a5",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "review_20261112/mass_balance_identity_resolution_20261112/manifest.json",
+      "original_sha256": "4e90c813a387c625954a34c9eafb13cf57d8164f10f218c0fefba529064c6f21",
+      "public_sha256": "83b34f1f873ddaa82c3a4bea207215cf4e470ce536573192c8a9a147a7cdfdc1",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "review_20261112/mass_balance_identity_resolution_20261112/revision_decisions_before_identity_resolution.json",
+      "original_sha256": "f597d479050175abc6127215d62cfe5a7b67911f1a9e6052aa9064a6df745ccc",
+      "public_sha256": "cbbab469cc5bf54baa03f1cbdd9bbf66ad65c414572b4ae45430a3a323486d87",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "review_20261112/mass_balance_identity_resolution_20261112/source_fetch_results.json",
+      "original_sha256": "20967b93dd55c42d0fd667a6241b91009be751e99c728901023ec13037b2c2e0",
+      "public_sha256": "3b523d25a7af8900414c0f185a7ec171cfe5705307b4f7199d33db6f0b07f949",
+      "change": "remove operational fields or make author workspace paths relative; scientific values unchanged"
+    },
+    {
+      "path": "Review_statistics_20261114/outputs/exact_archived_comparison.csv",
+      "original_sha256": "de6917d4364ff81cd481b6d42020c83fcb205caa913759e0bcbdf784b9fde7b9",
+      "public_sha256": "8a0475ae31b927ae4d879f19f4fe8f1d27d1d25ed1b510be912d93830c1f3fff",
+      "field": "source",
+      "rows": 345,
+      "all_other_cells_and_order_equal": true,
+      "change": "absolute author source path replaced by portable repository-relative POSIX path"
+    },
+    {
+      "path": "Review_statistics_20261114/outputs/exact_archived_interval_changes.csv",
+      "original_sha256": "1e3de3e4fc0ba68fd9041f41adf97b6caf5959bc86d96b7035a26f4548f523b2",
+      "public_sha256": "9bbf2703ec6f243f9925980d58f19f4e11476eae29c059fa9c8980b7a67e4961",
+      "field": "source",
+      "rows": 14,
+      "all_other_cells_and_order_equal": true,
+      "change": "absolute author source path replaced by portable repository-relative POSIX path"
+    },
+    {
+      "path": "Review_statistics_20261114/archive_comparison.py",
+      "original_sha256": "e146258974a2056ac041649d1c5ad575061586b0b081c7cf6e407fb174f040b9",
+      "public_sha256": "c11295990e6a1f9e43f3cd0b7399e1ba64e95a5f703f7fc6bde567b71ed8e583",
+      "change": "producer writes repository-relative POSIX source paths"
+    }
+  ],
+  "checkpoint_weights": "not distributed; no public retrieval promise",
+  "raw_fit_archive": "not needed for independent point-metric scoring; compact request/selection/epoch metadata and predictions included"
+}

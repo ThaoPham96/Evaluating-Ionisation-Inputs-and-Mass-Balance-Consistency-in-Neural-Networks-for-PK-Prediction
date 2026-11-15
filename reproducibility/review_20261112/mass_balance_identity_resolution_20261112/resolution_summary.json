@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-11-12T21:45:09.753004+00:00",
+  "scope": "65 labelled identity flags, necessary duplicate reconciliation, and two explicit component-attribution endpoint masks; no split redesign",
+  "reviewed_labelled_flags": 65,
+  "dispositions": {
+    "correct": 51,
+    "retain": 13,
+    "exclude": 1
+  },
+  "retained_after_review": 64,
+  "excluded_names": [
+    "COLISTIN"
+  ],
+  "labelled_structures_before": 953,
+  "labelled_structures_after": 952,
+  "identity_exclusion_percent_of_previous_labelled": 0.1049317943336831,
+  "same_row_complete_triads": 674,
+  "unique_valid_structures_after_identity_exclusions": 1152,
+  "entirely_unlabelled_structures": 200,
+  "remaining_labelled_identity_flags": 0,
+  "unlabelled_flags_not_in_scope": 6,
+  "endpoint_counts": {
+    "t1/2(hour)": 902,
+    "VD(liter)": 710,
+    "Cl(liter/hour)": 689,
+    "F(percentage)": 440,
+    "PPB(percentage)": 805,
+    "Cmax_uM": 550,
+    "Tmax": 686
+  },
+  "historical_partition_counts": {
+    "development": 734,
+    "holdout": 218
+  },
+  "historical_partition_changed": false,
+  "new_splits_created": false,
+  "remaining_exact_duplicate_groups": 4,
+  "tramadol_provenance_aliases": 3,
+  "tramadol_modelled_units": 1,
+  "training_ready": false,
+  "remaining_work": [
+    "separate review/freeze status of earlier 59 staged connectivity corrections remains recorded",
+    "split design and grouping review",
+    "scientific scope and runner validation"
+  ],
+  "representation_caveat": "Known racemates/stereoisomer mixtures with shared constitution may be represented by stereo-unspecified graphs. Known relative configurations are documented in the ledger; this does not claim the graph encodes mixture composition or all relative stereochemistry. Different-connectivity mixtures are excluded when PK cannot be assigned to one component.",
+  "archived_PK_values_changed": false,
+  "model_endpoint_masks": 2,
+  "partially_retained_records": [
+    "IVERMECTIN: H2B1a Cmax/Tmax only"
+  ]
+}

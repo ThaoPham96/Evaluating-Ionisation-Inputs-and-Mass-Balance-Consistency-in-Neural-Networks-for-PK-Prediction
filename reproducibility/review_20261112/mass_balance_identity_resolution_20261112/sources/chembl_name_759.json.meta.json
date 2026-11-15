@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TROVAFLOXACIN&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TROVAFLOXACIN&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:43.779594+00:00",
+  "sha256": "d0c8d1950d049b8d35718599c584f3a11e9c4283694004f6734de95b94f71d5e",
+  "bytes": 5642
+}

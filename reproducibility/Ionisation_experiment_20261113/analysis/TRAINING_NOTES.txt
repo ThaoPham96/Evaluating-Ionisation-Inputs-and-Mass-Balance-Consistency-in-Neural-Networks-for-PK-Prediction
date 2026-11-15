@@ -1,0 +1,46 @@
+Ionisation protocol v2 | per-fit implementation
+
+Run one fit from the experiment root with the pinned training environment.
+
+  python analysis/ionisation_train.py --request request.json --release-dir <cohort> --feature-dir <features> --output-dir <fit> --device cuda
+
+Use `campaign_id` for a production request and `diagnostic: true` for a
+standalone smoke test or throughput measurement. Use a separate output path
+for each fit. The production campaign supplies the exact frozen fold IDs.
+The fit entry point verifies the release and feature bindings, readiness and
+cohort flags, partition overlap, and endpoint coverage. It uses a 200-epoch
+cap by default, patience of 30 and minimum improvement of 0.0001, inherited
+from the mass-balance trainer. Final fits take a fixed epoch count and an
+empty validation list.
+
+All three backbones consume the same descriptor values at the first affine
+layer after structural pooling. GraphConv and Chemprop apply their original
+pre-affine dropout to the pooled structural channels. The frozen ChemBERTa
+head has no pre-affine dropout. C3 uses a four-row, 16-column lookup table
+whose output enters the affine layer directly. Its weights start from a
+normal distribution with standard deviation 1/sqrt(16), so an initial row
+has expected squared norm one, like the one-hot class vector.
+
+Numerical feature population moments are fitted on the fit-training rows.
+A channel with zero fit-training variance maps to zero on every partition.
+P5 repeats the already standardised 7.4 pair and divides by two. P4 divides
+its standardised eight-channel profile by two. A fit records moments, the
+zero-variance rule, channel order and width divisor in its scaler and
+checkpoint.
+
+Each fit starts from the native structure-only parameter initialisation.
+The common structure columns and affine bias retain their original values
+when the input expands. Descriptor columns use a separate stream and the
+structure-only fan to set their initialisation scale. Overlapping columns
+share the same draws across arms. C3 uses a separate lookup stream. The
+summary records the common parameter hash, the tensors that change shape,
+and their initialisation seeds. Sorted training IDs, batch permutation
+seeds and per-epoch dropout seeds are paired across input arms. Parallel
+fits use separate worker processes.
+
+Predictions preserve request order and include the seven transformed and
+physical predictions. Inner summaries record validation squared-error sums
+and observed counts by endpoint in training-standardised target space. A
+successful fit writes its completion marker after checkpoint reload and
+prediction checks. Resume verifies the request, code, data, features,
+environment and scaler hashes and all recorded artifact checksums.

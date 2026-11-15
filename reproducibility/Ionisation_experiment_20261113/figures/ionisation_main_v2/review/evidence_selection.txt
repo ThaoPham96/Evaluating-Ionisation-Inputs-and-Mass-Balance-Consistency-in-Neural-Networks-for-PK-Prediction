@@ -1,0 +1,213 @@
+IONISATION FIGURE | EVIDENCE AND PANEL SELECTION
+
+Proposed result narrative
+
+A pH 7.4 category improves Vd and clearance prediction relative to structure
+alone across all three backbones. The category alone carries much of the Vd
+signal. Additional pH encodings redistribute compound-level predictions,
+with limited evidence of improved held-out error beyond repeated inputs.
+
+Main figure, five panels
+
+A. Schematic. Show molecular structure entering each backbone and the optional
+   ionisation vector entering the common pooled head. Draw structure only,
+   one four-category block at pH 7.4, four categorical blocks, and four copies
+   of the pH 7.4 block. A simple acid/basic threshold diagram gives the four
+   flags as acid only, base only, neither and dual active. Keep pH values
+   numeric. Use the numerical-cohort order 7.4, 2.0, 6.5, 5.0 and note the
+   two-block and four-block norm divisors if visible. The same archived pKa
+   pair produces all categorical inputs. Class cohort labels also include
+   audited missing-side assignments. For the numerical follow-up, one small
+   327-structure transition summary is enough (206 / 38 / 85 switch at added
+   pH 2.0 / 6.5 / 5.0, 121 stay stable across all four pHs).
+
+B. All seven endpoints for pH 7.4 category versus structure only. For a
+   cohort-coherent main figure, use numerical P1-P0 (same arms later reused
+   as REF74-REF0) across the three backbones. Draw a 7 x 3 compact forest,
+   with mean paired relative MAE change and crossed 95% intervals. Vd and
+   clearance give the cross-backbone pattern. If the larger class-cohort
+   headline is important enough for main, insert a compact three-row Vd
+   forest of C2-C0 with its original 99.17% intervals beside this panel or
+   in the caption. Label 494 structures / 388 Vd labels explicitly. Keep
+   class and numerical effects visually distinct. They overlap in compounds
+   and should not be treated as independent replications or contrasted as
+   a change in cohort performance. No equal-weight omnibus endpoint score
+   is needed when all seven effects already fit the panel.
+
+C. Width-matched pH representations. Plot F and Vd as rows, each with all
+   three backbones. Use categorical ALL4-REP4 (prespecified 99.17% interval)
+   in the main panel and continuous P4-P5 (historical exploratory 95%
+   interval) in SI. The contrasts share the exact numerical cohort and folds
+   and use different representations and primary families. P4-P3 was the
+   original continuous primary comparison, with all three adjusted Vd
+   intervals spanning zero. Include that sentence in the caption.
+   Add a small inset with ChemBERTa Vd MAE for REF74, REP4 and ALL4 if space
+   permits. This locates the observed ALL4-REP4 increase against the ordinary
+   single-category reference and shows how the duplicate representation
+   changes error. F intervals span zero for ALL4-REP4. Put the other five
+   endpoint MAEs and the retuned sensitivity in SI if the primary forest is
+   already legible.
+
+D. Distribution of signed prediction changes. Put F across all three
+   models. If space permits a second row, add Cmax. Use the same paired nine-seed per-structure
+   summaries and symbols as prediction_shifts page 1. Show median, spread
+   and points, since signed centres alone miss the opposing shifts. Use pp
+   for F and a log2 ratio axis for Cmax. Label 327 structures for each endpoint
+   here, including those without measured labels. The full seven-endpoint
+   distributions already exist for SI. A two-row panel is easier to read
+   than fitting 21 strips into the main figure.
+
+E. Example of opposing directional changes. Show shared ALL4-REP4 Vd mean
+   log2 shifts for stable (121) and switchers (206) across all three backbones.
+   Optionally overlay paired per-seed group means, described as training
+   variation. Add the clear ChemBERTa example: base-only (n=90, all stable)
+   has identical categorical inputs between arms, but Vd is lower in 89/90.
+   The two separately fitted mappings can therefore give different outputs
+   even on unchanged inputs. A stable/switcher split is descriptive and
+   differs from the direct MAE interaction. All 21 tested ALL4-REP4 MAE
+   interactions have 95% intervals spanning zero.
+
+If a sixth panel fits, add a compact class-only control comparison. Show
+within-class Vd changes and training-fold class median versus overall median
+for the 494 cohort, with a 494 badge. For a crowded main figure, move this
+panel to SI and include the class-median limitation in the main caption.
+
+Evidence for the main estimates
+
+Original class campaign, C2-C0 shared recipe on 494 structures with 388
+Vd labels, GraphConv / Chemprop / frozen ChemBERTa:
+  Vd relative MAE: -7.57%, -12.05%, -4.62%, lower for all nine seeds each.
+  Original six-test adjusted intervals: [-15.10,+0.23], [-19.88,-3.25],
+  [-7.26,-2.40]%. GraphConv's point estimate is lower and its adjusted
+  interval spans zero. The ordinary 95% intervals are below zero for all
+  three. CL is lower for all three by exploratory 95% intervals.
+  Independent tuning preserves the Vd direction (-7.54%, -11.36%, -4.62%).
+  The ChemBERTa tuned and shared values coincide because the selected fits
+  coincide. These are sensitivity comparisons on the same held-out data.
+
+Numerical P1-P0 on 327 structures, same order. Use the original scoring file
+for these intervals and for the original campaign figure. The later scorer
+uses the same point estimates with slightly different resampling draws.
+  Vd: -11.30% [-16.79,-6.07], -12.99% [-19.17,-7.18],
+      -4.85% [-7.02,-2.90].
+  CL: -6.38% [-10.59,-2.31], -8.79% [-13.76,-4.21],
+      -2.36% [-4.07,-0.72].
+  Vd and CL are lower in all nine seeds for each model. Of 21 exploratory
+  95% intervals, eight are below zero and thirteen span zero. The other
+  two below-zero intervals are Chemprop half-life (-6.18%) and PPB (-6.63%).
+  F, Cmax and Tmax intervals span zero for all three. Numerical observed
+  endpoint Ns in standard endpoint order are 316, 259, 246, 172, 292, 190,
+  249. The class-cohort values are 474, 388, 374, 244, 433, 273, 361.
+
+Class-median caveat
+
+The class cohort overall-to-class median reduces Vd MAE from 0.5762 to
+0.4342 (-24.65%, exploratory 95% interval [-34.10,-16.74]). Numerical
+overall-to-class median is 0.5538 to 0.4531 (-18.18% [-28.29,-9.10]).
+These medians are estimated in training folds. In the class cohort,
+C2 MAEs are 0.4048, 0.4017 and 0.4559. All three C2-class_median pooled
+Vd intervals span zero (relative points -6.77%, -7.48%, +5.01%). The
+numerical P1 MAEs are 0.4348, 0.4514 and 0.4763. Numerical P1-class_median
+has no exported paired CI, so use these point values descriptively or show
+the scored numerical P4-class_median contrast in SI. Its three intervals
+span zero. Avoid claiming the neural category input beats a class-only
+reference generally. The evidence also does not show that the entire
+C2-C0 benefit is explained by the median. Within the anionic stratum,
+C2-C0 Vd MAE drops by 0.100, 0.083 and 0.058 log10, with the three
+exploratory intervals below zero. Chemprop neutral and ChemBERTa cationic
+rows also favour C2. Those improvements can reflect within-class shifts
+in calibration. Anionic Spearman actually declines in all three model
+point estimates (GraphConv 0.449 to 0.384, Chemprop 0.419 to 0.382,
+ChemBERTa 0.396 to 0.383), although pooled Vd Spearman increases for all
+three. C2 does not resolve lower anionic Vd MAE than class median for any
+backbone, and ChemBERTa C2 has higher anionic MAE (0.511 vs 0.390).
+Describe the result as substantial class-level signal and some within-class
+error shifts, with limited evidence for finer ranking or superiority to
+class medians. Within-stratum intervals are exploratory, not a direct test
+of differences in effects between classes.
+
+Numerical pH error and prediction shifts
+
+Shared categorical ALL4-REP4 F has three adjusted intervals spanning zero.
+Vd point estimates are +3.24%, +2.31%, +2.52% for GraphConv, Chemprop and
+ChemBERTa. The latter is +0.01172 log10, adjusted 99.17% interval
+[+0.00370,+0.01989], or +2.52% [+0.80,+4.27] and higher for all nine seeds.
+The other five adjusted comparisons span zero. ChemBERTa Vd MAE is
+0.47634 with REF74, 0.46544 with REP4 and 0.47716 with ALL4. REP4-REF74 is
+-2.29% [-4.03,-0.49] at 95%, whereas ALL4-REF74 is +0.17% [-1.09,+1.54].
+Continuous P4-P5 ChemBERTa Vd is +5.03%, exploratory 95% [3.18,6.86] in
+the original scoring. In the follow-up's historical re-scoring it is
+[3.20,6.92]. Use one source consistently for the plotted historical
+interval and identify it. ChemBERTa P5-P3 in the follow-up history is
+-4.83% [-6.63,-3.11]. Duplication effects are parameterisation outcomes,
+including calibration changes. They do not introduce additional pH
+information.
+
+Shared Chemprop ALL4-REP4 F: median signed +0.30 percentage points, median
+absolute 4.95 points, 163/327 at least five points, 170 higher/157 lower.
+Shared Chemprop Cmax: median signed near zero, median absolute 0.463 log2
+(1.38-fold), 54/327 at least twofold, 164 higher/163 lower. GraphConv F
+median absolute 2.78 points, ChemBERTa 0.96. For frozen ChemBERTa, stable
+Vd geometric mean changes 182.0 to 166.6 L, switchers 103.3 to 106.6 L.
+The directions are consistent across all nine paired seed means. Base-only
+Vd changes 238.7 to 212.7 L, ratio 0.891, with the same encoded inputs
+between arms. The separately fitted models alter the predictions.
+
+Selected supplementary figures
+
+S1. Cohort, representation and controls. Show C0, scalar C1, one-hot C2 and
+learned embedding C3 across all three backbones on the 494 cohort, and P0,
+P1, raw pKa P2, pH 7.4 propensities P3, profile P4, repeat P5 on the 327
+subset. Group representations by cohort. The scalar and one-hot both lower
+Vd error relative to structure alone. One-hot does not resolve an advantage
+over scalar for Vd, and ChemBERTa one-hot has higher Vd error than scalar
+(+1.10% [0.30,1.88]). C3-C2 lowers ChemBERTa Vd MAE (-4.25%
+[-6.15,-2.64]) and has exploratory CL/PPB gains there. GraphConv and
+Chemprop Vd differences span zero. Include training-fold overall/class
+median, Morgan ridge +/- class (Vd -8.78%, CL -4.06%), numerical
+descriptor-only ridge, and within-class Vd MAE/rank summaries as a focused
+control panel or accompanying table. Evidence strata and frozen group/fold
+counts are better in a table. Molecular-spectrum language is unnecessary.
+
+S2. All-seven pH performance and sensitivity. Retain shared/tuned
+ALL4-REP4, each added pH versus REP2, ALL4 and REP4 versus REF74, and
+continuous P4-P3/P4-P5/P5-P3. One compact endpoint matrix per comparison
+family is preferable to an atlas of 24 comparisons. Provide the complete
+numeric CSV as data. All 63 single-pH versus REP2 rows have zero intervals
+below zero and four above. Tuned Chemprop ALL4 has exploratory lower PPB
+and Cmax MAE versus tuned REP4 (-8.14% and -6.00%), but its absolute MAE
+point estimates are slightly higher than shared REF74 (+1.00% PPB and
++0.057% Cmax). The latter is a descriptive cross-procedure comparison.
+Tuned ChemBERTa shares 36 of 45 fits per arm and has the same Vd direction.
+
+S3. Prediction shifts. Use the existing three-page distribution, class
+and magnitude packet as an evidence source. In a selected SI package, keep
+the seven-endpoint distribution page and a compact signed subgroup or
+magnitude panel. Include all endpoints/arms/strata in the CSV. Endpoint
+AAFE, rho, R-squared and triad residual changes belong in supporting data
+unless needed for a specific result. The original category contrast does
+not show a common change in predicted triad agreement across backbones.
+
+Figure caption conventions
+
+All models predict the same seven PK endpoints jointly, with explicit
+supervised weights one and mass-balance penalty zero. Each seed trajectory
+pools five held-out parent/scaffold-group outer folds. MAE changes are
+arm minus comparator, with negative values favouring the first arm. Five
+endpoints use log10 MAE, F/PPB use percentage-point MAE, and the relative
+interval bounds use the same fixed comparator MAE as the point estimate.
+Prediction shifts instead use signed log2 fold ratios or percentage points.
+All prediction changes come from separately fitted models on supplied
+representations. The labels contain no added-pH measurements.
+
+Frozen sources, all listed hashes verified
+
+outputs/scoring/contrasts.csv, endpoint_summary.csv, within_class_vd_summary.csv,
+coverage.csv and coherence_contrasts.csv under original scoring manifest
+b03273df7247d1036d713845035a5914a588e76d39a0ce098d5119577f387268.
+outputs/ph_followup/scoring/contrasts.csv and prediction_sources.csv under
+follow-up scoring manifest
+6136354a44872aa2dc78082b803b5fcaa0a710d006aac18ba2ccd393a2bcbf05.
+figures/ph_followup_v1/prediction_shifts/shift_summary.csv under shift manifest
+c8f4f5d0f729be2778eb25842d59312e97ebb8d563e5969535a14b40e4674a7e.
+The old captions and plotting exports provide cohort-specific arm names.

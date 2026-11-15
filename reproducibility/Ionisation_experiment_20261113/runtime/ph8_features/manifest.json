@@ -1,0 +1,22 @@
+{
+  "release_fingerprint": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8",
+  "dataset_sha256": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+  "arm": "PH8",
+  "ph": "8.0",
+  "category_order": [
+    "anionic-like",
+    "cationic-like",
+    "neither-active",
+    "dual-active"
+  ],
+  "class_counts": [
+    82,
+    75,
+    128,
+    42
+  ],
+  "switchers_vs_74": 32,
+  "structure_count": 327,
+  "codes_sha256": "4f346b049e571386597f6c9226bb45c84f7a4ef8d4d5bbed6ccc8db3b4437f83",
+  "fingerprint": "49bfe06e159f21980681248784f90bbfe0aadffe59319dd0f39beed74addf8bc"
+}

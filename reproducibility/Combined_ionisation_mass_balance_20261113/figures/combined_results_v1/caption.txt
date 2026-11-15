@@ -1,0 +1,11 @@
+Accuracy and internal consistency across four conditions
+
+a. The triad macro MAE averages absolute log10 errors equally across half-life, volume of distribution and clearance on 242 observed same-row triads. Each dot pools the five held-out outer folds of one seed. Lines connect the same seed across conditions. Diamonds show the mean of nine seeds with 95% crossed bootstrap intervals. Structure only (00) has neither ionisation input nor a mass-balance penalty. Ionisation (10) adds the pH 7.4 category. Loss (01) adds the mass-balance penalty. Both (11) uses the ionisation category and the same fold-specific positive penalty as 01.
+
+b. Fold disagreement is 10 raised to the absolute log10 residual, or the larger divided by the smaller of predicted half-life and the half-life implied by ln(2) times predicted volume divided by predicted clearance. A value of one indicates exact agreement. Each curve averages empirical CDFs computed separately for nine fitted seeds on all 327 held-out structures per seed. Higher curves indicate more consistent predictions. The panel shows 1–5-fold. At most 18 of 2,943 predictions per curve (0.61%) lie above 5-fold. The full CDF support is included in plot_data.csv.
+
+Adding the loss to ionisation-informed models
+
+a. Change in triad macro log10 MAE on the 242 same-row observed triads. b. Change in mean absolute log10 triad residual across all 327 predicted triads. Each contrast subtracts ionisation only (10) from the combined condition (11). For each backbone and metric, all percentage estimates and interval bounds use the corresponding fixed nine-seed mean for condition 10 as the denominator. Dots give the nine paired seed differences on that scale. Diamonds show the mean. Thick intervals show exploratory 95% percentile coverage and thin intervals show 99.1667% Bonferroni-adjusted percentile coverage for the six primary comparisons. Negative values indicate lower error or lower disagreement.
+
+Intervals cross 10,000 paired bootstrap draws of whole structure groups and whole fitted seed trajectories. They describe variation over groups and training seeds conditional on the training dataset, splits, recipes and selection procedure.

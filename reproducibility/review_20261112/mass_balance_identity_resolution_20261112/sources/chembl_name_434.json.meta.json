@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ZIDOVUDINE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ZIDOVUDINE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:36.204114+00:00",
+  "sha256": "71eb9fc0d3921e20fc3a02a7ec5d2d23f86ecc43b2773493fc15585841e7eb3f",
+  "bytes": 5968
+}

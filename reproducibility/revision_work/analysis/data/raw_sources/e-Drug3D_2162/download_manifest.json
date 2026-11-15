@@ -1,0 +1,30 @@
+{
+  "version": "e-Drug3D_2162",
+  "citation": "https://zenodo.org/records/22831843",
+  "files": {
+    "pk": {
+      "url": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162_PK.csv/content",
+      "resolved_url": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162_PK.csv/content",
+      "retrieved_utc": "2026-11-12T14:29:07.684606+00:00",
+      "bytes": 274760,
+      "etag": null,
+      "last_modified": null,
+      "filename": "e-Drug3D_2162_PK.csv",
+      "sha256": "31bd629d1cb068c9d3e35fe8a034e4ecbe634491575128385d99d687854220ff",
+      "md5": "f56b0e1f446a8627b71ea1a35c8ddefb",
+      "publisher_checksum_verified": true
+    },
+    "structures": {
+      "url": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162.zip/content",
+      "resolved_url": "https://zenodo.org/api/records/22831843/files/e-Drug3D_2162.zip/content",
+      "retrieved_utc": "2026-11-12T14:29:08.736067+00:00",
+      "bytes": 1885855,
+      "etag": null,
+      "last_modified": null,
+      "filename": "e-Drug3D_2162.zip",
+      "sha256": "453c8ad79b86a30b41f0a0a1f6676f05986e87bec9fbc16d1510d6481cfaefac",
+      "md5": "b9fc4f5982363c3677802075dd2d5d9c",
+      "publisher_checksum_verified": true
+    }
+  }
+}

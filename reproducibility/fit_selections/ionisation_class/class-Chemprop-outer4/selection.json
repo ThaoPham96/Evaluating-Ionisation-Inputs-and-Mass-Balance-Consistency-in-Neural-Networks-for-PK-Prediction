@@ -1,0 +1,583 @@
+{
+  "campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "unit": {
+    "unit_id": "class-Chemprop-outer4",
+    "cohort": "class",
+    "backbone": "Chemprop",
+    "outer_fold": 4,
+    "new_fits_upper_bound": 155
+  },
+  "selected": {
+    "C0": {
+      "candidate_index": 1,
+      "epochs": 22,
+      "scores": {
+        "0": 0.8206459497384654,
+        "1": 0.8015970825912919,
+        "2": 0.8113051253848573,
+        "3": 0.813789087726785,
+        "4": 0.8072501941018909,
+        "5": 0.8059413796174653,
+        "6": 0.8168741718996404,
+        "7": 0.8143307482468416,
+        "8": 0.8068936425774177,
+        "9": 0.8133210187652191
+      }
+    },
+    "C2": {
+      "candidate_index": 4,
+      "epochs": 67,
+      "scores": {
+        "0": 0.7594012074004927,
+        "1": 0.7620783026916119,
+        "2": 0.8053950056206878,
+        "3": 0.7624081824297458,
+        "4": 0.7515037779424247,
+        "5": 0.7897508112818772,
+        "6": 0.8063486596791841,
+        "7": 0.7686711996008838,
+        "8": 0.7908191190552342,
+        "9": 0.8098813218465182
+      }
+    }
+  },
+  "primary_anchor_index": 1,
+  "calibration_fit_ids": {
+    "C0": [
+      "ION-696e5b71fd5c340418558a2d",
+      "ION-d6e486f5765181d9a5808403",
+      "ION-cbc3a40257980a23c7bb0b78",
+      "ION-20ad779444e030dde5dfe9fa",
+      "ION-227a2f6ff30f1f53c70b4798"
+    ],
+    "C1": [
+      "ION-95376e1573ad116eb29c42cd",
+      "ION-3bd69bc550f9611609a827c1",
+      "ION-273d46a79bc4082a3c8b48af",
+      "ION-5f18c2d393fd42768aed59a1",
+      "ION-b9706ed0e2d39ec2182e5a4b"
+    ],
+    "C2": [
+      "ION-c14c3928a985b0d85a24c57a",
+      "ION-4e793bbe05072ca69ac71d14",
+      "ION-df006d769a7fc48706ac3cd7",
+      "ION-9122d892c35c6a2cec84a651",
+      "ION-dc234533c1aec46eef30cfb9"
+    ],
+    "C3": [
+      "ION-cf1828806a108403a18d41c6",
+      "ION-614e512af30a41abc9604edb",
+      "ION-805b9f655ad1508934e381c3",
+      "ION-ca1d326ef3f6812b5c49bca4",
+      "ION-5b7a946d0af18a180a9fbe66"
+    ]
+  },
+  "search_fit_ids": {
+    "C0": {
+      "0": [
+        "ION-180f6adecd1e5207126d952f",
+        "ION-9648241b09f100d22bddeecd",
+        "ION-e82c7b8abb1fb5e609e8d2f2",
+        "ION-0b7d999a32e23f80484b0677",
+        "ION-1756d82b49617334cbee34c3"
+      ],
+      "1": [
+        "ION-696e5b71fd5c340418558a2d",
+        "ION-d6e486f5765181d9a5808403",
+        "ION-cbc3a40257980a23c7bb0b78",
+        "ION-20ad779444e030dde5dfe9fa",
+        "ION-227a2f6ff30f1f53c70b4798"
+      ],
+      "2": [
+        "ION-c3f2b5cb41fe68e9596cf411",
+        "ION-025285931a0b0c2fff69b937",
+        "ION-02579f767d1f1eb41f0b26b1",
+        "ION-c0f36c0414a68565ca7a941e",
+        "ION-9439844a8af561fea7084d51"
+      ],
+      "3": [
+        "ION-2a3870275271a4465b47c1a7",
+        "ION-fdb1e6e0d74116f1de0da5b6",
+        "ION-c778fb91e90fb0f7d793a59e",
+        "ION-4f7ea44e1203b92cab0045d7",
+        "ION-85558a62487e943d89ffd5b1"
+      ],
+      "4": [
+        "ION-95b903845aabebc713f388f2",
+        "ION-968cf200cbf183247d57bfb8",
+        "ION-5764b4893b436f9436b567fa",
+        "ION-ffdf6ec9d2e9f929e38249e6",
+        "ION-917de727e1b58e208e705af8"
+      ],
+      "5": [
+        "ION-5c9891dd82c9901420ae51c9",
+        "ION-268969b0f2e356750c3300f1",
+        "ION-39196adc6547df6c543b3850",
+        "ION-b0d6c3cccb5861f2a31f5b51",
+        "ION-eb47e8dd05c259c62246c875"
+      ],
+      "6": [
+        "ION-ae77e859d02962297a02e14e",
+        "ION-1d9b23b5a384e9849f0a82ac",
+        "ION-b626be6e006962af3c9bd458",
+        "ION-aa4d8459796b730cf80af5bc",
+        "ION-c47d8cf9702e466b8e1be185"
+      ],
+      "7": [
+        "ION-f4b60b88fc6ad077e3fd6e1a",
+        "ION-456c6d24cd1e681d16c60200",
+        "ION-a0a45b6f43af419a929360cc",
+        "ION-ad23e49317623cfb040b0678",
+        "ION-aae6ca31f2e3718f699206bc"
+      ],
+      "8": [
+        "ION-91fc75ec6e55abadcc541513",
+        "ION-e1debee58072ff2e8ad401ab",
+        "ION-eb83c44e70f21f914a58f6d8",
+        "ION-373968888817cfe57ebe587f",
+        "ION-def85b8d9c9cc2f2643656cf"
+      ],
+      "9": [
+        "ION-a0d2a75a31c53ca96421fd54",
+        "ION-154edf85144a87cd07e24b9d",
+        "ION-2aed399791ca5881cd7e9cd4",
+        "ION-03784330abb2fcc0ff582b74",
+        "ION-468a83294edec10b9d468788"
+      ]
+    },
+    "C2": {
+      "0": [
+        "ION-354d824e610054bef9b7cc18",
+        "ION-2bfba73bea429194fb595e86",
+        "ION-34106cc1e3da130ad4756472",
+        "ION-0556d3e5569d6632248662cf",
+        "ION-b6f1268d877db39aa28b9c50"
+      ],
+      "1": [
+        "ION-c14c3928a985b0d85a24c57a",
+        "ION-4e793bbe05072ca69ac71d14",
+        "ION-df006d769a7fc48706ac3cd7",
+        "ION-9122d892c35c6a2cec84a651",
+        "ION-dc234533c1aec46eef30cfb9"
+      ],
+      "2": [
+        "ION-1fbd33a303f78f04e1e72224",
+        "ION-5730757df0ce066dbf0de2c3",
+        "ION-9ef8cf6bcd0330b3298305d4",
+        "ION-253e24def259170a97a1c4b9",
+        "ION-b8d9a089d97a05ada8bb9942"
+      ],
+      "3": [
+        "ION-db695f12bbb57fbf95f9dd9e",
+        "ION-93e72bfb341139bba225bb78",
+        "ION-44de16834072333fe3da6d57",
+        "ION-6bc2d1bd468c351165d23fd2",
+        "ION-9e358cc853469db9b12a7d2f"
+      ],
+      "4": [
+        "ION-3c7363ba400ec49298cd5dfa",
+        "ION-1beb4f3b718e03718a2cc232",
+        "ION-6575c491d4b1c5e3e20f608d",
+        "ION-3fd4c3e0b4f2bfec5ebc8fe0",
+        "ION-5cf697f7a38697caa477d523"
+      ],
+      "5": [
+        "ION-98d953c8d7bfc56b42fb5ca1",
+        "ION-efd586ffe1281eec8a33a0c0",
+        "ION-f8359988c22f4c6e293a2dd9",
+        "ION-290fa831b2d489bcb69794a4",
+        "ION-6b2de522f8ae6e1328f8b640"
+      ],
+      "6": [
+        "ION-33844206b50f5c78818741b8",
+        "ION-b3236ce4d91c772a0826f391",
+        "ION-f078f123413ad7c40dafe665",
+        "ION-25d9b5b7184dc1ee8275137c",
+        "ION-705b1494e98164eba7b02e61"
+      ],
+      "7": [
+        "ION-0297d81202b9a24e7c812a17",
+        "ION-86b02f0f14186372d507fe0e",
+        "ION-33703dce4605ce8e5357128e",
+        "ION-23caaf64920706fd7d16b10e",
+        "ION-12d533bafee2ffbc755bd760"
+      ],
+      "8": [
+        "ION-bbef8119b6df8034fb656982",
+        "ION-2753060a54ccb19b2d222e9f",
+        "ION-6fdfb75a2da8633715a15674",
+        "ION-7e7ece94d90cdbc24d991daa",
+        "ION-82c33622f5a95dc3db30519c"
+      ],
+      "9": [
+        "ION-1d09d4cc4808b5c67bba0f48",
+        "ION-3c8401453ca8569406f7971f",
+        "ION-12c403089d4515f922583091",
+        "ION-f08a2e4d829167f7fc98a27a",
+        "ION-91ee22e3ffef7965531f0fd0"
+      ]
+    }
+  },
+  "final_requests": [
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 101,
+      "fit_id": "ION-a1fcfa26aa8c69afde205b61",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 202,
+      "fit_id": "ION-40f260c8a29e30e0c237e447",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 303,
+      "fit_id": "ION-304c05fa07e5f5a6c84c8868",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 404,
+      "fit_id": "ION-8d809f0059fc16e4c4bc73e9",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 505,
+      "fit_id": "ION-c2039b8f8be74d17f680463e",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 606,
+      "fit_id": "ION-e9de5d818d63906abe7c094b",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 707,
+      "fit_id": "ION-b608c874010a9a9b176e86a8",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 808,
+      "fit_id": "ION-49f4b10c60123051fcf1fc72",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C0",
+      "seed": 909,
+      "fit_id": "ION-c046acf3baea39471afd538b",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 101,
+      "fit_id": "ION-bdf5d7907b7166c322376a22",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 202,
+      "fit_id": "ION-8e156fe7025801509327dd6e",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 303,
+      "fit_id": "ION-86f568286558fa4d9d3d54da",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 404,
+      "fit_id": "ION-3bf2fb306900ca260b72825d",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 505,
+      "fit_id": "ION-5520b7ab2f89e317e85fbd69",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 606,
+      "fit_id": "ION-21cd57662a797f5487df48d7",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 707,
+      "fit_id": "ION-b908daf810dca754b0839246",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 808,
+      "fit_id": "ION-c50dc5606ea0a7e9e3c42d9f",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C1",
+      "seed": 909,
+      "fit_id": "ION-6994e31999dab1ad3488e82b",
+      "candidate_index": 1,
+      "epochs": 17
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 101,
+      "fit_id": "ION-560939b3bd2cdcb36837f487",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 202,
+      "fit_id": "ION-6d303ad16a9a71cbae36bf1f",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 303,
+      "fit_id": "ION-493829a1d22c31827c2a2cef",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 404,
+      "fit_id": "ION-7658d67c68767d2456b25bfa",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 505,
+      "fit_id": "ION-d92edba0c86ea6c8edb63f3b",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 606,
+      "fit_id": "ION-db04c2c8916102668ecfd80a",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 707,
+      "fit_id": "ION-777ae86df351ccfe726bd256",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 808,
+      "fit_id": "ION-b08917a0b8292a73deddf7e3",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C2",
+      "seed": 909,
+      "fit_id": "ION-2e442e4ff735e58268af8860",
+      "candidate_index": 1,
+      "epochs": 22
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 101,
+      "fit_id": "ION-83e03b1a9789eae155fcc917",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 202,
+      "fit_id": "ION-0b1eebd6f0b2688441f7dcfa",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 303,
+      "fit_id": "ION-cb156082e2664158f36e8c7f",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 404,
+      "fit_id": "ION-e2a72a43df10217f8e234ade",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 505,
+      "fit_id": "ION-4062a27a93aac6f1c7eda7b9",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 606,
+      "fit_id": "ION-2480a352402916d52531dd67",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 707,
+      "fit_id": "ION-8acd9db01a5906ae3f22029a",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 808,
+      "fit_id": "ION-c272766f31698fadbbd85252",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "primary",
+      "arm": "C3",
+      "seed": 909,
+      "fit_id": "ION-fc3d9c2d308ea14b0a37417f",
+      "candidate_index": 1,
+      "epochs": 18
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 101,
+      "fit_id": "ION-f054581c06336fde7de97a3c",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 202,
+      "fit_id": "ION-2849c20827efc007b0137e33",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 303,
+      "fit_id": "ION-79e6a4e726906fbb5c438879",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 404,
+      "fit_id": "ION-5edbdedd771b0dc2d53b9630",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 505,
+      "fit_id": "ION-4844666962457b7fba5e7bf0",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 606,
+      "fit_id": "ION-ed7822a55202bda8e81a7f3a",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 707,
+      "fit_id": "ION-5de040c112e98da7477d2a63",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 808,
+      "fit_id": "ION-581adee07217728f8e70ff2e",
+      "candidate_index": 4,
+      "epochs": 67
+    },
+    {
+      "procedure": "tuned",
+      "arm": "C2",
+      "seed": 909,
+      "fit_id": "ION-765554a6c2b4e203b1c5fca4",
+      "candidate_index": 4,
+      "epochs": 67
+    }
+  ]
+}

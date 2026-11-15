@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=IDELALISIB&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=IDELALISIB&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:46.198374+00:00",
+  "sha256": "95857566ad0596240b42eece6200d756a3375ac753f8bc8fc6fe5b22f4b2b46f",
+  "bytes": 6374
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ATROPINE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ATROPINE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:32.862224+00:00",
+  "sha256": "9bbcae469c8b4828ddc0e520b3ad9c07bbecced18d4310a8a07d55292196d6a7",
+  "bytes": 5002
+}

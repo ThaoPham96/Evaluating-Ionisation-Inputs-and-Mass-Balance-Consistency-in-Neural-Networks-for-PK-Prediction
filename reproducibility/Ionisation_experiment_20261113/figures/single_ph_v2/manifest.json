@@ -1,0 +1,101 @@
+{
+  "comparison_id": "71dcbfa99c4338ed36abda3f076a0fa1012c2bbe017fd5e9d8c002c512be1435",
+  "campaign_ids": {
+    "single_ph": "5935d646a2f6dd49b0b03be53cabcd1dd5b0b09fc3e2a3ea5c93ea43bafe55fd",
+    "ph8": "554201f47dbe9a5363bcc059b5c5609da54b94458be04ab34f025c98cf2b86c9"
+  },
+  "prior_campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "release_fingerprints": {
+    "numerical": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8"
+  },
+  "seed_ids": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "input_directories": [
+    "outputs/single_ph/scoring",
+    "outputs/ph8/scoring"
+  ],
+  "inputs_sha256": {
+    "outputs/single_ph/scoring/scoring_manifest.json": "330f41297e3c138854b76868c5355e0e3cb54266121936e0fc4da1df0e6d0536",
+    "outputs/single_ph/scoring/endpoint_metrics.csv": "039d0235beaca349b6f59d4ca060cfaff44683051db90af560338585825c6c57",
+    "outputs/single_ph/scoring/endpoint_summary.csv": "f0e7b54dc65f815f6b38c9e9a3ee7c5c53ba22c83f1883df92a307e7e18f53a7",
+    "outputs/single_ph/scoring/contrasts.csv": "6aa65fad97ae1fe8edce1ef2b90108a76ecf7f9c01dc1bdb13377902cb955763",
+    "outputs/single_ph/scoring/contrast_seeds.csv": "76c765ceacee1e7a6bf558ed597d2eb2b4feec84539b577c34776498daeb6c5e",
+    "outputs/single_ph/scoring/contrast_outer_folds.csv": "7a6756ec6059f8eec36fdebe57fba7f1b75257fdab4c08f234edc539130a8b8f",
+    "outputs/single_ph/scoring/coverage.csv": "81b3f3a682821e91b96ef5156a0c72cec99c1f2363d021de639e5b0abd3fed2e",
+    "outputs/single_ph/scoring/group_sizes.csv": "52d8d0ca59083d4885cf8667bd2d8d9accbef735afedcf444074406e6933f76d",
+    "outputs/single_ph/scoring/prediction_sources.csv": "ca0d41114c2313560a93e7e01b795fc5cfbade48560c44be8621816ddf6f6e33",
+    "outputs/ph8/scoring/scoring_manifest.json": "6e207915616aea56579f2553dd0a8cf1b00462091716f2d28eda6132bee737b0",
+    "outputs/ph8/scoring/endpoint_metrics.csv": "dc86a87665587b60190cbfbd9b5e5ada305028a1bfd619c5776dac625878b55d",
+    "outputs/ph8/scoring/endpoint_summary.csv": "39d27bdca5551e1eea625a300d2971d9d0fdfaf162a85a53f1a383d4b8659148",
+    "outputs/ph8/scoring/contrasts.csv": "c4407a2c3a0dce5504825e82778749fef451c1b4ca1476129c4cc6b03f0d91ef",
+    "outputs/ph8/scoring/contrast_seeds.csv": "d052aaa2d297845e3d7c01a16fbaf7e7e08ada04f3886627c3bc705bbe12d48b",
+    "outputs/ph8/scoring/contrast_outer_folds.csv": "ae29b937ad7767881a627255186a74e55bfc03b116f5bc8b94ef4f909901e4f9",
+    "outputs/ph8/scoring/coverage.csv": "81b3f3a682821e91b96ef5156a0c72cec99c1f2363d021de639e5b0abd3fed2e",
+    "outputs/ph8/scoring/group_sizes.csv": "52d8d0ca59083d4885cf8667bd2d8d9accbef735afedcf444074406e6933f76d",
+    "outputs/ph8/scoring/prediction_sources.csv": "1d257ac72fee72c478f5b531520e107c121a6fa85beeac92d97eb4d6c98f58d2"
+  },
+  "render_script_sha256": "3557ccdfb5cc3ada32233aa6d1e88e1b67528dc83be6610177e4c7fd3bc420d0",
+  "outputs_sha256": {
+    "all_endpoint_mae.png": "c2df97670a3f03c0d889df9313dae2932b37d1baed7248761dfa7ec5c00012b1",
+    "all_endpoint_mae.svg": "badc9573757058f60a2caded4719ae33eba9f704f7b94cad5304ce97ff25719d",
+    "vd_cl_vs_structure.png": "a31c48a9b0ac929281aa3d010fedaa47cdc445a3f131431ed7e649e9c7572841",
+    "vd_cl_vs_structure.svg": "7331a8b186011e04f8c994b89ef95a9bcca6eef5526dc86284de6ec01083ef05",
+    "vd_cl_vs_ph74.png": "47bf55d69ef643d731ec100743a998d3c0f617fd196b08f5f35efd91cebe75c5",
+    "vd_cl_vs_ph74.svg": "77f58e30b1924261174d1fcd75173607ae16bcf33e66d45d4f1cdce32d2ed547",
+    "single_ph_results.pdf": "70b7603898f903e3cccfd7511f9f0d13653fec0603556f3925b1288ac5441805",
+    "plotted_estimates.csv": "45b0c9f5fe32924d955c16794b0042593842f55882ade9ac2470c3ca02bdd563",
+    "plotted_seeds.csv": "2c75bd9667dbd9595f19bad1c48ff4005956e838a8e9077fbf10dfeda3d847c9",
+    "captions.txt": "d542d53e68d6c5bf37e4653fc7e35e65d6ff4eb8ce0c130d2a77aaff437028b5"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "png": "all_endpoint_mae.png",
+      "svg": "all_endpoint_mae.svg"
+    },
+    {
+      "page": 2,
+      "png": "vd_cl_vs_structure.png",
+      "svg": "vd_cl_vs_structure.svg"
+    },
+    {
+      "page": 3,
+      "png": "vd_cl_vs_ph74.png",
+      "svg": "vd_cl_vs_ph74.svg"
+    }
+  ],
+  "plotted_scales": {
+    "all_endpoint_mae": 15.0,
+    "vd_cl_vs_structure": {
+      "Vd": [
+        -24.0,
+        12.0
+      ],
+      "CL": [
+        -15.0,
+        10.0
+      ]
+    },
+    "vd_cl_vs_ph74": {
+      "Vd": [
+        -16.0,
+        32.0
+      ],
+      "CL": [
+        -8.0,
+        16.0
+      ]
+    }
+  },
+  "estimate_rows": 189,
+  "seed_rows": 1701
+}

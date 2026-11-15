@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TOREMIFENE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TOREMIFENE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:43.341217+00:00",
+  "sha256": "2d98e3cccde612351ac10d18248662f86a93b9d619f907d200e04502dc4e0cda",
+  "bytes": 5295
+}

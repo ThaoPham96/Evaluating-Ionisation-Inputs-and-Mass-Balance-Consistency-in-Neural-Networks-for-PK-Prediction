@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=FINASTERIDE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=FINASTERIDE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:37.895086+00:00",
+  "sha256": "42d9d18979ea501905174826d20187254092dc6ba841a8f3459ebf664d827e94",
+  "bytes": 6412
+}

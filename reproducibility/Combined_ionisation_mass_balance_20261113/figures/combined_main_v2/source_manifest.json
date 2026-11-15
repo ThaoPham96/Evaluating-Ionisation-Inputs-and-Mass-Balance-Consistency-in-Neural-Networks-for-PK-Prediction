@@ -1,0 +1,77 @@
+{
+  "campaign_id": "8507d5b8972f756b5d851f7677599f2ace390f4c63b08aad09f0e1364b25a928",
+  "score_manifest_sha256": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+  "verified_score_files": {
+    "metrics.csv": "b194c3f5f5dd7544dde5839c66d5ba37b54f7cce1c3fc14e12c1b29a6dd47c79",
+    "seed_metrics.csv": "7a3c30244dd57703c4410ac4ae28b66032600f6a916a90e9a20ab5cf87b67757",
+    "contrasts.csv": "d290e9a7ec43e71675f522d6811ba07023e0bc9ba918d98bedb0bde43698c0cb",
+    "seed_contrasts.csv": "e53914588debe38fb68bf27f2722df4a867abae3ca43a73b43eb91970924d949",
+    "disagreement_cdf.csv": "781c01b88a5e581d9831e56aed1044bbcf97e0a5c540b302655bfc054d5a8ce5",
+    "signed_residuals.csv": "c9f1e7a167742e69aa63ab5323fbaac568dc1a158367cce257d46806618f32c8",
+    "alpha_selection.csv": "62e9df20d281a71cf48e118904dc259798881589c636f41895597756e3f091db",
+    "lambda_selection.csv": "ff571434bb097f3a25fe9b05d7fc0898b3edca8d1c2ad46e8e9cf5dfbf513a01"
+  },
+  "main_plot_rows": 840,
+  "joint_x_limits": [
+    -6.0,
+    5.0
+  ],
+  "main_panel_counts": {
+    "b": 720,
+    "c": 120
+  },
+  "cross_panel_average_verified_atol": 1e-12,
+  "supplementary": {
+    "pages": 5,
+    "cdf_view_max_fold": 5,
+    "max_predictions_above_view": 18,
+    "seed_predictions_per_curve": 2943
+  },
+  "supplementary_rendered_by_this_build": false,
+  "presentation": "Panel letters, endpoint-coloured schematic symbols, black endpoint labels and condition-coloured estimates",
+  "main_layout": {
+    "figure_inches": [
+      7.0,
+      8.35
+    ],
+    "panel_heights_inches": [
+      1.8,
+      4.25,
+      2.3
+    ],
+    "simplified_input_and_loss_boxes": true,
+    "endpoint_separator_lines": true,
+    "endpoint_condition_offsets": [
+      -0.26,
+      0,
+      0.26
+    ],
+    "joint_panel_left": 0.105,
+    "combined_condition_markers": "Filled purple",
+    "display_average_label": "Average",
+    "display_transformer_label": "ChemBERTa"
+  },
+  "source_files": {
+    "figures\\combined_main_v2\\render.py": "b0cd590cb0b3e25329dbcab24b15414a2fb5c39dacc9c1848ff6492e0137eff0",
+    "figures\\combined_main_v2\\schematic.py": "02a670b483d67d43aa0f59b5c86f89bd424d8b4e81a5ee9b4cce224190ee204d",
+    "figures\\combined_main_v2\\endpoint_panel.py": "5587b3d7329d460e57fcf8a73f931daed7984a72f8ed76abc614e98b28e237b4",
+    "figures\\combined_main_v2\\average_endpoints.py": "b0304834f3ba022c38cf28678d63c0122e06ad726da1c71b40a983bac4c0ab6e",
+    "figures\\combined_main_v2\\average_manifest.json": "fd1a6963ce40f8312ae1c832aa33e2a7156df06777fd0b7bc7a7ee870d9cbc31",
+    "figures\\combined_main_v1\\render.py": "b234e219b6a07f59a022ae93748eb4e47178e0ef500765b2fa9d69196ee3694b",
+    "figures\\combined_main_v1\\schematic.py": "029a0427c6a174f1871c50f860951a0f6e94542b6ea30572bf2910ab6eb4870a",
+    "figures\\combined_main_v1\\triad_display_manifest.json": "befc652c09c4c63f466f762a88a2cec44a4f2120ccf87ae1577f7d21acf60bc5",
+    "figures\\combined_main_v1\\all_endpoint_manifest.json": "bcbbe1982693f13389659e9ab622200bb93c097c66575d25a1e12df3cccd7d41",
+    "figures\\combined_results_v1\\render.py": "05eac9e3d02e3fad1b2663e3377b87a312e56de13d01100c1b5b4a6158f1cbfb",
+    "figures\\combined_results_v1\\combined_style.py": "dc1fc1a89c8eaa467957935b5aa8b04295c28a64153b80cc5a956bd1f391d457",
+    "figures\\combined_supplementary_v1\\render.py": "052dd09ae7ed7b901167b0a80e33cf20a3461b3b64a2b85b8eb3f92c08033aa0"
+  },
+  "files": {
+    "average_seeds.csv": "7c6e496505d95c365ce34c2c7b223d8de9111c0f3e324e2a088f500098ddd167",
+    "average_summary.csv": "a7b81acc82a7b19489551651789ab911b9eaabaf779a96e62cb5aecd5409c360",
+    "caption.txt": "1ce873d89fa0843a03ab62f2576b64b2e41c0fadf6772c3faa7086bba7573fb5",
+    "combined_main.pdf": "6a643bfd5b05a4347ffdb8688cf75636aab54f36aaac80039b732f2397b8379c",
+    "combined_main.png": "6381ce85fb0cf4124fcc4cfdc280f4514c8bc7da8b38ca70f1b6de1b675cce04",
+    "combined_main.svg": "cf85f877016fa7362dd626d8be466ee37dfce65df39aee330ee08e389385cb4d",
+    "plot_data.csv": "91fc3fb44ed97ec3a42b64aeb479c302bf678efd1d24a090d5036e5b2097720f"
+  }
+}

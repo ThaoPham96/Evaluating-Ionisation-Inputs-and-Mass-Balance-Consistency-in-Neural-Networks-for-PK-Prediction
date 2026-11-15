@@ -1,0 +1,13 @@
+{
+  "source_pdfs_sha256": {
+    "prediction_shifts/prediction_shifts.pdf": "5d517850649ec1fed5e1a7c7dad0f10d0d688548bfa5377c12ab16a9cb1b939a",
+    "ph_main_results.pdf": "20c4516a59df9ef75f0436a24545dc97e82092c197628cc01f5e3de514988e87",
+    "reference_controls.pdf": "7eb97b1368402126f8775232018a62dd4290eb4bfff8ffd3f4b766c2608aa03a",
+    "individual_ph_results.pdf": "0b88f3bf933945a5938393fab4683dea7e1fc0fbf4abbd58603bf8948490815e",
+    "support/metric_atlas.pdf": "2b6ff155d3c6fb680a5b9993999a5654e84fa2befb0f924705905b2234cfc125",
+    "all_mae_contrasts.pdf": "c3da436e11f51d9ae64f913c67d6c0343d1c4fbe595f358d05940b2a6198ed9b",
+    "subgroups_and_interactions.pdf": "77c1c678966e9832bf6bacefe21eede30d1c00da9d21437e933d35d37f07f37e"
+  },
+  "output_sha256": "bbfff7ef542c246977fea5293901e0fa4498d208da481e5d410d0b675f8ab388",
+  "pages": 31
+}

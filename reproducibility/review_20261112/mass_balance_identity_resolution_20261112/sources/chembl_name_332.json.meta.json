@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NADOLOL&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NADOLOL&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:34.513565+00:00",
+  "sha256": "e03cb5b95bdf9a3487670e95f3701d80e75fc7b90c6453dc40120d7c22fba9d5",
+  "bytes": 5158
+}

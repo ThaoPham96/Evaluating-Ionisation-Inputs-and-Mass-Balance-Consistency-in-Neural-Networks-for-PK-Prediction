@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TICAGRELOR&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TICAGRELOR&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:44.984376+00:00",
+  "sha256": "7457c36a12f15de877798c0e538e403dd8e1408f3fe4515bebff2a59c8dd5a4a",
+  "bytes": 6702
+}

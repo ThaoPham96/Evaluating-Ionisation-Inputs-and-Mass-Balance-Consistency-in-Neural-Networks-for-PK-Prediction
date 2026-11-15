@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NALOXONE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NALOXONE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:33.685223+00:00",
+  "sha256": "68bf17288391834f5bcb8e9e4960f8d924a30a740f6eaa9dbe3538b1976365b7",
+  "bytes": 4794
+}

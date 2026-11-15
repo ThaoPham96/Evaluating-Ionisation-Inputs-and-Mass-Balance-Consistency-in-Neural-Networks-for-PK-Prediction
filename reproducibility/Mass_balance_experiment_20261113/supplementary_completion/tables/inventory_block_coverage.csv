@@ -1,0 +1,12 @@
+block,stage,n_fits,backbones,seeds,lambdas,n_verified_identity_split_checksum,units_raw_predictions
+alternative_encoders,inner,150,AttentiveFP|GAT|GIN,0,0|0.03|0.1|0.3|3,,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+alternative_encoders,outer_final,90,AttentiveFP|GAT|GIN,101|202|303,0|0.03|0.1|0.3|3,90.0,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+depth_1_to_5,inner,200,GraphConv,0,0|0.03|0.1|0.3|3,,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+depth_1_to_5,outer_final,120,GraphConv,101|202|303,0|0.03|0.1|0.3|3,120.0,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+positive_lambda_calibration,inner,450,ChemBERTa_head|Chemprop|GraphConv,0,0.03|0.1|0.3|1|3|10,,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+primary_baseline_search,inner,1500,ChemBERTa_head|Chemprop|GraphConv,0,0,,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+primary_final,outer_final,495,ChemBERTa_head|Chemprop|GraphConv,101|202|303|404|505|606|707|808|909,0|0.03|0.1|0.3|1|3|10,495.0,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+single_task_final,outer_final,105,GraphConv,101|202|303,0,105.0,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+single_task_search,inner,1050,GraphConv,0,0,,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+task_weight_sensitivity,inner,50,GraphConv,0,0|0.03|0.1|0.3|3,,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"
+task_weight_sensitivity,outer_final,30,GraphConv,101|202|303,0|0.03|0.1|0.3|3,30.0,"log10 (t_half,Vd,CL,Cmax,Tmax); logit10 (F,PPB)"

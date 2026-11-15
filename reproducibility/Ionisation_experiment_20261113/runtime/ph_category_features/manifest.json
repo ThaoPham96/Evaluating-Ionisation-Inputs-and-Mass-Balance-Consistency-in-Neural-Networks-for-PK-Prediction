@@ -1,0 +1,105 @@
+{
+  "release_fingerprint": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8",
+  "release": {
+    "release": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+    "features": "36188f3353482d1843f1764805b46e23387c71832b56e53f197663d305d6ae5d",
+    "fingerprint": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8",
+    "structures": 327
+  },
+  "ph_order": [
+    "7.4",
+    "2.0",
+    "6.5",
+    "5.0"
+  ],
+  "category_order": [
+    "anionic-like",
+    "cationic-like",
+    "neither-active",
+    "dual-active"
+  ],
+  "blocks": {
+    "ADD2": [
+      0,
+      1
+    ],
+    "ADD65": [
+      0,
+      2
+    ],
+    "ADD5": [
+      0,
+      3
+    ],
+    "ALL4": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "REP2": [
+      0,
+      0
+    ],
+    "REP4": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "structure_count": 327,
+  "group_count": 238,
+  "class_counts": [
+    [
+      65,
+      90,
+      119,
+      53
+    ],
+    [
+      0,
+      280,
+      37,
+      10
+    ],
+    [
+      49,
+      112,
+      108,
+      58
+    ],
+    [
+      31,
+      144,
+      91,
+      61
+    ]
+  ],
+  "transition_profiles": 20,
+  "switchers": [
+    206,
+    38,
+    85
+  ],
+  "perturbation_shifts": [
+    "-1",
+    "-0.5",
+    "0",
+    "0.5",
+    "1"
+  ],
+  "perturbation_scenarios": 24,
+  "perturbed_structures": 219,
+  "polyprotic_counts": {
+    "uncertain": 84,
+    "yes": 238,
+    "no": 5
+  },
+  "files": {
+    "ledger.csv": "c63ffcb41e86b04651c5ad67dc48cfd5374ea1bae0cd2b17c0e9de4d9c07a724",
+    "fold_counts.csv": "e311046ead0ab9f15a33800d90ab007f658f80944bf91141584009220c8108ad",
+    "codes.json": "ded6db964b8425ebd0c0c3e5a6ed24c6c8d458a1fe1d055756af4c6b0449c2ec"
+  },
+  "fingerprint": "ae3b9fa029ae0baa1fd7fc4ebbf6b77ca43ffa1079d089842c6f81650e04decd"
+}

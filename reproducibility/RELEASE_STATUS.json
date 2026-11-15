@@ -1,0 +1,8 @@
+{
+  "status": "HISTORICAL_RESULTS_REPRODUCIBLE",
+  "release_version": "repository-candidate-20261114",
+  "new_campaign_results": "PENDING complete independently verified robustness export, statistics and new figure integration",
+  "checkpoint_weights": "intentionally omitted; provenance hashes retained",
+  "current_base_figures": "PASS: Figures1/2/3/S1/S2; corrected primary intervals, scientific tables verified",
+  "historical_statistics": "PASS:5428 contrasts;10000 draws;345 exact archive comparisons, original intervals reproduced"
+}

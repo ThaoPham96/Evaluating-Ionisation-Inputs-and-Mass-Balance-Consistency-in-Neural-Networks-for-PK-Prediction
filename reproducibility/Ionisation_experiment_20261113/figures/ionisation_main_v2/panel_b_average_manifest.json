@@ -1,0 +1,125 @@
+{
+  "status": "report_ready",
+  "cohort": "numerical",
+  "procedure": "primary",
+  "arm": "P1",
+  "comparator": "P0",
+  "reference_predictions": {
+    "P1": "REF74",
+    "P0": "REF0"
+  },
+  "prior_campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "export_campaign_id": "27b0bc93f682a3ac04f773b3240f495e2d106c278b42722381328bb5daf67d58",
+  "release_fingerprints": {
+    "numerical": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8"
+  },
+  "n_structures": 327,
+  "n_groups": 238,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "endpoints": [
+    "t_half",
+    "Vd",
+    "CL",
+    "F",
+    "PPB",
+    "Cmax",
+    "Tmax"
+  ],
+  "labelled_structures": {
+    "t_half": 316,
+    "Vd": 259,
+    "CL": 246,
+    "F": 172,
+    "PPB": 292,
+    "Cmax": 190,
+    "Tmax": 249
+  },
+  "labelled_groups": {
+    "t_half": 230,
+    "Vd": 196,
+    "CL": 185,
+    "F": 135,
+    "PPB": 224,
+    "Cmax": 147,
+    "Tmax": 189
+  },
+  "endpoint_weight": 0.14285714285714285,
+  "estimand": "Within each seed, average the seven endpoint values of 100 \u00d7 (P1 MAE \u2212 P0 MAE) / original nine-seed mean P0 endpoint MAE. Average the nine seed values for the point estimate.",
+  "error_units": "Absolute log10 errors for t_half, Vd, CL, Cmax and Tmax. Absolute physical percentage-point errors for F and PPB, including observed zeros.",
+  "bootstrap_seed": 20261113,
+  "bootstrap_draws": 10000,
+  "bootstrap": "Joint crossed percentile interval using the numerical-cohort RNG stream. Each draw resamples 238 frozen groups and nine entire seed trajectories with replacement. Shared draw counts preserve pairing across arms, endpoints and backbones. Each endpoint divides by its own resampled observed label count and uses its fixed original P0 MAE normalization. The seven endpoint effects are then averaged within the draw.",
+  "interval_level": 0.95,
+  "inference": "Exploratory, unadjusted.",
+  "checks": {
+    "n_endpoint_estimates": 21,
+    "n_endpoint_seed_effects": 189,
+    "absolute_tolerance": 1e-12,
+    "max_absolute_differences": {
+      "original_comparator_mae": 0.0,
+      "original_seed_relative_delta_pct": 5.329070518200751e-15,
+      "original_mean_relative_delta_pct": 3.552713678800501e-15,
+      "panel_b_seed_relative_delta_pct": 4.3298697960381105e-14,
+      "panel_b_mean_relative_delta_pct": 1.7763568394002505e-15
+    }
+  },
+  "comparator_mae": {
+    "GraphConv": {
+      "t_half": 0.4162206052161476,
+      "Vd": 0.49016964536663143,
+      "CL": 0.4981263342242651,
+      "F": 26.822801176116254,
+      "PPB": 20.24779617300857,
+      "Cmax": 0.91158083921695,
+      "Tmax": 0.24269796438079919
+    },
+    "Chemprop": {
+      "t_half": 0.4353188069618702,
+      "Vd": 0.5187867151060459,
+      "CL": 0.5012849426448625,
+      "F": 27.61390250755698,
+      "PPB": 19.64010235776466,
+      "Cmax": 0.93212801214104,
+      "Tmax": 0.24714302210801728
+    },
+    "ChemBERTa_head": {
+      "t_half": 0.4244093099802889,
+      "Vd": 0.500601529841659,
+      "CL": 0.4830099650495579,
+      "F": 24.174282627971316,
+      "PPB": 17.468142604188895,
+      "Cmax": 0.8899600124041569,
+      "Tmax": 0.22889587183779464
+    }
+  },
+  "source_sha256": {
+    "figures/ionisation_main_v2/compute_average.py": "5e431157ef39593acdbe42bd8a3b520667382ea1935d0a3ee5131da8ae8de0ea",
+    "analysis/ionisation_score.py": "6fae7fd4105294bd3c5ebeae1abde0215f6939a9aeeee6a8f0140480acc6927e",
+    "analysis/ph_ionisation_score.py": "f17a7df5500160709056d399d22f07bee09cbafdef7cf83366b3019ed501c7a9",
+    "data/release/numerical/manifest.json": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+    "data/release/numerical/model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+    "data/release/numerical/outer.csv": "bf7aaee6fb25334686d2d6b43ebe34c30d123e2e97115aa636a70373a3a6ff32",
+    "outputs/ph_followup/outer_predictions.csv": "bf0a90c402173b94df88de851bd9ba84b4ba2e9b5fbe78ce6b11a6a13c2cd8c2",
+    "outputs/ph_followup/outer_predictions.manifest.json": "00d8d5a3c7ed63e14a089839d82227ae2c64b19d45327ce5e21888ed7c1c59da",
+    "outputs/ph_followup/outer_predictions.provenance.json": "2ed0286f06621cee9adca82f73dfabb8557aab6df967f2790ded0fcdf5d6a6ef",
+    "outputs/scoring/scoring_manifest.json": "b03273df7247d1036d713845035a5914a588e76d39a0ce098d5119577f387268",
+    "outputs/scoring/contrasts.csv": "3d8342ba0863150a30f637d91b21b801738e77d8dfa32b210cbde01581195bcf",
+    "outputs/scoring/contrast_seeds.csv": "7ebc1e88384b3f7075ee59b6cb687c8f4da74f76610487f3e893cf4f0e96318b",
+    "figures/ionisation_main_v2/panel_b_estimates.csv": "754a53a8a8bcee11240f8ebbb6c497a97e922194a5c2f02f21439021e60ac5e4",
+    "figures/ionisation_main_v2/panel_b_seeds.csv": "aeb50a703ecca2be35d2da224ce031d00fbfd0af51f269a7da16d76a777eb868"
+  },
+  "files": {
+    "panel_b_average_estimates.csv": "cfaf99e91d32354259f93784ef38ddf792a244a24a81b73f0cc7fdee0c296c8a",
+    "panel_b_average_seeds.csv": "de69458414669be928ba4fd1602b752361aa2834106dd7c5f426dd6ed92337ec"
+  }
+}

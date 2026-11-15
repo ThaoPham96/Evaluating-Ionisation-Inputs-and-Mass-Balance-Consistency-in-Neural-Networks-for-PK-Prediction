@@ -1,0 +1,39 @@
+{
+  "campaign_id": "3b240d4ba482578fb7682dbe9a353c4c86f694caac422dfc00fd727a4faefed3",
+  "code_sha256": "fef4433ce9f1fd052d2cd24179bbb398d895e44443233fc248fbbce2553a2ed8",
+  "fit_count": 4240,
+  "fixed_alpha_curve_seeds": [
+    101,
+    202,
+    303
+  ],
+  "outputs": {
+    "all_fits_index.csv": "e07c63027de1da756d96b7683dea2718b0159c2c523cd559157af7fa578fc42f",
+    "fixed_alpha_seed_metrics.csv": "bf2fa8788d215cf649b1850e0a1713ce2dc72187090476f93174bb64e7a30358",
+    "fixed_alpha_summary.csv": "3cfcf727fc9b18f867cf674386a635be3af785c3378b60c40dda3cfe0bb10054",
+    "primary_outer_predictions.csv.gz": "2c8478e8ced25c3ed4de821805f95a6773bfbcf7405445e1af17f3505608283a"
+  },
+  "primary_policies": [
+    "baseline",
+    "selected_positive",
+    "zero_eligible",
+    "selected_alpha_orthogonal",
+    "selected_alpha_half_life",
+    "exact_orthogonal",
+    "exact_half_life"
+  ],
+  "primary_prediction_rows": 179928,
+  "primary_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "scoring": "Five endpoints log10; F/PPB percentage units. Same-row triad truth is separate from endpoint truth.",
+  "unique_structures_per_model_policy_seed": 952
+}

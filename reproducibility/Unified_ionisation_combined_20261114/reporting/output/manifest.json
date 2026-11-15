@@ -1,0 +1,167 @@
+{
+  "campaign_id": "84858a14dd64206333d9bc3851252293e659881a4643d4b26ee7d7d39af545a1",
+  "release_fingerprint": "3e1de9c4f7641238fdb6603676c17d059c2ffce262496437c752340ee5208d2b",
+  "plan_sha256": "2a48470572150d0c104b3b6b0e1d843cbbcbd8876aad508691284a642f62fe06",
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261113,
+  "bootstrap_method": "Fixed unresampled mean comparator MAE; jointly resample full structure groups and full seed trajectories.",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "numerically_scored_structures": 327,
+  "numerically_scored_groups": 238,
+  "input_sha256": {
+    "Unified_ionisation_combined_20261114\\data\\release\\numerical\\manifest.json": "825ff1af8202cbda119cf2334038d5986349b60788d1f187d0276944556f975f",
+    "Unified_ionisation_combined_20261114\\data\\release\\numerical\\model_dataset.csv": "ebe47d2c6285ca54db824fd4d7e37313dca60930679e3527a1a5f90ddf0a3426",
+    "Unified_ionisation_combined_20261114\\data\\release\\numerical\\outer.csv": "bf7aaee6fb25334686d2d6b43ebe34c30d123e2e97115aa636a70373a3a6ff32",
+    "Unified_ionisation_combined_20261114\\data\\release\\numerical\\inner.csv": "918d1f3a683b8da9008f6511f3aef35a76277ed4a0a4dd45e06a3c3c4d55b5d5",
+    "Unified_ionisation_combined_20261114\\runtime\\same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd",
+    "Unified_ionisation_combined_20261114\\analysis\\combined_score.py": "8f349d7035db59bee898b708ab0eccea08993744dcfc60cbdc233d5630234ea4",
+    "Unified_ionisation_combined_20261114\\analysis\\vendor_ionisation\\ionisation_score.py": "6fae7fd4105294bd3c5ebeae1abde0215f6939a9aeeee6a8f0140480acc6927e",
+    "Unified_ionisation_combined_20261114\\reporting\\build.py": "534ea2d112351c474cdd3409c29d643c556f213bef82521f399dc0f832c885ed",
+    "export/manifest.json": "98790f71bff6f74f6a0f1cb32861ba269a85bb56e16ffc55f4f09f54260c409a",
+    "export/plan.json": "2a48470572150d0c104b3b6b0e1d843cbbcbd8876aad508691284a642f62fe06",
+    "export/combined/manifest.json": "7e9ff3bc064155e5dbf33c363368271ed133430bb8f0fbffc61d10883cb8383f",
+    "export/combined/final_predictions.csv": "a203e818304be29ca54537f4663395fdfbd1f5ee79dd6771aaffe9125669c939",
+    "export/combined/inner_grid_predictions.csv": "e631b20813f226ff67b9e74c06212e1336a37bc30b7c5b5fe15fc4cea50472aa",
+    "export/combined/inner_p1_zero_predictions.csv": "a7a988a9eced47bf2b38d03db9a59b71aaaf463b4fdc2ab6fa078029b28e3887",
+    "export/combined/selections.json": "d6ed07db4abde662d68dbd83591debc4dd8076f5bd4df10edc41b43b61086b23",
+    "export/ionisation/manifest.json": "622a9f8356923d40ca11ed2b042850c0efe2ad7e256921da88a4ab593fb6baad",
+    "export/ionisation/outer_predictions.csv": "134a4fe7685e846a09988071f23e7b1664d7deb065a3e8e91d7ba523639135fe",
+    "export/ionisation/reference_and_ph_predictions.csv": "915fd710c56cff5ad66a0d5deffd73617d36b360d93094683031c60967ab285c"
+  },
+  "rendering": {
+    "campaign_id": "84858a14dd64206333d9bc3851252293e659881a4643d4b26ee7d7d39af545a1",
+    "source_sha256": {
+      "Ionisation_experiment_20261113/figures/ionisation_main_v3/manifest.json": "0832a77720f391e755f030ca9df1ec282173fb29a6c93bb898b0d141028ae343",
+      "Ionisation_experiment_20261113/runtime/ph_category_features/ledger.csv": "c63ffcb41e86b04651c5ad67dc48cfd5374ea1bae0cd2b17c0e9de4d9c07a724",
+      "Ionisation_experiment_20261113/data/release/numerical/model_dataset.csv": "ebe47d2c6285ca54db824fd4d7e37313dca60930679e3527a1a5f90ddf0a3426",
+      "Ionisation_experiment_20261113/runtime/ph_category_features/manifest.json": "1471369ef5a0df4f1116f16f944a3ad8fcb18e6d6d397ecf1b2cb3cf37a75bb0",
+      "Ionisation_experiment_20261113/data/release/numerical/manifest.json": "825ff1af8202cbda119cf2334038d5986349b60788d1f187d0276944556f975f",
+      "Ionisation_experiment_20261113/runtime/ph8_features/manifest.json": "2fe9b15472166dda94b88c9db191ec15ab38f71a0b385200697ea7adb72135e2",
+      "Ionisation_experiment_20261113/runtime/ph8_features/codes.json": "4f346b049e571386597f6c9226bb45c84f7a4ef8d4d5bbed6ccc8db3b4437f83",
+      "Ionisation_experiment_20261113/figures/ionisation_main_v3/schematic.py": "97a1d32ff0ed22ebbdfe0d7ec69e18ecaafccbd5275f8342b1dcfba6cbe56a5f",
+      "Ionisation_experiment_20261113/figures/ionisation_style.py": "c79119b1703d840c3790fedb0e762d33568593feaedd2a9d65dfad6a01a68a31",
+      "Ionisation_experiment_20261113/figures/ionisation_main_v3/render.py": "938f01ffa479713d3413415aa3961b0816dc8d19933af89edd3fa64242594e0a",
+      "Ionisation_experiment_20261113/figures/supplementary_selected_v1/manifest.json": "6bd10301b8dbb6021bf5aa099b16eceffad0788c0bf71ad404889290716253b2",
+      "Ionisation_experiment_20261113/figures/supplementary_selected_v1/render.py": "56cdc8dc3b4de8ad21ac07e833349fee9eda0c59656af7c7d2fa65803d7f1feb",
+      "Ionisation_experiment_20261113/figures/supplementary_selected_v1/encoding_seed_values.csv": "8821aa3ed013624035b21a7e75d359d818d80ebea66f09f7c87e919076e1bc6f",
+      "Ionisation_experiment_20261113/figures/supplementary_selected_v1/encoding_summary.csv": "f29f0f731579ced164308218ff3f13e949175bc10e89b56f25a9b3afc171a64f",
+      "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/source_manifest.json": "6e2457cb379a0e200c2cb6158c509f95c2d163909ce963cdbe4b7231c4e1af11",
+      "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/render.py": "b0cd590cb0b3e25329dbcab24b15414a2fb5c39dacc9c1848ff6492e0137eff0",
+      "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/schematic.py": "02a670b483d67d43aa0f59b5c86f89bd424d8b4e81a5ee9b4cce224190ee204d",
+      "Combined_ionisation_mass_balance_20261113/figures/combined_main_v2/endpoint_panel.py": "5587b3d7329d460e57fcf8a73f931daed7984a72f8ed76abc614e98b28e237b4",
+      "Combined_ionisation_mass_balance_20261113/figures/combined_main_v1/render.py": "b234e219b6a07f59a022ae93748eb4e47178e0ef500765b2fa9d69196ee3694b",
+      "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/render.py": "05eac9e3d02e3fad1b2663e3377b87a312e56de13d01100c1b5b4a6158f1cbfb",
+      "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/combined_style.py": "dc1fc1a89c8eaa467957935b5aa8b04295c28a64153b80cc5a956bd1f391d457",
+      "Unified_ionisation_combined_20261114/reporting/render_staged.py": "9490e4d07a86d97a52d1a91406d5c8fcaaa72938c2ccf4fda22ba561ae1f12fd"
+    },
+    "ph74_identity": {
+      "summary_rows": 24,
+      "seed_rows": 216,
+      "checks": [
+        "same prediction values and fit IDs",
+        "same fixed denominators",
+        "same endpoint and average point estimates and CI bounds",
+        "same seed differences"
+      ]
+    },
+    "fig2": {
+      "panel_d_x_limits": [
+        -24.0,
+        16.0
+      ],
+      "scatter_limits": {
+        "Vd": [
+          0.35,
+          5.65
+        ],
+        "CL": [
+          -2.15,
+          3.65
+        ]
+      }
+    },
+    "figS2": {
+      "heatmap_outside_colour_scale": [],
+      "artists_bbox_inches": [
+        0.07,
+        0.09044444444444444,
+        7.153999999999998,
+        9.079555555555558
+      ],
+      "class_encoding_checksums": {
+        "encoding_seed_values.csv": "8821aa3ed013624035b21a7e75d359d818d80ebea66f09f7c87e919076e1bc6f",
+        "encoding_summary.csv": "f29f0f731579ced164308218ff3f13e949175bc10e89b56f25a9b3afc171a64f"
+      }
+    },
+    "fig3": {
+      "main_plot_rows": 840,
+      "joint_x_limits": [
+        -9.0,
+        4.0
+      ],
+      "joint_y_limits": [
+        0.03360042126903459,
+        0.173
+      ]
+    },
+    "matplotlib_version": "3.10.8"
+  },
+  "output_sha256": {
+    "fig2/caption.txt": "2aa1e4dc4cb502544c2156402be35f781f2b6ec170a8f1a8ac4e6a68d60d3535",
+    "fig2/ionisation_main.pdf": "5f488a3b36771a07f2b5c175aabdb696c833be6360f3537da4ddcfc7571a0ae9",
+    "fig2/ionisation_main.png": "9f45e9cf721272a632ecab2962c1986e458ea0d802852da6968f525fd3e225b9",
+    "fig2/ionisation_main.svg": "d1ef0d15f5e814c6b838cb723e74b6de041c3256e0f703adaa6f5abe53155062",
+    "fig2/panel_a_counts.csv": "1a6b3ca85f7d8986c43cb3a6705275c1aa38433a8eaed4db3eb8b50b12df1356",
+    "fig2/panel_b_average_estimates.csv": "86bab1e909badbc573a4b5e70c2cfa76a09f82822837760e3659989669647f87",
+    "fig2/panel_b_average_seeds.csv": "f92ada9214513ea5bceedd2515805bc39f0b51f93067b652153efcaee7e3e663",
+    "fig2/panel_b_displayed_estimates.csv": "593ff96972aa67afa100185e13f3491aa324db628823c42d4806cc8a2caeda05",
+    "fig2/panel_b_estimates.csv": "593ff96972aa67afa100185e13f3491aa324db628823c42d4806cc8a2caeda05",
+    "fig2/panel_b_seeds.csv": "461fc6a206f22a2f4a450350b9f752a782d9fe6fe7f8298c06c8fff32117c75f",
+    "fig2/panel_b_vd_scatter_points.csv": "83484d04bc40c12b39de7e83478f9fc1bf84340e9d5eecb39594e489fbe072e0",
+    "fig2/panel_c_estimates.csv": "0bdc61149a0d49fa401a3a97f34f5a75c3dc238dcae89a2bccf846e14ea0d2ca",
+    "fig2/panel_c_seeds.csv": "79dc7216f692a3dec002936c4b320398a876ebb6b19fa6a7033ea421c350d555",
+    "fig2/scatter_inputs/manifest.json": "4ca219b75a80923724a23c31c71e48f7f7afb3258eaf0bc5762633f0b6887ed2",
+    "fig2/scatter_inputs/metrics.csv": "fd20797e24a82cfded685537ed67320c9ddd0a1fd2a1aaa14bdcf9be616d53d1",
+    "fig2/scatter_inputs/plotted_points.csv": "7a0f3247c3d430a356545b778540067bfd01badc85eaf8ca1b9e1f5a59a7d4b8",
+    "fig3/average_seeds.csv": "e3b039c0c955b91c410d41fce6d19096da494e28cb03910ad2198fb988a91472",
+    "fig3/average_summary.csv": "d196c05f2aca057ef4e7e785f46dafc8965a52144f768f7a2ec889b89b212441",
+    "fig3/caption.txt": "1ce873d89fa0843a03ab62f2576b64b2e41c0fadf6772c3faa7086bba7573fb5",
+    "fig3/combined_main.pdf": "8c25c498ff079c9489f4211e6e4cd19f77689ec1538714766262886395d62825",
+    "fig3/combined_main.png": "dd6f41b7138e00182f97d22ab90dffa41841a57cb0018b86f2b518f451209126",
+    "fig3/combined_main.svg": "0e6c143653df037ed742a27b71fba096872e466886eaacb3f1eb3b70589f0b19",
+    "fig3/plot_data.csv": "c2e1d9f1ac87d6228206fba3478cc077a5fd81a1854d5056173a860ce8920b3c",
+    "figS2/caption.txt": "f0d314d584b6a0e47160bfcd08d061bcde201b61a9854479f098f431a6d0e470",
+    "figS2/encoding_seed_values.csv": "8821aa3ed013624035b21a7e75d359d818d80ebea66f09f7c87e919076e1bc6f",
+    "figS2/encoding_summary.csv": "f29f0f731579ced164308218ff3f13e949175bc10e89b56f25a9b3afc171a64f",
+    "figS2/ionisation_supplementary_selected.pdf": "07f691fb05ec9ef8de9b2208b2bd8e2d2a5dc0005976eff938bc1d2bdc279c8b",
+    "figS2/ionisation_supplementary_selected.png": "c289bc8f432ec068d58a807b8a6b74602b7d0e825f9129c315efa8b70fb53f45",
+    "figS2/ionisation_supplementary_selected.svg": "4353c289a8923e5b1a9760a00af17fb9d26e555a7b0dbd6da727de21c8a6783b",
+    "figS2/scatter_metrics.csv": "fd20797e24a82cfded685537ed67320c9ddd0a1fd2a1aaa14bdcf9be616d53d1",
+    "figS2/scatter_points.csv": "7a0f3247c3d430a356545b778540067bfd01badc85eaf8ca1b9e1f5a59a7d4b8",
+    "figS2/single_ph_estimates.csv": "5d28116f5da8ccb721f5cda100c7e81985b39ec1d6c4ab2a8a3b69646024094c",
+    "figS2/single_ph_seed_values.csv": "6faae951f491a7a8175027daeb3b6d4a3122f4b2f5fd4f666c3376029bf73dcf",
+    "figure2_figure3_shared_ph74.csv": "ef66e014f8ca2cade8126af7e37c797ff6175c4d5b822f5f21198719aed1dcf7",
+    "manuscript_claims.json": "59d2318ba5f80e71cc5a80f6763973bc2a6b36dc1cd688c927ad32dfb442c666",
+    "scores/combined_average_loss_contrasts.csv": "bdb7bf6ee6ba51d6893ec7bfb878ec165f46aec25d89aef44dbdab9369680b8a",
+    "scores/contrasts.csv": "85caf94e729258cb944cbef4ca7fadcaa4200df19562890f21e4280c94ebf1f3",
+    "scores/disagreement_cdf.csv": "bf48444ea6e1fea7369745c365f83bd944346745b9ce249ae27e2949fc6d4648",
+    "scores/lambda_selection.csv": "a618337b014734c6222b2874e25b85c9deec44dd0be794882d413f537f72645f",
+    "scores/manifest.json": "b0b0871141067dab6a24afde7fccb25ee0d382aa93b86fa0497e281b099209a2",
+    "scores/metrics.csv": "825885743d5f910bd906fe9e78d8e1108a0c57667f594b03a004707e790e3f2c",
+    "scores/seed_contrasts.csv": "fe51b1866ec454e40c2bb0f38cabda0432c003788a58414674049d9e063a60cb",
+    "scores/seed_metrics.csv": "a8cacce79ca33954db8e1277e1ac4aa58d2a06758d940a139a5f01f5e26d5f5c",
+    "scores/signed_residuals.csv": "2d88766b5cc26c629164d15ba0be878b526667450029b52c4825b606f7e88ea2",
+    "scores/single_ph_contrasts.csv": "d6e8479a3c77b19939d65b2e54a2a380c22516aa3b31c792c97fee958bca5956",
+    "scores/single_ph_seed_contrasts.csv": "e6173c9c1ea4bc855f516515d610bea2855226bac2f56d5e39af92181272ef57"
+  }
+}

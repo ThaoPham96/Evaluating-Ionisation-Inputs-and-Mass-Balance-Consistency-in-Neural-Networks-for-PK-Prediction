@@ -1,0 +1,61 @@
+{
+  "sources": {
+    "outputs\\scoring\\contrasts.csv": "3d8342ba0863150a30f637d91b21b801738e77d8dfa32b210cbde01581195bcf",
+    "outputs\\scoring\\contrast_seeds.csv": "7ebc1e88384b3f7075ee59b6cb687c8f4da74f76610487f3e893cf4f0e96318b",
+    "figures\\ionisation_main_v2\\panel_b_average_estimates.csv": "cfaf99e91d32354259f93784ef38ddf792a244a24a81b73f0cc7fdee0c296c8a",
+    "figures\\ionisation_main_v2\\panel_b_average_seeds.csv": "de69458414669be928ba4fd1602b752361aa2834106dd7c5f426dd6ed92337ec",
+    "figures\\ionisation_main_v2\\panel_ph_vs_baseline_estimates.csv": "43dcd449e6ec312cf92f770d0c92a0ee4a2080d20e130d661e9f989c77194680",
+    "figures\\ionisation_main_v2\\panel_ph_vs_baseline_seeds.csv": "4710bdc5d1d1b9bc8b0e468600c57843f5d27b270269000a85535a586a322495",
+    "runtime\\ph_category_features\\ledger.csv": "c63ffcb41e86b04651c5ad67dc48cfd5374ea1bae0cd2b17c0e9de4d9c07a724",
+    "figures\\ionisation_observed_predicted_v1\\plotted_points.csv": "37e2df1aee1edb6fed499892a4fdbc2f9ec24a4211cd44c79aadde176c972572",
+    "figures\\ionisation_observed_predicted_v1\\metrics.csv": "172b7e8c33a7f48e2e1e95e4740f06bf7c7cf54a666ded76f4ba887aa3ac0c0b"
+  },
+  "outputs": {
+    "caption.txt": "a670cf29f3c6576a9729925ff8d48809fe0d1c86f13a8e4d6e3b9352f3142ca9",
+    "ionisation_main.pdf": "d0ac88b7ca99ef2f7a6ec7016c0d720bf0b82df0e0df4859bbf8cf8cd0041a5b",
+    "ionisation_main.png": "9db7a44f541fae44356f96237eff45b6271ae28da8d1f35ceb775a0334f92b02",
+    "ionisation_main.svg": "f1dee26e1ce5ab5583ee55cab39e1944827430ddcfad9e8229ca98a23095c80a",
+    "main_pdf_check.png": "f9a21ffd7f4fa316bd600b5d2e99e29ce6a694cc0776a6d73c37ff540fc15565",
+    "panel_a_counts.csv": "8b791a0e3330504858d7602cebbce90c5110a4526347b2c8597060dd79b5f0d3",
+    "panel_b_average_estimates.csv": "cfaf99e91d32354259f93784ef38ddf792a244a24a81b73f0cc7fdee0c296c8a",
+    "panel_b_average_seeds.csv": "de69458414669be928ba4fd1602b752361aa2834106dd7c5f426dd6ed92337ec",
+    "panel_b_displayed_estimates.csv": "0ae6a54cc1497599dc3271d9542a7aa94f1fb35088c9088cf6ddc9dacd62e07b",
+    "panel_b_estimates.csv": "754a53a8a8bcee11240f8ebbb6c497a97e922194a5c2f02f21439021e60ac5e4",
+    "panel_b_seeds.csv": "aeb50a703ecca2be35d2da224ce031d00fbfd0af51f269a7da16d76a777eb868",
+    "panel_b_vd_scatter_points.csv": "ecd7da564c9133f73beee2f025d9e7e4b18de58eee6eb237922c6433a7582581",
+    "panel_c_points.csv": "3fb67071ad6d330b74be4a220f886fdc5642e53c78b7f88784a39653437d34d5",
+    "panel_d_plotted.csv": "09f00beb59216c2f877d3ae253fc6cf4a91cc28c887b395e399b9701a5ba3ff3",
+    "panel_d_seeds.csv": "c75e8d74fb82a15b35d13f0560fd09d8a537ca1424d935ca2116e0f8f37c460e",
+    "panel_d_summary.csv": "4967381f58078439fcd92883b6e69d9978c052d2a7b627fb7a7b85d3db4bc9f4",
+    "panel_e_estimates.csv": "3a4bb2ae46ccbaf15b385ee639f3602e2406539cffabd159baa2cadd69e60683",
+    "panel_ph_vs_baseline_estimates.csv": "43dcd449e6ec312cf92f770d0c92a0ee4a2080d20e130d661e9f989c77194680",
+    "panel_ph_vs_baseline_seeds.csv": "4710bdc5d1d1b9bc8b0e468600c57843f5d27b270269000a85535a586a322495",
+    "README.txt": "1bbd509bf3b71807fb865685b0e2dfec7b97a91fbf06792421ea93ca084abb69",
+    "REVIEW.txt": "a237e7f18442bb0573a1bfa9e8f3c30fad7dfb2c2780e058853e02c20b8d25d2",
+    "supplement_guide_check.png": "47224a0deb5e421e622be7a6837426f0ac0240ed4338de5c85375ee7910dd41e"
+  },
+  "main_cohort_structures": 327,
+  "main_cohort_groups": 238,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "renderer_sha256": "7490c3b3de56ede7757074c289339edf1b0eceda83ebc034a904b9c11df05614",
+  "panels": [
+    "A",
+    "B (endpoint average and Vd scatter included)",
+    "C (Vd vs structure only)",
+    "D (clearance vs structure only)"
+  ],
+  "figure_size_inches": [
+    9.4,
+    17.8
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 20287,
+        "SMILES": "CC1=C(ON=C1C)NS(=O)(=O)C2=CC=C(C=C2)N.C(CO)NCCO",
+        "InChIKey": "FEPTXVIRMZIGFY-UHFFFAOYSA-N",
+        "IUPACName": "4-amino-N-(3,4-dimethyl-1,2-oxazol-5-yl)benzenesulfonamide;2-(2-hydroxyethylamino)ethanol"
+      }
+    ]
+  }
+}

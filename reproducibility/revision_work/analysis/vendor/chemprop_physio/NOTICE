@@ -1,0 +1,50 @@
+vendor/chemprop_physio/chemprop
+===============================
+
+This directory redistributes a modified copy of Chemprop.
+
+    Chemprop, version 1.6.1
+    Copyright (c) 2020 Wengong Jin, Kyle Swanson, Kevin Yang,
+                       Regina Barzilay, Tommi Jaakkola
+    Licensed under the MIT License; see LICENSE in this directory.
+    Source: https://github.com/chemprop/chemprop
+    Distribution: https://pypi.org/project/chemprop/1.6.1/
+
+The copy was taken verbatim from the `chemprop` 1.6.1 wheel as installed by
+the environment specified in environment.yml, and LICENSE in this directory is
+the byte-identical LICENSE.txt from that wheel's distribution metadata.
+
+MODIFICATIONS
+-------------
+
+This copy is NOT stock Chemprop. Three files were modified to add the PIPK-Net
+mass-balance constraint:
+
+    chemprop/args.py                  +7  -1   two new TrainArgs fields
+    chemprop/train/run_training.py   +25   0   scaler threading, startup guard
+    chemprop/train/train.py          +47  -1   the constraint term itself
+
+Totals: 3 of 51 Python files changed, 79 lines added, 2 lines removed. Every
+other file in this copy is byte-identical to upstream 1.6.1.
+
+PATCH.md in this directory documents each edit, why upstream offered no hook
+that could carry the constraint, and how the fork is kept off the import path
+so that `import chemprop` continues to resolve to the stock installed package.
+
+The modifications are released under the same MIT License as the original.
+They are the work of the PIPK-Net authors and are not endorsed by, nor
+associated with, the Chemprop authors or their institutions.
+
+WHY A FORK IS REDISTRIBUTED AT ALL
+----------------------------------
+
+The published Chemprop benchmark figures were produced by stock 1.6.1 from
+environment.yml, never by this copy. This copy exists only for the constrained
+Chemprop arm, and is reachable only through
+`python vendor/chemprop_physio/run_train.py`, which prepends its own directory
+to sys.path. See PATCH.md for the verification that the two copies cannot
+shadow each other.
+
+Reviewers who prefer to rebuild the fork rather than take this copy on trust
+can do so from the instructions at the end of PATCH.md; the diff above is small
+enough to read in full.

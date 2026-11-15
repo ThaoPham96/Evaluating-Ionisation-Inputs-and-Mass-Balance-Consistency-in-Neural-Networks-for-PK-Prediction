@@ -1,0 +1,12 @@
+{
+  "n": 674,
+  "within_1.5_n": 451,
+  "within_2_n": 540,
+  "within_5_n": 641,
+  "beyond_5_n": 33,
+  "median_fold_disagreement": 1.1984032014907369,
+  "maximum_fold_disagreement": 87.28520051495603,
+  "x_axis_upper_limit": 90.0,
+  "x_axis_scale": "logarithmic",
+  "display": "Exact empirical cumulative distribution of all 674 structures; post steps; reference points at 1.5-, 2- and 5-fold; display endpoints at 1 and 90"
+}
