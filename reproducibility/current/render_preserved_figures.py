@@ -58,7 +58,7 @@ def save(fig, directory, stem):
     changes = []
     for label in fig.findobj(Text):
         old = label.get_text()
-        new = old.replace('ChemBERTA', 'ChemBERTa').replace('MAE relative to structure only (%)', 'MAE vs structure only (%)')
+        new = old.replace('ChemBERTA', 'ChemBERTa').replace('MAE relative to structure only (%)', 'MAE vs structure only (%)').replace(r'\ln 2', r'\ln\,2')
         if new != old:
             label.set_text(new)
             changes.append(dict(old=old, new=new))

@@ -50,6 +50,8 @@ There are two different workflows:
 | Reproduce saved results | Validate artifacts, rescore predictions, recompute intervals and redraw figures | CPU; Python or Docker as specified below |
 | Refit models | Run the documented grouped training and selection procedures into a new output directory | A compatible training environment; GPU recommended |
 
+Training-partition scales, validation-label counts and matched F/T calibration records are supplied in [Supplementary Data 3 and 4](reproducibility/supporting_data/README.txt), with a local rebuilding command in the reproduction guide.
+
 Use the [reproduction guide](docs/reproduction.md) for environment setup, artifact preparation and the available entry points. Recomputed saved-prediction statistics and a fresh training run answer different reproducibility questions: refitting can vary with the hardware and numerical environment.
 
 Clone the repository, then run the lightweight validation and point-metric checks with Python 3.11 or later. These checks use only the Python standard library:

@@ -47,7 +47,7 @@ def main():
     panel(axs[0,1],'B','Input-tuned (T): descriptor accuracy','T_new',desc,'MAE change vs T structure only (%)')
     names=['Structure','Categories',r'Raw p$K_a$','Fractions']
     panel(axs[1,0],'C','T: penalty effect on triad accuracy','T_new',[(n,f'P{i}_positive-P{i}_off','triad_mae') for i,n in enumerate(names)],'Triad MAE change vs same-input loss off (%)')
-    panel(axs[1,1],'D','T: penalty effect on internal consistency','T_new',[(n,f'P{i}_positive-P{i}_off','mean_abs_residual') for i,n in enumerate(names)],r'Change in mean absolute residual ($\log_{10}$)',True)
+    panel(axs[1,1],'D','T: penalty effect on internal consistency','T_new',[(n,f'P{i}_positive-P{i}_off','mean_abs_residual') for i,n in enumerate(names)],r'Change in mean absolute residual (log$_{10}$)',True)
     panel(axs[2,0],'E','F: separate versus shared penalty selection','F_new',[(f'{n}: {labels[ep]}',f'P{i}_separate-P{i}_shared',ep) for i,n in [(0,'Structure'),(1,'Categories')] for ep in ['Vd','CL','triad_mae']],'MAE change vs shared penalty (%)')
     panel(axs[2,1],'F','T: input by penalty interactions','T_new',[(f'{n}: {labels[ep]}',f'interaction_{c}',ep) for n,c in [('Categories','category'),(r'Raw p$K_a$','raw_pka'),('Fractions','fractions')] for ep in ['Vd','CL']],'Interaction on T structure-only scale (pp)')
     handles=[plt.Line2D([],[],marker='o',ls='',color=c,label=n,ms=5) for c,n in zip(COLORS,NAMES)]
