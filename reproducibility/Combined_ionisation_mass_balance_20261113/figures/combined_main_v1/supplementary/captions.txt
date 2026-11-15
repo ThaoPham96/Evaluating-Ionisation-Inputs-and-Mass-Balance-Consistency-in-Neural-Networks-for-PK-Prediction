@@ -1,0 +1,26 @@
+S1: Endpoint MAE changes from structure-only baseline on each endpoint’s full label mask. The same baseline seed-mean denominator is used for all three additions within a model/endpoint. Nine paired seed points, means and exploratory 95% crossed bootstrap intervals.
+
+S2: Difference-of-differences in MAE, calculated within each bootstrap draw; the fixed structure-only seed mean converts raw differences to percentages. Triad average, Vd and clearance use 242, 259 and 246 labelled structures, respectively. Thick intervals are exploratory 95%; thin intervals use the prespecified nine-test 99.4444% level.
+
+S3: Adding training loss or post-hoc correction to ionisation-only predictions. In A, each accuracy contrast and both interval bounds are divided by the fixed ionisation-only seed mean. B shows absolute mean log10 disagreement, with each model’s ionisation-only mean as a dashed reference line. Selected correction strengths use only inner validation predictions. The exact controls use alpha=1, producing algebraic consistency by construction.
+
+All intervals are equal-tailed percentile intervals from 10,000 paired resamples of whole scaffold/parent groups and whole seed trajectories. They condition on the observed training data, saved folds and selected recipes, and do not retrain models within each draw. Each seed pools its five held-out outer folds.
+
+S4: a. The triad macro MAE averages absolute log10 errors equally across half-life, volume of distribution and clearance on 242 observed same-row triads. Each dot pools the five held-out outer folds of one seed. Lines connect the same seed across conditions. Diamonds show the mean of nine seeds with 95% crossed bootstrap intervals. Structure only (00) has neither ionisation input nor a mass-balance penalty. Ionisation (10) adds the pH 7.4 category. Loss (01) adds the mass-balance penalty. Both (11) uses the ionisation category and the same fold-specific positive penalty as 01.
+
+b. Fold disagreement is 10 raised to the absolute log10 residual, or the larger divided by the smaller of predicted half-life and the half-life implied by ln(2) times predicted volume divided by predicted clearance. A value of one indicates exact agreement. Each curve averages empirical CDFs computed separately for nine fitted seeds on all 327 held-out structures per seed. Higher curves indicate more consistent predictions. The panel shows 1–5-fold. At most 18 of 2,943 predictions per curve (0.61%) lie above 5-fold. The full CDF support is included in plot_data.csv.
+
+
+S5. Paired effects of adding the mass-balance loss to ionisation-informed models.
+
+a. Teal shows the equal-weight average of seven endpoint percentage MAE changes. Each endpoint uses all observed labels: half-life 316, Vd 259, CL 246, Cmax 190, Tmax 249, F 172 and PPB 292, retaining zero F/PPB labels. Five endpoints use log10 MAE and F/PPB use percentage-point MAE. Each endpoint's paired MAE difference (both minus ionisation only) is divided by its fixed ionisation-only nine-seed mean MAE, multiplied by 100, and the seven changes are averaged within each seed. Purple shows the prespecified percentage change in raw triad macro log10 MAE on the 242 complete same-row triads, divided by the fixed ionisation-only triad mean. This triad macro metric averages raw log10 endpoint MAEs before normalisation; it therefore retains the original primary weighting, whereas the main figure's triad display averages normalised endpoint MAEs.
+
+b. Percentage change in mean absolute log10 triad residual on all 327 structures when adding the loss to ionisation-informed models. Estimates and interval bounds use the fixed ionisation-only mean across seeds as the denominator.
+
+Dots show nine paired seed changes; diamonds show means. Thick lines show exploratory 95% percentile intervals. Thin lines show 99.1667% Bonferroni-adjusted intervals for the six prespecified primary comparisons (triad accuracy and disagreement across three models). The seven-endpoint summary is exploratory and has 95% intervals only. The 10,000 crossed bootstrap draws jointly resample whole structure groups and whole fitted seed trajectories across endpoints, preserving endpoint dependence and using each endpoint's resampled observed-label count. Normalising denominators remain fixed. Training data, folds, recipes and selection procedure remain fixed.
+
+Complete-triad sensitivity (mean residual, both minus ionisation only):
+GraphConv: -31.43% on the 242 complete-triad structures; -31.72% on all 327.
+Chemprop: -45.95% on the 242 complete-triad structures; -45.96% on all 327.
+Frozen ChemBERTa + MLP: -48.11% on the 242 complete-triad structures; -48.52% on all 327.
+These are descriptive sensitivity estimates; the plotted primary intervals above remain the full-cohort analyses. Each population uses its own fixed ionisation-only mean as denominator.

@@ -1,0 +1,95 @@
+HOW THE CATEGORICAL pH INPUTS CHANGE PREDICTIONS
+
+These comparisons use all 327 held-out structures for every endpoint,
+including structures without observed labels for that endpoint. For each
+structure, subtract the prediction of the comparator from that of the first
+arm at the same seed and average the nine differences. Half-life, Vd, CL,
+Cmax and Tmax use log2 fold ratios. F and PPB use percentage points (pp).
+A prediction ratio of 1 means the two predictions agree. Positive signed
+changes mean higher predictions. The magnitudes below are absolute values
+of the per-structure nine-seed averages. They describe prediction changes,
+while the separate error figures use observed endpoint labels.
+
+1. The same small centre can conceal very different compound-level changes
+
+For shared-recipe ALL4 versus REP4, the median signed F change is about
++0.30 pp in each backbone. Median absolute F changes are 2.78 pp for
+GraphConv, 4.95 pp for Chemprop and 0.96 pp for frozen ChemBERTa. In Chemprop,
+170 structures rise and 157 fall, and 163 of 327 move by at least 5 pp.
+Its middle 80% ranges from -10.69 to +11.06 pp. The whole-cohort signed
+mean is +0.29 pp. GraphConv has 92 structures with changes of at least
+5 pp, and ChemBERTa has two.
+
+Cmax shows a similar pattern. Chemprop's median signed shift is almost zero
+and the counts are 164 higher and 163 lower. The median magnitude is
+0.463 log2, or 1.38-fold in either direction, and 54 structures move by at
+least twofold. GraphConv and ChemBERTa median magnitudes are 0.346 and 0.109
+log2 (1.27-fold and 1.08-fold). GraphConv has 25 structures that move at
+least twofold, and ChemBERTa has none. Chemprop's PPB mean shift is -1.31 pp
+with 138 structures rising and 189 falling. Tmax has the smallest median
+magnitude of the five log endpoints in all three models (0.086, 0.111 and
+0.022 log2, respectively).
+
+2. Opposite shifts in Vd among structures with stable and changing categories
+
+For frozen ChemBERTa, shared-recipe ALL4 versus REP4 Vd has a whole-cohort
+mean shift of -0.018 log2. The 121 stable structures shift down by -0.127
+log2 and the 206 switchers shift up by +0.046 log2. The mean change has
+the corresponding sign in all nine paired seed trajectories for each group.
+The stable group begins at a higher REP4 geometric mean predicted Vd than
+the switchers, 182.0 L versus 103.3 L. With ALL4 these become 166.6 L and
+106.6 L. GraphConv shows the same opposite directions, with geometric
+means changing from 309.1 to 283.7 L in stable structures and 82.5 to 86.7 L
+in switchers. Chemprop Vd rises more in switchers, 75.4 to 84.0 L, than in
+stable structures, 290.9 to 292.8 L. These are descriptive summaries across
+structures and seeds.
+
+All 90 base-only compounds at pH 7.4 retain the same operational category
+at every tested pH. For those compounds, the two 16-channel vectors are
+identical, as they are for all 121 stable compounds. Even so, ChemBERTa Vd
+falls in 89 of the 90 base-only compounds, with a mean log2 change of
+-0.166. The geometric mean ratio is 0.891 (10.9% lower), from 238.7 to
+212.7 L. For the same group, its Cmax shifts up by +0.099 log2 and F by
++1.15 pp. All three class-level mean directions hold across the nine seed
+means. The models were fitted separately on their respective inputs, so
+their predictions can differ even on identical vectors. The subgroup signs
+are properties of these fitted models. The category names describe
+threshold flags from the same two archived pKa estimates.
+
+3. Input comparisons that change the size of prediction shifts
+
+The individual-pH comparisons show endpoint- and backbone-dependent changes.
+For example, Chemprop ADD65 versus REP2 has a median absolute F shift of
+4.11 pp, with 137 structures moving by at least 5 pp despite 38 structures
+changing category at pH 6.5. ChemBERTa ADD65 F moves by a median of 0.50 pp.
+Across both backbones, the counts of changed input categories are fixed.
+
+Repeating pH 7.4 alone also changes predictions. Chemprop REP4 versus
+REF74 moves F by a median of 4.60 pp and at least 5 pp in 151 structures.
+Adding the pH 7.4 category to structure alone (REF74 versus REF0) produces
+larger median Vd shifts than ALL4 versus REP4 in all three backbones.
+Those medians are 0.512, 0.547 and 0.156 log2 versus 0.266, 0.270 and
+0.101 log2, in GraphConv, Chemprop and ChemBERTa respectively.
+
+Independent tuning keeps the broad backbone difference in shift magnitude.
+Tuned Chemprop Cmax moves by a median of 0.648 log2 (1.57-fold), with 88
+structures moving by at least twofold, versus 54 in the shared-recipe
+comparison. Its signed mean changes from -0.037 to +0.183 log2. Tuned
+ChemBERTa Vd shifts remain narrower (median magnitude 0.097 log2). For
+both ChemBERTa arms the tuned result shares 36 of 45 fits with the
+shared-recipe result. Tuning therefore describes the sensitivity of these
+predictions to recipe selection on the same data.
+
+The figures compare outputs of separately fitted models using operational
+categories. They describe shifts in the original endpoint predictions.
+No endpoint was measured under the added pH conditions.
+
+Files
+
+structure_shifts.csv contains each compound's nine-seed mean, absolute
+mean shift across seeds, seed SD and higher/lower seed counts.
+shift_summary.csv contains signed and absolute summaries, interquantile
+ranges and fold ratios for the entire cohort, pH 7.4 categories and
+switcher/stable strata. seed_shifts.csv retains nine whole-stratum means
+and magnitudes for every summary. Manifest binds the frozen prediction
+export, source-fit provenance, release and categorical pH ledger.

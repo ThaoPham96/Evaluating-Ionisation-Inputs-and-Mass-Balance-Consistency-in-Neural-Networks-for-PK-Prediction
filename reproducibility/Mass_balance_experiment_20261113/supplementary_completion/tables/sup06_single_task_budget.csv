@@ -1,0 +1,6 @@
+outer_fold,multitask_candidate,multitask_parameters,multitask_configurations_searched,single_task_configurations_searched_per_endpoint,single_task_t_half_candidate,single_task_t_half_parameters,single_task_Vd_candidate,single_task_Vd_parameters,single_task_CL_candidate,single_task_CL_parameters,single_task_F_candidate,single_task_F_parameters,single_task_PPB_candidate,single_task_PPB_parameters,single_task_Cmax_candidate,single_task_Cmax_parameters,single_task_Tmax_candidate,single_task_Tmax_parameters,single_task_total_parameters_seven_models
+1,GraphConv_10,56327,20,6,ST_06,209409,ST_02,15489,ST_04,55553,ST_05,209409,ST_05,209409,ST_04,55553,ST_05,209409,964231
+2,GraphConv_02,15879,20,6,ST_06,209409,ST_06,209409,ST_05,209409,ST_05,209409,ST_02,15489,ST_05,209409,ST_06,209409,1271943
+3,GraphConv_10,56327,20,6,ST_04,55553,ST_04,55553,ST_04,55553,ST_04,55553,ST_02,15489,ST_06,209409,ST_05,209409,656519
+4,GraphConv_02,15879,20,6,ST_04,55553,ST_04,55553,ST_02,15489,ST_02,15489,ST_02,15489,ST_04,55553,ST_02,15489,228615
+5,GraphConv_10,56327,20,6,ST_05,209409,ST_04,55553,ST_02,15489,ST_05,209409,ST_02,15489,ST_06,209409,ST_05,209409,924167

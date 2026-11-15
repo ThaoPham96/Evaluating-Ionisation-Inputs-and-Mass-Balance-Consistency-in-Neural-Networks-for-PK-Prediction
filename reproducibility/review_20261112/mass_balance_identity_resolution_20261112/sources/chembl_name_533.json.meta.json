@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TOPOTECAN&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TOPOTECAN&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:40.833506+00:00",
+  "sha256": "5f723824450d88ca498d12f0f04b4fe62d0eb179acac846160b975d426339821",
+  "bytes": 5722
+}

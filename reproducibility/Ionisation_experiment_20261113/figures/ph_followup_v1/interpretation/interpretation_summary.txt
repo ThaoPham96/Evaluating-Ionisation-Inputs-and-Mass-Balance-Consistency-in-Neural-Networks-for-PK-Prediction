@@ -1,0 +1,173 @@
+CATEGORICAL pH FOLLOW-UP | INTERPRETATION OF FROZEN SCORES
+
+The comparison pools five held-out folds within each of nine seeds for 327
+structures in 238 frozen groups. MAE differences are first arm minus comparator.
+Positive values mean higher error. F and PPB use percentage points, and the
+other five endpoints use log10 units. Percent changes and interval bounds use
+the same fixed comparator mean MAE. Crossed intervals resample whole seed
+trajectories and frozen groups. Only the six shared-recipe F/Vd headline rows
+use adjusted 99.17% intervals. All other intervals below are exploratory 95%.
+Sample SD and favourable seed counts describe paired seed variation.
+
+1. Width-matched primary comparison
+
+No shared-recipe ALL4 versus REP4 result met the primary reduction rule.
+ChemBERTa Vd MAE increased from 0.4654 to 0.4772, +0.01172 log10 units
+(adjusted interval +0.00370 to +0.01989), or +2.52% (+0.80% to +4.27%).
+The increase occurred in all nine seeds and all five outer folds. The other
+five adjusted intervals span zero. In order GraphConv, Chemprop, ChemBERTa:
+
+  Vd: +3.24% [-1.37, +8.28], +2.31% [-4.46, +8.67], +2.52% [+0.80, +4.27].
+  F:  -0.47% [-4.87, +4.65], -1.68% [-8.63, +5.36], +0.62% [-0.93, +2.11].
+
+F estimates correspond to -0.120, -0.454 and +0.146 percentage points on
+172 labels from 135 groups. Lower F errors occurred in 7/9, 8/9 and 1/9
+seeds respectively. The adjusted intervals still span reductions and increases.
+Vd uses 259 labels from 196 groups. Vd MAE was higher in 9/9 GraphConv,
+7/9 Chemprop and 9/9 ChemBERTa seeds. Independent tuning kept all three Vd
+point estimates positive. Tuned ChemBERTa +2.43% [+1.19, +3.72] was higher
+in 9/9 seeds and all five folds. For both arms, tuning reused all nine
+shared-recipe fits in folds 1, 2, 3 and 5 and selected a different fit in
+fold 4. The tuned result is a sensitivity analysis on the same data and
+shares 36 of 45 fits per arm. Tuned F intervals all span zero.
+
+2. Seven-endpoint pattern and individual pH blocks
+
+Across the 21 ALL4 versus REP4 shared-recipe endpoint/backbone rows, 18
+ordinary 95% intervals span zero. Three exclude zero in the higher-error
+direction: ChemBERTa Vd and half-life for GraphConv (+3.61%, [+0.25, +6.76],
+higher in 9/9 seeds) and Chemprop (+4.31%, [+0.18, +8.51], higher in 7/9).
+GraphConv's half-life direction persists under tuning (+2.61%, [+0.23,
++4.92], 9/9 higher). The Chemprop half-life estimate weakens (+1.59%,
+[-2.99, +5.75]). Across the six ALL4/REP4 backbone-by-recipe results,
+half-life, Vd and Tmax point estimates are all higher. CL changes are small
+and mixed. PPB and Cmax contain the main lower-error estimates in tuned
+Chemprop. F remains uncertain across both procedures.
+
+All 63 individual-pH versus REP2 results were examined. None had an ordinary
+95% interval entirely in the lower-error direction, and 59 span zero. All
+nine Vd point estimates are higher (+0.68% to +3.08%), as are all nine
+half-life and all nine Tmax estimates. ADD2 has exploratory higher MAE for
+ChemBERTa Vd (+2.61%, [+1.32, +4.00]) and CL (+1.06%, [+0.11, +2.06]);
+both rise in 9/9 seeds. All 21 ADD5 intervals span zero. The descriptive
+ADD65 intervals above zero are ChemBERTa Vd (+0.68%, [+0.04, +1.37], 9/9
+higher) and GraphConv Tmax (+1.95%, [+0.025, +3.79], 8/9 higher). Only 38
+structures change category at pH 6.5, including 23 with F labels.
+
+3. Single-pH reference and repeated inputs
+
+Compared with the reused structure-only REF0, REF74 reduces Vd and CL MAE
+in all three backbones, with lower error in every seed for each comparison.
+Vd changes are -11.30% [-16.83, -6.07], -12.99% [-19.07, -7.11] and
+-4.85% [-7.05, -2.87] for GraphConv, Chemprop and ChemBERTa. CL changes
+are -6.38% [-10.70, -2.24], -8.79% [-13.69, -4.14] and -2.36%
+[-4.10, -0.78]. ALL4 also has lower Vd and CL MAE than REF0. ALL4 versus
+REF74 has 20 of 21 intervals spanning zero, with the remaining interval
+showing higher GraphConv half-life MAE (+3.58%, [+0.32, +6.86]). Its F
+point estimates relative to REF74 are lower in every backbone (-2.04%,
+-4.05%, -1.42%), but the intervals span zero. The largest F estimate here
+is Chemprop -1.12 percentage points [-2.45, +0.18], lower in 7/9 seeds.
+
+REP4 versus REF74 repeats the same category while changing input
+parameterisation. ChemBERTa shows lower Vd (-2.29%, [-4.03, -0.49], 8/9
+lower), CL (-1.46%, [-2.75, -0.27], 9/9) and F (-2.02%, [-4.30, -0.14],
+8/9) MAE. The 18 other rows span zero. ChemBERTa Vd goes from 0.47634
+with REF74 to 0.46544 with REP4 and 0.47716 with ALL4. The repeat control
+accounts for the difference between a higher ALL4 error relative to REP4
+and the small, unresolved ALL4 contrast relative to REF74 (+0.17%,
+[-1.09, +1.54]). REP2 also improves ChemBERTa CL and PPB MAE over REF74
+in exploratory comparisons. These repeated-input results describe the fitted
+parameterisations, including their arm-specific calibration, and do not
+identify a unique optimisation mechanism.
+
+4. Independent tuning and metric shifts
+
+Tuned Chemprop gives the main exploratory improvements over REP4. ALL4
+lowers PPB MAE by 1.64 percentage points [-3.22, -0.28], or -8.14%
+[-15.99, -1.40]. It lowers Cmax MAE by 0.0591 log10 units [-0.1185,
+-0.0064], or -6.00% [-12.04, -0.65]. Each point estimate favours ALL4 in
+all nine seeds and all five outer-fold averages. Shared-recipe PPB and
+Cmax estimates have the same sign (-2.27% and -2.32%) but both intervals
+span zero. GraphConv Cmax moves from -2.05% under the shared recipe to
++1.59% under tuning. ChemBERTa Cmax is about +0.70% in both. These results
+support prioritising the tuned Chemprop PPB/Cmax findings as exploratory,
+with no matching broad gain across recipes and backbones.
+
+Shared-recipe REF74 gave lower Chemprop MAE point estimates than tuned ALL4
+for both endpoints. PPB was 18.33726 versus 18.52103 percentage points,
+an ALL4 change of +0.18378 percentage points (+1.00221%). Cmax was 0.924760
+versus 0.925287 log10 units, an ALL4 change of +0.000527 (+0.05702%). The
+tuned REP4 MAEs were 20.16228 percentage points and 0.984356 log10 units,
+respectively. These cross-procedure point comparisons are descriptive.
+
+Paired AAFE, Spearman rho and R-squared use descriptive means and sample
+SDs across seeds. No compound/group intervals are available for these
+metrics. All shifts below are first arm minus comparator (mean +/- paired
+seed SD). Smaller AAFE and larger rho/R-squared are favourable.
+
+  - ChemBERTa Vd ALL4-REP4, shared recipe: AAFE +0.0799 +/- 0.0137,
+    rho -0.0295 +/- 0.0045, R-squared -0.0310 +/- 0.0051. Each worsens in
+    all nine seeds. Tuned shifts are +0.0763, -0.0298 and -0.0305.
+  - ChemBERTa Vd REP4-REF74: AAFE -0.0742 +/- 0.0426 (8/9 favour REP4),
+    rho +0.0309 +/- 0.0128 and R-squared +0.0290 +/- 0.0148 (both 9/9).
+  - Chemprop Cmax tuned ALL4-REP4: AAFE -1.272 +/- 1.066 and
+    rho +0.0695 +/- 0.0472 (both 9/9), R-squared +0.0553 +/- 0.0874 (7/9).
+    Tuned PPB rho rises +0.0504 +/- 0.0430 (8/9) and R-squared rises
+    +0.1302 +/- 0.0856 (9/9). PPB AAFE has a smaller and less consistent
+    change (-0.0189 +/- 0.0422, 5/9), with a positive-label mask.
+  - GraphConv Tmax ALL4-REP4 illustrates a ranking/error distinction.
+    Shared-recipe MAE changes +0.00060 log10 units [-0.00537, +0.00638],
+    while rho falls -0.0483 +/- 0.0248 in all nine seeds. The tuned rho
+    change is -0.0384 +/- 0.0212, also lower in all nine seeds.
+  - REF74 versus REF0 improves Vd rho by +0.1262, +0.1357 and +0.0648,
+    and CL rho by +0.0932, +0.0898 and +0.0328 across GraphConv, Chemprop
+    and ChemBERTa. All six rho, R-squared and AAFE shifts are favourable
+    in all nine seeds, consistent with the single-category MAE pattern.
+
+5. Continuous-profile context
+
+All 21 historical P4-P3 95% intervals span zero. In the width-matched P4
+versus P5 comparison, five of 21 intervals are above zero and none are
+below. This includes GraphConv half-life (+6.49%, [+0.79, +12.99]) and F
+(+3.89%, [+0.12, +8.01]), and ChemBERTa Vd (+5.03%, [+3.20, +6.92]), F
+(+1.82%, [+0.37, +3.40]) and PPB (+2.30%, [+0.61, +4.09]). Each is higher
+in all nine seeds. ChemBERTa P5 versus P3 has lower Vd, CL and PPB errors,
+with Vd -4.83% [-6.63, -3.11] in all nine seeds. Thus both descriptor
+families show a repeat-control effect in ChemBERTa without adding pH
+information. In categorical versus continuous profile comparisons (ALL4-P4),
+GraphConv half-life and F MAE are lower, whereas ChemBERTa Vd, CL and PPB
+MAE are higher at the exploratory level. The encodings also differ in width.
+
+6. Switcher interactions and class summaries
+
+All 21 direct switcher-minus-stable interactions for ALL4-REP4 span zero.
+This includes all six F/Vd comparisons. For example, ChemBERTa Vd interaction
+is -0.00337 log10 [-0.01735, +0.00864]. Exploratory within-class intervals
+show higher ChemBERTa Vd errors in anionic, cationic and zwitterionic groups.
+The cationic group retains its pH 7.4 category across all tested pHs. The
+within-class rows describe errors and do not establish a difference between
+class effects. Across all 84 within-class ALL4-REP4 rows, nine 95% intervals
+are above zero and 75 span zero. No direct class-by-arm interaction is supplied.
+
+Six of 147 exploratory switcher interactions exclude zero, with no common
+direction across endpoints and backbones. For ADD5-REP2, GraphConv Vd is
+higher by +0.04264 log10 in switchers (62 labels, 54 groups) and +0.00171
+in stable structures (197 labels, 147 groups). The direct interaction is
++0.04094 [+0.00231, +0.08252]. ChemBERTa Tmax is lower by -0.00469 log10 in
+switchers (64 labels, 57 groups) and higher by +0.00371 in stable structures
+(185 labels, 138 groups). Its direct interaction is -0.00840 [-0.01535,
+-0.00255]. Both ADD5 full-cohort intervals span zero. The interactions
+estimate how paired representation effects differ across those strata.
+
+Source tables and filtering
+
+contrasts.csv, scope=all gives whole-cohort MAE; primary_test=True identifies
+the six adjusted rows. scope=class gives the audited pH 7.4 class estimates.
+scope=switch_status gives switcher and stable paired MAE estimates.
+switcher_interactions.csv gives their direct differences. endpoint_metrics.csv
+gives the same-seed rows used for descriptive paired metric shifts.
+endpoint_summary.csv gives the cross-procedure absolute MAE point estimates.
+contrast_outer_folds.csv and prediction_sources.csv document fold-level signs
+and reused fit identities. The accompanying CSVs preserve all examined
+whole-cohort contrasts and direct switcher interactions. Counts of exploratory
+intervals describe the reported comparisons and do not act as independent votes.

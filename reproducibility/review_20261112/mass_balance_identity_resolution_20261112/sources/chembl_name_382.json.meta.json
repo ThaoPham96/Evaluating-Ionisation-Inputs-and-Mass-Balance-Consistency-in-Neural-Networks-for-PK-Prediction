@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MILNACIPRAN&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MILNACIPRAN&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:40.365944+00:00",
+  "sha256": "943ea0853ca3b2e798da3e696bfaee481c5d24229648b6bf344d29c3685f4ea5",
+  "bytes": 3791
+}

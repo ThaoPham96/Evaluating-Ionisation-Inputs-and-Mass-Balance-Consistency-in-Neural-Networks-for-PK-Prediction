@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TRAMADOL&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=TRAMADOL&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:45.834917+00:00",
+  "sha256": "786b3bac1cb4416e591c346f2dc9019c7adab7c8c76139a17b5017131b73b5fa",
+  "bytes": 4437
+}

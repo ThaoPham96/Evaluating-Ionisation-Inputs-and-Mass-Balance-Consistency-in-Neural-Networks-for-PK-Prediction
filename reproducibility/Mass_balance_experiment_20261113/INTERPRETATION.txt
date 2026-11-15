@@ -1,0 +1,69 @@
+INTERPRETATION FOR INDEPENDENT SCIENTIFIC REVIEW
+
+Main finding
+Adding the selected positive consistency loss increased the fraction of predicted
+triads within 1.25-fold in all three model families. Mean triad prediction error
+changed very little, with all paired overall accuracy intervals including zero.
+
+                      Consistency baseline -> loss   Relative triad MAE change
+GraphConv                       40.59% -> 92.79%                  -0.306%
+Chemprop                        41.30% -> 75.83%                  +0.145%
+Frozen ChemBERTa + MLP           38.98% -> 85.48%                  -0.053%
+
+Paired accuracy delta in log10 MAE [95% group-bootstrap interval]:
+GraphConv     -0.001435 [-0.005574, +0.002481]
+Chemprop      +0.000667 [-0.004260, +0.004744]
+ChemBERTa     -0.000248 [-0.001637, +0.001083]
+Consistency gains, percentage points [95% interval]:
+GraphConv     +52.19 [47.92,56.09]
+Chemprop      +34.52 [30.98,38.43]
+ChemBERTa     +46.50 [42.75,49.92]
+
+What this supports
+The penalty is an effective way to change output consistency across these three
+model families under the shared protocol. It does not demonstrate that this
+training approach improves prediction accuracy overall. An interval crossing
+zero does not prove equivalence or an absence of accuracy cost.
+
+Post-hoc controls change the interpretation
+Exact orthogonal correction produces 100% consistency by construction, with
+relative triad MAE increases of 0.370%, 0.246% and 0.066% for GraphConv, Chemprop
+and ChemBERTa respectively. Exact half-life-only correction increases triad MAE
+by 0.422%, 1.185% and 0.736%. These are point estimates without the corresponding
+paired exact-control intervals yet. High consistency is therefore not unique
+to training with a loss and cannot by itself establish an advantage over a
+simple deterministic correction.
+Inner-selected partial correction is a separate comparison. Orthogonal alpha
+was zero in all five GraphConv folds, three Chemprop folds and no ChemBERTa folds.
+Selected orthogonal consistency was 40.59%,56.55%,69.88%; selected half-life-only
+consistency was 51.34%,54.96%,65.79%. Their overall accuracy intervals include zero.
+The positive loss is required to intervene, whereas alpha may select no change.
+The zero-eligible lambda policy should be shown in supporting results so this
+selection asymmetry remains visible.
+
+Label compatibility limits the biological interpretation
+Observed same-row triads are only 53.86% consistent within 1.25-fold, with median
+disagreement 1.198-fold. Some disagreement can reflect differing source definitions
+or measurement contexts. The 0.05959 log-MAE compatibility floor is a diagnostic
+for exactly coherent predictions, not a model score or evidence that a finite
+model must lose accuracy. The claim should concern algebraic consistency under
+heterogeneous curated labels, not proven biological fidelity or superiority.
+
+Further analyses before finalising a figure or Results text
+Inspect fixed-lambda and fixed-alpha trade-offs on common three-seed summaries;
+plot nine-seed selected-policy results with their paired intervals separately.
+Examine endpoint shifts and prediction spread to identify which outputs absorb
+the penalty. Evaluate the completed depth, encoder, task-weight and single-task
+blocks and the prespecified source-definition sensitivity (six central-volume
+records, cannabidiol regimen mismatch, ergoloid context). Also stratify by
+observed compatibility descriptively. No new training is required for those
+analyses. The additional metric suite and subgroup/curve intervals are pending.
+Secondary endpoint contrasts are exploratory; the intervals are not multiplicity
+adjusted. Do not select a narrative from isolated borderline endpoint effects.
+
+Suggested narrative
+First establish the compatibility of observed labels; then show the change in
+consistency and prediction error when adding the loss across model families;
+compare training-time intervention with partial/exact output correction; finally
+use supplementary robustness results to explain the scope of the effect.
+The experiment can stand alone without an architecture-ranking or novelty claim.

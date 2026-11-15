@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MEDROXYPROGESTERONE%20ACETATE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=MEDROXYPROGESTERONE%20ACETATE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:32.863225+00:00",
+  "sha256": "716aff67a77725977e76fea4134cea40abb924deaf1a12ffe832f324a2f70e5c",
+  "bytes": 8459
+}

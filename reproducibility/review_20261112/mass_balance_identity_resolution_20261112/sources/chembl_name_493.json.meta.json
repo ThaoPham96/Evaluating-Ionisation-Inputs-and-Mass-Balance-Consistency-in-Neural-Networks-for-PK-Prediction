@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=FLUVASTATIN&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=FLUVASTATIN&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:38.788097+00:00",
+  "sha256": "a913daeebd64ab8b4138c738b83d63ec1337a4320333df02d91f21f51421f149",
+  "bytes": 5212
+}

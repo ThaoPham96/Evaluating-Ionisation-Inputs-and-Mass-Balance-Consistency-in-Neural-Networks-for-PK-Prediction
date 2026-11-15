@@ -1,0 +1,522 @@
+[
+  {
+    "row_idx": 15,
+    "Name": "METHAMPHETAMINE",
+    "CAS": "537-46-2",
+    "ChEMBL_ID": "CHEMBL1201201",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_15.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_15.json"
+  },
+  {
+    "row_idx": 108,
+    "Name": "PREDNISONE",
+    "CAS": "53-03-2",
+    "ChEMBL_ID": "CHEMBL635",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_108.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_108.json"
+  },
+  {
+    "row_idx": 171,
+    "Name": "PHENYLPROPANOLAMINE",
+    "CAS": "14838-15-4",
+    "ChEMBL_ID": "CHEMBL61006",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_171.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_171.json"
+  },
+  {
+    "row_idx": 173,
+    "Name": "METHAZOLAMIDE",
+    "CAS": "554-57-4",
+    "ChEMBL_ID": "CHEMBL19",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_173.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_173.json"
+  },
+  {
+    "row_idx": 180,
+    "Name": "MEDROXYPROGESTERONE ACETATE",
+    "CAS": "71-58-9",
+    "ChEMBL_ID": "CHEMBL717",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_180.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_180.json"
+  },
+  {
+    "row_idx": 203,
+    "Name": "ATROPINE",
+    "CAS": "51-55-8",
+    "ChEMBL_ID": "CHEMBL517712",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_203.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_203.json"
+  },
+  {
+    "row_idx": 259,
+    "Name": "PENTAZOCINE",
+    "CAS": "359-83-1",
+    "ChEMBL_ID": "CHEMBL100116",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_259.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_259.json"
+  },
+  {
+    "row_idx": 269,
+    "Name": "NALOXONE",
+    "CAS": "465-65-6",
+    "ChEMBL_ID": "CHEMBL80",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_269.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_269.json"
+  },
+  {
+    "row_idx": 270,
+    "Name": "NORGESTREL",
+    "CAS": "6533-00-2",
+    "ChEMBL_ID": "CHEMBL2107797",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_270.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_270.json"
+  },
+  {
+    "row_idx": 332,
+    "Name": "NADOLOL",
+    "CAS": "42200-33-9",
+    "ChEMBL_ID": "CHEMBL521606",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_332.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_332.json"
+  },
+  {
+    "row_idx": 338,
+    "Name": "CALCITRIOL",
+    "CAS": "32222-06-3",
+    "ChEMBL_ID": "CHEMBL846",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_338.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_338.json"
+  },
+  {
+    "row_idx": 376,
+    "Name": "NABILONE",
+    "CAS": "51022-71-0",
+    "ChEMBL_ID": "CHEMBL2218896",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_376.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_376.json"
+  },
+  {
+    "row_idx": 382,
+    "Name": "MILNACIPRAN",
+    "CAS": "92623-85-3",
+    "ChEMBL_ID": "CHEMBL259209",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_382.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_382.json"
+  },
+  {
+    "row_idx": 391,
+    "Name": "NIMODIPINE",
+    "CAS": "66085-59-4",
+    "ChEMBL_ID": "CHEMBL1428",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_391.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_391.json"
+  },
+  {
+    "row_idx": 417,
+    "Name": "PERGOLIDE",
+    "CAS": "66104-22-1",
+    "ChEMBL_ID": "CHEMBL531",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_417.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_417.json"
+  },
+  {
+    "row_idx": 434,
+    "Name": "ZIDOVUDINE",
+    "CAS": "30516-87-1",
+    "ChEMBL_ID": "CHEMBL129",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_434.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_434.json"
+  },
+  {
+    "row_idx": 459,
+    "Name": "FOSINOPRIL",
+    "CAS": "98048-97-6",
+    "ChEMBL_ID": "CHEMBL3039598",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_459.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_459.json"
+  },
+  {
+    "row_idx": 470,
+    "Name": "ITRACONAZOLE",
+    "CAS": "84625-61-6",
+    "ChEMBL_ID": "CHEMBL64391",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_470.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_470.json"
+  },
+  {
+    "row_idx": 476,
+    "Name": "DIDANOSINE",
+    "CAS": "69655-05-6",
+    "ChEMBL_ID": "CHEMBL1460",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_476.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_476.json"
+  },
+  {
+    "row_idx": 478,
+    "Name": "FINASTERIDE",
+    "CAS": "98319-26-7",
+    "ChEMBL_ID": "CHEMBL710",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_478.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_478.json"
+  },
+  {
+    "row_idx": 483,
+    "Name": "CISAPRIDE",
+    "CAS": "81098-60-4",
+    "ChEMBL_ID": "CHEMBL1729",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_483.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_483.json"
+  },
+  {
+    "row_idx": 487,
+    "Name": "GRANISETRON",
+    "CAS": "109889-09-0",
+    "ChEMBL_ID": "CHEMBL289469",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_487.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_487.json"
+  },
+  {
+    "row_idx": 493,
+    "Name": "FLUVASTATIN",
+    "CAS": "93957-54-1",
+    "ChEMBL_ID": "CHEMBL2220442",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_493.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_493.json"
+  },
+  {
+    "row_idx": 506,
+    "Name": "STAVUDINE",
+    "CAS": "3056-17-5",
+    "ChEMBL_ID": "CHEMBL991",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_506.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_506.json"
+  },
+  {
+    "row_idx": 518,
+    "Name": "LAMIVUDINE",
+    "CAS": "134678-17-4",
+    "ChEMBL_ID": "CHEMBL141",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_518.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_518.json"
+  },
+  {
+    "row_idx": 529,
+    "Name": "RITONAVIR",
+    "CAS": "155213-67-5",
+    "ChEMBL_ID": "CHEMBL163",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_529.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_529.json"
+  },
+  {
+    "row_idx": 533,
+    "Name": "TOPOTECAN",
+    "CAS": "123948-87-8",
+    "ChEMBL_ID": "CHEMBL84",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_533.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_533.json"
+  },
+  {
+    "row_idx": 536,
+    "Name": "MIFEPRISTONE",
+    "CAS": "84371-65-3",
+    "ChEMBL_ID": "CHEMBL1276308",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_536.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_536.json"
+  },
+  {
+    "row_idx": 575,
+    "Name": "CEVIMELINE",
+    "CAS": "107233-08-9",
+    "ChEMBL_ID": "CHEMBL168815",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_575.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_575.json"
+  },
+  {
+    "row_idx": 590,
+    "Name": "DROSPIRENONE",
+    "CAS": "67392-87-4",
+    "ChEMBL_ID": "CHEMBL1509",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_590.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_590.json"
+  },
+  {
+    "row_idx": 630,
+    "Name": "APREPITANT",
+    "CAS": "170729-80-3",
+    "ChEMBL_ID": "CHEMBL1471",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_630.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_630.json"
+  },
+  {
+    "row_idx": 632,
+    "Name": "TROSPIUM",
+    "CAS": "47608-32-2",
+    "ChEMBL_ID": "CHEMBL1888176",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_632.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_632.json"
+  },
+  {
+    "row_idx": 697,
+    "Name": "CLARITHROMYCIN",
+    "CAS": "81103-11-9",
+    "ChEMBL_ID": "CHEMBL1741",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_697.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_697.json"
+  },
+  {
+    "row_idx": 700,
+    "Name": "AZITHROMYCIN",
+    "CAS": "83905-01-5",
+    "ChEMBL_ID": "CHEMBL529",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_700.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_700.json"
+  },
+  {
+    "row_idx": 741,
+    "Name": "NICOTINE",
+    "CAS": "54-11-5",
+    "ChEMBL_ID": "CHEMBL3",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_741.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_741.json"
+  },
+  {
+    "row_idx": 749,
+    "Name": "TOREMIFENE",
+    "CAS": "89778-26-7",
+    "ChEMBL_ID": "CHEMBL1655",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_749.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_749.json"
+  },
+  {
+    "row_idx": 752,
+    "Name": "SAQUINAVIR",
+    "CAS": "127779-20-8",
+    "ChEMBL_ID": "CHEMBL114",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_752.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_752.json"
+  },
+  {
+    "row_idx": 759,
+    "Name": "TROVAFLOXACIN",
+    "CAS": "147059-72-1",
+    "ChEMBL_ID": "CHEMBL428",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_759.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_759.json"
+  },
+  {
+    "row_idx": 760,
+    "Name": "NELFINAVIR",
+    "CAS": "159989-64-7",
+    "ChEMBL_ID": "CHEMBL584",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_760.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_760.json"
+  },
+  {
+    "row_idx": 873,
+    "Name": "LINAGLIPTIN",
+    "CAS": "668270-12-0",
+    "ChEMBL_ID": "CHEMBL237500",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_873.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_873.json"
+  },
+  {
+    "row_idx": 874,
+    "Name": "FIDAXOMICIN",
+    "CAS": "873857-62-6",
+    "ChEMBL_ID": "CHEMBL1255800",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_874.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_874.json"
+  },
+  {
+    "row_idx": 881,
+    "Name": "TICAGRELOR",
+    "CAS": "274693-27-5",
+    "ChEMBL_ID": "CHEMBL398435",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_881.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_881.json"
+  },
+  {
+    "row_idx": 922,
+    "Name": "DOLUTEGRAVIR",
+    "CAS": "1051375-16-6",
+    "ChEMBL_ID": "CHEMBL1229211",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_922.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_922.json"
+  },
+  {
+    "row_idx": 924,
+    "Name": "MONOMETHYL FUMARATE",
+    "CAS": "2756-87-8",
+    "ChEMBL_ID": "CHEMBL589586",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_924.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_924.json"
+  },
+  {
+    "row_idx": 931,
+    "Name": "TRAMADOL",
+    "CAS": "27203-92-5",
+    "ChEMBL_ID": "CHEMBL1237044",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_931.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_931.json"
+  },
+  {
+    "row_idx": 943,
+    "Name": "IDELALISIB",
+    "CAS": "870281-82-6",
+    "ChEMBL_ID": "CHEMBL2216870",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_943.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_943.json"
+  },
+  {
+    "row_idx": 946,
+    "Name": "OMBITASVIR",
+    "CAS": "1258226-87-7",
+    "ChEMBL_ID": "CHEMBL3127326",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_946.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_946.json"
+  },
+  {
+    "row_idx": 954,
+    "Name": "EDOXABAN",
+    "CAS": "480449-70-5",
+    "ChEMBL_ID": "CHEMBL1269025",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_954.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_954.json"
+  },
+  {
+    "row_idx": 970,
+    "Name": "COBIMETINIB",
+    "CAS": "934660-93-2",
+    "ChEMBL_ID": "CHEMBL2146883",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_970.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_970.json"
+  },
+  {
+    "row_idx": 977,
+    "Name": "OBETICHOLIC ACID",
+    "CAS": "459789-99-2",
+    "ChEMBL_ID": "CHEMBL566315",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_977.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_977.json"
+  },
+  {
+    "row_idx": 1005,
+    "Name": "PIBRENTASVIR",
+    "CAS": "1353900-92-1",
+    "ChEMBL_ID": "CHEMBL3545123",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1005.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1005.json"
+  },
+  {
+    "row_idx": 1019,
+    "Name": "ACALABRUTINIB",
+    "CAS": "1420477-60-6",
+    "ChEMBL_ID": "CHEMBL3707348",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1019.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1019.json"
+  },
+  {
+    "row_idx": 1039,
+    "Name": "LAROTRECTINIB",
+    "CAS": "1223403-58-4",
+    "ChEMBL_ID": "CHEMBL3889654",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1039.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1039.json"
+  },
+  {
+    "row_idx": 1044,
+    "Name": "DUVELISIB",
+    "CAS": "1201438-56-3",
+    "ChEMBL_ID": "CHEMBL3039502",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1044.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1044.json"
+  },
+  {
+    "row_idx": 1093,
+    "Name": "SERDEXMETHYLPHENIDATE",
+    "CAS": "1996626-29-9",
+    "ChEMBL_ID": "CHEMBL4301162",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1093.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1093.json"
+  },
+  {
+    "row_idx": 1097,
+    "Name": "NIFURTIMOX",
+    "CAS": "23256-30-6",
+    "ChEMBL_ID": "CHEMBL290960",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1097.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1097.json"
+  },
+  {
+    "row_idx": 1098,
+    "Name": "PONESIMOD",
+    "CAS": "854107-55-4",
+    "ChEMBL_ID": "CHEMBL1096146",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1098.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1098.json"
+  },
+  {
+    "row_idx": 1101,
+    "Name": "PRALSETINIB",
+    "CAS": "2097132-94-8",
+    "ChEMBL_ID": "CHEMBL4582651",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1101.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1101.json"
+  },
+  {
+    "row_idx": 1103,
+    "Name": "BEROTRALSTAT",
+    "CAS": "1809010-50-1",
+    "ChEMBL_ID": "CHEMBL5189739",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1103.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1103.json"
+  },
+  {
+    "row_idx": 1112,
+    "Name": "PACRITINIB",
+    "CAS": "937272-79-2",
+    "ChEMBL_ID": "CHEMBL2035187",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1112.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1112.json"
+  },
+  {
+    "row_idx": 1134,
+    "Name": "DEUCRAVACITINIB",
+    "CAS": "1609392-27-9",
+    "ChEMBL_ID": "CHEMBL4435170",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1134.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1134.json"
+  },
+  {
+    "row_idx": 1144,
+    "Name": "OMAVELOXOLONE",
+    "CAS": "1474034-05-3",
+    "ChEMBL_ID": "CHEMBL4303525",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_1144.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_1144.json"
+  },
+  {
+    "row_idx": 785,
+    "Name": "COLISTIN",
+    "CAS": "1066-17-7",
+    "ChEMBL_ID": "CHEMBL6067481",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_785.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_785.json"
+  },
+  {
+    "row_idx": 508,
+    "Name": "ACARBOSE",
+    "CAS": "56180-94-0",
+    "ChEMBL_ID": "CHEMBL404271",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_508.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_508.json"
+  },
+  {
+    "row_idx": 709,
+    "Name": "IVERMECTIN",
+    "CAS": "70288-86-7",
+    "ChEMBL_ID": "CHEMBL6067487",
+    "chembl_record": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_709.json",
+    "chembl_name": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\chembl_name_709.json"
+  }
+]

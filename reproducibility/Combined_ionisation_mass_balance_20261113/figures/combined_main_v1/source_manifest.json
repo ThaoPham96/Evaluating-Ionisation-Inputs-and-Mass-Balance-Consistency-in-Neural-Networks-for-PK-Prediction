@@ -1,0 +1,42 @@
+{
+  "campaign_id": "8507d5b8972f756b5d851f7677599f2ace390f4c63b08aad09f0e1364b25a928",
+  "score_manifest_sha256": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+  "verified_score_files": {
+    "metrics.csv": "b194c3f5f5dd7544dde5839c66d5ba37b54f7cce1c3fc14e12c1b29a6dd47c79",
+    "seed_metrics.csv": "7a3c30244dd57703c4410ac4ae28b66032600f6a916a90e9a20ab5cf87b67757",
+    "contrasts.csv": "d290e9a7ec43e71675f522d6811ba07023e0bc9ba918d98bedb0bde43698c0cb",
+    "seed_contrasts.csv": "e53914588debe38fb68bf27f2722df4a867abae3ca43a73b43eb91970924d949",
+    "disagreement_cdf.csv": "781c01b88a5e581d9831e56aed1044bbcf97e0a5c540b302655bfc054d5a8ce5",
+    "signed_residuals.csv": "c9f1e7a167742e69aa63ab5323fbaac568dc1a158367cce257d46806618f32c8",
+    "alpha_selection.csv": "62e9df20d281a71cf48e118904dc259798881589c636f41895597756e3f091db",
+    "lambda_selection.csv": "ff571434bb097f3a25fe9b05d7fc0898b3edca8d1c2ad46e8e9cf5dfbf513a01"
+  },
+  "source_files": {
+    "render.py": "1edf575835b6a06289124ec4a6cadbf6de2d85b00e8952ec78454df3ed5c975f",
+    "schematic.py": "642fac95f7a8ebf9b4abde5542b50e8f7097e35978d770650dff1f787dca4fb5",
+    "all_endpoints.py": "234521d9a24c7058fe16ab52b0270ad4300fa787a54cc504a3a9f8c75e83d162",
+    "all_endpoint_manifest.json": "bcbbe1982693f13389659e9ab622200bb93c097c66575d25a1e12df3cccd7d41",
+    "triad_display.py": "00d41bdb64c00d1f3dbd1495eaec93086b8ad4f1a52150f89284ef1067dddf2b",
+    "triad_display_manifest.json": "befc652c09c4c63f466f762a88a2cec44a4f2120ccf87ae1577f7d21acf60bc5",
+    "../combined_results_v1/render.py": "6ec423b3f30314805b5d4edb4128c1934f569978219a769e9aee14e26189cfd3"
+  },
+  "files": {
+    "combined_main.png": "7b8809d05f08b8c61c854bad0cf46ad3a4d962d07ac095c1d156a07bb83273cf",
+    "combined_main.pdf": "9c68d3e84b398029d3c89bf385902f1fe2d1cdc3a62fe2a42c0a441241c19790",
+    "combined_main.svg": "b291d6e7b9c64d4d6c9dbe6686ecce016e9e996646b5fff232700533c7453a08",
+    "plot_data.csv": "e8e6193e071e960c2e95a24cf2c3fbe11bddbffe9a317047c0f7e14ea39b5808",
+    "caption.txt": "b663cce2910979eec57fa77824a2484aaf63ab5c69feff9e319f8ca783e61bc5"
+  },
+  "display_x_limits": [
+    -11.0,
+    6.0
+  ],
+  "supplementary_paired_files": {
+    "S5_paired_effects.png": "6bd930289c8fb02662bdfea484a76845389fda4f2cb697eaa56babfcf13a3394",
+    "S5_paired_effects.pdf": "3779b1312d2fea3f10112f87e4e03fd7eb66b8374f39e29119594a32317a70d8",
+    "S5_paired_effects.svg": "cce00b5a034241a6050f0a579efc7b531abc6329b74b4e2beac3269b90b01451",
+    "S5_plot_data.csv": "7bbf1dfc8377dc3aed5732356fec5c1450c5a7c5069ebe3137b6c589d2df1e61",
+    "S5_caption.txt": "8ecd1d8684b6124a26a2de00fdd2afd5937df4408d5057219629069a2b000f29",
+    "S5_cohort_sensitivity.csv": "85120d08d9cbefa2af6e554be28ff35f981d1965f9800cabce12ba7d0faa960b"
+  }
+}

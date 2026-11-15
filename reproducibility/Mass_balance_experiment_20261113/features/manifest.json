@@ -1,0 +1,194 @@
+{
+  "chemberta": {
+    "attention_implementation": "eager",
+    "batch_size": 8,
+    "device": "cuda",
+    "dtype": "float32",
+    "gpu_name": "NVIDIA GeForce RTX 4070 SUPER",
+    "longest_structure_ids": [
+      "e8949b8e747fd3cc"
+    ],
+    "model_config": {
+      "architectures": [
+        "RobertaForMaskedLM"
+      ],
+      "attention_probs_dropout_prob": 0.1,
+      "bos_token_id": 0,
+      "eos_token_id": 2,
+      "gradient_checkpointing": false,
+      "hidden_act": "gelu",
+      "hidden_dropout_prob": 0.1,
+      "hidden_size": 768,
+      "initializer_range": 0.02,
+      "intermediate_size": 3072,
+      "layer_norm_eps": 1e-12,
+      "max_position_embeddings": 512,
+      "model_type": "roberta",
+      "num_attention_heads": 12,
+      "num_hidden_layers": 6,
+      "pad_token_id": 1,
+      "type_vocab_size": 1,
+      "vocab_size": 52000
+    },
+    "model_id": "seyonec/PubChem10M_SMILES_BPE_450k",
+    "observed_token_length_range_including_special_tokens": [
+      3,
+      403
+    ],
+    "padding_side": "right",
+    "pooling": "float32 mean of final encoder hidden states at attended non-special token positions",
+    "position_limit_including_special_tokens": 510,
+    "revision": "c18fccd09b3326bf2d4633412c256d7db872156d",
+    "revision_metadata_url": "https://huggingface.co/api/models/seyonec/PubChem10M_SMILES_BPE_450k/revision/c18fccd09b3326bf2d4633412c256d7db872156d?blobs=true",
+    "shape": [
+      952,
+      768
+    ],
+    "source_files": {
+      "config.json": {
+        "git_blob": "945d3f4694927f2144868e0f4f7e9254e2441307",
+        "sha256": "bbce3b7bd4a5ff3c246eaf85cd8ed3cb12828a56b4e65153f5f9f20b3277854e"
+      },
+      "merges.txt": {
+        "git_blob": "763dc46f0758806cb81d0c25baca3b5ac21fccb7",
+        "sha256": "711b94fe4512ea656c3e849b9cbad47033bcc9521e0042bad5bf807d7d990020"
+      },
+      "pytorch_model.bin": {
+        "sha256": "f471de1ad73de11d47e1bbdfddb93aeace0b8aeab31ec03bcde0eabb17a97264"
+      },
+      "special_tokens_map.json": {
+        "git_blob": "e97d1993365bb21c88f390e8703e4c1af564821f",
+        "sha256": "c611b1f7d416eb001ee4f293d903ea8c88e703463f1d403f1866a0352743fd00"
+      },
+      "tokenizer_config.json": {
+        "git_blob": "18d63e03c656615691d7e3b5e75c217d4088c357",
+        "sha256": "359fdd360be3de14228b56e2ca9c6c940ff0b1a3dc88a5bf32bdeeb21ec7be9c"
+      },
+      "vocab.json": {
+        "git_blob": "06a706075a2bb0a243ba8e562722b775c76b1b3e",
+        "sha256": "f1e78bee7d674f970495446b3ec0f44ab8e1e4620d2172638c247d1645ba89d1"
+      }
+    },
+    "special_token_ids": [
+      0,
+      2,
+      3,
+      1,
+      4
+    ],
+    "special_tokens_map": {
+      "bos_token": {
+        "content": "<s>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "cls_token": {
+        "content": "<s>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "eos_token": {
+        "content": "</s>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "mask_token": {
+        "content": "<mask>",
+        "lstrip": true,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "pad_token": {
+        "content": "<pad>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "sep_token": {
+        "content": "</s>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "unk_token": {
+        "content": "<unk>",
+        "lstrip": false,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      }
+    },
+    "tokenizer_class": "RobertaTokenizerFast",
+    "tokenizer_config": {
+      "full_tokenizer_file": null,
+      "special_tokens_map_file": null
+    },
+    "tokenizer_use_fast": true,
+    "truncation": false,
+    "unused_checkpoint_keys": [
+      "lm_head.bias",
+      "lm_head.decoder.bias",
+      "lm_head.decoder.weight",
+      "lm_head.dense.bias",
+      "lm_head.dense.weight",
+      "lm_head.layer_norm.bias",
+      "lm_head.layer_norm.weight",
+      "roberta.pooler.dense.bias",
+      "roberta.pooler.dense.weight"
+    ]
+  },
+  "data": {
+    "fingerprint": "5413771691c6981d22b6c9ca8e21584dc93cd01244c5e3b143c489dfdc9c7942",
+    "manifest.json": "01a9b8fc98e934b2fce4b399c63b013c6a21fb09f0c5ba8ddd82e788dacafbb1",
+    "model_dataset.csv": "857df1882b9b644e65adc15f48a8b41ff59198df215865ec36e15e235de8a2c6",
+    "ordered_structure_smiles_sha256": "9f20d4c1dba569e2dcd33a0f47c5caa2a290a6dcb219a6e9fc79865cb4821f7c"
+  },
+  "files": {
+    "chemberta.npy": "b8a3b63161653609a5274625f7f086676d676be3a1d4ef1f57eca675d65cdfec",
+    "graphs.pt": "20b0e6e0255b957de2498b88e3ae8f1b575691486565253656513437fb7abc5c",
+    "structures.json": "6eaac117356e099b10627722517b380979512daf76e4d5156c0d6689e643c3fb"
+  },
+  "graphs": {
+    "atom_features": "pipknet.featurizers.atom_to_feature_vector (element, degree, formal charge, aromaticity)",
+    "bondless_structure_count": 0,
+    "dedicated_isotope_or_stereochemistry_channels": false,
+    "edge_feature_dim": 6,
+    "edge_features": "pipknet.featurizers.build_edge_index_and_attr (bond type, conjugation, ring; both directions)",
+    "empty_edges": "int64 edge_index[2,0] and float32 edge_attr[0,6]",
+    "explicit_ion_category_input": false,
+    "node_feature_dim": 23,
+    "rdkit_parser": "Chem.MolFromSmiles(smiles) defaults: sanitize=True, removeHs=True",
+    "representation": "list of PyTorch Geometric Data(x, edge_index, edge_attr)",
+    "smiles": "frozen canonical_smiles, parsed directly without component filtering or normalization"
+  },
+  "order": "model_dataset.csv row order for structures.json, graphs.pt and chemberta.npy",
+  "schema_version": 1,
+  "source_hashes": {
+    "pipknet/featurizers.py": "1778c7b78d33ddd78aacd61cc96aaf745fb4d35a828f3df3dad8c791fb1150b7",
+    "pipknet/models.py": "a231679f8586dc74308ef07b8f3966b68dbf3481d1f297bf9b80f5c30ee828b3",
+    "prepare_mass_balance_features.py": "75377a9e654138e1e2cb126ec62e98c28412b5f032c95d95c9bbe942ac14903e"
+  },
+  "structure_count": 952,
+  "versions": {
+    "huggingface_hub": "0.26.5",
+    "numpy": "1.26.4",
+    "python": "3.11.15",
+    "rdkit": "2025.09.6",
+    "regex": "2026.11.9",
+    "safetensors": "0.4.5",
+    "tokenizers": "0.20.3",
+    "torch": "2.5.1+cu124",
+    "torch_cuda": "12.4",
+    "torch_geometric": "2.7.0",
+    "transformers": "4.46.3"
+  }
+}

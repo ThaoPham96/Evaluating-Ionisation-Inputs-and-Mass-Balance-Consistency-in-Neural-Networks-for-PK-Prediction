@@ -1,0 +1,43 @@
+{
+  "campaign_id": "27b0bc93f682a3ac04f773b3240f495e2d106c278b42722381328bb5daf67d58",
+  "inputs": {
+    "outputs/ph_followup/outer_predictions.csv": "bf0a90c402173b94df88de851bd9ba84b4ba2e9b5fbe78ce6b11a6a13c2cd8c2",
+    "outputs/ph_followup/outer_predictions.manifest.json": "00d8d5a3c7ed63e14a089839d82227ae2c64b19d45327ce5e21888ed7c1c59da",
+    "outputs/ph_followup/outer_predictions.provenance.json": "2ed0286f06621cee9adca82f73dfabb8557aab6df967f2790ded0fcdf5d6a6ef",
+    "outputs/ph_followup/scoring/scoring_manifest.json": "6136354a44872aa2dc78082b803b5fcaa0a710d006aac18ba2ccd393a2bcbf05",
+    "data/release/numerical/manifest.json": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+    "data/release/numerical/model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+    "runtime/ph_category_features/manifest.json": "0dea43802abf46e18cc18c737fc5379aceb4d2f98b22754d47ad723880b8a4c2",
+    "runtime/ph_category_features/ledger.csv": "c63ffcb41e86b04651c5ad67dc48cfd5374ea1bae0cd2b17c0e9de4d9c07a724",
+    "runtime/ph_category_features/codes.json": "ded6db964b8425ebd0c0c3e5a6ed24c6c8d458a1fe1d055756af4c6b0449c2ec"
+  },
+  "outputs": {
+    "structure_shifts.csv": "be67723c9eac99eacef505bf7074291f09b2d8410a1b54d4e2ba51197d648006",
+    "shift_summary.csv": "34f6e26d5fff9097868a186884b5a5ba3e07641b62b69c2c9319223e712cdf6e",
+    "seed_shifts.csv": "25048d14c798692af7183fc058e4084b7cd02de451bd1d7b7d7efc628610c677",
+    "prediction_shifts.pdf": "32396b30889b8801d195383769849e4a1e9114fe253f8147289bd7d78bd45d95",
+    "render.py": "1147a844efd8788577e195934798ad32603dfd881d56a575e959e9fdadf6fcd9",
+    "interpretation.txt": "6012f79e6d6f20c3fd8ea09a5b9d84e1c59c5914b8b1c9fa3dc7363aec0ffc92"
+  },
+  "rows": {
+    "structure_shifts.csv": 48069,
+    "shift_summary.csv": 1029,
+    "seed_shifts.csv": 9261
+  },
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "structures": 327,
+  "groups": 238,
+  "pages": 3,
+  "estimand": "Per structure, mean paired difference across nine independently trained seed trajectories. Positive endpoints use log2 prediction ratio. F and PPB use percentage-point differences.",
+  "subgroup_definition": "ALL4, REF74 and REP4 comparisons use stability across all added pHs. Individual-pH comparisons use stability for the corresponding pH."
+}

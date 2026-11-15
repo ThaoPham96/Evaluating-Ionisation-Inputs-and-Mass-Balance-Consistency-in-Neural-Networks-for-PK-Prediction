@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PACRITINIB&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PACRITINIB&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:50.399565+00:00",
+  "sha256": "9ae78ce2489e6fefaf7e4d3cf207f7be4d14585685a8878b24ef4ac077493455",
+  "bytes": 5525
+}

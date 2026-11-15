@@ -1,0 +1,14 @@
+{
+  "data/release/numerical/fold_coverage.csv": "8f868346b6af03ffea71a474a54e5d1a5d7a624c72ee0908a63389d84fda7734",
+  "data/release/numerical/inner.csv": "918d1f3a683b8da9008f6511f3aef35a76277ed4a0a4dd45e06a3c3c4d55b5d5",
+  "data/release/numerical/ledger.csv": "dd54529f31dea464a2cce42fc6199ec95c7f22309ddc62ef915d8f36558fffc3",
+  "data/release/numerical/manifest.json": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+  "data/release/numerical/model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+  "data/release/numerical/outer.csv": "bf7aaee6fb25334686d2d6b43ebe34c30d123e2e97115aa636a70373a3a6ff32",
+  "features/numerical/chemberta.npy": "4d9dd63d0bd3622c5cc8d8e6caadb0dc5c9f55f6de18cab268d5d5c1f2e48c23",
+  "features/numerical/graphs.pt": "72a9f724e624433e7a6fcdc3c011ceb7f418030b599e72f8681d5a379fc1cb8a",
+  "features/numerical/manifest.json": "36188f3353482d1843f1764805b46e23387c71832b56e53f197663d305d6ae5d",
+  "features/numerical/structures.json": "c3a9b7d0d54f364340848f6290fbaf270567864f345cc5eb7e373654d80acc55",
+  "runtime/p0_recipes.json": "84adb53b8a99a222674c36f5030972bc26b7bc4fb9d4668c25c8eba3c6f81574",
+  "runtime/same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd"
+}

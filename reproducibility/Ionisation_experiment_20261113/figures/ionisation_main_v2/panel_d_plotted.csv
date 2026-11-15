@@ -1,0 +1,7 @@
+backbone,stratum,n,geometric_mean_prediction_change_pct
+GraphConv,stable,121,-8.217568439847152
+GraphConv,switcher,206,5.052012709269168
+Chemprop,stable,121,0.6608124107130653
+Chemprop,switcher,206,11.515679991149957
+ChemBERTa_head,stable,121,-8.457032087561991
+ChemBERTa_head,switcher,206,3.2090224461639067

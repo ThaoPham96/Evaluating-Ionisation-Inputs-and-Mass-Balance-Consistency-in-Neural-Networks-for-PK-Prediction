@@ -1,0 +1,99 @@
+{
+  "campaign_id": "2109d71c4127900d3ee9f1d6eb2acc9bf2469f9e46b77c9ed6958d7f66a74eb3",
+  "conditions": [
+    [
+      "T",
+      "P0",
+      "off"
+    ],
+    [
+      "T",
+      "P0",
+      "positive"
+    ],
+    [
+      "T",
+      "P1",
+      "off"
+    ],
+    [
+      "T",
+      "P1",
+      "positive"
+    ],
+    [
+      "T",
+      "P2",
+      "off"
+    ],
+    [
+      "T",
+      "P2",
+      "positive"
+    ],
+    [
+      "T",
+      "P3",
+      "off"
+    ],
+    [
+      "T",
+      "P3",
+      "positive"
+    ],
+    [
+      "F",
+      "P0",
+      "off"
+    ],
+    [
+      "F",
+      "P0",
+      "shared"
+    ],
+    [
+      "F",
+      "P0",
+      "separate"
+    ],
+    [
+      "F",
+      "P1",
+      "off"
+    ],
+    [
+      "F",
+      "P1",
+      "shared"
+    ],
+    [
+      "F",
+      "P1",
+      "separate"
+    ],
+    [
+      "F",
+      "P2",
+      "off"
+    ],
+    [
+      "F",
+      "P3",
+      "off"
+    ]
+  ],
+  "files": {
+    "final_predictions.csv": "73375d27caae320fdc98e403c0960a43451ce4085a2935eb9022a6d1cb7419b5",
+    "plan.json": "108e1ca9708cdd2257b5385a4cae596d73231afdfc165a0b0a238b38219cf92f",
+    "selections.json": "939a941943601df628cf5e5184db21d27b4c318ed9784c79dc6e3c9b0eac405e",
+    "unit_markers.json": "c26afba34f233b61cd56898717b8443eaad2fb40bb45e4d6873769a7d3765916"
+  },
+  "final_rows": 141264,
+  "references_manifest": "89bc4d6f367df69086758a44451a86d1b732413bda81c94ec680c0b81f8ad846",
+  "unique_new_fits": 6105,
+  "public_packaging": {
+    "original_plan_sha256": "b12213355e7ea6105a6fa42952062f3cc5f26feba49f41428ac0c48de780d74b",
+    "public_plan_identity_sha256": "47cb4674a73b31151d4277e12728414294e9f2f39eba084dad24464ef62ed34a",
+    "scope": "Archived campaign and fit IDs retained; only private registry hostname removed from image provenance. Immutable image digest preserved."
+  }
+}

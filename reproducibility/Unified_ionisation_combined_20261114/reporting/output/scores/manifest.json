@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "campaign_id": "84858a14dd64206333d9bc3851252293e659881a4643d4b26ee7d7d39af545a1",
+  "release_fingerprint": "3e1de9c4f7641238fdb6603676c17d059c2ffce262496437c752340ee5208d2b",
+  "final_rows": 35316,
+  "fit_counts": {
+    "inner": 1050,
+    "final": 540
+  },
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261113,
+  "plan_sha256": "2a48470572150d0c104b3b6b0e1d843cbbcbd8876aad508691284a642f62fe06",
+  "export_manifest_sha256": "7e9ff3bc064155e5dbf33c363368271ed133430bb8f0fbffc61d10883cb8383f",
+  "source_triads_sha256": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd",
+  "scorer_sha256": "8f349d7035db59bee898b708ab0eccea08993744dcfc60cbdc233d5630234ea4",
+  "files": {
+    "metrics.csv": "825885743d5f910bd906fe9e78d8e1108a0c57667f594b03a004707e790e3f2c",
+    "seed_metrics.csv": "a8cacce79ca33954db8e1277e1ac4aa58d2a06758d940a139a5f01f5e26d5f5c",
+    "contrasts.csv": "85caf94e729258cb944cbef4ca7fadcaa4200df19562890f21e4280c94ebf1f3",
+    "seed_contrasts.csv": "fe51b1866ec454e40c2bb0f38cabda0432c003788a58414674049d9e063a60cb",
+    "disagreement_cdf.csv": "bf48444ea6e1fea7369745c365f83bd944346745b9ce249ae27e2949fc6d4648",
+    "signed_residuals.csv": "2d88766b5cc26c629164d15ba0be878b526667450029b52c4825b606f7e88ea2",
+    "lambda_selection.csv": "a618337b014734c6222b2874e25b85c9deec44dd0be794882d413f537f72645f"
+  }
+}

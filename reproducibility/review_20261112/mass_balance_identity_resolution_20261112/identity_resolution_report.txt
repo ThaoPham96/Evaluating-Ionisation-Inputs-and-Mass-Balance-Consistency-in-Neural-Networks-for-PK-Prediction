@@ -1,0 +1,66 @@
+# Identity review: 65 labelled flags resolved
+
+The updated mass-balance candidate contains 952 labelled structures, compared with 953 before this review. The loss is one structure (0.10%). It contains 674 complete triads originating in single source rows. Archived PK values are preserved; two ivermectin values are masked in modelling inputs. No train/test split was changed and no experiment was launched.
+
+## Dispositions
+
+Of the 65 flagged labelled records, 51 structures were corrected (including partial retention of ivermectin), 13 retained with documented justification, and one excluded. All 65 now have an explicit disposition, old/new structure where applicable, and evidence links in identity_resolution_65.csv.
+
+Corrections principally restore missing or incorrect stereochemistry, double-bond/ring geometry, the deuterated group in deucravacitinib, or remove a false single-isomer assignment from a racemic product. Forty-three cases have matching named ChEMBL and CAS-linked PubChem parent identities; exceptions were adjudicated using regulatory product information, NIST, USP, ChEBI or primary studies. Matching database entries are corroboration of chemical identity, not independent experimental confirmation of PK measurements.
+
+Retained exceptions include methazolamide and ponesimod, where the existing geometric specification is supported by FDA records, and serdexmethylphenidate chloride, where PubChem uses a different protonation form. Granisetron's endo geometry was restored using the FDA description and ChEBI:5537. Acarbose uses the cyclic ChEBI/ChEMBL representation with an unspecified reducing-end anomer.
+
+## Exclusion and partial retention
+
+Colistin is excluded. The e-Drug3D card cites PMID 19433570 for the archived measurements. That study pooled A/B forms after intravenous colistimethate (CMS). Its 13.7 L/h clearance belongs to CMS, whereas 189 L is the apparent volume (V/fm) of formed colistin and 14.4 h is its half-life. Thus the archived triad combines different analytes, and the peak concentration also refers to pooled formed colistin. None of these measurements supports the single A-like graph in the archive.
+
+Ivermectin is retained as the measured H2B1a analyte for Cmax/Tmax only. The FDA label identifies the peak concentration of H2B1a after 12 mg oral mixture in fasting healthy volunteers: 46.6 ng/mL at approximately 4 h. With H2B1a molecular weight 875.10, this is 0.05325 uM, matching the archived 0.053 uM after rounding. The card has no study citation; linkage is inferred from the matching value and context. Restore the B1a stereochemistry from PubChem CID 6321424, corroborated by FDA UNII 91Y2202OUW. Preserve the archived product CAS and record separate analyte CAS 71827-03-7 and mixture dosing context.
+
+The archived 18 h half-life and 99% PPB remain in the source-record file but are masked in the modelling table. Their component-specific provenance is not established by the cited product label. A separate H2B1a study also reports about 18 h (Guzzo et al., DOI 10.1177/009127002237994), but does not identify the source of this archived measurement or its half-life phase. The two masks and reasons are explicit in endpoint_identity_masks.csv; neither is replaced by a new value.
+
+References: FDA ivermectin label https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/050742s030lbl.pdf ; colistin primary study https://pmc.ncbi.nlm.nih.gov/articles/PMC2715599/ . Cached source documents and retrieval/hash metadata are in sources/.
+
+## Racemates and representation
+
+Known racemates and stereoisomer mixtures sharing one molecular constitution are retained using a documented stereo-unspecified graph where a single absolute isomer would be misleading. The ledger records their known relative stereochemistry/mixture status. These graphs do not encode composition or every relative stereochemical constraint, and are not a claim that every stereoisomer has the same PK. All model families will receive the same reviewed representation. For mixtures with different constituent connectivity, retain only endpoints reliably assigned to a specific measured component, as with ivermectin H2B1a. Do not substitute the dominant component for pooled measurements.
+
+## Duplicate reconciliation
+
+Correcting the racemate tramadol row exposed three other source rows carrying the identical seven-endpoint PK vector under alternative stereochemical CAS records. Leaving them as an additional model unit would duplicate the same product-level measurements. The source product card reports that vector for marketed tramadol; the FDA label describes racemic tramadol.
+
+Keep one racemate modelling unit (source row 931). Rows 495, 929 and 930 remain preserved as provenance aliases, not independent isomer-specific observations. Their archived CAS and PK values are unchanged. This preserves the previous one-unit contribution of tramadol and loses no unique PK information. Details: tramadol_source_aliases.csv and row_to_structure.csv.
+
+Source: https://chemoinfo.ipmc.cnrs.fr/MOLDB/CARD/edrug3d_714_1674_1676_1678_1680_1675_1677_1679.html ; FDA https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/020281s040lbl.pdf .
+
+## Dataset accounting
+
+Original archived records: 1,170. Parseable structure records before exclusions: 1,167. Previous unique full-structure units: 1,153; 200 have no PK labels, leaving 953 eligible labelled units. Removing colistin gives 952; ivermectin remains with two endpoints. The necessary tramadol alias reconciliation prevents an artificial extra observation after structure correction.
+
+The final labelled candidate has no remaining flags from the 65-case queue. Six originally flagged records without any PK labels were outside this review and remain outside the modelling cohort. This does not assert that every clinical PK measurement has been source-validated, or that the original scaffold split is now valid. Earlier 59 connectivity corrections are inherited from the preceding review candidate and are not re-adjudicated in this 65-case pass.
+
+Historical labels only: development 734, hold-out 218. These are retained provenance assignments, not a proposed new split. Grouping and split design are the next step and have not started.
+
+| Endpoint | Labelled structures | Positive labels | Zero labels |
+| --- | ---: | ---: | ---: |
+| Half-life | 902 | 902 | 0 |
+| Volume of distribution | 710 | 710 | 0 |
+| Clearance | 689 | 689 | 0 |
+| Bioavailability | 440 | 440 | 0 |
+| Plasma protein binding | 805 | 781 | 24 |
+| Cmax | 550 | 550 | 0 |
+| Tmax | 686 | 686 | 0 |
+
+PPB zeros remain in percentage-scale error metrics and are excluded once from fold-ratio metrics. Endpoint counts are distinct modelling units, not source-record counts, and overlap across endpoints. The mass-balance candidate uses all eligible PK structures regardless of pKa availability; the separate ionisation dataset was not changed. Complete same-row triads indicate co-occurrence in one source record, not proven agreement of study, analyte, volume definition or clearance type; for example the tramadol label reports CL/F. These distinctions remain relevant to the planned scientific-scope review.
+
+## Files and reproducibility
+
+- mass_balance_labelled_structures.csv: updated 952-structure candidate, endpoint units, analyte context, explicit endpoint masks and historical provenance.
+- identity_resolution_65.csv: every disposition, reason, old/new SMILES and reference.
+- identity_corrections.csv and identity_exclusions.csv: focused change lists.
+- tramadol_source_aliases.csv: additional provenance reconciliation required by the correction.
+- endpoint_identity_masks.csv: two ivermectin model-input masks, with archived values and reasons.
+- same_row_complete_triads.csv and endpoint_counts.csv: reproducible counts.
+- all_records_after_identity_review.csv: all original rows, unchanged archived PK values and explicit inclusion/masking metadata. Use the labelled modelling table for analysis, not these archived values directly.
+- manifest.json: source/input/output hashes. Source cache includes API responses and primary references.
+
+Rebuild using revision_work/.venv/Scripts/python.exe revision_work/analysis/resolve_mass_balance_identities.py after the cached source/evidence steps. Rebuild the human-readable report separately with review_20261112/write_identity_resolution_report.py. This produces a new candidate; original data, the earlier audit and the ionisation candidate remain intact. Training readiness remains false until split/scientific-scope and runner checks are completed.

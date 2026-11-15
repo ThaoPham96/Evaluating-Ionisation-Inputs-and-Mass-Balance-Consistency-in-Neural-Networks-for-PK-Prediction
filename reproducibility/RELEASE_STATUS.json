@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETE_SCIENTIFIC_RESULTS_VALIDATED",
+  "release_version": "repository-20261115",
+  "clean_repository_validation": "PASS; isolated copy of intended repository files with no pre-expanded data or fit archive",
+  "historical_point_metrics": {
+    "status": "PASS",
+    "metrics": 3618
+  },
+  "robustness_export": {
+    "status": "PASS",
+    "fits": 6105,
+    "units": 60,
+    "final_rows": 141264,
+    "logical_conditions": 16,
+    "selection_replay": "exact architecture, lambda and epoch selections for all 60 units"
+  },
+  "statistics": {
+    "status": "PASS",
+    "bootstrap_draws": 10000,
+    "contrasts": 9520,
+    "earlier_contrasts_preserved": 5428,
+    "new_contrasts": 4092,
+    "archive_comparisons": 345,
+    "maximum_absolute_difference_from_reference": 4.418687638008123e-14,
+    "comparison_relative_tolerance": 1e-10,
+    "comparison_absolute_tolerance": 1e-10
+  },
+  "figures": {
+    "status": "PASS",
+    "rebuilt": [
+      "1",
+      "2",
+      "3",
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "S3_plotted_values": 96,
+    "S3_maximum_absolute_difference": 0,
+    "visual_review": "all six current figures passed; PDF bytes may vary with fonts and renderer"
+  },
+  "training_validation": {
+    "full_mass_plan_logical_fits": 4240,
+    "mass_CPU_fixture_tests": 19,
+    "class_plan_units": 15,
+    "class_CPU_fixture_tests": 19,
+    "robustness_CPU_fixture_tests": 6,
+    "robustness_architecture_request_split_checks": 3000,
+    "historical_plan_units": 15,
+    "historical_plan_fits": 2430,
+    "full_research_refits_run": false
+  },
+  "clean_validation_commands": [
+    "python scripts/pipeline.py validate",
+    "python scripts/pipeline.py validate-robustness",
+    "python scripts/pipeline.py statistics --output outputs/statistics",
+    "python scripts/pipeline.py figures --output outputs/figures",
+    "python scripts/pipeline.py preflight --campaign robustness --device cpu --output outputs/refit-preflight"
+  ],
+  "checkpoint_weights": "Intentionally omitted; original hashes retained. No retrieval service is promised.",
+  "fresh_training": "Actual runtime is recorded. Fresh robustness fits have distinct campaign/request identities; numerical equivalence to archived research fits is not claimed.",
+  "publication_scope": "This receipt validates the packaged scientific files and commands; a Git commit or tagged release supplies publication identity."
+}

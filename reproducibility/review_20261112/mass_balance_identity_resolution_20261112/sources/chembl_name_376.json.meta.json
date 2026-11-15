@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NABILONE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NABILONE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:34.512564+00:00",
+  "sha256": "6668a593b3aad5590dd7eb488cc7574500281eef53f938c2c6d096ec6597a53e",
+  "bytes": 5130
+}

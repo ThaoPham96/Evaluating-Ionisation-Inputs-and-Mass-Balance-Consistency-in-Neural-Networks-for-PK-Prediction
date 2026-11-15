@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PIBRENTASVIR&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PIBRENTASVIR&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:47.484089+00:00",
+  "sha256": "cffe871582379a2304e8da0bf64645a4fa950cd9afc5a02dba3e4eb1dcaac633",
+  "bytes": 10056
+}

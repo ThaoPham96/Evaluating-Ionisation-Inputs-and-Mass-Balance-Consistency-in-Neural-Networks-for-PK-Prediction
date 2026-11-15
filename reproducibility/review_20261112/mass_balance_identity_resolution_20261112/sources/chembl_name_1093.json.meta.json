@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=SERDEXMETHYLPHENIDATE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=SERDEXMETHYLPHENIDATE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:48.716433+00:00",
+  "sha256": "12f6cad2a2b25aa0f4a10cd01c9c3e7e367e31ff212920db4d2d3e15be0fb4f4",
+  "bytes": 5475
+}

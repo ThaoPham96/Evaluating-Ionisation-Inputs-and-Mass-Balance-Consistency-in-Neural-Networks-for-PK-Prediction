@@ -1,0 +1,235 @@
+{
+  "inputs_sha256": {
+    "figures/ionisation_style.py": "c79119b1703d840c3790fedb0e762d33568593feaedd2a9d65dfad6a01a68a31",
+    "figures/supplementary_selected_v1/render.py": "56cdc8dc3b4de8ad21ac07e833349fee9eda0c59656af7c7d2fa65803d7f1feb",
+    "figures/ionisation_observed_predicted_v1/manifest.json": "0a77e730e3a1a9357c23b79e152e5ae4b02cb2d791a5db30f105f968ab635e7f",
+    "figures/single_ph_v2/manifest.json": "100b789e68256c950e4a2d6a618853b473ae9a28933a1242dfbc564d4af846ae",
+    "outputs/scoring/scoring_manifest.json": "b03273df7247d1036d713845035a5914a588e76d39a0ce098d5119577f387268",
+    "data/release/class/manifest.json": "e8a1870320cf33bbf04dbd0749e24647275f3b1e95dd85ce9c2ade1985d884f5",
+    "data/release/class/model_dataset.csv": "376b492bfb68044a28952ae8436f31cb121dfbe6a83e756f8365d1e8861a9742",
+    "data/release/numerical/manifest.json": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+    "data/release/numerical/model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+    "outputs/ph_followup/outer_predictions.csv": "bf0a90c402173b94df88de851bd9ba84b4ba2e9b5fbe78ce6b11a6a13c2cd8c2",
+    "outputs/ph_followup/scoring/endpoint_metrics.csv": "28b6166fc92c3fe5a652aca9b9388f93a802470598e091b00b30229b1a5e469e",
+    "figures/ionisation_observed_predicted_v1/plotted_points.csv": "37e2df1aee1edb6fed499892a4fdbc2f9ec24a4211cd44c79aadde176c972572",
+    "figures/ionisation_observed_predicted_v1/metrics.csv": "172b7e8c33a7f48e2e1e95e4740f06bf7c7cf54a666ded76f4ba887aa3ac0c0b",
+    "outputs/scoring/endpoint_metrics.csv": "63f86534b96d9604000384f72a2a1b46466130065d65cd25540ef06c37e280f1",
+    "outputs/scoring/endpoint_summary.csv": "5272763a94c27f0caf611cfa63f585c117a50026de7dac0aa140653424543c42",
+    "figures/single_ph_v2/plotted_estimates.csv": "45b0c9f5fe32924d955c16794b0042593842f55882ade9ac2470c3ca02bdd563",
+    "figures/single_ph_v2/plotted_seeds.csv": "2c75bd9667dbd9595f19bad1c48ff4005956e838a8e9077fbf10dfeda3d847c9"
+  },
+  "outputs_sha256": {
+    "figures/supplementary_selected_v1/ionisation_supplementary_selected.pdf": "c578937b25a8dd5e329d105ebae7bb3a8b9317f25f7363319482301302aa3cb2",
+    "figures/supplementary_selected_v1/ionisation_supplementary_selected.png": "2e5b0cdbb7c3f47360519278ff8af5622ac7f3e02afafebcf5cced5e1b0624b3",
+    "figures/supplementary_selected_v1/ionisation_supplementary_selected.svg": "dfe22e4309da98bfae2029b531f5e2e3bb1f8167946745aace720ad1ffb68bd7",
+    "figures/supplementary_selected_v1/caption.txt": "f0d314d584b6a0e47160bfcd08d061bcde201b61a9854479f098f431a6d0e470",
+    "figures/supplementary_selected_v1/scatter_points.csv": "eeca382c7faf0b29d75511e46d8ded3e34eb3ef26d25a197814dcbd4e66d08af",
+    "figures/supplementary_selected_v1/scatter_metrics.csv": "69bfeacdb6d00edc7a366e88bb1474fe84621d99dbb1c808168596394424abe4",
+    "figures/supplementary_selected_v1/encoding_seed_values.csv": "8821aa3ed013624035b21a7e75d359d818d80ebea66f09f7c87e919076e1bc6f",
+    "figures/supplementary_selected_v1/encoding_summary.csv": "f29f0f731579ced164308218ff3f13e949175bc10e89b56f25a9b3afc171a64f",
+    "figures/supplementary_selected_v1/single_ph_estimates.csv": "6ffe8c40331cf66e2d24cf9a4da983293e7725531e0f0d1a80a8e17add989756",
+    "figures/supplementary_selected_v1/single_ph_seed_values.csv": "4f1489d822fe0e7245ac6daf21b087e79f91d57550f1615d047bb53e9f24d655"
+  },
+  "panels": {
+    "A": "Vd observed versus predicted: REF0/REF74",
+    "B": "CL observed versus predicted: REF0/REF74",
+    "C": "Audited class cohort Vd MAE: C0\u2013C3",
+    "D": "Numerical-pKa cohort MAE change: five single-pH arms versus REF0"
+  },
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "figure_size_inches": [
+    7.4,
+    9.4
+  ],
+  "artists_bbox_inches": [
+    0.07,
+    0.09044444444444444,
+    7.153999999999998,
+    9.079555555555558
+  ],
+  "scatter_limits_log10": {
+    "Vd": [
+      0.35,
+      5.65
+    ],
+    "CL": [
+      -2.15,
+      3.65
+    ]
+  },
+  "encoding_xlim_log10_mae": [
+    0.37,
+    0.51
+  ],
+  "heatmap_limits_percent": [
+    -15.0,
+    15.0
+  ],
+  "matplotlib_version": "3.9.2",
+  "palette": {
+    "text": "#000000",
+    "baseline": "#7C8993",
+    "ionisation": "#0072B2",
+    "heatmap": [
+      "#176E7B",
+      "#F4F6F5",
+      "#A6416B"
+    ],
+    "endpoints": {
+      "t_half": "#B2182B",
+      "Vd": "#00865A",
+      "CL": "#9A7B00",
+      "Cmax": "#C04B8B",
+      "Tmax": "#596B2F",
+      "F": "#238C8C",
+      "PPB": "#6B4530"
+    },
+    "category_circles": {
+      "Acid-only": "#24246B",
+      "Base-only": "#00BFC4",
+      "Neither-active": "#EFCB00",
+      "Dual-active": "#FF796C"
+    }
+  },
+  "checks": {
+    "scatter_identity_and_metrics": [
+      {
+        "endpoint": "CL",
+        "model": "ChemBERTa_head",
+        "arm": "REF0",
+        "n": 246,
+        "r2": 0.18267164136392533,
+        "mae": 0.48154409452447144
+      },
+      {
+        "endpoint": "CL",
+        "model": "ChemBERTa_head",
+        "arm": "REF74",
+        "n": 246,
+        "r2": 0.2219796004451141,
+        "mae": 0.47000471724383525
+      },
+      {
+        "endpoint": "CL",
+        "model": "Chemprop",
+        "arm": "REF0",
+        "n": 246,
+        "r2": 0.1245088958305739,
+        "mae": 0.48188682952834755
+      },
+      {
+        "endpoint": "CL",
+        "model": "Chemprop",
+        "arm": "REF74",
+        "n": 246,
+        "r2": 0.25062374424403555,
+        "mae": 0.4434488825901987
+      },
+      {
+        "endpoint": "CL",
+        "model": "GraphConv",
+        "arm": "REF0",
+        "n": 246,
+        "r2": 0.14172770339078422,
+        "mae": 0.49459416763199143
+      },
+      {
+        "endpoint": "CL",
+        "model": "GraphConv",
+        "arm": "REF74",
+        "n": 246,
+        "r2": 0.21985498089296063,
+        "mae": 0.4632255775783133
+      },
+      {
+        "endpoint": "Vd",
+        "model": "ChemBERTa_head",
+        "arm": "REF0",
+        "n": 259,
+        "r2": 0.17639492083156694,
+        "mae": 0.49827134959513014
+      },
+      {
+        "endpoint": "Vd",
+        "model": "ChemBERTa_head",
+        "arm": "REF74",
+        "n": 259,
+        "r2": 0.241296804990633,
+        "mae": 0.47340167148713475
+      },
+      {
+        "endpoint": "Vd",
+        "model": "Chemprop",
+        "arm": "REF0",
+        "n": 259,
+        "r2": 0.1532972830324978,
+        "mae": 0.5004677418213368
+      },
+      {
+        "endpoint": "Vd",
+        "model": "Chemprop",
+        "arm": "REF74",
+        "n": 259,
+        "r2": 0.32527205032217565,
+        "mae": 0.43146910186461496
+      },
+      {
+        "endpoint": "Vd",
+        "model": "GraphConv",
+        "arm": "REF0",
+        "n": 259,
+        "r2": 0.2156100494648624,
+        "mae": 0.4832989206089868
+      },
+      {
+        "endpoint": "Vd",
+        "model": "GraphConv",
+        "arm": "REF74",
+        "n": 259,
+        "r2": 0.34769609187882544,
+        "mae": 0.42765314424659123
+      }
+    ],
+    "class_encoding": {
+      "structures": 494,
+      "Vd_labels": 388,
+      "Vd_groups": 258,
+      "seed_rows": 108,
+      "mean_sd_rows_verified": 12
+    },
+    "single_pH": {
+      "structures": 327,
+      "groups": 238,
+      "estimates_verified": 105,
+      "seed_rows": 945,
+      "min_percent": -13.803954869015957,
+      "max_percent": 4.209744328274898,
+      "label_counts": {
+        "t_half": 316,
+        "Vd": 259,
+        "CL": 246,
+        "Cmax": 190,
+        "Tmax": 249,
+        "F": 172,
+        "PPB": 292
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "historical_image_digest": "sha256:6a533de192716278129758f72961ff0e635534d20e90ad15f19b6ee20d566487",
+  "historical_mass_python": "3.11.9",
+  "historical_unified_python": "3.11.10",
+  "public_recipe": "runtime_recipe/Dockerfile",
+  "coverage": "169 distribution versions and 144 conda artifact URLs verified; historical binary equivalence is not asserted"
+}

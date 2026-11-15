@@ -1,0 +1,38 @@
+{
+  "campaign_id": "84858a14dd64206333d9bc3851252293e659881a4643d4b26ee7d7d39af545a1",
+  "chemprop_version": "1.6.1",
+  "environment": {
+    "cuda_version": "12.4",
+    "device_type": "cuda",
+    "gpu_capability": [
+      7,
+      5
+    ],
+    "gpu_name": "Tesla T4",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux",
+    "python": "3.11.10",
+    "rdkit": "2025.09.6",
+    "torch": "2.5.1+cu124",
+    "torch_geometric": "2.7.0"
+  },
+  "environment_hash": "49698e33d82dc42d81dc8ee0f91f7a076568f34f51f35bc85931fbb309e2b60a",
+  "files": {
+    "outer_predictions.csv": "134a4fe7685e846a09988071f23e7b1664d7deb065a3e8e91d7ba523639135fe",
+    "reference_and_ph_predictions.csv": "915fd710c56cff5ad66a0d5deffd73617d36b360d93094683031c60967ab285c"
+  },
+  "fits": 810,
+  "max_selection_score_replay_delta": 1.1102230246251565e-16,
+  "plan_sha256": "2a48470572150d0c104b3b6b0e1d843cbbcbd8876aad508691284a642f62fe06",
+  "reference_fits": 270,
+  "reference_rows": 17658,
+  "release_fingerprint": "3e1de9c4f7641238fdb6603676c17d059c2ffce262496437c752340ee5208d2b",
+  "rows": 52974,
+  "unified_fit_counts": {
+    "final_fits": 1080,
+    "inner_fits": 1350,
+    "total_fits": 2430,
+    "units": 15
+  }
+}

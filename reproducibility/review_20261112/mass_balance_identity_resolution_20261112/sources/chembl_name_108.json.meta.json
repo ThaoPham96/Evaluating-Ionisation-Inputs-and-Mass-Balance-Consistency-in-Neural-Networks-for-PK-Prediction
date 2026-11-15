@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PREDNISONE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=PREDNISONE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:32.039993+00:00",
+  "sha256": "3f354c29bda94182e2bfe16587d2b52186a879d63f8fb75044da17f49e3fed3d",
+  "bytes": 7209
+}

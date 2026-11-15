@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=LAMIVUDINE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=LAMIVUDINE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:39.611714+00:00",
+  "sha256": "a5e2f99a72333d33d73e742fceed25b759b74102745f06e116ebadef28b0b642",
+  "bytes": 7401
+}

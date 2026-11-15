@@ -1,0 +1,26 @@
+Tool: built-in image_gen, edit mode; 13 November 2026.
+Source: output/imagegen/ionisation_ph_embedding_v2.png, supplied through the
+user's linked chat 01a1d6e9-cce8-7ec0-a7f1-f9e69ab973ad.
+
+Prompt:
+Edit target: the provided scientific schematic. Make exactly ONE text correction.
+In the lower-left module, replace the heading 'Select 1 of 4 embeddings' with
+the exact heading '4-category one-hot input'. Match the existing font, size,
+weight, alignment and colour. Preserve every other pixel-level design element
+as closely as possible: entire molecule and atom labels, network, MLP, all
+arrows, seven PK endpoint tiles and their symbols/colours, pH and pKa input
+boxes, pH-dependent ionisation state, Acid-only/Base-only/Neither/Dual-active
+category list, four empty vector boxes, all spacing, title and panel A. Keep
+the full original wide aspect ratio and white background, no cropped content,
+no additional labels, no black bars. Do not redesign or interpret the data.
+This corrects the terminology for a fixed one-hot category vector; there is
+no separately learned categorical embedding layer in these plotted experiments.
+
+Second edit: built-in image_gen, edit mode.
+Source: the first corrected ionisation_onehot_schematic.png.
+Output: exec-503a836a-757e-4f29-8702-b279cf449e7c.png.
+
+Requested changes: match the category text colours to the scatter legend.
+The requested palette was Acid-only #0072B2, Base-only #D55E00,
+Neither-active #7C8A92 and Dual-active #8552A0. Replace "Neither" with
+"Neither-active". Preserve the rest of the schematic and its wide framing.

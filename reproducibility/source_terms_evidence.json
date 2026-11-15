@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-14T23:08:55.500634+00:00",
+  "sources": {
+    "zenodo_record": {
+      "url": "https://zenodo.org/api/records/22831843",
+      "id": 22831843,
+      "doi": "10.5281/zenodo.22831843",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "title": "Structures of FDA-approved drugs and their active metabolites and data sets of experimental PD and PK properties"
+    },
+    "chemberta_model": {
+      "url": "https://huggingface.co/api/models/seyonec/PubChem10M_SMILES_BPE_450k/revision/c18fccd09b3326bf2d4633412c256d7db872156d",
+      "sha": "c18fccd09b3326bf2d4633412c256d7db872156d",
+      "cardData": null,
+      "tags": [
+        "transformers",
+        "pytorch",
+        "jax",
+        "roberta",
+        "fill-mask",
+        "endpoints_compatible",
+        "deploy:azure",
+        "region:us"
+      ]
+    }
+  }
+}

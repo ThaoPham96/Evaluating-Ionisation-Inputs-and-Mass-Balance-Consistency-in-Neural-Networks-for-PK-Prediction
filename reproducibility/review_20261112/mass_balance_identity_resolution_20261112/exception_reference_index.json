@@ -1,0 +1,248 @@
+[
+  {
+    "reference_id": "phenylpropanolamine_nist",
+    "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=14838-15-4",
+    "row_indices": [
+      171
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_phenylpropanolamine_nist.html"
+  },
+  {
+    "reference_id": "methazolamide",
+    "url": "https://precision.fda.gov/uniisearch/srs/unii/W733B0S9SD",
+    "row_indices": [
+      173
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_methazolamide.html"
+  },
+  {
+    "reference_id": "atropine",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/021146Orig1s025lbl.pdf",
+    "row_indices": [
+      203
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_atropine.pdf"
+  },
+  {
+    "reference_id": "pentazocine",
+    "url": "https://pdf.hres.ca/dpd_pm/00045599.PDF",
+    "row_indices": [
+      259
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_pentazocine.pdf"
+  },
+  {
+    "reference_id": "norgestrel",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/017031s041EA.pdf",
+    "row_indices": [
+      270
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_norgestrel.pdf"
+  },
+  {
+    "reference_id": "nadolol",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:8699333%20AND%20SRC:MED&format=json&resultType=core",
+    "row_indices": [
+      332
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_nadolol.json"
+  },
+  {
+    "reference_id": "nabilone",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/pre96/018677Orig1s000rev.pdf",
+    "row_indices": [
+      376
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_nabilone.pdf"
+  },
+  {
+    "reference_id": "milnacipran",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b66b1850-0d2a-41d6-b0ad-c676166394c7",
+    "row_indices": [
+      382
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_milnacipran.html"
+  },
+  {
+    "reference_id": "fosinopril",
+    "url": "https://pdf.hres.ca/dpd_pm/00008615.PDF",
+    "row_indices": [
+      459
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_fosinopril.pdf"
+  },
+  {
+    "reference_id": "itraconazole",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/020083s065lbl.pdf",
+    "row_indices": [
+      470
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_itraconazole.pdf"
+  },
+  {
+    "reference_id": "cisapride",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/pre96/020210_S000_Cisapride_CHEMR.pdf",
+    "row_indices": [
+      483
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_cisapride.pdf"
+  },
+  {
+    "reference_id": "granisetron",
+    "url": "https://www.ebi.ac.uk/chebi/CHEBI:5537",
+    "row_indices": [
+      487
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_granisetron.html"
+  },
+  {
+    "reference_id": "granisetron_label",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=50b713d3-7ca8-465a-aefa-65ddbe17b934",
+    "row_indices": [
+      487
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_granisetron_label.html"
+  },
+  {
+    "reference_id": "fluvastatin_fda",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2002/20261s32%2C21192s4lbl.pdf",
+    "row_indices": [
+      493
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_fluvastatin_fda.pdf"
+  },
+  {
+    "reference_id": "acarbose",
+    "url": "https://www.ebi.ac.uk/chebi/CHEBI:2376",
+    "row_indices": [
+      508
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_acarbose.html"
+  },
+  {
+    "reference_id": "cevimeline_usp",
+    "url": "https://doi.usp.org/USPNF/USPNF_M14810_02_01.html",
+    "row_indices": [
+      575
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_cevimeline_usp.html"
+  },
+  {
+    "reference_id": "trospium",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2004/21-595_Sanctura_Pharmr.pdf",
+    "row_indices": [
+      632
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_trospium.pdf"
+  },
+  {
+    "reference_id": "ivermectin",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/050742s030lbl.pdf",
+    "row_indices": [
+      709
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_ivermectin.pdf"
+  },
+  {
+    "reference_id": "ivermectin_b1a_unii",
+    "url": "https://precision.fda.gov/uniisearch/srs/unii/91Y2202OUW",
+    "row_indices": [
+      709
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_ivermectin_b1a_unii.html"
+  },
+  {
+    "reference_id": "ivermectin_b1a_pubchem",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6321424/property/SMILES,InChIKey/JSON",
+    "row_indices": [
+      709
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_ivermectin_b1a_pubchem.json"
+  },
+  {
+    "reference_id": "ivermectin_source_card",
+    "url": "https://chemoinfo.ipmc.cnrs.fr/MOLDB/CARD/edrug3d_1068.html",
+    "row_indices": [
+      709
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_ivermectin_source_card.html"
+  },
+  {
+    "reference_id": "trovafloxacin",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=da9b26bb-d2d7-4113-a0f9-c6c2280f4875",
+    "row_indices": [
+      759
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_trovafloxacin.html"
+  },
+  {
+    "reference_id": "colistin",
+    "url": "https://www.famic.go.jp/ffis/woah/obj/a30_cl.pdf",
+    "row_indices": [
+      785
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_colistin.pdf"
+  },
+  {
+    "reference_id": "colistin_source_card",
+    "url": "https://chemoinfo.ipmc.cnrs.fr/MOLDB/CARD/edrug3d_1312_977.html",
+    "row_indices": [
+      785
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_colistin_source_card.html"
+  },
+  {
+    "reference_id": "colistin_pk_study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2715599/",
+    "row_indices": [
+      785
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_colistin_pk_study.html"
+  },
+  {
+    "reference_id": "tramadol",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/020281s040lbl.pdf",
+    "row_indices": [
+      931
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_tramadol.pdf"
+  },
+  {
+    "reference_id": "serdexmethylphenidate",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00b5e716-5564-4bbd-acaf-df2bc45a5663",
+    "row_indices": [
+      1093
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_serdexmethylphenidate.html"
+  },
+  {
+    "reference_id": "ponesimod",
+    "url": "https://precision.fda.gov/uniisearch/srs/unii/5G7AKV2MKP",
+    "row_indices": [
+      1098
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_ponesimod.html"
+  },
+  {
+    "reference_id": "pralsetinib",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16edd46e-28b8-f06d-e063-6394a90ae31b&type=display",
+    "row_indices": [
+      1101
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_pralsetinib.html"
+  },
+  {
+    "reference_id": "berotralstat",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3527ece1-e7e0-40b1-b0c5-6baeb0deabeb",
+    "row_indices": [
+      1103
+    ],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_berotralstat.html"
+  },
+  {
+    "reference_id": "chembl_status",
+    "url": "https://www.ebi.ac.uk/chembl/api/data/status.json",
+    "row_indices": [],
+    "cache": "review_20261112\\mass_balance_identity_resolution_20261112\\sources\\reference_chembl_status.json"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=FOSINOPRIL&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=FOSINOPRIL&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:36.226111+00:00",
+  "sha256": "1b4b265713cfd8997163bdb3c31653c075fb7c19aa2c0def4da98cfe93a59c22",
+  "bytes": 5859
+}

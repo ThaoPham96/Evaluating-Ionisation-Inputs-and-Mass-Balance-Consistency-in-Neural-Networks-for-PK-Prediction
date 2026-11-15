@@ -1,0 +1,3 @@
+contrast,metric,unit,estimate,ci95_lower,ci95_upper,seed_sd,seed_min,seed_max,n_seeds,n_bootstrap_draws,n_defined_draws,n_endpoints
+single_task - multitask_baseline,macro_seven_endpoint,mean of endpoint MAE percentage changes,0.20998119327246278,-1.016877094129849,1.6778853170432135,0.5733015158467399,-0.19466251948102056,0.8660344981614022,3,10000,10000,7
+single_task - multitask_loss,macro_seven_endpoint,mean of endpoint MAE percentage changes,0.8600156678430458,-0.44093436266122316,2.057974246009464,0.12914407044409684,0.7110221552078395,0.9398874427965981,3,10000,10000,7

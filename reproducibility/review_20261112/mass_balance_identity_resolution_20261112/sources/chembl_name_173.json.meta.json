@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=METHAZOLAMIDE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=METHAZOLAMIDE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:32.875003+00:00",
+  "sha256": "6ab854ea60e8707e2dea107b96bb1ce24c6ef5bb276a26e326196160be631b52",
+  "bytes": 4290
+}

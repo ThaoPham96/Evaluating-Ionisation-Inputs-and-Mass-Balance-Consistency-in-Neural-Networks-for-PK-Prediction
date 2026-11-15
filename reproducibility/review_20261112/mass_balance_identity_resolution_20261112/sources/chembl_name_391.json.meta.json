@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NIMODIPINE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=NIMODIPINE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:35.349349+00:00",
+  "sha256": "53edfe88e307db74b47aecf6fa3a61eb62eaea96c113f29f7e9c4757a58615b9",
+  "bytes": 6258
+}

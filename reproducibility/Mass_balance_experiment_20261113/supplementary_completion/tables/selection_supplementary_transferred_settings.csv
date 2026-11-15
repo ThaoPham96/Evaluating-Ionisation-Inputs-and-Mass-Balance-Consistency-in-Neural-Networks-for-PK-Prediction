@@ -1,0 +1,91 @@
+block,backbone,depth,outer_fold,arm,lambda_value,candidate_id,final_epochs,inner_best_epochs,settings_source
+alternative_encoders,GIN,2,1,baseline,0.0,GraphConv_10,53,46|47|53|86|93,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,1,loss,0.1,GraphConv_10,65,52|55|65|71|101,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,2,baseline,0.0,GraphConv_02,83,50|81|83|86|110,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,2,loss,0.03,GraphConv_02,100,50|57|100|108|132,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,3,baseline,0.0,GraphConv_10,63,37|47|63|79|85,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,3,loss,3.0,GraphConv_10,66,43|64|66|79|121,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,4,baseline,0.0,GraphConv_02,116,66|107|116|118|153,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,4,loss,3.0,GraphConv_02,105,71|82|105|107|110,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,5,baseline,0.0,GraphConv_10,61,53|57|61|90|108,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GIN,2,5,loss,0.3,GraphConv_10,67,53|61|67|77|105,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,1,baseline,0.0,GraphConv_10,87,52|74|87|95|173,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,1,loss,0.1,GraphConv_10,87,52|79|87|95|195,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,2,baseline,0.0,GraphConv_02,144,66|128|144|147|188,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,2,loss,0.03,GraphConv_02,146,66|99|146|147|177,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,3,baseline,0.0,GraphConv_10,34,28|34|34|59|155,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,3,loss,3.0,GraphConv_10,60,33|34|60|64|118,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,4,baseline,0.0,GraphConv_02,197,65|186|197|198|200,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,4,loss,3.0,GraphConv_02,189,53|178|189|196|198,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,5,baseline,0.0,GraphConv_10,130,83|121|130|139|192,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,GAT,2,5,loss,0.3,GraphConv_10,144,110|125|144|192|198,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,1,baseline,0.0,GraphConv_10,43,25|40|43|48|59,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,1,loss,0.1,GraphConv_10,28,21|23|28|38|61,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,2,baseline,0.0,GraphConv_02,72,43|66|72|80|107,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,2,loss,0.03,GraphConv_02,70,66|67|70|79|93,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,3,baseline,0.0,GraphConv_10,57,34|50|57|81|128,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,3,loss,3.0,GraphConv_10,34,29|30|34|36|57,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,4,baseline,0.0,GraphConv_02,82,51|61|82|116|130,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,4,loss,3.0,GraphConv_02,77,48|70|77|77|88,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,5,baseline,0.0,GraphConv_10,45,18|31|45|47|53,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+alternative_encoders,AttentiveFP,2,5,loss,0.3,GraphConv_10,47,24|32|47|53|73,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,1,baseline,0.0,GraphConv_10,117,83|110|117|118|200,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,1,loss,0.1,GraphConv_10,118,83|116|118|118|194,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,2,baseline,0.0,GraphConv_02,180,94|143|180|183|200,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,2,loss,0.03,GraphConv_02,143,64|110|143|180|184,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,3,baseline,0.0,GraphConv_10,77,14|56|77|85|140,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,3,loss,3.0,GraphConv_10,77,14|56|77|109|136,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,4,baseline,0.0,GraphConv_02,184,123|179|184|192|200,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,4,loss,3.0,GraphConv_02,184,148|157|184|191|200,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,5,baseline,0.0,GraphConv_10,141,47|94|141|190|195,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,1,5,loss,0.3,GraphConv_10,94,47|57|94|189|198,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,1,baseline,0.0,GraphConv_10,46,37|38|46|48|52,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,1,loss,0.1,GraphConv_10,43,37|40|43|43|48,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,2,baseline,0.0,GraphConv_02,85,42|43|85|92|102,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,2,loss,0.03,GraphConv_02,73,42|43|73|91|92,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,3,baseline,0.0,GraphConv_10,36,32|35|36|36|48,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,3,loss,3.0,GraphConv_10,56,31|39|56|70|79,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,4,baseline,0.0,GraphConv_02,93,65|76|93|93|114,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,4,loss,3.0,GraphConv_02,99,70|93|99|103|177,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,5,baseline,0.0,GraphConv_10,59,20|49|59|70|91,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,3,5,loss,0.3,GraphConv_10,65,52|61|65|79|91,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,1,baseline,0.0,GraphConv_10,35,19|34|35|50|56,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,1,loss,0.1,GraphConv_10,38,19|36|38|38|56,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,2,baseline,0.0,GraphConv_02,58,30|44|58|65|76,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,2,loss,0.03,GraphConv_02,62,22|45|62|64|73,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,3,baseline,0.0,GraphConv_10,33,31|32|33|43|66,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,3,loss,3.0,GraphConv_10,33,20|31|33|43|73,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,4,baseline,0.0,GraphConv_02,85,32|47|85|91|100,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,4,loss,3.0,GraphConv_02,70,49|69|70|100|118,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,5,baseline,0.0,GraphConv_10,48,31|46|48|50|53,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,4,5,loss,0.3,GraphConv_10,46,35|35|46|50|79,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,1,baseline,0.0,GraphConv_10,34,28|29|34|48|51,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,1,loss,0.1,GraphConv_10,42,28|36|42|45|54,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,2,baseline,0.0,GraphConv_02,59,52|56|59|60|72,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,2,loss,0.03,GraphConv_02,59,52|52|59|65|70,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,3,baseline,0.0,GraphConv_10,33,28|31|33|35|43,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,3,loss,3.0,GraphConv_10,21,18|20|21|22|33,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,4,baseline,0.0,GraphConv_02,56,41|47|56|76|85,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,4,loss,3.0,GraphConv_02,56,25|53|56|59|69,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,5,baseline,0.0,GraphConv_10,50,31|35|50|58|63,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+depth_1_to_5,GraphConv,5,5,loss,0.3,GraphConv_10,47,32|45|47|49|67,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,1,baseline,0.0,GraphConv_10,72,57|58|72|81|84,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,1,loss,0.1,GraphConv_10,70,33|70|70|75|82,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,2,baseline,0.0,GraphConv_02,93,41|60|93|107|158,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,2,loss,0.03,GraphConv_02,112,41|111|112|164|187,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,3,baseline,0.0,GraphConv_10,44,8|35|44|68|90,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,3,loss,3.0,GraphConv_10,44,9|31|44|68|121,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,4,baseline,0.0,GraphConv_02,102,57|83|102|132|140,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,4,loss,3.0,GraphConv_02,106,57|87|106|120|167,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,5,baseline,0.0,GraphConv_10,93,72|88|93|98|139,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+task_weight_sensitivity,GraphConv,2,5,loss,0.3,GraphConv_10,82,51|56|82|85|88,transferred from GraphConv outer-fold selection (candidate and lambda); own inner epoch calibration
+primary_final,GraphConv,2,1,baseline,0.0,GraphConv_10,76,,inner-selected for GraphConv
+primary_final,GraphConv,2,1,loss,0.1,GraphConv_10,90,,inner-selected for GraphConv
+primary_final,GraphConv,2,2,baseline,0.0,GraphConv_02,96,,inner-selected for GraphConv
+primary_final,GraphConv,2,2,loss,0.03,GraphConv_02,96,,inner-selected for GraphConv
+primary_final,GraphConv,2,3,baseline,0.0,GraphConv_10,72,,inner-selected for GraphConv
+primary_final,GraphConv,2,3,loss,3.0,GraphConv_10,148,,inner-selected for GraphConv
+primary_final,GraphConv,2,4,baseline,0.0,GraphConv_02,143,,inner-selected for GraphConv
+primary_final,GraphConv,2,4,loss,3.0,GraphConv_02,146,,inner-selected for GraphConv
+primary_final,GraphConv,2,5,baseline,0.0,GraphConv_10,96,,inner-selected for GraphConv
+primary_final,GraphConv,2,5,loss,0.3,GraphConv_10,96,,inner-selected for GraphConv

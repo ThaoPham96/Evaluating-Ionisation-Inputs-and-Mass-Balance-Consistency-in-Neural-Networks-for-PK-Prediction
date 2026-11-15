@@ -1,0 +1,20 @@
+{
+  "superseded_cached_pages": [
+    {
+      "file": "sources/reference_phenylpropanolamine.html",
+      "reason": "GSRS application shell, not substantive identity evidence",
+      "replacement": "sources/reference_phenylpropanolamine_nist.html"
+    },
+    {
+      "file": "sources/reference_cevimeline.html",
+      "reason": "GSRS application shell, not substantive identity evidence",
+      "replacement": "sources/reference_cevimeline_usp.html"
+    },
+    {
+      "file": "sources/reference_fluvastatin.html",
+      "reason": "reCAPTCHA response, not substantive identity evidence",
+      "replacement": "sources/reference_fluvastatin_fda.pdf"
+    }
+  ],
+  "policy": "Superseded responses are preserved as retrieval history, excluded from exception_reference_index.json and not relied upon for dispositions."
+}

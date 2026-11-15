@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=RITONAVIR&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=RITONAVIR&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:40.434499+00:00",
+  "sha256": "b0744cb0a98c4156660801d5c703e2276362c2da56c79a24a37598cb709670ce",
+  "bytes": 9277
+}

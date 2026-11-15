@@ -1,0 +1,44 @@
+{
+  "status": "report_ready",
+  "cohorts": [
+    "class",
+    "numerical"
+  ],
+  "numerical_block_deferred": false,
+  "cheap_controls_included": true,
+  "release_fingerprints": {
+    "class": "8f1ae06ab1571ccb84f6b08284a8eee238bd0aaaddca6e10f8eba45bc4d5216f",
+    "numerical": "3e1de9c4f7641238fdb6603676c17d059c2ffce262496437c752340ee5208d2b"
+  },
+  "campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "neural_predictions_sha256": "02ddf62899691b8c31ee252f7ecc3703cee97be7e71d47a8af15b3e8e1f86755",
+  "control_predictions_sha256": "ce71e4148698881f58d20cbe1ac910ddc531919dfa09a2ff7345747b309d31ac",
+  "bootstrap_seed": 20261113,
+  "bootstrap_draws": 10000,
+  "adjusted_level": 0.9916666666666667,
+  "primary_family_size": 6,
+  "primary_rule": "Crossed equal-tailed adjusted upper bound below zero; production Vd headline contrasts only",
+  "delta": "Arm minus named comparator. Negative MAE deltas denote lower arm error.",
+  "relative_delta": "Mean paired MAE delta divided by comparator MAE averaged over trajectories",
+  "crossed_interval": "Approximate equal-tailed paired percentile interval over whole seed trajectories and frozen groups, conditional on the observed training data, fixed folds and selected settings",
+  "conditional_group_interval": "Equal-tailed paired percentile interval over frozen groups with all trained seeds fixed",
+  "seed_interval": "Paired t interval over whole-trajectory deltas on the fixed observed structures",
+  "aafe": "10 ** mean absolute log10 error on strictly positive observed labels; zero predictions yield infinite AAFE",
+  "class_median": "Training-fold medians scored on the original scale; within-class Spearman omitted",
+  "scope_class_rule": "P3-P1 subgroup contrasts compare the audited category with the strict numeric pKa thresholds. The permanent-charge disagreement subgroup is a subset of all threshold disagreements.",
+  "empty_draws": "Draws containing no labelled structure in a given endpoint/stratum are undefined. Valid draw counts are reported in each row.",
+  "files": {
+    "endpoint_metrics.csv": "63f86534b96d9604000384f72a2a1b46466130065d65cd25540ef06c37e280f1",
+    "within_class_vd.csv": "0f90a2ef58625dfcee8d21ca3a248f012071f5b8b519ae61ef7cb3d780ba7bee",
+    "coherence.csv": "47ba03b1e5e793cd2e30d65de69b7b37c38cda291aeebd4c0ab330e7c0857b42",
+    "contrasts.csv": "3d8342ba0863150a30f637d91b21b801738e77d8dfa32b210cbde01581195bcf",
+    "contrast_seeds.csv": "7ebc1e88384b3f7075ee59b6cb687c8f4da74f76610487f3e893cf4f0e96318b",
+    "contrast_outer_folds.csv": "5bd9053392637c7ef72dcf4ad26c6638f36aee9a290f6578f357156d4e19d6bc",
+    "coherence_contrasts.csv": "a927e8400970352139b1ebb69296fd177fe621b4f78c168f271374a846e1e2bc",
+    "coherence_contrast_seeds.csv": "1bfe48f87044614ccc1f4388de27d0c1ee8c7dfd9f6b165b0daefb2d4edbddb3",
+    "endpoint_summary.csv": "5272763a94c27f0caf611cfa63f585c117a50026de7dac0aa140653424543c42",
+    "within_class_vd_summary.csv": "cf9dca67224cd012b74dc387eae63365e09a4c2176db756e264f597ccbbbb853",
+    "coverage.csv": "a3a9c0f5c615fde0fbf2af68ef4180c63e530512cf5658781a3b6bcde889c9b5",
+    "group_sizes.csv": "01e741530459dbbae526a754cb793671373cc87c3a9dd02a6f5c020e43401a56"
+  }
+}

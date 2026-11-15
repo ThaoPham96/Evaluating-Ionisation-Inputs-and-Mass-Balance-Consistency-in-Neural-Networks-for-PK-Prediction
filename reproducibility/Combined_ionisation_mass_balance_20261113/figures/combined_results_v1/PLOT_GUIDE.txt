@@ -1,0 +1,22 @@
+COMBINED RESULTS: PLOT GUIDE
+
+Start with combined_overview: four conditions (structure only, pH 7.4
+ionisation input, mass-balance loss, both) on the same cohort/folds/seeds.
+Top row: triad prediction error, lower is better.
+Bottom row: cumulative predicted triad agreement, higher curves are better.
+
+adding_loss_tradeoff isolates Both minus Ionisation. The left panel is
+prediction error; the right panel is internal disagreement. Seed dots and
+bootstrap intervals are distinct sources of variability. Multiplicity-adjusted
+intervals are the thin bars; exploratory 95% intervals are the thick bars.
+
+combined_results_all_plots.pdf contains five pages:
+1. Four-condition overview
+2. Adding-loss trade-off
+3. All seven endpoint errors (S1)
+4. Four-cell accuracy interactions (S2)
+5. Training loss versus post-hoc correction controls (S3)
+
+Each main and supplementary figure also has a PNG, PDF and editable SVG.
+Captions and plotted source tables sit beside their render.py scripts.
+No models were retrained and no analysis tables were changed to make plots.

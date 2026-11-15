@@ -1,0 +1,38 @@
+{
+  "campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "new_training": false,
+  "seed_count": 9,
+  "input_score_manifest_sha256": "b03273df7247d1036d713845035a5914a588e76d39a0ce098d5119577f387268",
+  "scoring_inputs": {
+    "endpoint_metrics.csv": "63f86534b96d9604000384f72a2a1b46466130065d65cd25540ef06c37e280f1",
+    "within_class_vd.csv": "0f90a2ef58625dfcee8d21ca3a248f012071f5b8b519ae61ef7cb3d780ba7bee",
+    "coherence.csv": "47ba03b1e5e793cd2e30d65de69b7b37c38cda291aeebd4c0ab330e7c0857b42",
+    "contrasts.csv": "3d8342ba0863150a30f637d91b21b801738e77d8dfa32b210cbde01581195bcf",
+    "contrast_seeds.csv": "7ebc1e88384b3f7075ee59b6cb687c8f4da74f76610487f3e893cf4f0e96318b",
+    "contrast_outer_folds.csv": "5bd9053392637c7ef72dcf4ad26c6638f36aee9a290f6578f357156d4e19d6bc",
+    "coherence_contrasts.csv": "a927e8400970352139b1ebb69296fd177fe621b4f78c168f271374a846e1e2bc",
+    "coherence_contrast_seeds.csv": "1bfe48f87044614ccc1f4388de27d0c1ee8c7dfd9f6b165b0daefb2d4edbddb3",
+    "endpoint_summary.csv": "5272763a94c27f0caf611cfa63f585c117a50026de7dac0aa140653424543c42",
+    "within_class_vd_summary.csv": "cf9dca67224cd012b74dc387eae63365e09a4c2176db756e264f597ccbbbb853",
+    "coverage.csv": "a3a9c0f5c615fde0fbf2af68ef4180c63e530512cf5658781a3b6bcde889c9b5",
+    "group_sizes.csv": "01e741530459dbbae526a754cb793671373cc87c3a9dd02a6f5c020e43401a56"
+  },
+  "script_sha256": "dd29670e59d0410698e4118a6ccd3ca7adeedef61612fe311c5f3438e86454b8",
+  "cohort_inputs": {
+    "class": "376b492bfb68044a28952ae8436f31cb121dfbe6a83e756f8365d1e8861a9742",
+    "numerical": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6"
+  },
+  "bootstrap_display": "Absolute-difference intervals scaled by fixed mean comparator MAE",
+  "outputs": {
+    "ionisation_overview.pdf": "c5ed1d605d334f156d876b01505dffc76515004898d5df42edd65a0cb338a965",
+    "ionisation_overview.png": "6eb777dd505ca8b5f4fbb2c60c2792d944e595babe9505d6b769ecd5bd39e563",
+    "ionisation_overview.svg": "2ce5841346fd778d3b79da2aada0536ccf570fcc9f719e0c3dac6b8e4fbe62e7",
+    "ionisation_overview_caption.txt": "11095c075b54b513dc3db40ad2705ee370f0196ef5ccd5dd95dedc7a41364f6b",
+    "ionisation_overview_plotted_data.csv": "df7373c63861347f42e1530ba73e1c38d630c8c93c2a9792eefe5d9645593d7f",
+    "ionisation_diagnostics.pdf": "52d62cdd357d9f4fdbf3a6870243e3320b8ea6c04f8ffa65e1ec928b02aafaca",
+    "ionisation_diagnostics.png": "7217eba8db7c80bc0880c053da30c5fd306b45d389e963bbe1b0f7f7596bdd8d",
+    "ionisation_diagnostics.svg": "f851cce6f411df10350b3ca744ebd27eb2936804c3f36ac17e594a4bf1885092",
+    "ionisation_diagnostics_caption.txt": "eb961c9832fc5291801f5de3cfe5fa733d1e83ce3efe65a03c62d34a2c53ab21",
+    "ionisation_diagnostics_plotted_data.csv": "c7b2fd745266cfe00f840872c52fbd99971aaee0dd615d30fda141fd2ed9c6fe"
+  }
+}

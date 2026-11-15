@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:8699333%20AND%20SRC:MED&format=json&resultType=core",
+  "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:8699333%20AND%20SRC:MED&format=json&resultType=core",
+  "retrieved_utc": "2026-11-12T21:30:04.499012+00:00",
+  "sha256": "86d051dcf4ebad8e96122e430bf18bcb7f73904de43e0a38817785f4931a2898",
+  "bytes": 5809
+}

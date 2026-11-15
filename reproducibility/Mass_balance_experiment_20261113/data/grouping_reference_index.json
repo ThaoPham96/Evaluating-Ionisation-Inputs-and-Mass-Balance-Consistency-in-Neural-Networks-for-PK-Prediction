@@ -1,0 +1,62 @@
+[
+  {
+    "filename": "identity_chlordiazepoxide_fda.html",
+    "url": "https://precision.fda.gov/uniisearch/srs/unii/6RZ6XEZ3CR",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\identity_chlordiazepoxide_fda.html"
+  },
+  {
+    "filename": "identity_anisotropine_fda.html",
+    "url": "https://precision.fda.gov/uniisearch/srs/unii/MJJ5G1G8OM",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\identity_anisotropine_fda.html"
+  },
+  {
+    "filename": "hydroxyzine_pamoate.html",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d60603e7-15c5-7b01-e053-2995a90ad252",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\hydroxyzine_pamoate.html"
+  },
+  {
+    "filename": "ergoloid.html",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=1344cf98-7d79-4ab4-9a63-2e632d9afbd4",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\ergoloid.html"
+  },
+  {
+    "filename": "oxtriphylline_usp.html",
+    "url": "https://doi.usp.org/USPNF/USPNF_M59360_01_01.html",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\oxtriphylline_usp.html"
+  },
+  {
+    "filename": "sulfisoxazole_diolamine.json",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/20287/property/SMILES,InChIKey,IUPACName/JSON",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\sulfisoxazole_diolamine.json"
+  },
+  {
+    "filename": "penicillin_benzathine.html",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=012d46f1-d0a0-4676-a879-cd320297ab16",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\penicillin_benzathine.html"
+  },
+  {
+    "filename": "eltrombopag_olamine.html",
+    "url": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=52ba8e06-aa7d-caa6-e063-6294a90a5ce5",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\eltrombopag_olamine.html"
+  },
+  {
+    "filename": "erythromycin_lactobionate.html",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6f9565b-6d9d-40e3-87f8-9f38ede9173a",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\erythromycin_lactobionate.html"
+  },
+  {
+    "filename": "quinidine_gluconate.html",
+    "url": "https://doi.usp.org/USPNF/USPNF_M72650_03_01.html",
+    "cached": true,
+    "result": "review_20261112\\mass_balance_freeze_20261112\\grouping_sources\\quinidine_gluconate.html"
+  }
+]

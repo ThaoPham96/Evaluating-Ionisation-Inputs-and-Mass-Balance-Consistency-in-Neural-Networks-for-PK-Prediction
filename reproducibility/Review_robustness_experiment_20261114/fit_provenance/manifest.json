@@ -1,0 +1,36 @@
+{
+  "fits": 6105,
+  "units": 60,
+  "files": [
+    {
+      "path": "fit_provenance/ChemBERTa_head.jsonl.gz",
+      "sha256": "38c824cb97a9f7141f92565ac106f6a9faa40e4b25710b173abdf3fbb9712201",
+      "fits": 1996,
+      "bytes": 24165109
+    },
+    {
+      "path": "fit_provenance/Chemprop.jsonl.gz",
+      "sha256": "32cc5fb3b4007995b9671852fb17635b615ec5d9c562d1d2c1ae33977c7260d5",
+      "fits": 2032,
+      "bytes": 24769464
+    },
+    {
+      "path": "fit_provenance/GraphConv.jsonl.gz",
+      "sha256": "ffb2aaa1951c69fd362ac41703bf628737203970c6126e99351f712fbd99116e",
+      "fits": 2077,
+      "bytes": 25362208
+    }
+  ],
+  "included": [
+    "complete.json",
+    "request.json",
+    "summary.json",
+    "scaler.json",
+    "predictions.csv"
+  ],
+  "excluded": [
+    "checkpoint.pt",
+    "learning_curve.csv"
+  ],
+  "scope": "Original bytes; included artifacts verified against original completion markers; omitted artifact hashes remain provenance only"
+}

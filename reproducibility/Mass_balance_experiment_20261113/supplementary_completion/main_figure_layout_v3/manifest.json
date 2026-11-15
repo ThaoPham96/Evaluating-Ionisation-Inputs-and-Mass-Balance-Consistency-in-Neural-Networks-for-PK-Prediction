@@ -1,0 +1,54 @@
+{
+  "purpose": "Endpoint-coloured estimates and schematic symbols with black labels",
+  "layout_revision": "Separate supervised MSE and mass-balance terms in A; B-E retain physical dimensions and positions from the lower edge",
+  "new_training": false,
+  "data_changed": false,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "dimensions_inches": [
+    7.0,
+    8.85
+  ],
+  "png_dpi": 350,
+  "font": "Arial",
+  "text_sizes_pt": {
+    "base": 8.0,
+    "small": 7.0,
+    "panel_letter": 10.0,
+    "title": 9.0,
+    "panel_A_triad_symbols": 12,
+    "panel_A_other_symbols": 9.5,
+    "panel_A_equation": 8.0
+  },
+  "uncertainty_D": "95% paired group-bootstrap intervals, nine seeds",
+  "uncertainty_E": "sample SD across nine paired seeds",
+  "inputs_sha256": {
+    "average_seed_values.csv": "8c566ce0f2c687ea7fd4a2ceded8b3d048adcd70f620a6da117308ba422b0d40",
+    "cdf_values.csv.gz": "f335c50b736c1a4a55917d9a554721a2a6fb27fcf7a4ef0d9c8eba2b13a528f7",
+    "endpoint_seed_values.csv": "ec73cbcbb9d0e4e0ea73093234c6a00330802450b62bc721162308907aaf2212",
+    "endpoint_summary.csv": "f90015561cdb9a1f6c242131700e92467e5cc4c893cb2aead6f31aa5bd59dad5",
+    "same_row_complete_triads.csv": "0f47b54ea77bdd3a8f088fc6a30002969c76aa99732199f820831cf7ee804cee",
+    "split_1_5_summary.csv": "23cfb02297a86defef02fc8786ccb5f169f377354712ca86039662049e83d3cb"
+  },
+  "script_sha256": "ce71d49481ffe1c875969e5d1442a1f80410a5f530f03270aeae7a3b775c8d9d",
+  "schematic_sha256": "99e9bccb75d3b4062c3a5a52747f4f4adfe2cd2a79a912d3416945628b56ea3c",
+  "style_sha256": "73e94e89503aec774b57846d9a965c2aa96097aa91a4b9879cdb408e44e234bd",
+  "outputs_sha256": {
+    "mass_balance_main_v3.png": "fab788d916aa20b009b65231b1eeed9a737466f1b3eba0217a472a0d01e93d72",
+    "mass_balance_main_v3.pdf": "36bfd58b67a47a5269a721404afce1fc63f8c45df03cd8adaa0f6dd60e0bdd14",
+    "mass_balance_main_v3.svg": "e10528558ac0759a25be366a7733f508ccfd30099b9e9c1ff0d76ced793b0c4d",
+    "observed_ecdf_v3.csv": "06c4aa3d8ff8690bfbebb33ae3bf14d11c6643f811345bb5b402ebd3264a28dc",
+    "observed_summary_v3.json": "324cef912ac461fe4ddaa9f7f0c71b25545429a8bcaa903a7e67762c17ea063c",
+    "caption.txt": "baaa35e42fa2fa0b401f5fe342449467f688a7fa17138993c44444fc0a8cea43"
+  },
+  "layout_check_problems": []
+}

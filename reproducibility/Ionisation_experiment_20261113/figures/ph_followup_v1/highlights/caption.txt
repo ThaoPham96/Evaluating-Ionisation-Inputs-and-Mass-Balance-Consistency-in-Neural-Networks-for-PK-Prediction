@@ -1,0 +1,5 @@
+Three selected views of shared-recipe ALL4 versus REP4, a matched-width comparison.
+A: distribution of per-structure, nine-seed-mean changes in predicted bioavailability for Chemprop; all 327 structures, including those without measured F labels.
+B: each point is the ratio implied by a structure's nine-seed mean log2 prediction change for Vd in frozen ChemBERTa. Diamonds exponentiate the average log2 ratio within each pH 7.4 class. They are geometric mean ratios, not arithmetic percentage changes.
+C: the six predeclared primary MAE contrasts. Relative changes and adjusted bootstrap bounds divide absolute MAE changes by the same fixed nine-seed mean comparator MAE. Lower is better. Bars are Bonferroni-adjusted 99.1667% crossed seed/group bootstrap intervals.
+These selected descriptive patterns are not an organ-specific simulation. A and B characterize prediction changes, not gains in accuracy or validated mechanisms. The original full atlas contains all endpoints and comparisons.

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ACARBOSE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ACARBOSE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:51.442013+00:00",
+  "sha256": "7ecbab7f4ec39c3692ef6ea894e1326423e39062ac87bdcbb7a647f5b4e52eed",
+  "bytes": 7557
+}

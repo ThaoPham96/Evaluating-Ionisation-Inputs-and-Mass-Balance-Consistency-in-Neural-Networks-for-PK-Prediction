@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DEUCRAVACITINIB&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DEUCRAVACITINIB&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:50.401212+00:00",
+  "sha256": "2afb69c5bbe2fc87b5524a94e4c5b376a7faef09249f1f57a11dac36f2fd9752",
+  "bytes": 6759
+}

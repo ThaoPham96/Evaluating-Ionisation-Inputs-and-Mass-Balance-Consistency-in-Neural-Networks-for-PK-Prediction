@@ -1,0 +1,68 @@
+{
+  "campaign_id": "84858a14dd64206333d9bc3851252293e659881a4643d4b26ee7d7d39af545a1",
+  "chemprop_version": "1.6.1",
+  "environment": {
+    "cuda_version": "12.4",
+    "device_type": "cuda",
+    "gpu_capability": [
+      7,
+      5
+    ],
+    "gpu_name": "Tesla T4",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux",
+    "python": "3.11.10",
+    "rdkit": "2025.09.6",
+    "torch": "2.5.1+cu124",
+    "torch_geometric": "2.7.0"
+  },
+  "environment_hash": "49698e33d82dc42d81dc8ee0f91f7a076568f34f51f35bc85931fbb309e2b60a",
+  "exports": {
+    "combined": "7e9ff3bc064155e5dbf33c363368271ed133430bb8f0fbffc61d10883cb8383f",
+    "ionisation": "622a9f8356923d40ca11ed2b042850c0efe2ad7e256921da88a4ab593fb6baad"
+  },
+  "max_selection_score_replay_delta": 1.1102230246251565e-16,
+  "plan_sha256": "2a48470572150d0c104b3b6b0e1d843cbbcbd8876aad508691284a642f62fe06",
+  "release_fingerprint": "3e1de9c4f7641238fdb6603676c17d059c2ffce262496437c752340ee5208d2b",
+  "selection_score_replay_deltas": {
+    "ChemBERTa_head-outer1": 1.1102230246251565e-16,
+    "ChemBERTa_head-outer2": 5.551115123125783e-17,
+    "ChemBERTa_head-outer3": 1.1102230246251565e-16,
+    "ChemBERTa_head-outer4": 0.0,
+    "ChemBERTa_head-outer5": 1.1102230246251565e-16,
+    "Chemprop-outer1": 1.1102230246251565e-16,
+    "Chemprop-outer2": 1.1102230246251565e-16,
+    "Chemprop-outer3": 5.551115123125783e-17,
+    "Chemprop-outer4": 0.0,
+    "Chemprop-outer5": 1.1102230246251565e-16,
+    "GraphConv-outer1": 1.1102230246251565e-16,
+    "GraphConv-outer2": 1.1102230246251565e-16,
+    "GraphConv-outer3": 0.0,
+    "GraphConv-outer4": 0.0,
+    "GraphConv-outer5": 1.1102230246251565e-16
+  },
+  "unified_fit_counts": {
+    "final_fits": 1080,
+    "inner_fits": 1350,
+    "total_fits": 2430,
+    "units": 15
+  },
+  "unit_markers": {
+    "ChemBERTa_head-outer1": "85aa9f8a983ae38b2d9c01b38afa54eb34fe7b5e5f1e32bf95d2a539f242d3d7",
+    "ChemBERTa_head-outer2": "32adc4ad110a5a6417a5abc12e5259393c656829578f4dfad5af732d0ae8b311",
+    "ChemBERTa_head-outer3": "9500f66af8a8f965307a7ca9fbee22480ce9a1ad69a6c0512296889002a83f3d",
+    "ChemBERTa_head-outer4": "7b0787e98c63459621e77a7d5084044b5ffb054a1bda0bfb8c1ccca8cfc78156",
+    "ChemBERTa_head-outer5": "a3312dd9c7dd42c5784da4ba23b7df83d380ffb284ff43799dccc5ac3c559083",
+    "Chemprop-outer1": "fd937d3f27ec56076afd7cb2f13f17a75d1a38b6bb492607f099260e8cec4d0a",
+    "Chemprop-outer2": "ead397c3a86cef2f482a2b70a5a1823b5600f6fce81331748bd98d0c7e58086b",
+    "Chemprop-outer3": "e891225de59bf2b8424913b28b256af7f48a8b589203b19e5ad6eed736a16284",
+    "Chemprop-outer4": "65e464e6f8dd34d72cdf3e6c5c30283768a7a439ba80ad5d4b0a455a9d9a5a9b",
+    "Chemprop-outer5": "5da93a8e63de44287f27c47b493812494e21f093824425ea14b05e9345575355",
+    "GraphConv-outer1": "e24a3fc3253624c972a6c5c1eb7fa317d67a1b4df36a93897b44c0b19fcdac01",
+    "GraphConv-outer2": "403d0b5cde60eafe521dd8213c73576297cf5367c3e072c6c447aa6245ce3a5f",
+    "GraphConv-outer3": "7eb784f63a83ccfec5e307b2105f99253817c7604e5b4fc89236da11304d3d77",
+    "GraphConv-outer4": "c4d5179810df6231a2b2cd35587498f85211d0f5f5aa08767be79e6f529795fb",
+    "GraphConv-outer5": "f9e6ebf8e5d62f6aca2da31e93e2ce7137c8c76c26247739864f5af21eaf761d"
+  }
+}

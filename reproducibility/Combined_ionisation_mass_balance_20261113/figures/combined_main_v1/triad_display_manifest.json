@@ -1,0 +1,54 @@
+{
+  "campaign_id": "8507d5b8972f756b5d851f7677599f2ace390f4c63b08aad09f0e1364b25a928",
+  "score_manifest_sha256": "aad525e59fb9d7d36444482e1d6fdb5e7a0c3037880062ffa4fa366c8adc1767",
+  "method": "Equal-weight mean of three normalized endpoint MAEs on the frozen same-row triads.",
+  "formula": "100 * (mean_e[MAE(backbone, cell, seed, endpoint) / mean_s(MAE(backbone, 00, s, endpoint))] - 1)",
+  "n_triads": 242,
+  "residual_population": "mean_abs_residual_log10 uses the same 242 complete triads as accuracy; all_structures_mean_abs_residual_log10 retains the 327-structure reference.",
+  "cohort_sensitivity": "Both-minus-ionisation residual changes use each cohort's fixed ionisation-only mean across nine seeds as denominator. Seed SD is descriptive; no new intervals.",
+  "n_groups": 181,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "raw_endpoint_mae_unit": "log10",
+  "endpoint_baseline_00_mae": {
+    "GraphConv": {
+      "t_half": 0.42644306799239795,
+      "Vd": 0.4864267537053581,
+      "CL": 0.4967966933955441
+    },
+    "Chemprop": {
+      "t_half": 0.44423060990471774,
+      "Vd": 0.5062355731869824,
+      "CL": 0.4800513982599799
+    },
+    "ChemBERTa_head": {
+      "t_half": 0.4313915119659069,
+      "Vd": 0.4986794158060363,
+      "CL": 0.48480326692060477
+    }
+  },
+  "verification_absolute_tolerance": 1e-12,
+  "source_sha256": {
+    "triad_display.py": "00d41bdb64c00d1f3dbd1495eaec93086b8ad4f1a52150f89284ef1067dddf2b",
+    "all_endpoints.py": "234521d9a24c7058fe16ab52b0270ad4300fa787a54cc504a3a9f8c75e83d162",
+    "analysis/combined_score.py": "20e44121aefccc255f8904bd4e17baa4854d9101f90150583a6e2e8c46bf018f",
+    "outputs/scores/seed_metrics.csv": "7a3c30244dd57703c4410ac4ae28b66032600f6a916a90e9a20ab5cf87b67757",
+    "outputs/export/manifest.json": "403ed303bf1d3be9c5ee4195c23cb2b1464839d3e823d466686a4bdb3853710d",
+    "outputs/export/final_predictions.csv": "0b46a9cd9967429121f8a5cfaa34fe813c11f129551b5395b2420fddb439b333",
+    "data/release/numerical/manifest.json": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+    "runtime/same_row_complete_triads.csv": "db51103863ca3abe0ff966a838a0715dc06e1657a599e9ce1d43af95e5d642bd"
+  },
+  "files": {
+    "triad_display_seed_metrics.csv": "8a23e6389bc70d644148032ae199c0ac3d781d9c08d0916ef959ebfabb1a2a23",
+    "residual_cohort_summary.csv": "8ec38fb780c8008ea2b469b669693defc81fb2f0d333ef45a45786f3d5d0d27b"
+  }
+}

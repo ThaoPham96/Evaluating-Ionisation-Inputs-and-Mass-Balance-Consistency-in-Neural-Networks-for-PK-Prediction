@@ -1,0 +1,68 @@
+{
+  "campaign_id": "84858a14dd64206333d9bc3851252293e659881a4643d4b26ee7d7d39af545a1",
+  "output_manifest_sha256": "b9a9fb725a24b33eaf80b70954664cbf5e5c873422fe61c9225b3c776c0c4874",
+  "output_files_verified": 46,
+  "exact_ph74_panel_values": {
+    "baseline_means_and_paired_estimates_and_intervals": 21,
+    "matching_average_estimates_and_intervals": 3,
+    "paired_seeds": 216,
+    "figure2_panel_d_seed_rows": 54,
+    "figure_s2_panel_d_seed_rows": 189
+  },
+  "shared_vd_scatter_sources": {
+    "rows": 777,
+    "source_tables_exact": true,
+    "figure2_renderer_default_csv_parser_display_precision": "The accepted reader rounds some coordinates at floating-point parse precision. Both figures read the same source values.",
+    "max_absolute_difference": {
+      "observed_log10": 8.881784197001252e-16,
+      "predicted_log10": 4.440892098500626e-16,
+      "predicted_geometric_mean": 2.2737367544323206e-13,
+      "observed_physical": 0.0
+    }
+  },
+  "rendered_pdf_verification": {
+    "render_dpi": 120,
+    "embedding": "Vector contents and embedded fonts confirmed for all three PDFs.",
+    "visual_review": "All panels visible with full labels and content within the page."
+  },
+  "fig2": {
+    "panel_d_x_limits": [
+      -24.0,
+      16.0
+    ],
+    "scatter_limits": {
+      "Vd": [
+        0.35,
+        5.65
+      ],
+      "CL": [
+        -2.15,
+        3.65
+      ]
+    }
+  },
+  "fig3": {
+    "main_plot_rows": 840,
+    "joint_x_limits": [
+      -9.0,
+      4.0
+    ],
+    "joint_y_limits": [
+      0.03360042126903459,
+      0.173
+    ]
+  },
+  "figS2": {
+    "heatmap_outside_colour_scale": [],
+    "artists_bbox_inches": [
+      0.07,
+      0.09044444444444444,
+      7.153999999999998,
+      9.079555555555558
+    ],
+    "class_encoding_checksums": {
+      "encoding_seed_values.csv": "8821aa3ed013624035b21a7e75d359d818d80ebea66f09f7c87e919076e1bc6f",
+      "encoding_summary.csv": "f29f0f731579ced164308218ff3f13e949175bc10e89b56f25a9b3afc171a64f"
+    }
+  }
+}

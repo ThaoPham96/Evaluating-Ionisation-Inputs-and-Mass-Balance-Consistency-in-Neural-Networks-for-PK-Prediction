@@ -1,0 +1,101 @@
+{
+  "sources": {
+    "outputs\\scoring\\contrasts.csv": "3d8342ba0863150a30f637d91b21b801738e77d8dfa32b210cbde01581195bcf",
+    "outputs\\scoring\\contrast_seeds.csv": "7ebc1e88384b3f7075ee59b6cb687c8f4da74f76610487f3e893cf4f0e96318b",
+    "figures\\ionisation_main_v2\\panel_b_average_estimates.csv": "cfaf99e91d32354259f93784ef38ddf792a244a24a81b73f0cc7fdee0c296c8a",
+    "figures\\ionisation_main_v2\\panel_b_average_seeds.csv": "de69458414669be928ba4fd1602b752361aa2834106dd7c5f426dd6ed92337ec",
+    "figures\\ionisation_main_v2\\panel_ph_vs_baseline_estimates.csv": "43dcd449e6ec312cf92f770d0c92a0ee4a2080d20e130d661e9f989c77194680",
+    "runtime\\ph_category_features\\ledger.csv": "c63ffcb41e86b04651c5ad67dc48cfd5374ea1bae0cd2b17c0e9de4d9c07a724",
+    "data\\release\\numerical\\model_dataset.csv": "709e65ce183eb07cecde8f210d18b3bb072e6fbb98a8179d23063383da9be4f6",
+    "runtime/ph_category_features/manifest.json": "0dea43802abf46e18cc18c737fc5379aceb4d2f98b22754d47ad723880b8a4c2",
+    "data/release/numerical/manifest.json": "5335be3b4b3cb54232396d896aac49bcb7f376fdefbf3cfa20565ca74708b8a3",
+    "runtime/ph8_features/manifest.json": "562047d275e23ca0ec60f56a02f15f73c9e10c276c8691863613eba40520b9cf",
+    "runtime/ph8_features/codes.json": "4f346b049e571386597f6c9226bb45c84f7a4ef8d4d5bbed6ccc8db3b4437f83",
+    "outputs/scoring/scoring_manifest.json": "b03273df7247d1036d713845035a5914a588e76d39a0ce098d5119577f387268",
+    "figures/ionisation_main_v2/panel_b_average_manifest.json": "6d64127c9459ceb1f8c6d670915c9fdd509f668b590f5eed953646f73a9bb974",
+    "figures/ionisation_main_v2/panel_ph_vs_baseline_manifest.json": "adaf8053b342b0976f39a89a225d36d22e7ebf75b2edba4722d9059b6cc64385",
+    "figures/ionisation_observed_predicted_v1/manifest.json": "0a77e730e3a1a9357c23b79e152e5ae4b02cb2d791a5db30f105f968ab635e7f",
+    "figures/single_ph_v2/render.py": "3557ccdfb5cc3ada32233aa6d1e88e1b67528dc83be6610177e4c7fd3bc420d0",
+    "figures/ionisation_main_v3/schematic.py": "97a1d32ff0ed22ebbdfe0d7ec69e18ecaafccbd5275f8342b1dcfba6cbe56a5f",
+    "figures/ionisation_style.py": "c79119b1703d840c3790fedb0e762d33568593feaedd2a9d65dfad6a01a68a31",
+    "figures\\ionisation_observed_predicted_v1\\plotted_points.csv": "37e2df1aee1edb6fed499892a4fdbc2f9ec24a4211cd44c79aadde176c972572",
+    "figures\\ionisation_observed_predicted_v1\\metrics.csv": "172b7e8c33a7f48e2e1e95e4740f06bf7c7cf54a666ded76f4ba887aa3ac0c0b"
+  },
+  "single_ph_sources": {
+    "outputs/single_ph/scoring/scoring_manifest.json": "330f41297e3c138854b76868c5355e0e3cb54266121936e0fc4da1df0e6d0536",
+    "outputs/single_ph/scoring/endpoint_metrics.csv": "039d0235beaca349b6f59d4ca060cfaff44683051db90af560338585825c6c57",
+    "outputs/single_ph/scoring/endpoint_summary.csv": "f0e7b54dc65f815f6b38c9e9a3ee7c5c53ba22c83f1883df92a307e7e18f53a7",
+    "outputs/single_ph/scoring/contrasts.csv": "6aa65fad97ae1fe8edce1ef2b90108a76ecf7f9c01dc1bdb13377902cb955763",
+    "outputs/single_ph/scoring/contrast_seeds.csv": "76c765ceacee1e7a6bf558ed597d2eb2b4feec84539b577c34776498daeb6c5e",
+    "outputs/single_ph/scoring/contrast_outer_folds.csv": "7a6756ec6059f8eec36fdebe57fba7f1b75257fdab4c08f234edc539130a8b8f",
+    "outputs/single_ph/scoring/coverage.csv": "81b3f3a682821e91b96ef5156a0c72cec99c1f2363d021de639e5b0abd3fed2e",
+    "outputs/single_ph/scoring/group_sizes.csv": "52d8d0ca59083d4885cf8667bd2d8d9accbef735afedcf444074406e6933f76d",
+    "outputs/single_ph/scoring/prediction_sources.csv": "ca0d41114c2313560a93e7e01b795fc5cfbade48560c44be8621816ddf6f6e33",
+    "outputs/ph8/scoring/scoring_manifest.json": "6e207915616aea56579f2553dd0a8cf1b00462091716f2d28eda6132bee737b0",
+    "outputs/ph8/scoring/endpoint_metrics.csv": "dc86a87665587b60190cbfbd9b5e5ada305028a1bfd619c5776dac625878b55d",
+    "outputs/ph8/scoring/endpoint_summary.csv": "39d27bdca5551e1eea625a300d2971d9d0fdfaf162a85a53f1a383d4b8659148",
+    "outputs/ph8/scoring/contrasts.csv": "c4407a2c3a0dce5504825e82778749fef451c1b4ca1476129c4cc6b03f0d91ef",
+    "outputs/ph8/scoring/contrast_seeds.csv": "d052aaa2d297845e3d7c01a16fbaf7e7e08ada04f3886627c3bc705bbe12d48b",
+    "outputs/ph8/scoring/contrast_outer_folds.csv": "ae29b937ad7767881a627255186a74e55bfc03b116f5bc8b94ef4f909901e4f9",
+    "outputs/ph8/scoring/coverage.csv": "81b3f3a682821e91b96ef5156a0c72cec99c1f2363d021de639e5b0abd3fed2e",
+    "outputs/ph8/scoring/group_sizes.csv": "52d8d0ca59083d4885cf8667bd2d8d9accbef735afedcf444074406e6933f76d",
+    "outputs/ph8/scoring/prediction_sources.csv": "1d257ac72fee72c478f5b531520e107c121a6fa85beeac92d97eb4d6c98f58d2"
+  },
+  "single_ph_metadata": {
+    "campaign_ids": {
+      "single_ph": "5935d646a2f6dd49b0b03be53cabcd1dd5b0b09fc3e2a3ea5c93ea43bafe55fd",
+      "ph8": "554201f47dbe9a5363bcc059b5c5609da54b94458be04ab34f025c98cf2b86c9"
+    },
+    "prior_campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+    "release_fingerprints": {
+      "numerical": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8"
+    },
+    "prediction_fit_count": 810,
+    "n_structures": 327,
+    "n_groups": 238,
+    "comparison_id": "71dcbfa99c4338ed36abda3f076a0fa1012c2bbe017fd5e9d8c002c512be1435"
+  },
+  "outputs": {
+    "ionisation_main.pdf": "b68351b737e67a226ee38ac63a36335ebe200864aaa15920ea04f242a3574505",
+    "ionisation_main.png": "d409a927705189ff3f88a9c622a5a216c807e3015ad180e1e2d09b0a663af649",
+    "ionisation_main.svg": "781f4fb1ba18f1ee4b014b68385d5e06ba62ec58b2ec4063f57ac767bc80c5db",
+    "caption.txt": "d19f2638db90be37239d1385d745cc2b404897e298d1d6cf5e3bce5e5aa9dce9",
+    "panel_a_counts.csv": "1a6b3ca85f7d8986c43cb3a6705275c1aa38433a8eaed4db3eb8b50b12df1356",
+    "panel_b_estimates.csv": "754a53a8a8bcee11240f8ebbb6c497a97e922194a5c2f02f21439021e60ac5e4",
+    "panel_b_displayed_estimates.csv": "0ae6a54cc1497599dc3271d9542a7aa94f1fb35088c9088cf6ddc9dacd62e07b",
+    "panel_b_seeds.csv": "aeb50a703ecca2be35d2da224ce031d00fbfd0af51f269a7da16d76a777eb868",
+    "panel_b_vd_scatter_points.csv": "ecd7da564c9133f73beee2f025d9e7e4b18de58eee6eb237922c6433a7582581",
+    "panel_c_estimates.csv": "50233edcf1aa2ac82884cc4334bed2808f71f037b6dfe9bfefb709586d2c53f0",
+    "panel_c_seeds.csv": "ce3c6e953c64eed148af75a91a8d5dedf850455185c5f4ce126de7edbcd65906"
+  },
+  "render_script_sha256": "938f01ffa479713d3413415aa3961b0816dc8d19933af89edd3fa64242594e0a",
+  "presentation": "Endpoint-coloured estimates and schematic symbols with black labels",
+  "main_cohort_structures": 327,
+  "main_cohort_groups": 238,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "panel_a_vector_source": "schematic.py",
+  "panel_c_endpoint": "Vd",
+  "panel_c_category_encoding": "Borderless circles with category-specific colours",
+  "panel_d_comparator": "REF0",
+  "panel_d_x_limits_pct": [
+    -24.0,
+    12.0
+  ],
+  "panel_d_estimates": 30,
+  "panel_d_seed_values": 270,
+  "legacy_plot_data_filenames": {
+    "panel_b_vd_scatter_points.csv": "C",
+    "panel_c_estimates.csv": "D",
+    "panel_c_seeds.csv": "D"
+  }
+}

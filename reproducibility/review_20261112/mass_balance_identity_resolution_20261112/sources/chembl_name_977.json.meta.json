@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=OBETICHOLIC%20ACID&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=OBETICHOLIC%20ACID&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:47.521840+00:00",
+  "sha256": "047026c08180fa6222eb456e4255f475e0f0a7d05ae5fa32bacf6924ceab30e9",
+  "bytes": 6473
+}

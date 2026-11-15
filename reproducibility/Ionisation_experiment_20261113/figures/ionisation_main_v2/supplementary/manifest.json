@@ -1,0 +1,251 @@
+{
+  "source_paths_relative_to": "Ionisation_experiment_20261113/figures",
+  "page_map": [
+    {
+      "pdf_page": 1,
+      "title": "Reading guide",
+      "source": null
+    },
+    {
+      "pdf_page": 2,
+      "figure": "S1",
+      "title": "Category and continuous inputs for Vd prediction",
+      "source": "ionisation_results_v1/ionisation_overview.pdf",
+      "source_page": 1,
+      "source_sha256": "34b738a322021c8c3f4a58eae1ec1fb8f55d9ae53fc86d9abb5bc91ef4e00266",
+      "source_manifest": "ionisation_results_v1/manifest.json",
+      "source_data_and_caption": [
+        "ionisation_results_v1/ionisation_overview_caption.txt",
+        "ionisation_results_v1/ionisation_overview_plotted_data.csv"
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "figure": "S2",
+      "title": "Representation controls and separate tuning",
+      "source": "ionisation_results_v1/support/representation_checks.pdf",
+      "source_page": 1,
+      "source_sha256": "b9ed11a9371b35d715c989eb63e9180285bef91257213abcf310a80a8ad8bd7a",
+      "source_manifest": "ionisation_results_v1/support/manifest.json",
+      "source_data_and_caption": [
+        "ionisation_results_v1/support/captions.md",
+        "ionisation_results_v1/support/representation_checks_values.csv"
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "figure": "S3",
+      "title": "Cohort, baseline and prediction diagnostics",
+      "source": "ionisation_results_v1/ionisation_diagnostics.pdf",
+      "source_page": 1,
+      "source_sha256": "6656210dea94ab78fa965da3d74c36d89d2664bc4ce7cde618817e158e32602a",
+      "source_manifest": "ionisation_results_v1/manifest.json",
+      "source_data_and_caption": [
+        "ionisation_results_v1/ionisation_diagnostics_caption.txt",
+        "ionisation_results_v1/ionisation_diagnostics_plotted_data.csv"
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "figure": "S4",
+      "title": "Categorical input and parameterisation controls",
+      "source": "ph_followup_v1/reference_controls.pdf",
+      "source_page": 1,
+      "source_sha256": "7eb97b1368402126f8775232018a62dd4290eb4bfff8ffd3f4b766c2608aa03a",
+      "source_manifest": "ph_followup_v1/figure_manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/reference_controls.txt",
+        "ph_followup_v1/reference_controls_plotted.csv"
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "figure": "S5",
+      "title": "Adding one pH at a time",
+      "source": "ph_followup_v1/individual_ph_results.pdf",
+      "source_page": 1,
+      "source_sha256": "0b88f3bf933945a5938393fab4683dea7e1fc0fbf4abbd58603bf8948490815e",
+      "source_manifest": "ph_followup_v1/figure_manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/individual_ph_results.txt",
+        "ph_followup_v1/individual_ph_results_plotted.csv"
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "figure": "S6",
+      "title": "Width-matched four-pH accuracy and tuning sensitivity",
+      "source": "ph_followup_v1/ph_main_results.pdf",
+      "source_page": 1,
+      "source_sha256": "20c4516a59df9ef75f0436a24545dc97e82092c197628cc01f5e3de514988e87",
+      "source_manifest": "ph_followup_v1/figure_manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/ph_main_results.txt",
+        "ph_followup_v1/ph_main_results_plotted.csv"
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "figure": "S7",
+      "title": "Paired changes in average absolute fold error",
+      "source": "ph_followup_v1/support/metric_atlas.pdf",
+      "source_page": 6,
+      "source_sha256": "2b6ff155d3c6fb680a5b9993999a5654e84fa2befb0f924705905b2234cfc125",
+      "source_manifest": "ph_followup_v1/support/manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/support/captions.md",
+        "ph_followup_v1/support/paired_seed_values.csv",
+        "ph_followup_v1/support/paired_summary.csv"
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "figure": "S8",
+      "title": "Paired changes in Spearman rank correlation",
+      "source": "ph_followup_v1/support/metric_atlas.pdf",
+      "source_page": 7,
+      "source_sha256": "2b6ff155d3c6fb680a5b9993999a5654e84fa2befb0f924705905b2234cfc125",
+      "source_manifest": "ph_followup_v1/support/manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/support/captions.md",
+        "ph_followup_v1/support/paired_seed_values.csv",
+        "ph_followup_v1/support/paired_summary.csv"
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "figure": "S9",
+      "title": "Paired changes in coefficient of determination",
+      "source": "ph_followup_v1/support/metric_atlas.pdf",
+      "source_page": 8,
+      "source_sha256": "2b6ff155d3c6fb680a5b9993999a5654e84fa2befb0f924705905b2234cfc125",
+      "source_manifest": "ph_followup_v1/support/manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/support/captions.md",
+        "ph_followup_v1/support/paired_seed_values.csv",
+        "ph_followup_v1/support/paired_summary.csv"
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "figure": "S10",
+      "title": "Prediction shifts across held-out structures",
+      "source": "ph_followup_v1/prediction_shifts/prediction_shifts.pdf",
+      "source_page": 1,
+      "source_sha256": "5d517850649ec1fed5e1a7c7dad0f10d0d688548bfa5377c12ab16a9cb1b939a",
+      "source_manifest": "ph_followup_v1/prediction_shifts/manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/prediction_shifts/interpretation.txt",
+        "ph_followup_v1/prediction_shifts/structure_shifts.csv",
+        "ph_followup_v1/prediction_shifts/shift_summary.csv",
+        "ph_followup_v1/prediction_shifts/seed_shifts.csv"
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "figure": "S11",
+      "title": "Direction of prediction shifts by subgroup",
+      "source": "ph_followup_v1/prediction_shifts/prediction_shifts.pdf",
+      "source_page": 2,
+      "source_sha256": "5d517850649ec1fed5e1a7c7dad0f10d0d688548bfa5377c12ab16a9cb1b939a",
+      "source_manifest": "ph_followup_v1/prediction_shifts/manifest.json",
+      "source_data_and_caption": [
+        "ph_followup_v1/prediction_shifts/interpretation.txt",
+        "ph_followup_v1/prediction_shifts/structure_shifts.csv",
+        "ph_followup_v1/prediction_shifts/shift_summary.csv",
+        "ph_followup_v1/prediction_shifts/seed_shifts.csv"
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "figure": "S12",
+      "title": "Observed and predicted volume of distribution",
+      "source": "ionisation_observed_predicted_v1/baseline_comparison/baseline_vs_ionisation.pdf",
+      "source_page": 1,
+      "source_sha256": "02950cf0de7a616ea90ca93429016009fa8427ff519f7fe1f1564d582564cb2e",
+      "source_manifest": "ionisation_observed_predicted_v1/baseline_comparison/manifest.json",
+      "source_data_and_caption": [
+        "ionisation_observed_predicted_v1/baseline_comparison/caption.txt",
+        "ionisation_observed_predicted_v1/baseline_comparison/metrics.csv",
+        "ionisation_observed_predicted_v1/baseline_comparison/plotted_points.csv"
+      ]
+    },
+    {
+      "pdf_page": 14,
+      "figure": "S13",
+      "title": "Observed and predicted clearance",
+      "source": "ionisation_observed_predicted_v1/baseline_comparison/baseline_vs_ionisation.pdf",
+      "source_page": 2,
+      "source_sha256": "02950cf0de7a616ea90ca93429016009fa8427ff519f7fe1f1564d582564cb2e",
+      "source_manifest": "ionisation_observed_predicted_v1/baseline_comparison/manifest.json",
+      "source_data_and_caption": [
+        "ionisation_observed_predicted_v1/baseline_comparison/caption.txt",
+        "ionisation_observed_predicted_v1/baseline_comparison/metrics.csv",
+        "ionisation_observed_predicted_v1/baseline_comparison/plotted_points.csv"
+      ]
+    },
+    {
+      "pdf_page": 15,
+      "figure": "S14",
+      "title": "MAE changes across all seven endpoints",
+      "source": "ionisation_main_v2/supplementary/ph_vs_baseline_overview/ph_vs_baseline_overview.pdf",
+      "source_page": 1,
+      "source_sha256": "010400f0e8a1ea004c4e36e952c61232a19729d06c13c090a1fa84c9ad8b828f",
+      "source_manifest": "ionisation_main_v2/supplementary/ph_vs_baseline_overview/manifest.json",
+      "source_data_and_caption": [
+        "ionisation_main_v2/supplementary/ph_vs_baseline_overview/caption.txt",
+        "ionisation_main_v2/supplementary/ph_vs_baseline_overview/plotted_data.csv"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "ionisation_results_v1/manifest.json": "d2f1ce13a237d42b81c696850c3975210b3e18c0a7eb6f8047c4ee9870feb519",
+    "ionisation_results_v1/ionisation_overview.pdf": "34b738a322021c8c3f4a58eae1ec1fb8f55d9ae53fc86d9abb5bc91ef4e00266",
+    "ionisation_results_v1/ionisation_overview_caption.txt": "11095c075b54b513dc3db40ad2705ee370f0196ef5ccd5dd95dedc7a41364f6b",
+    "ionisation_results_v1/ionisation_overview_plotted_data.csv": "df7373c63861347f42e1530ba73e1c38d630c8c93c2a9792eefe5d9645593d7f",
+    "ionisation_results_v1/support/manifest.json": "c52a6d529c88a3dfc58353767536a759ba73bb8c17fb14919f79824b865853c5",
+    "ionisation_results_v1/support/representation_checks.pdf": "b9ed11a9371b35d715c989eb63e9180285bef91257213abcf310a80a8ad8bd7a",
+    "ionisation_results_v1/support/captions.md": "40dce4e06eb76cdb52fa1eeab959241e03e64181fccb2beadbc7feebe666f525",
+    "ionisation_results_v1/support/representation_checks_values.csv": "649243d034930d93b279f0d15eeb8b1849767eead6b88de0ca7bd3e13241ef88",
+    "ionisation_results_v1/ionisation_diagnostics.pdf": "6656210dea94ab78fa965da3d74c36d89d2664bc4ce7cde618817e158e32602a",
+    "ionisation_results_v1/ionisation_diagnostics_caption.txt": "c7e88a3da0ff1d256b39ec31bc1ac1f209d613df7b594f62e72d271f327e1939",
+    "ionisation_results_v1/ionisation_diagnostics_plotted_data.csv": "c7b2fd745266cfe00f840872c52fbd99971aaee0dd615d30fda141fd2ed9c6fe",
+    "ph_followup_v1/figure_manifest.json": "23e33f9cd0c9e13a95f7400a82a0720e859cb764ea7310d9ff9069cfeece340f",
+    "ph_followup_v1/reference_controls.pdf": "7eb97b1368402126f8775232018a62dd4290eb4bfff8ffd3f4b766c2608aa03a",
+    "ph_followup_v1/reference_controls.txt": "f0cb95ca0a20d5e7afd4ac410750dfb839c778ea5418eb7fa4b7aeb69a485fef",
+    "ph_followup_v1/reference_controls_plotted.csv": "53620fe5697bcae17068dadbe5f4785c006d10ad1e62daaed604783692d2ff34",
+    "ph_followup_v1/individual_ph_results.pdf": "0b88f3bf933945a5938393fab4683dea7e1fc0fbf4abbd58603bf8948490815e",
+    "ph_followup_v1/individual_ph_results.txt": "da1a5f7cc5bbb95a438ff94e76031797f3e83a6de80ddcfdc215d1384a84458a",
+    "ph_followup_v1/individual_ph_results_plotted.csv": "8fdf8de68bf722fddf52fc58989d1140bc912022ac20d47bf6d886c7f8e441a8",
+    "ph_followup_v1/ph_main_results.pdf": "20c4516a59df9ef75f0436a24545dc97e82092c197628cc01f5e3de514988e87",
+    "ph_followup_v1/ph_main_results.txt": "0b9ff5a34ec27a61f55d55b9cdcc4ffe0ded8624564378c5785de5f9e44fe836",
+    "ph_followup_v1/ph_main_results_plotted.csv": "7e333c6b01ab8eea696d58a877c89e5a040c55c2e358cb8b40cd9d6a240dba5f",
+    "ph_followup_v1/support/manifest.json": "6cca1b9dc7455bd0b99f26e378e79957a12119cabcc707526730bf70eb50d45f",
+    "ph_followup_v1/support/metric_atlas.pdf": "2b6ff155d3c6fb680a5b9993999a5654e84fa2befb0f924705905b2234cfc125",
+    "ph_followup_v1/support/captions.md": "57ca7b8c553755a0a7d48f3b3e02388927ba3e62fbe1f959dc64178475fa7e74",
+    "ph_followup_v1/support/paired_seed_values.csv": "8139af765470e3c67526ccab61bae09c5189a700ddb2caf8d5a80b56b3186781",
+    "ph_followup_v1/support/paired_summary.csv": "7eab5a678e567a6e3604c5aa3f63b596330add40682440213a9dbda40afdfd8f",
+    "ph_followup_v1/prediction_shifts/manifest.json": "c8f4f5d0f729be2778eb25842d59312e97ebb8d563e5969535a14b40e4674a7e",
+    "ph_followup_v1/prediction_shifts/prediction_shifts.pdf": "5d517850649ec1fed5e1a7c7dad0f10d0d688548bfa5377c12ab16a9cb1b939a",
+    "ph_followup_v1/prediction_shifts/interpretation.txt": "6012f79e6d6f20c3fd8ea09a5b9d84e1c59c5914b8b1c9fa3dc7363aec0ffc92",
+    "ph_followup_v1/prediction_shifts/structure_shifts.csv": "be67723c9eac99eacef505bf7074291f09b2d8410a1b54d4e2ba51197d648006",
+    "ph_followup_v1/prediction_shifts/shift_summary.csv": "34f6e26d5fff9097868a186884b5a5ba3e07641b62b69c2c9319223e712cdf6e",
+    "ph_followup_v1/prediction_shifts/seed_shifts.csv": "25048d14c798692af7183fc058e4084b7cd02de451bd1d7b7d7efc628610c677",
+    "ionisation_observed_predicted_v1/baseline_comparison/manifest.json": "202ecebedb1ba4f5f435e956aa85dd7f98a20b5238c842b2de752d3e2d40d66a",
+    "ionisation_observed_predicted_v1/baseline_comparison/baseline_vs_ionisation.pdf": "02950cf0de7a616ea90ca93429016009fa8427ff519f7fe1f1564d582564cb2e",
+    "ionisation_observed_predicted_v1/baseline_comparison/caption.txt": "c2fe622125311c2796819d81a3ba61e76acc2d45b7ae46aba1caabd477be52a1",
+    "ionisation_observed_predicted_v1/baseline_comparison/metrics.csv": "5dd688fe5aa8379e40a658ef3b32b359fc3d332262bf0167c08f67ec42a3992a",
+    "ionisation_observed_predicted_v1/baseline_comparison/plotted_points.csv": "217c79597d23f7f57bfba432916a34e6e7c67f60068cff77766d851cae7eb4b3",
+    "ionisation_main_v2/supplementary/ph_vs_baseline_overview/manifest.json": "1aec93e6efb86a151c31e0f0584993497581f774484824c29845843caaca803f",
+    "ionisation_main_v2/supplementary/ph_vs_baseline_overview/ph_vs_baseline_overview.pdf": "010400f0e8a1ea004c4e36e952c61232a19729d06c13c090a1fa84c9ad8b828f",
+    "ionisation_main_v2/supplementary/ph_vs_baseline_overview/caption.txt": "0f76094188680ca7cbabe9e40d9a650bea042122d8a20abb909f9b4316d5faef",
+    "ionisation_main_v2/supplementary/ph_vs_baseline_overview/plotted_data.csv": "e298cf02dff1c74453b5cb4edf61090ceda9e314b4a5685ab5cd157a40a43e91"
+  },
+  "vector_sources": true,
+  "source_page_transform": "Original page retained at 100% scale with a 30-point header margin",
+  "builder_sha256": "abf46de3c118fb6a7f356f035fcd29c6d2a800afda1159825def20f8087e125a",
+  "outputs_sha256": {
+    "ionisation_supplementary.pdf": "9798fa71c9cabf0d7619f3c407504e68abf72c219eb4c5cbe3572d5a25de5446",
+    "captions.txt": "8008fee4f0da5d161a7521b5315ca217ffb9b21a166c897b31d99f039a258098"
+  }
+}

@@ -1,0 +1,9 @@
+name,source_row,structure_id,volume_definition,study_compatibility,in_674_same_row_triads,triad_file_flag,endpoint_labels_removed,outer_fold
+ERGOLOID,725,e8949b8e747fd3cc,unclassified,not_established,False,,t_half|F|Tmax,2
+IDELALISIB,943,a9325e575826982c,source_confirmed_central,not_established,True,True,t_half|Vd|CL|PPB|Tmax,2
+CANNABIDIOL,1031,adb37b2065c961b6,unclassified,known_dose_regimen_mismatch,True,True,t_half|Vd|CL|PPB|Tmax,2
+UBROGEPANT,1062,2c88cf40e356e8cf,source_confirmed_central,not_established,True,True,t_half|Vd|CL|PPB|Tmax,1
+VOXELOTOR,1081,facf90ad07e3231f,source_confirmed_central,not_established,True,True,t_half|Vd|CL|PPB|Tmax,3
+UMBRALISIB,1095,963f842c59534572,source_confirmed_central,not_established,True,True,t_half|Vd|CL|PPB|Cmax|Tmax,1
+OTESECONAZOLE,1129,49cd9b1ea3deb44d,source_confirmed_central,not_established,False,,t_half|Vd|PPB|Cmax|Tmax,5
+PIRTOBRUTINIB,1138,4c16a65e042c9001,source_confirmed_central,not_established,True,True,t_half|Vd|CL|F|PPB|Cmax|Tmax,4

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=SAQUINAVIR&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=SAQUINAVIR&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:43.675603+00:00",
+  "sha256": "bf7e960feef47ace44d2fe8483eaca9212e47a920ff4d06fc7c5e583e4a0fb5b",
+  "bytes": 7767
+}

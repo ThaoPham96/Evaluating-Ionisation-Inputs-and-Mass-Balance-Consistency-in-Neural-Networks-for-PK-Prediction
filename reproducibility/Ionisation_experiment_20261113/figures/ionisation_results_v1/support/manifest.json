@@ -1,0 +1,81 @@
+{
+  "campaign_id": "3ffed2efa5ca4a2bdfa3584cb0d1d3d2869d6edc17e1697e6476fa5a356b5e28",
+  "release_fingerprints": {
+    "class": "40aaf9b824380b35414b5e514942ee660c5b89645dce564c323a4eb37b3067fb",
+    "numerical": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8"
+  },
+  "inputs_sha256": {
+    "outputs/scoring/scoring_manifest.json": "b03273df7247d1036d713845035a5914a588e76d39a0ce098d5119577f387268",
+    "runtime/plan.json": "41787924aedfe4c4e3f7170e522fd77522f5be9634644e8cc5356e4adf1c2a51",
+    "outputs/scoring/contrasts.csv": "3d8342ba0863150a30f637d91b21b801738e77d8dfa32b210cbde01581195bcf",
+    "outputs/scoring/contrast_seeds.csv": "7ebc1e88384b3f7075ee59b6cb687c8f4da74f76610487f3e893cf4f0e96318b",
+    "outputs/scoring/endpoint_metrics.csv": "63f86534b96d9604000384f72a2a1b46466130065d65cd25540ef06c37e280f1",
+    "outputs/scoring/coverage.csv": "a3a9c0f5c615fde0fbf2af68ef4180c63e530512cf5658781a3b6bcde889c9b5"
+  },
+  "render_script_sha256": "53303fc8dce1e1148d60a56109c3bc6e2e221d07f48bb4406237f823280be186",
+  "outputs_sha256": {
+    "endpoint_effects.png": "fc00d1bfee4c1cad11d136dee2507c401fb624a418e8cdd56627a7b2993dfb85",
+    "endpoint_effects.pdf": "ef6b0e95014de0f829ff3cd727aa870e90d9b6bfccc71cddb815d0b9098ffcd6",
+    "endpoint_effects.svg": "919e7a9658d3055008b0f51627f03bb3854790d6bec4ccdda906629af9ca545d",
+    "representation_checks.png": "9c954b89f24f8de6734601e367242db524b2a76959ce58a6e0c736b110db53ed",
+    "representation_checks.pdf": "296b99bd7b3abb248c856cc41cb50f20c0045815b8ceece38f6b415cea18195d",
+    "representation_checks.svg": "9406ef634a67eda2d4ba8df0a35ccb8f00d14eebb5e273dbe5074860e9066859",
+    "endpoint_effects_seed_values.csv": "e3d5eb7a6f91fbd2ac3af22c5c829d0da88e58a5e082f5921a3e0bc20674acee",
+    "endpoint_effects_summary.csv": "ca569ebe9879d3c35ff467ca175e008eca613e3a81d4b93e8737f76f31e50741",
+    "representation_checks_values.csv": "649243d034930d93b279f0d15eeb8b1849767eead6b88de0ca7bd3e13241ef88",
+    "captions.md": "58d23c73c86bc16d6e66bfd5ca1eec4bcb642b6d36f837935b211921335f9838"
+  },
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "outer_folds": 5,
+  "lambda": 0,
+  "endpoint_loss_weights": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "labelled_structure_counts": {
+    "class": {
+      "t_half": 474,
+      "Vd": 388,
+      "CL": 374,
+      "Cmax": 273,
+      "Tmax": 361,
+      "F": 244,
+      "PPB": 433
+    },
+    "numerical": {
+      "t_half": 316,
+      "Vd": 259,
+      "CL": 246,
+      "Cmax": 190,
+      "Tmax": 249,
+      "F": 172,
+      "PPB": 292
+    }
+  },
+  "endpoint_rows": 432,
+  "endpoint_summary_rows": 48,
+  "representation_rows": 30,
+  "endpoint_normalization": "100 \u00d7 seed paired delta / mean comparator MAE over nine seeds",
+  "endpoint_average": "Equal-weight mean of seven normalized changes within each seed",
+  "endpoint_error_bars": "Mean \u00b1 sample SD across nine seeds (ddof=1)",
+  "representation_error_bars": "Exploratory crossed 95% absolute-delta bounds \u00d7 100 / fixed mean comparator MAE",
+  "bootstrap_draws": 10000,
+  "matplotlib": "3.9.2",
+  "numpy": "2.4.4",
+  "pandas": "2.3.3"
+}

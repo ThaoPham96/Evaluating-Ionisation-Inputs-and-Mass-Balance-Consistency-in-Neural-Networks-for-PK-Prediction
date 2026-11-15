@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=OMAVELOXOLONE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=OMAVELOXOLONE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:55.938665+00:00",
+  "sha256": "eb35138a9295b97d08736abae8c30ab7ac107fff969a0d3a62ed8a71b2cb0354",
+  "bytes": 6697
+}

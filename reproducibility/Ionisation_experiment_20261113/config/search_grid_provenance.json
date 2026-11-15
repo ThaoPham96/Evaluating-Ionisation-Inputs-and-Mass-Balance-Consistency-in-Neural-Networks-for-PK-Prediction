@@ -1,0 +1,28 @@
+{
+  "source": "Mass_balance_experiment_20261113\\plans\\PIPK_Net_mass_balance_experimental_protocol_v6_20261112_candidate_configurations.csv",
+  "sha256": "4710bf1ceb86f47fa3f5be9361e04f3fade3e2b153f63334245c8f7ba06caf39",
+  "rule": "First 10 configurations per backbone by existing fixed file order; selected before ionisation results, no outcome selection",
+  "counts": {
+    "GraphConv": 10,
+    "Chemprop": 10,
+    "ChemBERTa_head": 10
+  },
+  "implementation_refinement": [
+    {
+      "candidate_index": 1,
+      "from_hidden_dim": 2300,
+      "to_hidden_dim": 600
+    },
+    {
+      "candidate_index": 6,
+      "from_hidden_dim": 1200,
+      "to_hidden_dim": 600
+    },
+    {
+      "candidate_index": 7,
+      "from_hidden_dim": 1200,
+      "to_hidden_dim": 600
+    }
+  ],
+  "rationale": "Protocol calls for a modest 10-candidate grid; cap Chemprop hidden/FFN widths at 600, retaining depth/dropout/lr/weight-decay settings and identical grid for every arm. Avoid inherited 1200/2300-wide configurations on 339/506 candidate cohorts. Declared before scientific fitting, not selected from pilot accuracy."
+}

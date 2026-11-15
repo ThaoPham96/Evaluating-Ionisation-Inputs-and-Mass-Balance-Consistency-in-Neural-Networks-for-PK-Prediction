@@ -1,0 +1,46 @@
+{
+  "concurrent_processes": 2,
+  "configurations": {
+    "Chemprop": {
+      "depth": 6,
+      "dropout": 0.1,
+      "ffn_layers": 3,
+      "hidden_dim": 600,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "GraphConv": {
+      "depth": 2,
+      "dropout": 0.0,
+      "ffn_layers": 2,
+      "hidden_dim": 256,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    }
+  },
+  "environment": {
+    "chemprop": "1.6.1",
+    "cuda_version": "12.4",
+    "device_type": "cuda",
+    "diagnostic_device": "cuda",
+    "diagnostic_gpu_name": "NVIDIA GeForce RTX 4070 SUPER",
+    "gpu_capability": [
+      8,
+      9
+    ],
+    "gpu_name": "NVIDIA GeForce RTX 4070 SUPER",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Windows",
+    "python": "3.11.15",
+    "rdkit": "2025.09.6",
+    "torch": "2.5.1+cu124",
+    "torch_geometric": "2.7.0"
+  },
+  "limitation": "Two-epoch diagnostic on local RTX 4070 SUPER, not T4 runtime benchmarking; CUDA allocator peaks exclude driver/context overhead",
+  "passed": true,
+  "peak_process_rss_sum_bytes": 2243284992,
+  "script_sha256": "e26ec1123036936139559a058e7393cc3d015894787a8469c2a942f0cfd7837e",
+  "summed_peak_cuda_allocated_bytes": 277188608,
+  "trainer_sha256": "34a729ee844811f87a1556d81b012c7a5fb31b645110b99790542c8b9a7b75fa"
+}

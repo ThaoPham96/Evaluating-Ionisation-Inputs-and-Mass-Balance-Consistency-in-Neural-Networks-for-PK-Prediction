@@ -1,0 +1,7 @@
+{
+  "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/20287/property/SMILES,InChIKey,IUPACName/JSON",
+  "resolved_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/20287/property/SMILES,InChIKey,IUPACName/JSON",
+  "retrieved_utc": "2026-11-12T22:04:46.749907+00:00",
+  "sha256": "6a9ea44600645795f1a71b17cb385aa0c9002b76be05062a479ed775c9604b15",
+  "bytes": 326
+}

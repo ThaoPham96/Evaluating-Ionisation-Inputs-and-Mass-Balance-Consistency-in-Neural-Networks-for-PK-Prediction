@@ -1,0 +1,11 @@
+SINGLE-pH IONISATION RESULTS
+
+Page 1. All seven endpoints. Each cell gives the mean of nine paired MAE changes from the structure-only reference (REF0) for the same backbone. Each ionisation arm receives a single four-channel category input at pH 2.0, 5.0, 6.5, 7.4 or 8.0. The colour scale is shared across all models and endpoints. MAE uses log10 units for the five positive endpoints and percentage points for F and PPB. The figure shows point estimates.
+
+Page 2. Vd and clearance versus structure only. Each pH arm is compared with REF0 on the same structures. Vd has 259 observed labels in 196 groups. Clearance has 246 observed labels in 185 groups.
+
+Page 3. Vd and clearance versus the pH 7.4 category. Each of the four other pHs replaces the pH 7.4 category block at the same four-channel width. The pH 7.4 reference is REF74.
+
+For pages 2 and 3, small dots show all nine paired seed changes, diamonds show means, and bars show exploratory, unadjusted 95% intervals. Intervals resample whole seed trajectories and frozen parent/scaffold groups (10,000 draws), conditional on observed data, fixed folds and selected settings. The x-axis limits are common across backbones within each endpoint and comparison. Each paired absolute difference and interval bound is divided by the fixed nine-seed mean comparator MAE for the same model and endpoint and multiplied by 100. Negative values indicate lower error.
+
+All comparisons use the 327-structure numerical-pKa subset with 238 frozen groups. Each seed pools held-out predictions from five grouped outer folds. REF0 and REF74 reuse the original reference predictions. The single-pH categories are based on archived acidic/basic pKa descriptors. The outcomes are the original observed PK endpoints. All fits use zero mass-balance penalty and equal endpoint weights.

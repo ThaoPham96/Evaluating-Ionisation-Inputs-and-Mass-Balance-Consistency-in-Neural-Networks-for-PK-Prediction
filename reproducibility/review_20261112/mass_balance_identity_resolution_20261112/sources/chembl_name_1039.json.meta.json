@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=LAROTRECTINIB&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=LAROTRECTINIB&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:48.307445+00:00",
+  "sha256": "be2947ee40b755cea3e1823c28a7fdf940e6a4db133961aa26f86fd0c1fb2d9e",
+  "bytes": 6083
+}

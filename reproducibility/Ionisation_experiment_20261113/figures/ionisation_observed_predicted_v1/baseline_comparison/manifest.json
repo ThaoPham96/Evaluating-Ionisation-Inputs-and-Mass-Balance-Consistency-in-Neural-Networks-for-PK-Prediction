@@ -1,0 +1,32 @@
+{
+  "sources": {
+    "Ionisation_experiment_20261113\\figures\\ionisation_observed_predicted_v1\\manifest.json": "0a77e730e3a1a9357c23b79e152e5ae4b02cb2d791a5db30f105f968ab635e7f",
+    "Ionisation_experiment_20261113\\figures\\ionisation_observed_predicted_v1\\plotted_points.csv": "37e2df1aee1edb6fed499892a4fdbc2f9ec24a4211cd44c79aadde176c972572",
+    "Ionisation_experiment_20261113\\figures\\ionisation_observed_predicted_v1\\metrics.csv": "172b7e8c33a7f48e2e1e95e4740f06bf7c7cf54a666ded76f4ba887aa3ac0c0b"
+  },
+  "axis_limits_log10": {
+    "Vd": [
+      0.35,
+      5.65
+    ],
+    "CL": [
+      -2.15,
+      3.65
+    ]
+  },
+  "arms": [
+    "REF0",
+    "REF74"
+  ],
+  "outputs": {
+    "baseline_vs_ionisation.pdf": "93f186b284d61b5bbb7a50b39c9be2da39219b4743cfae2694e7c0c5791594eb",
+    "caption.txt": "a9cb371f632f18b4c041fbd1e790916c114f4fc2123c352e62ed5028f7857a4d",
+    "cl_baseline_vs_ionisation.png": "3dfcbd812e09887718dc448cee2d0e6ebefe5810782b13ee856ac80c10c8e028",
+    "cl_baseline_vs_ionisation.svg": "9d9190d3e490b6cb2a9228c396532d6b95885e5ba80b0215418fbdc4b312a8a4",
+    "metrics.csv": "5dd688fe5aa8379e40a658ef3b32b359fc3d332262bf0167c08f67ec42a3992a",
+    "pdf_review.png": "86a37dfd51c98152a23e3a31f43aa1c2427c946da833210e063e3eb5c2ab8a69",
+    "plotted_points.csv": "217c79597d23f7f57bfba432916a34e6e7c67f60068cff77766d851cae7eb4b3",
+    "vd_baseline_vs_ionisation.png": "96ec6890029ced4a1d110456585510254877bb66f9341fd8b60e11dce41d9b0d",
+    "vd_baseline_vs_ionisation.svg": "e4b6122b81a158b2638f20e15da7142633a21b4f20092daa9ddc1b61add62f2c"
+  }
+}

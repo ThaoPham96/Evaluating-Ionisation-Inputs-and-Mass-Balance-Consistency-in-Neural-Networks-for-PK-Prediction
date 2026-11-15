@@ -1,0 +1,16 @@
+{
+  "sources": {
+    "Ionisation_experiment_20261113\\figures\\ph_followup_v1\\prediction_shifts\\structure_shifts.csv": "be67723c9eac99eacef505bf7074291f09b2d8410a1b54d4e2ba51197d648006",
+    "Ionisation_experiment_20261113\\figures\\ph_followup_v1\\prediction_shifts\\shift_summary.csv": "34f6e26d5fff9097868a186884b5a5ba3e07641b62b69c2c9319223e712cdf6e",
+    "Ionisation_experiment_20261113\\outputs\\ph_followup\\scoring\\contrasts.csv": "52f24b60175b0607df39c49dbd4e1a2f01042052a5859abecdf8c71714258905"
+  },
+  "outputs": {
+    "caption.txt": "79aebb945be577036a8f9847b416fbb2511ed9cc9f0dd12c35cf55397931f57d",
+    "ionisation_three_key_plots.pdf": "66fa41e7b3bc5e1e47ae69ea449ef5aa5ab38e7ff9508af7606155c29e9b1bbc",
+    "ionisation_three_key_plots.png": "f6e9d2df324b66fc499e5ba7587954d30101d868bc958c7b27b0688b48f7de05",
+    "ionisation_three_key_plots.svg": "2be41ef425c3b3dd66e5060094c0b7e262443a4a49db3d0100f19ae224c75d12",
+    "panel_a_points.csv": "d6364f891092b254bb6380dc6817c10aa9efb949ce6c60202b77dae62845ae65",
+    "panel_b_points.csv": "9d21c560948689992cb1a94989edf23c5e7a1501a105f8aeebb59d4a74cd4747",
+    "panel_c_estimates.csv": "3a4bb2ae46ccbaf15b385ee639f3602e2406539cffabd159baa2cadd69e60683"
+  }
+}

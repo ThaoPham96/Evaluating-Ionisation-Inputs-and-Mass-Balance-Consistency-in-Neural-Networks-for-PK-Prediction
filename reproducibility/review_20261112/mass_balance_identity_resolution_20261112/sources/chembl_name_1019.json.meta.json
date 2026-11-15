@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ACALABRUTINIB&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=ACALABRUTINIB&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:47.874499+00:00",
+  "sha256": "c20027406a2d1347645207630a5465dd5aabc470138782c371610fa7602f2333",
+  "bytes": 5818
+}

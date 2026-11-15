@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-11-12T22:08:55.764647+00:00",
+  "fingerprint": "5413771691c6981d22b6c9ca8e21584dc93cd01244c5e3b143c489dfdc9c7942",
+  "data_frozen": true,
+  "splits_frozen": true,
+  "training_ready": false,
+  "reason_not_training_ready": "Trainer/feature bundle correctness and throughput preflight remain",
+  "labelled_structures": 952,
+  "unlabelled_excluded": 200,
+  "complete_same_row_triads": 674,
+  "independent_groups": 552,
+  "largest_group": 88,
+  "endpoint_counts": {
+    "t1/2(hour)": 902,
+    "VD(liter)": 710,
+    "Cl(liter/hour)": 689,
+    "F(percentage)": 440,
+    "PPB(percentage)": 805,
+    "Cmax_uM": 550,
+    "Tmax": 686
+  },
+  "outer_folds": [
+    {
+      "outer_fold": 1,
+      "n_structures": 190,
+      "same_row_complete_triads": 137
+    },
+    {
+      "outer_fold": 2,
+      "n_structures": 190,
+      "same_row_complete_triads": 127
+    },
+    {
+      "outer_fold": 3,
+      "n_structures": 191,
+      "same_row_complete_triads": 127
+    },
+    {
+      "outer_fold": 4,
+      "n_structures": 190,
+      "same_row_complete_triads": 148
+    },
+    {
+      "outer_fold": 5,
+      "n_structures": 191,
+      "same_row_complete_triads": 135
+    }
+  ],
+  "inner_validation_min_endpoint_n": 60,
+  "inner_validation_min_triads": 100,
+  "overlap_checks_passed": 30,
+  "observed_median_disagreement_fold": 1.1984032014907369,
+  "observed_within_1_25_fraction": 0.5385756676557863,
+  "coherent_prediction_logMAE_floor": 0.059588276061498184,
+  "definition_caveat": "Same-row triads are not proven same-study or physiologically matched Vz/CL/terminal-half-life observations. Study estimates a soft consistency penalty.",
+  "source_sensitivity_excluded_names": [
+    "CANNABIDIOL",
+    "ERGOLOID",
+    "UMBRALISIB",
+    "VOXELOTOR",
+    "IDELALISIB",
+    "PIRTOBRUTINIB",
+    "UBROGEPANT",
+    "OTESECONAZOLE"
+  ],
+  "wholly_excluded_names": [
+    "COLISTIN"
+  ],
+  "identity_amendments": [
+    195,
+    231
+  ],
+  "batch_review_status": "57 accepted; 2 recommended amendments applied and graph keys verified",
+  "all_archived_PK_values_unchanged_in_this_freeze": true,
+  "model_identity_masks": 2,
+  "old_historical_partitions_retained_as_metadata": true,
+  "versions": {
+    "python": "3.11.15",
+    "rdkit": "2025.09.6",
+    "pandas": "2.3.3",
+    "numpy": "1.26.4"
+  }
+}

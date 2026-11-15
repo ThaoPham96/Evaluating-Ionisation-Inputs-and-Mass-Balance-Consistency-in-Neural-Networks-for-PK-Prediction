@@ -1,0 +1,13 @@
+{
+  "source": "Ionisation_experiment_20261113\\outputs\\ph_followup\\outer_predictions.csv",
+  "source_sha256": "bf0a90c402173b94df88de851bd9ba84b4ba2e9b5fbe78ce6b11a6a13c2cd8c2",
+  "outputs": {
+    "caption.txt": "a1df3138530898453fc86babd7f37a328bf5da27bc62930a7f0c5a450913fce0",
+    "paired_prediction_changes.csv": "cdf368745a44e3808e2a1333679c255bc4f5645835446fdf1bb4b885af69db75",
+    "panel_c_vd_shift.pdf": "58f94626cfa90400e9a5c0f0078347947435ab4142e769448761567386ad4b27",
+    "panel_c_vd_shift.png": "8717cf0f10689e44715978c85b21a531701b4adad646c3a39116d478e6829cd3",
+    "panel_c_vd_shift.svg": "27f784b889de5ad93e1fa1003846adc05f2cf5b3443887485878fef3861ec4a3",
+    "seed_medians.csv": "a94eb01e831d7b1bbfc99196a0adc563e995a9517b2de45e0f634af63c95b513",
+    "summary.csv": "21195fb9012d38b12c91ca98ee2b411b667dda5da73b498fb97a69a43c6ceb92"
+  }
+}

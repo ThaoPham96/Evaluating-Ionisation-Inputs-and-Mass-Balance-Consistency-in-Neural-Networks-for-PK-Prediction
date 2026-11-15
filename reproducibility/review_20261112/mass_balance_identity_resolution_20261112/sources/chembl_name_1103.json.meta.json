@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=BEROTRALSTAT&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=BEROTRALSTAT&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:50.108305+00:00",
+  "sha256": "28bb18176dc2bf3d182e0914e6e60ffba0ce7750b92ffb102a94080334140580",
+  "bytes": 6151
+}

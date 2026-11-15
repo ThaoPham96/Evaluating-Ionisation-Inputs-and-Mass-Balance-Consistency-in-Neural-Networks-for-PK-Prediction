@@ -1,0 +1,37 @@
+Run from the extracted Mass_balance_experiment_20261113 folder.
+Commands are intentionally one line and work with a Python 3.11 environment.
+Use a new output directory to preserve the supplied results.
+
+CPU scoring environment (no GPU, checkpoint, download or retraining needed):
+python -m pip install -r requirements-scoring.txt
+python verify_package.py
+python analysis/summarize_mass_balance_campaign.py --campaign-dir campaign --release-dir data --output-dir reproduced/summary
+python analysis/bootstrap_mass_balance_overview.py --campaign-dir campaign --release-dir data --output-dir reproduced/bootstrap
+python analysis/export_mass_balance_figure_data.py --campaign-dir campaign --release-dir data --output-dir reproduced/figure_data
+
+Scientific unit tests (scoring only):
+python -m pip install pytest==8.4.2
+python -m pytest analysis/tests/test_mass_balance_controls.py analysis/tests/test_mass_balance_summary.py analysis/tests/test_mass_balance_bootstrap.py -q
+
+Fresh training, only if independently desired (not required for the review):
+Use a separate Python 3.11 environment; the original Barkla version was 3.11.9.
+python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+python -m pip install -r requirements-training.txt
+python analysis/mass_balance_campaign.py init --release-dir data --feature-dir features --plan-dir plans --output-dir new_training
+python analysis/mass_balance_campaign.py worker --release-dir data --feature-dir features --plan-dir plans --output-dir new_training --device cuda
+
+The worker command performs model fitting. Do not point it at the provided campaign
+snapshot. Multiple workers may share new_training, with distinct GPU allocations.
+The original campaign used four workers/GPU after a concurrency benchmark, but
+that is a hardware-specific choice, not a universal setting. No cluster submission
+or paid cloud automation is included.
+
+Feature regeneration is optional; cached graph/features are included:
+python -m pip install -r requirements-feature-extraction.txt
+python analysis/prepare_mass_balance_features.py --data-dir data --output regenerated_features --device cuda
+This downloads the pinned Hugging Face model unless --offline is used with a cache.
+Do not substitute a moving transformer revision. Numerical/platform differences
+may alter regenerated feature hashes; the provided features reproduce this run.
+
+The general pipknet package training/CLI files are dependencies, not the campaign
+entry point. Use mass_balance_train.py through the coordinator above.

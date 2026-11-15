@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DROSPIRENONE&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=DROSPIRENONE&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:41.648591+00:00",
+  "sha256": "3eed70918058220c470ae9ab26844d5b854a3f67f01dcbcfcc776dd4407e96f0",
+  "bytes": 6957
+}

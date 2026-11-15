@@ -1,0 +1,36 @@
+{
+  "source_files_relative_to": "figures/ionisation_main_v2",
+  "source_sha256": {
+    "panel_ph_vs_baseline_manifest.json": "adaf8053b342b0976f39a89a225d36d22e7ebf75b2edba4722d9059b6cc64385",
+    "panel_ph_vs_baseline_estimates.csv": "43dcd449e6ec312cf92f770d0c92a0ee4a2080d20e130d661e9f989c77194680",
+    "panel_ph_vs_baseline_seeds.csv": "4710bdc5d1d1b9bc8b0e468600c57843f5d27b270269000a85535a586a322495"
+  },
+  "render_script_sha256": "251e7a52493f35e25bd92c7a377a441996a34ead76dc2e58bc250421a459c044",
+  "outputs": {
+    "ph_vs_baseline_overview.pdf": "9fcb2f2861e056184083b9b60125d59207f7cff6fb343786aedb6261644f72b6",
+    "ph_vs_baseline_overview.png": "343256a434946ade80332f7983655e40d8e562953d774561e03bea0b64fb2bcb",
+    "plotted_data.csv": "e298cf02dff1c74453b5cb4edf61090ceda9e314b4a5685ab5cd157a40a43e91",
+    "caption.txt": "0f76094188680ca7cbabe9e40d9a650bea042122d8a20abb909f9b4316d5faef"
+  },
+  "campaign_id": "27b0bc93f682a3ac04f773b3240f495e2d106c278b42722381328bb5daf67d58",
+  "release_fingerprints": {
+    "numerical": "99e83f5ad3b3802ab2374777eff38f8d9d66e2178237c0e1ea5f23d143948cb8"
+  },
+  "comparator": "REF0",
+  "rows": 147,
+  "seed_ids": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "colour_limit_pct": [
+    -15,
+    15
+  ]
+}

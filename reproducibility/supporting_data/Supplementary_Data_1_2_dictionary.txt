@@ -1,0 +1,94 @@
+SUPPLEMENTARY DATA 1 AND 2
+
+Data 1 contains the complete accuracy and consistency contrasts. Data 2 contains
+the algebraic post-processing comparisons, including direct and derived MAEs.
+Every row is a model/condition comparison within one cohort and observed-label
+stratum. No rows were selected by interval direction.
+
+cohort: full952 = full952-structure cohort; unified327 = paired numerical-pKa
+subset; class494 = cohort with assigned pH7.4 ionisation classes.
+protocol: F = fixed-capacity main comparisons; F_pH = single-pH inputs;
+F_supp3 = supplementary encoder/depth/task-weight/single-task comparisons with
+three seeds; F_class_encoding = category encodings in494 structures;
+F_zero_policy = zero-inclusive inner penalty selection sensitivity.
+model: ChemBERTa_head denotes frozen ChemBERTa with a trained prediction head.
+
+Main condition identifiers: 00 = structure only; 10 = ionisation category only;
+01 = mass-balance penalty only; 11 = both. baseline = structure only;
+selected_positive/loss = the selected positive penalty; zero_eligible = penalty
+selection also allowing zero. In pH comparisons REF0 = structure only, REF74 =
+pH7.4 category; PH2/PH5/PH65/PH8 supply categories at2/5/6.5/8.0. In the class
+cohort C0 = structure only, C1 = charge-sign code, C2 = one-hot category,
+C3 = learned categorical embedding. H:<condition>__derive_<endpoint>-original
+compares one algebraically derived endpoint with the original prediction.
+
+GraphConv_depth2_task_weight_sensitivity uses supervised weights
+[1,5,5,1,1,1,1] in the training endpoint order
+[t_half,Vd,CL,F,PPB,Cmax,Tmax]: five for volume and clearance, one otherwise.
+Both zero-penalty and positive-penalty arms retain the outer fold's original
+two-layer GraphConv configuration; the positive arm also inherits its selected
+positive penalty weight. Inner calibration uses seed0, and each arm's final
+epoch is the median of its five inner stopping epochs. Final seeds are
+101,202,303. Configuration IDs for outer folds1..5 are10,2,10,2,10; inherited
+positive lambdas are0.1,0.03,3,3,0.3. Median epochs for zero/positive arms are
+72/70,93/112,44/44,102/106,93/82, respectively. These settings describe the
+existing80-fit sensitivity (50 inner calibrations and30 final fits).
+
+stratum: all uses every observed label for the endpoint; complete_triad uses
+the same-row complete observed triads; observed_le_1.5 and observed_gt_1.5 split
+complete triads by observed fold disagreement<=1.5 and>1.5. Internal consistency
+in the all stratum uses all predicted triads, including incomplete observations.
+n/n_groups identify the scored structures/groups; n_seeds/seeds identify fits.
+
+metric: t_half,Vd,CL,Cmax,Tmax,F,PPB are endpoint MAEs. triad_mae gives equal
+weight to the three log10 endpoint errors on complete observed triads.
+seven_endpoint_average gives equal weight to seven endpoint relative changes.
+mean_abs_residual is mean absolute log10 algebraic disagreement; within_1.25
+is the percentage of predicted triads agreeing within1.25-fold.
+unit is the absolute scoring unit: log10 for the firstfive endpoints and
+percentage_points for bioavailability/protein binding.
+
+denominator/denominator_condition identify the reference MAE used to scale a
+relative result. denominator_mean is its full-cohort mean across fitted seeds.
+absolute_delta, absolute_low/high: paired change and nominal95% whole-group
+interval on the endpoint's absolute scoring scale. absolute_seed_sd describes
+the SD of paired changes across fitted seeds separately.
+relative_pct:100 times the mean paired MAE change divided by the declared
+reference mean MAE. relative_seed_sd uses that same full-cohort denominator.
+primary_low/high: nominal95% paired whole-group bootstrap percentiles; fitted
+seeds are averaged, and the declared mean denominator is recomputed per draw.
+fixed_group_low/high: groups resampled, denominator fixed at its full-cohort mean.
+crossed_fixed_low/high: groups and whole fitted-seed trajectories resampled,
+denominator fixed at its full-cohort mean.
+
+scale=comparator_specific is a percentage change versus that comparator.
+scale=common_structure_only is a percentage-point difference on the common
+structure-only MAE scale, used for factorial interactions and contrasts bearing
+the suffix structure_scale. Relative units/scales are not_applicable for
+absolute-only consistency outcomes. Their absolute_delta/low/high remain valid.
+terms gives the linear contrast coefficients. interaction uses11-10-01+00.
+
+In prediction provenance, reference_fit_id identifies the same-input loss-off
+fit for the specified protocol, input, model, outer fold and seed. This paired
+fit identity is distinct from the statistical denominator: input comparisons
+and interactions may use the protocol's structure-only loss-off comparator.
+denominator_condition and scale specify the actual normalising MAE in each
+contrast. Reused fixed-capacity reference aliases retain their archived fit IDs.
+
+legacy_method/low/high identify the corresponding interval convention for
+comparison. Direction fields describe whether each interval lies above/below
+or spans zero; they are descriptive, unadjusted and exploratory. They are not
+equivalence tests. Some requested H/stratum contrasts were newly calculated,
+so legacy fields there denote the alternative convention rather than a
+previously published result.
+
+For Data2 accuracy rows, direct_prediction_mae is the original endpoint MAE
+and derived_prediction_mae is the MAE after replacing the named prediction
+by its algebraic derivation. Other outputs are unchanged. All three directions
+were evaluated. Exact consistency is guaranteed by the construction.
+
+Bootstrap resampling conditions on the fitted models, observed training data,
+fixed folds and selected settings. It does not refit models or repeat tuning.
+All intervals use10000 resamples. Whole-group draws are shared within cohorts.
+
+FINAL F/T MATRIX: F_new is fixed-capacity R0/R2; T_new is input-tuned. P0 structure, P1 category, P2 raw pKa, P3 fractions. *_new_zero_policy uses inner-selected zero-inclusive choices. New export reference_fit_id identifies the same-input loss-off fit for protocol/input/model/fold/seed; it is NOT necessarily the comparator used for input effects or interactions. denominator_condition and scale specify each statistical contrast. Supplementary Data 3 T/R0 lists resolved configuration fields; R2 lists shared/separate/zero-inclusive lambdas and median epochs.

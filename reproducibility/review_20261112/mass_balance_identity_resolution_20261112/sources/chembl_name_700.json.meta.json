@@ -1,0 +1,7 @@
+{
+  "url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=AZITHROMYCIN&limit=100",
+  "resolved_url": "https://www.ebi.ac.uk/chembl/api/data/molecule.json?pref_name__iexact=AZITHROMYCIN&limit=100",
+  "retrieved_utc": "2026-11-12T21:22:42.878798+00:00",
+  "sha256": "258af59401428709d287debd5eebd59719de5e0e2a8b1ba0259ee048f5477fb3",
+  "bytes": 10824
+}

@@ -1,0 +1,14 @@
+MAIN FIGURE LAYOUT v3 - CHANGES AGAINST LAYOUT v2
+13 November 2026. Requested by the user ("add option 1 to the main plot"). v2 and the accepted
+figure are unchanged; v3 lives in main_figure_layout_v3/.
+
+1. New panel D: change in complete-triad MAE with the selected loss, as a percentage of baseline
+   triad MAE, for the 451 structures whose observed triad agrees within 1.5-fold and the 223 above
+   1.5-fold. Points are means over nine seeds; bars are 95% paired group-bootstrap intervals
+   (conditional on the fitted models, unadjusted). Values: inputs/split_1_5_summary.csv, produced by
+   supplementary_completion/code/sup07b_split_1_5.py. Five of the six intervals include zero.
+   Groups are defined on the observed labels, so the panel is descriptive.
+2. The endpoint panel is now E (was D); its content is unchanged.
+3. Panels B and C are narrower to make room. Panel B's in-panel table is shortened
+   ("Cumulative share", "<=1.5-fold" etc.); panel C's legend entry reads "With loss".
+4. Size (7.0 x 7.6 in), fonts, colours and all B, C and E calculations are as in v2.
