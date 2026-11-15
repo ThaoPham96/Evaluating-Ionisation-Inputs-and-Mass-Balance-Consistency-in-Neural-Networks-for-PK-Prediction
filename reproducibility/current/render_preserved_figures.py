@@ -3,6 +3,7 @@ from pathlib import Path
 import hashlib
 import importlib.util
 import json
+import re
 import sys
 import shutil
 import matplotlib
@@ -52,6 +53,14 @@ def geometry(fig):
                 h.update(path.vertices.tobytes())
     return h.hexdigest()
 
+def parameter_labels(value):
+    if '$' in value:
+        return value
+    for old, new in [('Vd', r'$V_d$'), ('Cmax', r'$C_{\max}$'), ('Tmax', r'$T_{\max}$'), ('CL', r'$CL$')]:
+        value = re.sub(r'\b' + old + r'\b', lambda match: new, value)
+    return value
+
+
 def save(fig, directory, stem):
     directory.mkdir(exist_ok=True)
     before = geometry(fig)
@@ -60,13 +69,13 @@ def save(fig, directory, stem):
         for ax in fig.axes:
             labels = [label.get_text() for label in ax.get_xticklabels()]
             if any('t½' in label for label in labels):
-                ax.xaxis.set_major_formatter(FixedFormatter([label.replace('t½', r'$t_{1/2}$') for label in labels]))
+                ax.xaxis.set_major_formatter(FixedFormatter([parameter_labels(label).replace('t½', r'$t_{1/2}$') for label in labels]))
                 changes.append(dict(tick_label='half-life subscript'))
     for label in fig.findobj(Text):
         old = label.get_text()
         new = old.replace('ChemBERTA', 'ChemBERTa').replace('MAE relative to structure only (%)', 'MAE vs structure only (%)').replace(r'\ln 2', r'\ln\,2')
         if stem == 'ionisation_supplementary_selected':
-            new = new.replace('t½', r'$t_{1/2}$')
+            new = parameter_labels(new).replace('t½', r'$t_{1/2}$')
         if new != old:
             label.set_text(new)
             changes.append(dict(old=old, new=new))

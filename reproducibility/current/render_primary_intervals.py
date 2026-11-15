@@ -32,6 +32,8 @@ def save(fig,path,stem):
     for text in fig.findobj(Text):
         text.set_text(text.get_text().replace('ChemBERTA','ChemBERTa').replace('MAE relative to structure only (%)','MAE vs structure only (%)'))
         label=text.get_text()
+        if stem=='ionisation_main' and label=='Clearance' and text.get_position()==(-.83,.5):
+            text.set_text(r'$CL$')
         if stem=='combined_main' and label in ('Concatenate','Prediction head'):
             x,y=text.get_position()
             text.set_position((x+(-2 if label=='Concatenate' else 2),y))

@@ -1,0 +1,4 @@
+structure_id,pH,acid_pKa,base_pKa,acid_equal,base_equal,class_code
+feeaaaa2cd809c3e,2.0,6.99,2.0,False,True,0
+c50a026a700eed75,5.0,11.89,5.0,False,True,0
+148e13976089851b,8.0,8.0,9.75,True,False,2

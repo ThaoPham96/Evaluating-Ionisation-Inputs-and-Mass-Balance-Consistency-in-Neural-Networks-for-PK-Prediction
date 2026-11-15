@@ -109,3 +109,13 @@ python reproducibility/current/reporting_checks.py --output outputs/reporting-su
 ```
 
 This reads retained structures and held-out predictions to reproduce Supplementary Data 5: disconnected-component and atomic-charge counts, endpoint accuracy among partially labelled triads, F/T reference comparisons, and fixed-capacity interactions under shared versus separate penalty selection. It uses the same 10,000 whole-group bootstrap draws and nine fitted seeds as the primary statistics. No models are refitted. The CSV dictionary in `reproducibility/supporting_data` defines the contrasts and denominators. Figure 1E's 24 plotted means and primary intervals are exported as `fig1/endpoint_primary_intervals.csv` by the figure command.
+
+### Subgroup and encoding summaries
+
+```bash
+python reproducibility/current/saved_prediction_checks.py --output outputs/subgroup-summaries
+```
+
+This regenerates Supplementary Data 6 from saved out-of-fold predictions: ionisation effects by input components and atomic formal charge, accuracy on one- versus two-label triads, all pairwise category-encoding contrasts, and factorial accuracy across observed-disagreement strata. It also exports the full 952-structure target and split inventory, exact pKa threshold-boundary records and selected final-fit epochs. The 10,000 paired group draws retain the fitted seeds and recompute the comparator denominator. Intervals are omitted below five eligible groups or 9,500 nonempty draws; all point estimates remain available. The data dictionary states the scoring units and subgroup interpretation. No training is performed.
+
+The machine-readable full cohort is directly available in `reproducibility/supporting_data/Supplementary_Data_6_full_structure_inventory.csv`. Figure 2D and Figure S2 use consistent mathematical parameter labels; plotted values are unchanged.
