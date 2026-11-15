@@ -1,0 +1,67 @@
+Supplementary Data 6: structure inventory and additional saved-prediction summaries
+
+No models were trained or selected for these analyses. Predictions retain the original
+out-of-fold assignments and nine fitted seeds (101,202,303,404,505,606,707,808,909).
+All intervals are nominal, paired whole-group percentile bootstrap intervals with
+10,000 draws, conditional on the fitted models; no multiple-comparison adjustment.
+
+full_structure_inventory.csv: all 952 original structure-level records. canonical_smiles
+is the actual model input, not the stripped grouping parent. Raw scalar labels retain
+their original units: t1/2(hour), VD(liter), Cl(liter/hour), Cmax_uM, Tmax (hours),
+F(percentage) and PPB(percentage). Empty entries are missing labels. source_rows is a
+JSON array of original row indices. group_id and outer_fold reproduce the grouped
+evaluation assignments. same_row_complete_triad identifies the 674 eligible observed
+triads. observed_triad_endpoint_count counts nonmissing half-life, volume and clearance.
+The other identity/context fields are retained from the reconciled dataset; unknown
+definitions remain unknown and are not inferred from the prediction residual.
+
+input_composition.csv: ionisation-only minus structure-only accuracy on the numerical
+327-structure cohort, partitioned into single_component_no_charged_atoms (244),
+single_component_charged_atoms (6), and multiple_components (77). These groups classify
+the recorded input graph; they are not pH-dependent physiological charge states.
+Multiple components include hydrates and formulation components as well as counterions.
+All original fitted models and training cohorts are retained in this subgroup analysis.
+
+partial_triad_accuracy.csv: positive-penalty minus baseline errors in the full cohort,
+separately for one observed triad label (187 structures), two labels (46), and their
+pooled subgroup (233). Scoring includes only observed endpoint labels. Test-compound
+observations are not provided to the prediction model at inference.
+
+encoding_contrasts.csv: all six pairwise contrasts among C0 (structure only), C1 (charge
+sign), C2 (one-hot) and C3 (learned embedding) on the 494-structure assigned-class cohort.
+comparison is condition minus reference. All seven endpoints are retained; the paper's
+Table S15 shows volume, with 388 labels in 258 groups.
+
+For the preceding three contrast files, reference_mae and condition_mae average the
+individual-seed MAEs. absolute_delta is condition minus reference. relative_pct is
+100*absolute_delta/reference_mae. primary_low/high are relative-percent interval bounds;
+absolute_low/high are bounds in the endpoint's scoring units. Denominators are
+recomputed within each paired bootstrap draw. The logarithmic endpoints (t_half, Vd,
+CL, Cmax, Tmax) use log10 units; F and PPB use percentage-point errors.
+n counts eligible labels, n_groups eligible chemical groups, n_seeds fitted seeds.
+bootstrap_draws is 10000. nonempty_draws counts resamples containing eligible labels.
+Empty draws are excluded jointly from numerator and denominator. Intervals are omitted
+when fewer than five eligible groups or fewer than 9500 nonempty draws contribute;
+point estimates are retained. This reporting rule does not establish reliable coverage
+in the other small subgroups: the clearance subsets with 13 or 15 labels remain
+exploratory and sensitive to individual groups.
+
+factorial_strata.csv: selected original Supplementary Data 1 rows, unchanged numerically.
+F identifies the fixed-capacity shared-penalty factorial experiment. Observed strata
+contain 152 complete triads at D<=1.5 and 90 at D>1.5. Conditions 00,10,01,11 mean
+structure only, ionisation only, loss only, and both. 11-10_structure_scale is adding
+the loss after ionisation, expressed as percentage points of structure-only triad MAE.
+interaction = 100*(M11-M10-M01+M00)/M00. See the Data 1 dictionary for all inherited fields.
+
+threshold_counts.csv and threshold_boundary_records.csv: exact comparisons against the
+archived numerical pKa values, with acidic pKa<pH and basic pKa>pH. Equality leaves its
+channel inactive. class_code=acid_active+2*base_active: 0 neither, 1 acid only, 2 base
+only, 3 both. The boundary file lists only records exactly equal to a tested threshold.
+
+stopping_epochs.csv: selected configuration ID, penalty weight and median best epoch
+used for full952 baseline/positive fits and class494 C0-C3 fits, one record per outer
+fold and condition. All nine final seeds use that epoch count. It is the median best
+checkpoint epoch, not the inner-fit termination epoch after patience.
+
+manifest.json records source checksums, interval conventions and CSV checksums.
+The reproducible saved_prediction_checks.py script performs these analyses without fitting.

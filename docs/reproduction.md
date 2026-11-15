@@ -35,7 +35,7 @@ python scripts/pipeline.py figures --historical --output outputs/figures-histori
 
 The default command regenerates Figures 1, 2, 3, S1, S2 and S3. Figure S3 uses the complete verified F/T matrix statistics, including all prespecified input, loss and interaction contrasts. Its 96 displayed rows are saved beside the figure.
 
-`--current-base` regenerates current Figures 1, 2, 3, S1 and S2 from retained source tables and drawing functions. Figures 2 and 3 use the revised primary whole-group bootstrap intervals in `Review_statistics_20261114/outputs/contrasts.csv`; the renderer verifies every displayed endpoint/average estimate and bound against that table. The other three figures retain their existing scientific values. The public runtime falls back to DejaVu Sans when Arial is unavailable; two S1 labels use shorter equivalent wording so the layout checks pass. Numerical coordinates are preserved, but binary-identical PDF files are not promised across fonts and renderers.
+`--current-base` regenerates current Figures 1, 2, 3, S1 and S2 from retained source tables and drawing functions. Figures 2 and 3 use the revised primary whole-group bootstrap intervals in `Review_statistics_20261114/outputs/contrasts.csv`; the renderer verifies every displayed endpoint/average estimate and bound against that table. Figure 1E uses the primary paired group-bootstrap intervals from the same score table; its mean changes and seed dots are unchanged. Figures S1 and S2 retain their existing scientific values. The public runtime falls back to DejaVu Sans when Arial is unavailable; two S1 labels use shorter equivalent wording so the layout checks pass. Numerical coordinates are preserved, but binary-identical PDF files are not promised across fonts and renderers.
 
 The explicit `--historical` command reruns the archived unified builder, including 10,000 bootstrap draws, and regenerates historical Figures 2, 3 and S2 plus plotted tables. Its intervals precede the revised manuscript analysis. `--current-base` selects the five current figures preceding S3. See `reproducibility/RELEASE_STATUS.json` for validation status.
 
@@ -101,3 +101,21 @@ The repository includes selection, configuration, lambda, epoch and fit-ID metad
 `reproducibility/manifest.json` covers the hydrated scientific payload; `artifacts.json` maps compressed tables to their public bytes. `.gitattributes` disables end-of-line rewriting for the checksum-covered snapshot. `PACKAGING.json` records excluded ancillary files and metadata changes. Operational host/job/token fields and author workspace prefixes were removed from metadata. Eight tables also use a neutral reviewer display field. `PUBLIC_METADATA_IDENTITY.json` records original/public hashes and verifies that all other cells and row/column order are unchanged; the public cohort fingerprints and dependent hash constants were refrozen. Scientific labels, predictions, historical fit IDs and original artifact hashes were preserved. Fresh robustness refits explicitly bind the actual environment into new campaign/request identities. Original archival hashes in sanitized fit metadata describe the original files, not the sanitized JSON representation.
 
 The robustness export retains archived campaign `2109d71c4127900d3ee9f1d6eb2acc9bf2469f9e46b77c9ed6958d7f66a74eb3` and the exact final-prediction SHA-256 in its manifest. Its public plan removes a private registry hostname while retaining the immutable image digest; the original plan hash and public identity mapping make that metadata transformation explicit. Source-specific terms are described in [data-terms.md](data-terms.md) and [NOTICE.md](../NOTICE.md).
+
+### Additional reporting summaries
+
+```bash
+python reproducibility/current/reporting_checks.py --output outputs/reporting-summaries
+```
+
+This reads retained structures and held-out predictions to reproduce Supplementary Data 5: disconnected-component and atomic-charge counts, endpoint accuracy among partially labelled triads, F/T reference comparisons, and fixed-capacity interactions under shared versus separate penalty selection. It uses the same 10,000 whole-group bootstrap draws and nine fitted seeds as the primary statistics. No models are refitted. The CSV dictionary in `reproducibility/supporting_data` defines the contrasts and denominators. Figure 1E's 24 plotted means and primary intervals are exported as `fig1/endpoint_primary_intervals.csv` by the figure command.
+
+### Subgroup and encoding summaries
+
+```bash
+python reproducibility/current/saved_prediction_checks.py --output outputs/subgroup-summaries
+```
+
+This regenerates Supplementary Data 6 from saved out-of-fold predictions: ionisation effects by input components and atomic formal charge, accuracy on one- versus two-label triads, all pairwise category-encoding contrasts, and factorial accuracy across observed-disagreement strata. It also exports the full 952-structure target and split inventory, exact pKa threshold-boundary records and selected final-fit epochs. The 10,000 paired group draws retain the fitted seeds and recompute the comparator denominator. Intervals are omitted below five eligible groups or 9,500 nonempty draws; all point estimates remain available. The data dictionary states the scoring units and subgroup interpretation. No training is performed.
+
+The machine-readable full cohort is directly available in `reproducibility/supporting_data/Supplementary_Data_6_full_structure_inventory.csv`. Figure 2D and Figure S2 use consistent mathematical parameter labels; plotted values are unchanged.

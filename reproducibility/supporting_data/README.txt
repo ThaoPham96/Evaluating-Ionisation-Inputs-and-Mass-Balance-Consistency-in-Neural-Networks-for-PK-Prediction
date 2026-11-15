@@ -134,3 +134,7 @@ Supplementary_Data_4_selection_comparison.csv compares the 15 P0 model/fold sele
 Supplementary_Data_4_dictionary.txt defines these fields.
 
 Run current/build_training_metadata.py after hydration to reproduce and verify these four tables. The accompanying current/paired_calibration.jsonl.gz stores the original learning-curve bytes and whitelisted scientific request/summary fields for each paired fit. Per-curve hashes are verified. Requests, initial-state/data/scaler/environment hashes and batch/dropout streams match. Chemprop and ChemBERTa trajectories match; all 175 GraphConv pairs differ numerically and 50 have different best epochs. These records do not identify a particular GPU kernel as the cause. No new training was performed for this metadata release.
+
+Supplementary Data 5 reports structure component/charge counts, partial-triad endpoint accuracy, repeated F/T reference comparisons and shared/separate fixed-capacity interactions. Its dictionary defines estimands and conditional intervals.
+
+Supplementary Data 6 supplies the complete 952-structure target/group/fold inventory, input-composition and one-/two-label subgroup analyses, pairwise encoding intervals, factorial disagreement strata, exact threshold boundaries and final-fit epochs. See Supplementary_Data_6_dictionary.txt for definitions and small-subgroup reporting rules.

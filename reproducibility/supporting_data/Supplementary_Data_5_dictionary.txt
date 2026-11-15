@@ -1,0 +1,15 @@
+SUPPLEMENTARY DATA 5: ADDITIONAL STRUCTURE AND PREDICTION SUMMARIES
+
+Structure flags: one row per full-cohort structure. component_count counts RDKit molecular fragments; charged_atom_count counts atoms with nonzero formal charge; net_formal_charge is their sum. Disconnected components include hydrates and other formulation components, so these counts are not a salt classification. The summary reports counts and percentages within each cohort.
+
+Partial-triad accuracy: the 233 structures with one or two observed triad endpoints; each endpoint is scored only where observed (228 half-life, 36 volume, 15 clearance labels). Predictions at missing endpoints cannot be assessed directly.
+
+F/T reference comparison: T minus F on matched structures and nine seeds. Off compares loss-off references. T positive versus F separate compares the same input-specific penalty-selection policy across executions. T positive versus F shared additionally changes the penalty-selection policy. These rows describe the realised executions; they do not estimate uncertainty over repeated model searches.
+
+F penalty interactions: category+penalty - category-only - structure+penalty + structure-only, under either shared or separate positive-penalty selection. Accuracy percentages use the common structure-only denominator. Positive values indicate a less favourable penalty-associated MAE change with categories.
+
+All prediction summaries use 10,000 paired whole-group bootstrap draws, fixed fitted seeds and a recomputed reference denominator per draw. Sampling follows Supplementary Data 1. n and n_groups count scored structures and groups. triad_mae uses the 242 complete numerical-cohort triads; mean_abs_residual uses all 327 structures. Endpoint errors are log10 units except F/PPB, which use percentage points.
+
+condition_means: JSON mapping of arm identifiers to nine-seed mean metric values. terms: JSON coefficients for the paired contrast. denominator identifies the reference arm, and denominator_mean is its unresampled mean. absolute_delta/low/high give the point difference and nominal 95% interval in metric units. relative_pct/primary_low/high give 100 times that contrast divided by its reference, with the reference recomputed within each bootstrap draw. Interaction percentages are percentage-point differences on the structure-only MAE scale. Relative residual differences are percent changes in the mean absolute residual, not endpoint-accuracy changes.
+
+The manifest records source hashes and output hashes. All summaries use archived predictions; no models were refitted.

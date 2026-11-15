@@ -1,0 +1,10 @@
+cohort,feature,n,denominator,percent
+full952,multiple_components,250,952,26.260504201680675
+full952,any_charged_atom,90,952,9.453781512605042
+full952,nonzero_net_formal_charge,6,952,0.6302521008403361
+class494,multiple_components,123,494,24.898785425101213
+class494,any_charged_atom,38,494,7.6923076923076925
+class494,nonzero_net_formal_charge,0,494,0.0
+numerical327,multiple_components,77,327,23.547400611620795
+numerical327,any_charged_atom,21,327,6.422018348623854
+numerical327,nonzero_net_formal_charge,0,327,0.0
