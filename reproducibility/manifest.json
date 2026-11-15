@@ -1,5 +1,5 @@
 {
-  "release_version": "repository-20261115-clarifications",
+  "release_version": "repository-20261115-fold-guides",
   "checksums": {
     "artifacts.json": "ad0d78828a68e32cb90db6ce2b5a81aa36717a7b00310899a4b027f92c1e58a5",
     "checkpoint_provenance.csv": "80f4770c6886b9bd6e84f6ab16befc6d59854665699e5ad401dd6624b3d1831f",
@@ -89,7 +89,7 @@
     "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/PLOT_GUIDE.txt": "302ed75d9531da9d40f44b1861b436f35b6143ca5ca12f4a95b93a2d3f471e27",
     "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/render.py": "05eac9e3d02e3fad1b2663e3377b87a312e56de13d01100c1b5b4a6158f1cbfb",
     "Combined_ionisation_mass_balance_20261113/figures/combined_results_v1/source_manifest.json": "ddd2558b2d276c2453d48dbcf925a828235d0999a42842f87c6796f9bb3d014e",
-    "current/render_preserved_figures.py": "803aebabf5fef5d7f0a5f125572e2731084925295a35ec1a63bfe7c1d50f37db",
+    "current/render_preserved_figures.py": "6d232a823de906dda5929427d8fd383894028eb5aba1a98a78b27f7444bd7a04",
     "current/render_primary_intervals.py": "292bda521fc2f55d8b52f14f01e648924ba9520bef5e9194200a8da53d28f68b",
     "current/render_s3.py": "c3aea750cba118b7d236cd9d8fee7c60a01fd6e27c9516d5472152b9229bab5b",
     "derived/observation_masks_and_membership.csv": "b5643675536dc7a674f4ffb565252598a24a202944471a80bb3e88f1b9d85bf2",

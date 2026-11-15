@@ -10,6 +10,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.text import Text
 from matplotlib.ticker import FuncFormatter
+from matplotlib.patches import Rectangle
 import numpy as np
 import pandas as pd
 
@@ -101,6 +102,63 @@ def save(fig, directory, stem):
                          outputs={ext:sha(directory/f'{stem}.{ext}') for ext in ['pdf','png','svg']})
     plt.close(fig)
 
+def mass_fold_panel(fig, curves, mod):
+    """Show the saved mean ECDFs and exact 1.5/2/5-fold values in Panel C."""
+    mod.fs.letter(fig, 'C', .298, .752)
+    thresholds=(1.5,2.0,5.0)
+    styles=[('baseline',mod.fs.BASELINE_GREY,mod.fs.BASELINE_DASH,1.2,'No loss'),
+            ('selected_positive',mod.fs.LOSS,'-',1.6,'With loss')]
+    values=[]
+    for column,(model,title) in enumerate(mod.MODELS):
+        ax=mod.model_axes(fig,column,.569,.161,title)
+        lookup={}
+        for policy,colour,linestyle,linewidth,_ in styles:
+            d=curves[curves.backbone.eq(model)&curves.policy.eq(policy)].sort_values('fold_disagreement')
+            assert d.mean_cumulative_percent.is_monotonic_increasing
+            x=d.fold_disagreement.to_numpy();y=d.mean_cumulative_percent.to_numpy()
+            # A post-step empirical CDF is evaluated at the last observed x <= cutoff.
+            # Interpolation would incorrectly allocate partial observations.
+            at=lambda t:float(y[np.searchsorted(x,t,side='right')-1])
+            shown=d[d.fold_disagreement.le(5.12)]
+            ax.step(np.r_[shown.fold_disagreement,5.12],
+                    np.r_[shown.mean_cumulative_percent,at(5.12)],where='post',
+                    color=colour,lw=linewidth,ls=linestyle,zorder=3)
+            for threshold in thresholds:
+                percent=at(threshold);lookup[policy,threshold]=percent
+                ax.plot(threshold,percent,'o',ms=2.8,color=colour,mec='white',mew=.35,zorder=5)
+                values.append(dict(backbone=model,policy=policy,fold_threshold=threshold,
+                                   mean_percent=percent,n_structures_per_seed=952,n_seeds=9))
+        for threshold in thresholds:
+            ax.plot([threshold,threshold],[0,max(lookup[p,threshold] for p,*_ in styles)],
+                    color=mod.fs.REFERENCE,lw=.6,ls=(0,(3,2.5)),zorder=1)
+        ax.set(xscale='log',xlim=(1/1.03,5.12),ylim=(-2.5,102.5),yticks=[0,25,50,75,100])
+        ax.set_xticks([1,1.5,2,5],['1','1.5','2','5']);ax.minorticks_off()
+        ax.grid(axis='y',color=mod.GRID,lw=.5);ax.set_axisbelow(True)
+        ax.spines['bottom'].set_bounds(1,5);ax.spines['left'].set_bounds(0,100)
+        if column==0:ax.set_ylabel('Predictions within fold (%)',labelpad=3)
+        else:ax.tick_params(axis='y',labelleft=False,length=0)
+        # The inset occupies only the empty lower-right area below both curves.
+        ax.add_patch(Rectangle((.24,.025),.77,.575,transform=ax.transAxes,
+                               facecolor='white',edgecolor='none',zorder=6,clip_on=False))
+        labels=[]
+        def label(x,y,text,**kw):
+            obj=ax.text(x,y,text,transform=ax.transAxes,fontsize=mod.SMALL,
+                        va='center',zorder=8,clip_on=False,**kw)
+            labels.append(obj)
+        label(.64,.55,'Within fold (%)',ha='center',fontweight='bold')
+        for x,(policy,colour,linestyle,linewidth,name) in zip([.67,1.0],styles):
+            ax.plot([x-.20,x],[.47,.47],transform=ax.transAxes,color=colour,
+                    ls=linestyle,lw=linewidth,zorder=8,clip_on=False)
+            label(x,.41,name,ha='right')
+        for y,threshold in zip([.29,.17,.05],thresholds):
+            label(.19,y,f'\u2264{threshold:g}\u00d7',ha='left')
+            label(.67,y,f'{lookup["baseline",threshold]:.2f}',ha='right')
+            label(1.0,y,f'{lookup["selected_positive",threshold]:.2f}',ha='right')
+        ax._fold_inset_labels=labels
+    fig.text((mod.LEFT+mod.RIGHT)/2,.536,'Predicted mass-balance\nfold disagreement',ha='center',va='top')
+    pd.DataFrame(values).to_csv(mod.ROOT/'predicted_fold_thresholds.csv',index=False)
+
+
 def mass_main():
     source = ROOT / 'Mass_balance_experiment_20261113/supplementary_completion/main_figure_layout_v3'
     mod = module('minor_mass_main', source / 'render_v3.py')
@@ -110,7 +168,7 @@ def mass_main():
         mod.fs.configure()
         fig = plt.figure(figsize=(mod.WIDTH, mod.BODY_HEIGHT), facecolor='white')
         mod.observed_panel(fig, csv(mod.INPUTS/'same_row_complete_triads.csv'))
-        mod.continuous_panel(fig, csv(mod.INPUTS/'cdf_values.csv.gz'))
+        mass_fold_panel(fig, csv(mod.INPUTS/'cdf_values.csv.gz'), mod)
         mod.split_panel(fig, csv(mod.INPUTS/'split_1_5_summary.csv'))
         mod.endpoint_panel(fig, csv(mod.INPUTS/'endpoint_seed_values.csv'), csv(mod.INPUTS/'average_seed_values.csv'),
                            csv(mod.INPUTS/'endpoint_summary.csv'))
@@ -125,6 +183,14 @@ def mass_main():
             label.set_position((x,y*ratio))
         fig.set_size_inches(mod.WIDTH, mod.HEIGHT)
         mod.schematic(fig)
+        fig.canvas.draw()
+        renderer=fig.canvas.get_renderer()
+        for ax in fig.axes:
+            labels=getattr(ax,'_fold_inset_labels',[])
+            boxes=[label.get_window_extent(renderer) for label in labels]
+            for i,a in enumerate(boxes):
+                for j,b in enumerate(boxes[i+1:],i+1):
+                    assert not a.overlaps(b),(labels[i].get_text(),labels[j].get_text())
         save(fig, mod.ROOT, mod.STEM)
 
 def mass_supp():

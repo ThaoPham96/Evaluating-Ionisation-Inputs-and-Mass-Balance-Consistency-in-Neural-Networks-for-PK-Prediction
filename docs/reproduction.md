@@ -33,7 +33,7 @@ python scripts/pipeline.py figures --current-base --output outputs/figures-curre
 python scripts/pipeline.py figures --historical --output outputs/figures-historical
 ```
 
-The default command regenerates Figures 1, 2, 3, S1, S2 and S3. Figure S3 uses the complete verified F/T matrix statistics, including all prespecified input, loss and interaction contrasts. Its 96 displayed rows are saved beside the figure.
+The default command regenerates Figures 1, 2, 3, S1, S2 and S3. Figure 1C displays the unchanged saved cumulative distributions on a logarithmic axis through fivefold disagreement, with reference guides and mean percentages at 1.5-, 2- and 5-fold. The 18 displayed values are exported as `fig1/predicted_fold_thresholds.csv`; evaluation uses the empirical step values without interpolation. Figure S3 uses the complete verified F/T matrix statistics, including all prespecified input, loss and interaction contrasts. Its 96 displayed rows are saved beside the figure.
 
 `--current-base` regenerates current Figures 1, 2, 3, S1 and S2 from retained source tables and drawing functions. Figures 2 and 3 use the revised primary whole-group bootstrap intervals in `Review_statistics_20261114/outputs/contrasts.csv`; the renderer verifies every displayed endpoint/average estimate and bound against that table. The other three figures retain their existing scientific values. The public runtime falls back to DejaVu Sans when Arial is unavailable; two S1 labels use shorter equivalent wording so the layout checks pass. Numerical coordinates are preserved, but binary-identical PDF files are not promised across fonts and renderers.
 
